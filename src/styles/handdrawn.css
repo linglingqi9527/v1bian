@@ -1,0 +1,351 @@
+.handdrawn-shape,
+.handdrawn-frame {
+  display: block;
+  width: 100%;
+  fill: none;
+  stroke: var(--color-line);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 4;
+}
+
+.handdrawn-animated-fill {
+  position: absolute;
+  inset: 7px 8px;
+  z-index: 0;
+  display: block;
+  overflow: hidden;
+  border-radius: 9px;
+  pointer-events: none;
+}
+
+.handdrawn-animated-fill svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.handdrawn-animated-fill--enter {
+  animation: handdrawn-fill-sweep var(--handdrawn-fill-duration, 220ms) ease-out both;
+  transform-origin: left center;
+}
+
+.app-shell :is(
+  .primary-nav a,
+  .mobile-nav a,
+  .settings-link,
+  .sketch-button,
+  .sketch-tag,
+  .sketch-card
+) {
+  position: relative;
+}
+
+.app-shell :is(
+  .primary-nav a,
+  .mobile-nav a,
+  .settings-link,
+  .sketch-button,
+  .sketch-tag,
+  .sketch-card
+) > :not(.handdrawn-animated-fill) {
+  position: relative;
+  z-index: 1;
+}
+
+@keyframes handdrawn-fill-sweep {
+  0% {
+    clip-path: inset(0 100% 0 0 round 9px);
+    opacity: 0;
+  }
+
+  100% {
+    clip-path: inset(0 0 0 0 round 9px);
+    opacity: 1;
+  }
+}
+
+/*
+  Hand-drawn borders are stroke-only by design.
+  Keep fills, shadows, and panel backgrounds outside this module so frame
+  geometry can be tuned without accidentally adding gray or white artifacts.
+*/
+.app-frame-border,
+.handdrawn-frame-layer {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.app-frame-border {
+  z-index: 30;
+  overflow: visible;
+}
+
+.app-frame-border__line {
+  fill: none;
+  stroke: var(--color-line);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.app-frame-border__line {
+  stroke-width: var(--handdrawn-frame-stroke, 5.5);
+}
+
+.app-frame-border__divider {
+  stroke-width: var(--handdrawn-frame-divider-stroke, 5);
+}
+
+.app-shell {
+  --handdrawn-panel-stroke: 3.9px;
+  --handdrawn-card-stroke: 3.15px;
+  --handdrawn-control-stroke: 2.6px;
+  --handdrawn-tiny-stroke: 2.05px;
+  --handdrawn-line-stroke: 2.4px;
+}
+
+.app-shell :is(
+  .review-board,
+  .training-board,
+  .editor-shell,
+  .history-strip,
+  .match-card
+) {
+  --handdrawn-border-stroke: var(--handdrawn-panel-stroke);
+  --handdrawn-border-inset: 2px;
+  --handdrawn-border-wobble: -0.08deg;
+}
+
+.app-shell :is(
+  .sketch-card,
+  .nav-mini-card,
+  .training-row,
+  .match-context-card,
+  .recorder-card,
+  .hint-card,
+  .linked-review-card,
+  .history-row,
+  .training-mini,
+  .linked-paper,
+  .writing-box
+) {
+  --handdrawn-border-stroke: var(--handdrawn-card-stroke);
+  --handdrawn-border-inset: 1.5px;
+  --handdrawn-border-wobble: 0.1deg;
+}
+
+.app-shell :is(
+  .primary-nav a,
+  .mobile-nav a,
+  .search-box,
+  .pill,
+  .filter-button,
+  .match-action-link,
+  .sketch-button,
+  .mini-action,
+  .mini-square,
+  .add-section,
+  .sketch-modal
+) {
+  --handdrawn-border-stroke: var(--handdrawn-control-stroke);
+  --handdrawn-border-inset: 1px;
+  --handdrawn-border-wobble: -0.12deg;
+}
+
+.app-shell :is(
+  .sketch-tag,
+  .toc-item--active
+) {
+  --handdrawn-border-stroke: var(--handdrawn-tiny-stroke);
+  --handdrawn-border-inset: 0.5px;
+  --handdrawn-border-wobble: 0.14deg;
+}
+
+.app-shell :is(
+  .review-board,
+  .training-board,
+  .editor-shell,
+  .history-strip,
+  .match-card,
+  .sketch-card,
+  .nav-mini-card,
+  .training-row,
+  .match-context-card,
+  .recorder-card,
+  .hint-card,
+  .linked-review-card,
+  .history-row,
+  .training-mini,
+  .linked-paper,
+  .writing-box,
+  .primary-nav a,
+  .mobile-nav a,
+  .search-box,
+  .pill,
+  .filter-button,
+  .match-action-link,
+  .sketch-button,
+  .mini-action,
+  .mini-square,
+  .add-section,
+  .sketch-modal,
+  .sketch-tag,
+  .toc-item--active
+) {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  border-color: transparent;
+  background-clip: padding-box;
+}
+
+.app-shell :is(
+  .primary-nav a.active,
+  .mobile-nav a.active
+) {
+  border-color: transparent;
+}
+
+.app-shell :is(
+  .review-board,
+  .training-board,
+  .editor-shell,
+  .history-strip,
+  .match-card,
+  .sketch-card,
+  .nav-mini-card,
+  .training-row,
+  .match-context-card,
+  .recorder-card,
+  .hint-card,
+  .linked-review-card,
+  .history-row,
+  .training-mini,
+  .linked-paper,
+  .writing-box,
+  .primary-nav a,
+  .mobile-nav a,
+  .search-box,
+  .pill,
+  .filter-button,
+  .match-action-link,
+  .sketch-button,
+  .mini-action,
+  .mini-square,
+  .add-section,
+  .sketch-modal,
+  .sketch-tag,
+  .toc-item--active
+)::before {
+  content: '';
+  position: absolute;
+  inset: var(--handdrawn-border-inset, 1px);
+  z-index: 0;
+  border-color: var(--color-line);
+  border-style: solid;
+  border-width:
+    calc(var(--handdrawn-border-stroke, 3px) + 0.1px)
+    calc(var(--handdrawn-border-stroke, 3px) - 0.15px)
+    calc(var(--handdrawn-border-stroke, 3px) + 0.2px)
+    var(--handdrawn-border-stroke, 3px);
+  border-radius: inherit;
+  pointer-events: none;
+  transform: translate(0.15px, -0.1px) rotate(var(--handdrawn-border-wobble, 0deg));
+}
+
+.app-shell :is(input.sketch-input, textarea.sketch-input) {
+  border-width: var(--handdrawn-control-stroke);
+  border-color: var(--color-line);
+}
+
+.app-shell :is(
+  .nav-divider,
+  .tabs,
+  .review-row,
+  .editor-tabs,
+  .editor-toolbar,
+  .section-head--flat,
+  .toc-panel,
+  .related-panel,
+  .match-side,
+  .match-duration,
+  .review-duration
+) {
+  position: relative;
+  border: 0;
+  isolation: isolate;
+}
+
+.app-shell .nav-divider {
+  height: var(--handdrawn-line-stroke);
+}
+
+.app-shell :is(
+  .tabs,
+  .review-row,
+  .editor-tabs,
+  .editor-toolbar,
+  .section-head--flat
+)::after {
+  content: '';
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  height: var(--handdrawn-line-stroke);
+  border-radius: 999px;
+  background: var(--color-line);
+  pointer-events: none;
+  transform: translateY(0.5px) rotate(-0.08deg);
+}
+
+.app-shell :is(.nav-divider)::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: 999px;
+  background: var(--color-line);
+  pointer-events: none;
+  transform: rotate(0.1deg);
+}
+
+.app-shell :is(
+  .toc-panel,
+  .match-side,
+  .match-duration
+)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 0;
+  width: var(--handdrawn-line-stroke);
+  border-radius: 999px;
+  background: var(--color-line);
+  pointer-events: none;
+  transform: translateX(0.5px) rotate(0.08deg);
+}
+
+.app-shell :is(
+  .related-panel,
+  .review-duration
+)::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  width: var(--handdrawn-line-stroke);
+  border-radius: 999px;
+  background: var(--color-line);
+  pointer-events: none;
+  transform: translateX(-0.5px) rotate(-0.08deg);
+}

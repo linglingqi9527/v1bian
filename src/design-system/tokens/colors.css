@@ -1,0 +1,12 @@
+:root {
+  --color-ink: #201a16;
+  --color-muted: #766d65;
+  --color-paper: #fffdf7;
+  --color-panel: #fff8e8;
+  --color-line: #2f2924;
+  --color-accent: #15616d;
+  --color-accent-soft: #d7eef0;
+  --color-highlight: #f4c95d;
+  --color-danger: #b9473c;
+  --shadow-sketch: 4px 4px 0 rgba(32, 26, 22, 0.14);
+}

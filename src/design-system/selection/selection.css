@@ -1,0 +1,18 @@
+/*
+  Legacy semantic selection helpers.
+  Rough hand-drawn fills now live in design-system/handdrawn/HandDrawnAnimatedFill.
+*/
+
+.sketch-selection,
+.sketch-selection--current,
+.sketch-selection--marked {
+  background: #fff;
+}
+
+.app-shell :is(
+  .primary-nav a.active,
+  .mobile-nav a.active
+) {
+  background: #fff;
+  box-shadow: none;
+}
