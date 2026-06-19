@@ -1,5 +1,5 @@
 import clsx from 'clsx'
-import { HandDrawnAnimatedFill } from '../handdrawn/HandDrawnAnimatedFill.jsx'
+import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
 export function SketchButton({
   active = false,
@@ -13,6 +13,12 @@ export function SketchButton({
   ...props
 }) {
   const fillProps = typeof handdrawnFill === 'object' ? handdrawnFill : {}
+  const selectionFillProps = {
+    ...fillProps,
+    fill: fillProps.fill ?? fillProps.color,
+    preset: fillProps.preset ?? 'buttonActiveFill',
+    shape: fillProps.shape ?? 'pill',
+  }
   const showFill = active && handdrawnFill !== false
 
   return (
@@ -26,7 +32,7 @@ export function SketchButton({
       )}
       {...props}
     >
-      {showFill ? <HandDrawnAnimatedFill active={active} {...fillProps} /> : null}
+      {showFill ? <HandDrawnSelectionFill active={active} {...selectionFillProps} /> : null}
       <span className="sketch-button__content">
         {icon ? <span className="sketch-button__icon">{icon}</span> : null}
         {children}

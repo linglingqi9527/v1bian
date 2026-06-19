@@ -1,6 +1,6 @@
 import { NavLink, useLocation } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
-import { HandDrawnAnimatedFill } from '../handdrawn/HandDrawnAnimatedFill.jsx'
+import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
 const navItems = [
   { to: '/matches', label: '看比赛', icon: imageAssets.nav.watchMatch },
@@ -30,7 +30,7 @@ export function SideNav() {
           <NavLink key={item.to} to={item.to}>
             {({ isActive }) => (
               <>
-                {isActive ? <HandDrawnAnimatedFill tone="current" /> : null}
+                {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
                 <img src={item.icon} alt="" />
                 <span>{item.label}</span>
               </>
@@ -45,7 +45,7 @@ export function SideNav() {
       <NavLink className="settings-link" to="/profile">
         {({ isActive }) => (
           <>
-            {isActive ? <HandDrawnAnimatedFill tone="current" /> : null}
+            {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
             <span>⚙</span>
             <span>设置</span>
           </>

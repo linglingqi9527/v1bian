@@ -5,6 +5,7 @@ import { EmptyState } from '../design-system/ui/EmptyState.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { SketchCard } from '../design-system/ui/SketchCard.jsx'
 import { getMatchById } from '../features/matches/matchService.js'
+import { formatMatchTeams } from '../features/matches/matchUtils.js'
 import { getReviewByMatchId } from '../features/reviews/reviewService.js'
 
 export default function MatchDetailPage() {
@@ -18,7 +19,7 @@ export default function MatchDetailPage() {
 
   return (
     <ContentLayout>
-      <PageHeader eyebrow="比赛详情" title={match.title} description={match.topic} />
+      <PageHeader eyebrow="比赛详情" title={match.title} description={`${formatMatchTeams(match)} · ${match.date} · ${match.bvId}`} />
       <SketchCard>
         <p>{match.summary}</p>
         <div className="actions-row">

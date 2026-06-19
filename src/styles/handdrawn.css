@@ -19,14 +19,35 @@
   pointer-events: none;
 }
 
+.handdrawn-selection-fill {
+  position: absolute;
+  z-index: 0;
+  display: block;
+  overflow: visible;
+  border-radius: 12px;
+  pointer-events: none;
+}
+
 .handdrawn-animated-fill svg {
   display: block;
   width: 100%;
   height: 100%;
 }
 
+.handdrawn-selection-fill svg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
 .handdrawn-animated-fill--enter {
   animation: handdrawn-fill-sweep var(--handdrawn-fill-duration, 220ms) ease-out both;
+  transform-origin: left center;
+}
+
+.handdrawn-selection-fill--enter {
+  animation: handdrawn-selection-sweep var(--handdrawn-selection-duration, 220ms) ease-out both;
   transform-origin: left center;
 }
 
@@ -48,7 +69,7 @@
   .sketch-button,
   .sketch-tag,
   .sketch-card
-) > :not(.handdrawn-animated-fill) {
+) > :not(.handdrawn-animated-fill):not(.handdrawn-selection-fill) {
   position: relative;
   z-index: 1;
 }
@@ -61,6 +82,18 @@
 
   100% {
     clip-path: inset(0 0 0 0 round 9px);
+    opacity: 1;
+  }
+}
+
+@keyframes handdrawn-selection-sweep {
+  0% {
+    clip-path: inset(0 100% 0 0);
+    opacity: 0;
+  }
+
+  100% {
+    clip-path: inset(-6px -6px -6px -6px);
     opacity: 1;
   }
 }

@@ -1,5 +1,6 @@
 import clsx from 'clsx'
-import { HandDrawnAnimatedFill } from '../handdrawn/HandDrawnAnimatedFill.jsx'
+import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
+import { handdrawnToneFills } from '../handdrawn/handdrawnPresets.js'
 
 export function SketchTag({ active, children, className, tone = 'gray', ...props }) {
   const resolvedTone = resolveTone(tone, className)
@@ -15,7 +16,14 @@ export function SketchTag({ active, children, className, tone = 'gray', ...props
       )}
       {...props}
     >
-      {showFill ? <HandDrawnAnimatedFill active tone={toneToFillTone(resolvedTone)} /> : null}
+      {showFill ? (
+        <HandDrawnSelectionFill
+          active
+          fill={toneToFillColor(resolvedTone)}
+          preset="tagActiveFill"
+          shape="pill"
+        />
+      ) : null}
       <span className="sketch-tag__content">{children}</span>
     </span>
   )
@@ -30,8 +38,6 @@ function resolveTone(tone, className = '') {
   return 'gray'
 }
 
-function toneToFillTone(tone) {
-  if (tone === 'blue') return 'marked'
-  if (tone === 'green') return 'green'
-  return 'current'
+function toneToFillColor(tone) {
+  return handdrawnToneFills[tone] ?? handdrawnToneFills.current
 }

@@ -1,6 +1,6 @@
 import { NavLink } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
-import { HandDrawnAnimatedFill } from '../handdrawn/HandDrawnAnimatedFill.jsx'
+import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
 const navItems = [
   { to: '/matches', label: '比赛', icon: imageAssets.nav.watchMatch },
@@ -16,7 +16,7 @@ export function MobileNav() {
         <NavLink key={item.to} to={item.to}>
           {({ isActive }) => (
             <>
-              {isActive ? <HandDrawnAnimatedFill tone="current" /> : null}
+              {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
               <img src={item.icon} alt="" />
               <span>{item.label}</span>
             </>
