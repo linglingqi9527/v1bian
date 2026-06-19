@@ -16,16 +16,19 @@ export function getMatchStatusTags(match) {
   return [
     {
       active: isMatchWatched(match),
+      kind: 'watched',
       label: isMatchWatched(match) ? '已看' : '未看',
       tone: isMatchWatched(match) ? 'yellow' : 'gray',
     },
     {
       active: isMatchReviewed(match),
+      kind: 'review',
       label: isMatchReviewed(match) ? '已评' : '待评',
       tone: isMatchReviewed(match) ? 'blue' : 'gray',
     },
     {
       active: trainingCount > 0,
+      kind: 'training',
       label: `已练 ${trainingCount}`,
       tone: trainingCount > 0 ? 'green' : 'gray',
     },

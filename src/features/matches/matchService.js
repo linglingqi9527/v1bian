@@ -57,6 +57,16 @@ export function markMatchWatched(matchId) {
   })
 }
 
+export function toggleMatchWatched(matchId) {
+  const match = getMatchById(matchId)
+  if (!match) return null
+
+  return updateMatch(matchId, {
+    watched: !match.watched,
+    status: match.watched ? '未看' : '已看',
+  })
+}
+
 export function setMatchReviewId(matchId, reviewId) {
   if (!reviewId) return getMatchById(matchId)
 

@@ -703,6 +703,15 @@ h3 {
   line-height: 1.15;
 }
 
+.match-main h2[role='button'] {
+  cursor: pointer;
+}
+
+.match-main h2[role='button']:focus-visible {
+  outline: 3px solid #2f80ff;
+  outline-offset: 4px;
+}
+
 .match-school,
 .match-speakers {
   color: #5f6670;
@@ -736,6 +745,10 @@ h3 {
   min-width: 66px;
   justify-content: center;
   padding-inline: 12px;
+}
+
+.status-row .sketch-tag[role='button'] {
+  cursor: pointer;
 }
 
 .match-actions {
@@ -789,6 +802,74 @@ h3 {
   border-right: 3px solid var(--color-line);
   border-left: 3px solid var(--color-line);
   transform: skewY(-35deg);
+}
+
+.match-card .bookmark-mark {
+  top: 14px;
+  right: 12px;
+  z-index: 5;
+  width: 34px;
+  height: 44px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.match-card .bookmark-mark::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  right: 8px;
+  z-index: 2;
+  width: 18px;
+  height: 30px;
+  border: 3px solid var(--color-line);
+  border-bottom: 0;
+  pointer-events: none;
+}
+
+.match-card .bookmark-mark::after {
+  right: 8px;
+  bottom: 2px;
+  left: auto;
+  z-index: 2;
+  width: 18px;
+  height: 18px;
+  border-right: 3px solid var(--color-line);
+  border-left: 3px solid var(--color-line);
+  pointer-events: none;
+  transform: skewY(-35deg);
+}
+
+.match-card .bookmark-mark__fill {
+  inset: 6px 8px 5px 8px !important;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+.match-card .bookmark-mark[data-favorite='true'] {
+  animation: bookmark-pop 180ms ease-out both;
+}
+
+.match-card .bookmark-mark:focus-visible {
+  outline: 3px solid #2f80ff;
+  outline-offset: 3px;
+}
+
+@keyframes bookmark-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  55% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
 }
 
 .sketch-card {

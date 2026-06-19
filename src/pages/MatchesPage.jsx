@@ -6,7 +6,8 @@ import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { SketchTag } from '../design-system/ui/SketchTag.jsx'
-import { listMatches, markMatchWatched, toggleMatchFavorite } from '../features/matches/matchService.js'
+import { FavoriteBookmark } from '../features/matches/components/FavoriteBookmark.jsx'
+import { listMatches, markMatchWatched, toggleMatchFavorite, toggleMatchWatched } from '../features/matches/matchService.js'
 import {
   filterMatches,
   formatMatchSpeakers,
@@ -37,15 +38,23 @@ export default function MatchesPage() {
     refreshMatches()
   }
 
-  function handleBookmarkKeyDown(event, matchId) {
+  function handleToggleWatched(event, matchId) {
+    event.stopPropagation()
+    toggleMatchWatched(matchId)
+    refreshMatches()
+  }
+
+  function handleStatusKeyDown(event, matchId, kind) {
+    if (kind !== 'watched') return
     if (event.key !== 'Enter' && event.key !== ' ') return
 
     event.preventDefault()
-    handleToggleFavorite(matchId)
+    handleToggleWatched(event, matchId)
   }
 
   function handleWatchMatch(event, match) {
     event.preventDefault()
+    event.stopPropagation()
     markMatchWatched(match.id)
     refreshMatches()
 
@@ -55,6 +64,13 @@ export default function MatchesPage() {
     }
 
     window.alert('暂无比赛链接')
+  }
+
+  function handleTitleKeyDown(event, match) {
+    if (event.key !== 'Enter' && event.key !== ' ') return
+
+    event.preventDefault()
+    handleWatchMatch(event, match)
   }
 
   return (
@@ -101,12 +117,26 @@ export default function MatchesPage() {
             </aside>
             <div className="match-main">
               <p className="match-school">{formatMatchTeams(match)} · {match.date} · {match.bvId}</p>
-              <h2>{match.title}</h2>
+              <h2
+                aria-label={`观看比赛：${match.title}`}
+                onClick={(event) => handleWatchMatch(event, match)}
+                onKeyDown={(event) => handleTitleKeyDown(event, match)}
+                role="button"
+                tabIndex={0}
+                title="打开比赛链接"
+              >
+                {match.title}
+              </h2>
               <p className="match-speakers">{formatMatchSpeakers(match)}</p>
               <div className="status-row">
                 {getMatchStatusTags(match).map((tag) => (
                   <SketchTag
                     active={tag.active}
+                    aria-label={tag.kind === 'watched' ? `${tag.label}，点击切换已看状态` : undefined}
+                    onClick={tag.kind === 'watched' ? (event) => handleToggleWatched(event, match.id) : undefined}
+                    onKeyDown={(event) => handleStatusKeyDown(event, match.id, tag.kind)}
+                    role={tag.kind === 'watched' ? 'button' : undefined}
+                    tabIndex={tag.kind === 'watched' ? 0 : undefined}
                     tone={tag.tone}
                     key={tag.label}
                   >
@@ -129,15 +159,12 @@ export default function MatchesPage() {
               />
               <ActionLink icon={imageAssets.matchCard.startTraining} label="开始训练" to={getMatchTrainingRoute(match)} />
             </div>
-            <span
-              aria-label={match.favorite ? '取消收藏比赛' : '收藏比赛'}
-              aria-pressed={match.favorite}
-              className="bookmark-mark"
-              data-favorite={match.favorite ? 'true' : 'false'}
-              onClick={() => handleToggleFavorite(match.id)}
-              onKeyDown={(event) => handleBookmarkKeyDown(event, match.id)}
-              role="button"
-              tabIndex={0}
+            <FavoriteBookmark
+              favorite={match.favorite}
+              onClick={(event) => {
+                event.stopPropagation()
+                handleToggleFavorite(match.id)
+              }}
             />
           </article>
         ))}
@@ -147,6 +174,11 @@ export default function MatchesPage() {
 }
 
 function ActionLink({ icon, label, onClick, to }) {
+  function handleClick(event) {
+    event.stopPropagation()
+    onClick?.(event)
+  }
+
   return (
     <SketchButton
       active={label === '观看比赛'}
@@ -154,7 +186,7 @@ function ActionLink({ icon, label, onClick, to }) {
       className="match-action-link"
       handdrawnFill={{ color: '#F7D95C', opacity: 0.44, variant: 'marker' }}
       icon={<img src={icon} alt="" />}
-      onClick={onClick}
+      onClick={handleClick}
       to={to}
       variant="secondary"
     >
