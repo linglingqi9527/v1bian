@@ -1,7 +1,8 @@
 import { createMatchModel } from '../models/matchModel.js'
 import { DEMO_USER_ID } from '../models/userModel.js'
+import generatedMatches from './generated/generatedMatches.json'
 
-export const demoMatches = [
+const fallbackDemoMatches = [
   createMatchModel({
     id: 'match-001',
     userId: DEMO_USER_ID,
@@ -60,3 +61,9 @@ export const demoMatches = [
     publishedAt: '2026-01-21T10:00:00.000Z',
   }),
 ]
+
+const matchSource = Array.isArray(generatedMatches) && generatedMatches.length > 0
+  ? generatedMatches
+  : fallbackDemoMatches
+
+export const demoMatches = matchSource.map((match) => createMatchModel(match))

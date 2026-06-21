@@ -290,6 +290,33 @@
   transform: translate(0.15px, -0.1px) rotate(var(--handdrawn-border-wobble, 0deg));
 }
 
+/* Controls use a fixed three-layer stack: fill, border, then content. */
+.app-shell :is(
+  .primary-nav a,
+  .mobile-nav a,
+  .settings-link,
+  .pill,
+  .filter-button,
+  .match-action-link,
+  .sketch-button,
+  .sketch-tag
+)::before {
+  z-index: 2;
+}
+
+.app-shell :is(
+  .primary-nav a,
+  .mobile-nav a,
+  .settings-link,
+  .pill,
+  .filter-button,
+  .match-action-link,
+  .sketch-button,
+  .sketch-tag
+) > :not(.handdrawn-animated-fill):not(.handdrawn-selection-fill) {
+  z-index: 3;
+}
+
 .app-shell :is(input.sketch-input, textarea.sketch-input) {
   border-width: var(--handdrawn-control-stroke);
   border-color: var(--color-line);

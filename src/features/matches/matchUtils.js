@@ -68,20 +68,24 @@ export function filterMatches(matches, activeFilter) {
 }
 
 export function searchMatches(matches, query) {
-  const keyword = query.trim().toLowerCase()
+  const keyword = normalizeSearchText(query)
   if (!keyword) return matches
 
-  return matches.filter((match) => {
-    const searchableText = [
-      match.title,
-      match.event,
-      match.stage,
-      match.date,
-      match.bvId,
-      ...match.teams,
-      ...match.speakers,
-    ].join(' ').toLowerCase()
+  return matches.filter((match) => createMatchSearchText(match).includes(keyword))
+}
 
-    return searchableText.includes(keyword)
-  })
+function createMatchSearchText(match) {
+  return normalizeSearchText([
+    match.title,
+    match.event,
+    match.stage,
+    match.date,
+    match.bvId,
+    ...(Array.isArray(match.teams) ? match.teams : []),
+    ...(Array.isArray(match.speakers) ? match.speakers : []),
+  ].filter(Boolean).join(' '))
+}
+
+function normalizeSearchText(value) {
+  return String(value ?? '').trim().toLowerCase().replace(/\s+/g, ' ')
 }

@@ -3,9 +3,9 @@ import { imageAssets } from '../../assets/assetPaths.js'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
 const navItems = [
-  { to: '/matches', label: '看比赛', icon: imageAssets.nav.watchMatch },
-  { to: '/reviews', label: '写赛评', icon: imageAssets.nav.writeReview },
-  { to: '/trainings', label: '做训练', icon: imageAssets.nav.startTraining },
+  { to: '/matches', label: '看比赛', icon: imageAssets.nav.watchMatch, kind: 'watch' },
+  { to: '/reviews', label: '写赛评', icon: imageAssets.nav.writeReview, kind: 'review' },
+  { to: '/trainings', label: '做训练', icon: imageAssets.nav.startTraining, kind: 'train' },
 ]
 
 export function SideNav() {
@@ -30,9 +30,13 @@ export function SideNav() {
           <NavLink key={item.to} to={item.to}>
             {({ isActive }) => (
               <>
-                {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
-                <img src={item.icon} alt="" />
-                <span>{item.label}</span>
+                {isActive ? (
+                  <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+                ) : null}
+                <span className="primary-nav__icon" data-nav-icon={item.kind}>
+                  <img src={item.icon} alt="" />
+                </span>
+                <span className="primary-nav__label">{item.label}</span>
               </>
             )}
           </NavLink>
@@ -45,7 +49,9 @@ export function SideNav() {
       <NavLink className="settings-link" to="/profile">
         {({ isActive }) => (
           <>
-            {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
+            {isActive ? (
+              <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+            ) : null}
             <span>⚙</span>
             <span>设置</span>
           </>

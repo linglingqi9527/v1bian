@@ -6,6 +6,7 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
+    "crawl:xgb": "node scripts/crawler/bilibili/crawlXinGuoBian.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

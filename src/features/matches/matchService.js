@@ -20,7 +20,7 @@ export function saveMatches(matches) {
   const snapshot = readLocalDb() ?? {}
   writeLocalDb({
     ...snapshot,
-    matches: matches.map((match) => createMatchModel(match)),
+    matches: matches.map(serializeMatchState),
   })
 }
 
@@ -88,14 +88,21 @@ function mergeMatchesWithPersistedState(baseMatches, persistedMatches) {
   if (!Array.isArray(persistedMatches)) return baseMatches
 
   const persistedById = new Map(persistedMatches.map((match) => [match.id, match]))
-  const baseIds = new Set(baseMatches.map((match) => match.id))
-  const mergedBaseMatches = baseMatches.map((match) => ({
+  return baseMatches.map((match) => ({
     ...match,
     ...pickPersistedMatchState(persistedById.get(match.id)),
   }))
-  const extraPersistedMatches = persistedMatches.filter((match) => !baseIds.has(match.id))
+}
 
-  return [...mergedBaseMatches, ...extraPersistedMatches]
+function serializeMatchState(match) {
+  return {
+    id: match.id,
+    favorite: Boolean(match.favorite),
+    watched: Boolean(match.watched),
+    reviewId: match.reviewId ?? null,
+    status: match.watched ? '已看' : '未看',
+    trainingIds: Array.isArray(match.trainingIds) ? match.trainingIds : [],
+  }
 }
 
 function pickPersistedMatchState(match) {

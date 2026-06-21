@@ -16,7 +16,9 @@ export function MobileNav() {
         <NavLink key={item.to} to={item.to}>
           {({ isActive }) => (
             <>
-              {isActive ? <HandDrawnSelectionFill preset="navActiveFill" shape="pill" /> : null}
+              {isActive ? (
+                <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+              ) : null}
               <img src={item.icon} alt="" />
               <span>{item.label}</span>
             </>

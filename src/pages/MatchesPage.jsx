@@ -90,18 +90,18 @@ export default function MatchesPage() {
             value={searchQuery}
           />
         </label>
-        <div className="pill-row">
+        <div className="pill-row match-filter-pills">
           {FILTERS.map((item) => (
             <SketchButton
               active={item === activeFilter}
-              className="pill"
+              className={`pill match-filter-pill${item === activeFilter ? ' is-active' : ''}`}
               handdrawnFill={{ color: '#F7D95C', opacity: 0.46, variant: 'marker' }}
               onClick={() => setActiveFilter(item)}
               type="button"
               variant="secondary"
               key={item}
             >
-              {item}
+              <span className="match-filter-pill__label">{item}</span>
             </SketchButton>
           ))}
         </div>
@@ -109,7 +109,7 @@ export default function MatchesPage() {
 
       <section className="match-list">
         {visibleMatches.map((match) => (
-          <article className="match-card" key={match.title}>
+          <article className="match-card" key={match.id}>
             <span className={`card-accent card-accent--${match.accent}`} />
             <aside className="match-side">
               <span className="match-side-event">{match.event.replace('bilibili', '')}</span>
@@ -147,17 +147,24 @@ export default function MatchesPage() {
             </div>
             <div className="match-actions">
               <ActionLink
+                action="watch"
                 icon={imageAssets.matchCard.watchVideo}
                 label="观看比赛"
                 onClick={(event) => handleWatchMatch(event, match)}
                 to={`/matches/${match.id}`}
               />
               <ActionLink
+                action="review"
                 icon={imageAssets.matchCard.writeReview}
                 label="打开赛评"
                 to={getMatchReviewRoute(match)}
               />
-              <ActionLink icon={imageAssets.matchCard.startTraining} label="开始训练" to={getMatchTrainingRoute(match)} />
+              <ActionLink
+                action="train"
+                icon={imageAssets.matchCard.startTraining}
+                label="开始训练"
+                to={getMatchTrainingRoute(match)}
+              />
             </div>
             <FavoriteBookmark
               favorite={match.favorite}
@@ -173,7 +180,7 @@ export default function MatchesPage() {
   )
 }
 
-function ActionLink({ icon, label, onClick, to }) {
+function ActionLink({ action, icon, label, onClick, to }) {
   function handleClick(event) {
     event.stopPropagation()
     onClick?.(event)
@@ -184,13 +191,14 @@ function ActionLink({ icon, label, onClick, to }) {
       active={label === '观看比赛'}
       as={Link}
       className="match-action-link"
+      data-match-action={action}
       handdrawnFill={{ color: '#F7D95C', opacity: 0.44, variant: 'marker' }}
       icon={<img src={icon} alt="" />}
       onClick={handleClick}
       to={to}
       variant="secondary"
     >
-      {label}
+      <span className="match-action-link__label">{label}</span>
     </SketchButton>
   )
 }

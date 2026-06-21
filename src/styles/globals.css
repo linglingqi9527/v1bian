@@ -257,13 +257,46 @@ h3 {
 }
 
 .primary-nav a {
-  width: calc(100% - 10px);
+  --handdrawn-border-stroke: var(--handdrawn-panel-stroke);
+  width: calc(100% - 34px);
 }
 
-.primary-nav img {
-  width: 42px;
-  height: 42px;
+.primary-nav__icon {
+  position: relative;
+  display: grid;
+  flex: 0 0 44px;
+  width: 44px;
+  height: 44px;
+  overflow: visible;
+  place-items: center;
+}
+
+.primary-nav__icon img {
+  display: block;
+  width: 48px;
+  max-width: none;
+  height: 48px;
   object-fit: contain;
+}
+
+.primary-nav__icon[data-nav-icon='watch'] img {
+  transform: translateY(2px);
+}
+
+.primary-nav__icon[data-nav-icon='review'] img {
+  width: 74px;
+  height: 74px;
+  transform: translate(-2px, 6px);
+}
+
+.primary-nav__icon[data-nav-icon='train'] img {
+  width: 62px;
+  height: 62px;
+  transform: translateY(2px);
+}
+
+.primary-nav__label {
+  flex: 0 0 auto;
 }
 
 .primary-nav a.active,
@@ -754,6 +787,7 @@ h3 {
 .match-actions {
   display: grid;
   align-content: center;
+  justify-items: center;
   gap: 11px;
 }
 
@@ -762,6 +796,7 @@ h3 {
   align-items: center;
   justify-content: center;
   gap: 8px;
+  width: 166px;
   min-height: 44px;
   border: 3px solid var(--color-line);
   border-radius: 9px;
@@ -772,14 +807,55 @@ h3 {
   font-weight: 900;
 }
 
+.match-action-link .sketch-button__content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.match-action-link .sketch-button__icon {
+  position: absolute;
+  top: 50%;
+  left: 14px;
+  width: 32px;
+  height: 32px;
+  overflow: visible;
+  transform: translateY(-50%);
+}
+
+.match-action-link__label {
+  display: inline-block;
+  transform: translateX(10px);
+}
+
 .match-action-link:first-child {
   background: #fff;
 }
 
 .match-action-link img {
-  width: 34px;
-  height: 34px;
+  display: block;
+  width: 46px;
+  max-width: none;
+  height: 46px;
   object-fit: contain;
+}
+
+.match-action-link[data-match-action='watch'] img {
+  transform: translateX(-2px);
+}
+
+.match-action-link[data-match-action='review'] img {
+  width: 38px;
+  height: 38px;
+  transform: translateX(-1px);
+}
+
+.match-action-link[data-match-action='train'] img {
+  width: 48px;
+  height: 48px;
 }
 
 .bookmark-mark {
@@ -805,48 +881,41 @@ h3 {
 }
 
 .match-card .bookmark-mark {
-  top: 14px;
-  right: 12px;
+  top: 12px;
+  right: 9px;
   z-index: 5;
   width: 34px;
-  height: 44px;
+  height: 40px;
   border: 0;
   padding: 0;
   background: transparent;
   cursor: pointer;
 }
 
-.match-card .bookmark-mark::before {
-  content: '';
-  position: absolute;
-  top: 6px;
-  right: 8px;
-  z-index: 2;
-  width: 18px;
-  height: 30px;
-  border: 3px solid var(--color-line);
-  border-bottom: 0;
-  pointer-events: none;
+.match-card .bookmark-mark::before,
+.match-card .bookmark-mark::after {
+  content: none;
 }
 
-.match-card .bookmark-mark::after {
-  right: 8px;
-  bottom: 2px;
-  left: auto;
+.match-card .bookmark-mark__icon {
+  position: absolute;
+  top: 6px;
+  left: 7px;
   z-index: 2;
-  width: 18px;
-  height: 18px;
-  border-right: 3px solid var(--color-line);
-  border-left: 3px solid var(--color-line);
+  width: 20px;
+  height: 28px;
+  fill: none;
+  color: var(--color-line);
+  stroke-linecap: round;
+  stroke-linejoin: round;
   pointer-events: none;
-  transform: skewY(-35deg);
 }
 
 .match-card .bookmark-mark__fill {
-  inset: 6px 8px 5px 8px !important;
+  inset: 4px 5px !important;
   z-index: 1;
   overflow: hidden;
-  border-radius: 2px;
+  border-radius: 0;
 }
 
 .match-card .bookmark-mark[data-favorite='true'] {
@@ -935,6 +1004,40 @@ h3 {
   padding: 6px 24px;
   font-size: 21px;
 }
+
+/* ===== Component: MatchFilterPill experimental handdrawn border ===== */
+.match-filter-pills {
+  position: relative;
+}
+
+.match-filter-pill {
+  isolation: isolate;
+  border-color: transparent;
+  background: #fff;
+}
+
+.match-filter-pill::before {
+  content: '';
+  position: absolute;
+  inset: 1px;
+  z-index: 2;
+  border-color: var(--color-line);
+  border-style: solid;
+  border-width: 2.55px 2.7px 2.5px 2.62px;
+  border-radius: 13px 14px 12px 14px / 14px 12px 14px 13px;
+  pointer-events: none;
+  transform: translate(0.1px, -0.05px) rotate(-0.12deg);
+}
+
+.match-filter-pill.is-active {
+  background: #fff;
+}
+
+.match-filter-pill__label {
+  position: relative;
+  z-index: 3;
+}
+/* ===== End Component: MatchFilterPill ===== */
 
 .sketch-button.match-action-link {
   min-height: 44px;

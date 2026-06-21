@@ -27,5 +27,7 @@ export function createMatchModel(match = {}) {
     status: match.status ?? (match.watched ? '已看' : '未看'),
     sourceUrl: match.sourceUrl ?? match.bilibiliUrl ?? '',
     publishedAt: match.publishedAt ?? new Date().toISOString(),
+    duration: match.duration ?? 0,
+    raw: match.raw ?? null,
   }
 }

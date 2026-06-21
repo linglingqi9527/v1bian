@@ -156,8 +156,31 @@ function createRoughShape(rc, shape, x, y, width, height, options) {
     return rc.rectangle(x, y, width, height, options)
   }
 
+  if (shape === 'bookmark') {
+    return rc.path(bookmarkPath(x, y, width, height), options)
+  }
+
   const radius = Math.min(height / 2, 14)
   return rc.path(roundedRectPath(x, y, width, height, radius), options)
+}
+
+function bookmarkPath(x, y, width, height) {
+  const right = x + width
+  const bottom = y + height
+  const notchY = bottom - Math.min(height * 0.28, width * 0.48)
+  const radius = Math.min(2, width * 0.12)
+
+  return [
+    `M ${x + radius} ${y}`,
+    `L ${right - radius} ${y}`,
+    `Q ${right} ${y}, ${right} ${y + radius}`,
+    `L ${right} ${bottom}`,
+    `L ${x + width / 2} ${notchY}`,
+    `L ${x} ${bottom}`,
+    `L ${x} ${y + radius}`,
+    `Q ${x} ${y}, ${x + radius} ${y}`,
+    'Z',
+  ].join(' ')
 }
 
 function roundedRectPath(x, y, width, height, radius) {
