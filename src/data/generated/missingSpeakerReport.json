@@ -1,0 +1,3794 @@
+[
+  {
+    "bvId": "BV1i7yzBJEoX",
+    "title": "人终有一死，是/不是一件好事",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1i7yzBJEoX",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 决赛",
+    "date": "2025-10-28",
+    "teams": [
+      "华南师范大学",
+      "中国政法大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1o7yzBJE6F",
+    "title": "脱口秀/辩论能更好地回应世界",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE6F",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
+    "date": "2025-10-28",
+    "teams": [
+      "中国政法大学",
+      "南昌大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1o7yzBJE4f",
+    "title": "脱口秀/辩论能更好地回应世界",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE4f",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 半决赛上半赛区",
+    "date": "2025-10-28",
+    "teams": [
+      "南开大学",
+      "华南师范大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1VqWizTE21",
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1VqWizTE21",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第一场",
+    "date": "2025-10-18",
+    "teams": [
+      "南开大学",
+      "南京大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1TDWiztE3Z",
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1TDWiztE3Z",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第二场",
+    "date": "2025-10-18",
+    "teams": [
+      "南京大学",
+      "南开大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1K9Wiz4ECY",
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1K9Wiz4ECY",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第一场",
+    "date": "2025-10-18",
+    "teams": [
+      "华南师范大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1TUWizfERx",
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1TUWizfERx",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第二场",
+    "date": "2025-10-18",
+    "teams": [
+      "陕西师范大学",
+      "华南师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1UaWzzTExX",
+    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1UaWzzTExX",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第一场",
+    "date": "2025-10-18",
+    "teams": [
+      "西安交通大学",
+      "中国政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1MYWzzqEC3",
+    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1MYWzzqEC3",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第二场",
+    "date": "2025-10-18",
+    "teams": [
+      "中国政法大学",
+      "西安交通大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1XWWzzkE8Q",
+    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1XWWzzkE8Q",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第一场",
+    "date": "2025-10-18",
+    "teams": [
+      "南昌大学",
+      "上海大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1kCWzzfEU9",
+    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1kCWzzfEU9",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第二场",
+    "date": "2025-10-18",
+    "teams": [
+      "上海大学",
+      "南昌大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1WoWizWEbd",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1WoWizWEbd",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛STU组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "广西民族大学",
+      "安徽大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ejWqz6EQs",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ejWqz6EQs",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛STU组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "安徽大学",
+      "南昌大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1XJWqzqEhF",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1XJWqzqEhF",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛STU组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "南昌大学",
+      "广西民族大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ZuWqz5EYq",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ZuWqz5EYq",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "厦门大学",
+      "上海大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1G6WizNEu1",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1G6WizNEu1",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "上海大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1LeWizuEAp",
+    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1LeWizuEAp",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "宁波大学",
+      "厦门大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1mhWqzFE8k",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1mhWqzFE8k",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "天津师范大学",
+      "东北林业大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1gsWqzNEvA",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1gsWqzNEvA",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "东北林业大学",
+      "西安交通大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1HyWqzHEvf",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1HyWqzHEvf",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "西安交通大学",
+      "天津师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV11YWqzZEyr",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV11YWqzZEyr",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "天津大学",
+      "杭州师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1FPWqzUE17",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FPWqzUE17",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "杭州师范大学",
+      "中国政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1FKWqz7Eei",
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FKWqz7Eei",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "中国政法大学",
+      "天津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV161WqzSEae",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEae",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "江西财经大学",
+      "华南师范大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ZDWqzjErN",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ZDWqzjErN",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "华南师范大学",
+      "哈尔滨工业大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1hKWBzKE3g",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hKWBzKE3g",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "陕西师范大学",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV18TWBzvELm",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV18TWBzvELm",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "暨南大学",
+      "中国海洋大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1acWBzzEXZ",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1acWBzzEXZ",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "中国海洋大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1c1WqzDEEi",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1c1WqzDEEi",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "南开大学",
+      "复旦大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1F1WqzDEo8",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1F1WqzDEo8",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "复旦大学",
+      "对外经济贸易大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1n1WqzDEjq",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1n1WqzDEjq",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "对外经济贸易大学",
+      "南开大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV161WqzSEE6",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEE6",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第一场",
+    "date": "2025-10-17",
+    "teams": [
+      "上海戏剧学院",
+      "华东政法大学"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1n1WqzDEjb",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1n1WqzDEjb",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第二场",
+    "date": "2025-10-17",
+    "teams": [
+      "华东政法大学",
+      "南京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV161WqzSEDJ",
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEDJ",
+    "event": "2025新国辩",
+    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第三场",
+    "date": "2025-10-17",
+    "teams": [
+      "南京大学",
+      "上海戏剧学院"
+    ],
+    "speakerStatus": "partial",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1YvSRYGEwZ",
+    "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1YvSRYGEwZ",
+    "event": "2024新国辩",
+    "stage": "半决赛下半区第三场",
+    "date": "2024-11-05",
+    "teams": [
+      "爱丁堡大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1BNSdYDEif",
+    "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1BNSdYDEif",
+    "event": "2024新国辩",
+    "stage": "半决赛下半区第二场",
+    "date": "2024-11-05",
+    "teams": [
+      "台北科技大学",
+      "爱丁堡大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1LbSRYjEtu",
+    "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1LbSRYjEtu",
+    "event": "2024新国辩",
+    "stage": "半决赛下半区第一场",
+    "date": "2024-11-05",
+    "teams": [
+      "宁波大学",
+      "台北科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1uZSJYzEps",
+    "title": "当代年轻人人格独立的前提，是/不是经济独立",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1uZSJYzEps",
+    "event": "2024新国辩",
+    "stage": "半决赛上半区第三场",
+    "date": "2024-11-04",
+    "teams": [
+      "陕西师范大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV14ASnYKEBX",
+    "title": "当代年轻人人格独立的前提，是/不是经济独立",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV14ASnYKEBX",
+    "event": "2024新国辩",
+    "stage": "半决赛上半区第二场",
+    "date": "2024-11-04",
+    "teams": [
+      "南京审计大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1M7S7YFEAC",
+    "title": "当代年轻人人格独立的前提，是/不是经济独立",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1M7S7YFEAC",
+    "event": "2024新国辩",
+    "stage": "半决赛上半区第一场",
+    "date": "2024-11-04",
+    "teams": [
+      "南开大学",
+      "南京审计大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1qoStYGERA",
+    "title": "应该/不应该对贫困生助学金使用情况进行公示",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1qoStYGERA",
+    "event": "2024新国辩",
+    "stage": "晋级赛UVWX组第二场",
+    "date": "2024-11-03",
+    "teams": [
+      "中国人民大学",
+      "爱丁堡大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV15ASbYMEzv",
+    "title": "应该/不应该对贫困生助学金使用情况进行公示",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV15ASbYMEzv",
+    "event": "2024新国辩",
+    "stage": "晋级赛UVWX组第一场",
+    "date": "2024-11-03",
+    "teams": [
+      "爱丁堡大学",
+      "中国人民大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1WyStYnE64",
+    "title": "应该不应该对贫困生助学金使用情况进行公示丨晋级赛QRST组第二场 台北科技大学 vs 东北师范大学",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1WyStYnE64",
+    "event": "2024新国辩",
+    "stage": "合集：资格赛",
+    "date": "2024-11-03",
+    "teams": [
+      "台北科技大学",
+      "东北师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1xpSbYsEE6",
+    "title": "应该/不应该对贫困生助学金使用情况进行公示",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1xpSbYsEE6",
+    "event": "2024新国辩",
+    "stage": "晋级赛QRST组第一场",
+    "date": "2024-11-03",
+    "teams": [
+      "东北师范大学",
+      "台北科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1t7SbYZEiJ",
+    "title": "“内容至上”是/不是当下国产游戏的出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1t7SbYZEiJ",
+    "event": "2024新国辩",
+    "stage": "晋级赛MNOP组第二场",
+    "date": "2024-11-02",
+    "teams": [
+      "同济大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1hGSbYwE3P",
+    "title": "“内容至上”是/不是当下国产游戏的出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hGSbYwE3P",
+    "event": "2024新国辩",
+    "stage": "晋级赛MNOP组第一场",
+    "date": "2024-11-02",
+    "teams": [
+      "宁波大学",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1taSxYDEeU",
+    "title": "“内容至上”是不是当下国产游戏的出路丨晋级赛IJKL组第二场 中国计量大学 vs 陕西师范大学",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1taSxYDEeU",
+    "event": "2024新国辩",
+    "stage": "合集：资格赛",
+    "date": "2024-11-02",
+    "teams": [
+      "中国计量大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1sBSxY2E4D",
+    "title": "“内容至上”是/不是当下国产游戏的出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1sBSxY2E4D",
+    "event": "2024新国辩",
+    "stage": "晋级赛IJKL组第一场",
+    "date": "2024-11-02",
+    "teams": [
+      "陕西师范大学",
+      "中国计量大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1JSSxYuEMM",
+    "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1JSSxYuEMM",
+    "event": "2024新国辩",
+    "stage": "晋级赛EFGH组第二场",
+    "date": "2024-11-01",
+    "teams": [
+      "澳门大学",
+      "南京审计大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1HySxYkEgo",
+    "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1HySxYkEgo",
+    "event": "2024新国辩",
+    "stage": "晋级赛EFGH组第一场",
+    "date": "2024-11-01",
+    "teams": [
+      "南京审计大学",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1NJS4YUE77",
+    "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1NJS4YUE77",
+    "event": "2024新国辩",
+    "stage": "晋级赛ABCD组第二场",
+    "date": "2024-11-01",
+    "teams": [
+      "大连海事大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1xES4YJEHQ",
+    "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1xES4YJEHQ",
+    "event": "2024新国辩",
+    "stage": "晋级赛ABCD组第一场",
+    "date": "2024-11-01",
+    "teams": [
+      "南开大学",
+      "大连海事大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1m6yJYpEiC",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1m6yJYpEiC",
+    "event": "2024新国辩",
+    "stage": "复赛WX组第二场",
+    "date": "2024-10-30",
+    "teams": [
+      "中国人民大学",
+      "香港中文大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1a3ynYwEaP",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1a3ynYwEaP",
+    "event": "2024新国辩",
+    "stage": "复赛WX组第一场",
+    "date": "2024-10-30",
+    "teams": [
+      "香港中文大学",
+      "中国人民大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1SLC2YhEpo",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1SLC2YhEpo",
+    "event": "2024新国辩",
+    "stage": "复赛UV组第二场",
+    "date": "2024-10-27",
+    "teams": [
+      "爱丁堡大学",
+      "福建师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1WxC2Y9E6a",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1WxC2Y9E6a",
+    "event": "2024新国辩",
+    "stage": "复赛UV组第一场",
+    "date": "2024-10-27",
+    "teams": [
+      "福建师范大学",
+      "爱丁堡大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1hXC2YKEm7",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hXC2YKEm7",
+    "event": "2024新国辩",
+    "stage": "复赛ST组第二场",
+    "date": "2024-10-26",
+    "teams": [
+      "安徽大学",
+      "台北科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1tFCmYhEgi",
+    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1tFCmYhEgi",
+    "event": "2024新国辩",
+    "stage": "复赛ST组第一场",
+    "date": "2024-10-26",
+    "teams": [
+      "台北科技大学",
+      "安徽大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ab2gYoE7t",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ab2gYoE7t",
+    "event": "2024新国辩",
+    "stage": "复赛QR组第二场",
+    "date": "2024-10-23",
+    "teams": [
+      "东北师范大学",
+      "华中师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1UF23YvEup",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”“电子幻觉”丨复赛QR组第一场 华中师范大学 vs 东北师范大学",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1UF23YvEup",
+    "event": "2024新国辩",
+    "stage": "合集：资格赛",
+    "date": "2024-10-23",
+    "teams": [
+      "华中师范大学",
+      "东北师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV11N23YwEhn",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV11N23YwEhn",
+    "event": "2024新国辩",
+    "stage": "复赛OP组第二场",
+    "date": "2024-10-20",
+    "teams": [
+      "同济大学",
+      "四川大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1em2gYyEED",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1em2gYyEED",
+    "event": "2024新国辩",
+    "stage": "复赛OP组第一场",
+    "date": "2024-10-20",
+    "teams": [
+      "四川大学",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1dt2wYsEDW",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1dt2wYsEDW",
+    "event": "2024新国辩",
+    "stage": "复赛MN组第二场",
+    "date": "2024-10-19",
+    "teams": [
+      "河北大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Nu2wYBEtR",
+    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Nu2wYBEtR",
+    "event": "2024新国辩",
+    "stage": "复赛MN组第一场",
+    "date": "2024-10-19",
+    "teams": [
+      "宁波大学",
+      "河北大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV12m2wYrEAs",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV12m2wYrEAs",
+    "event": "2024新国辩",
+    "stage": "复赛KL组第二场",
+    "date": "2024-10-18",
+    "teams": [
+      "广东外语外贸大学",
+      "中国计量大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1yX2wYMEEq",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1yX2wYMEEq",
+    "event": "2024新国辩",
+    "stage": "复赛KL组第一场",
+    "date": "2024-10-18",
+    "teams": [
+      "中国计量大学",
+      "广东外语外贸大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1UC2wY5EPX",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1UC2wY5EPX",
+    "event": "2024新国辩",
+    "stage": "复赛IJ组第二场",
+    "date": "2024-10-16",
+    "teams": [
+      "纽约大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV18A24YUEtJ",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV18A24YUEtJ",
+    "event": "2024新国辩",
+    "stage": "复赛IJ组第一场",
+    "date": "2024-10-16",
+    "teams": [
+      "陕西师范大学",
+      "纽约大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1x324YVE94",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1x324YVE94",
+    "event": "2024新国辩",
+    "stage": "复赛GH组第二场",
+    "date": "2024-10-13",
+    "teams": [
+      "澳门科技大学",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1RX2xYxEfR",
+    "title": "在恋爱关系中，应该/不应该追求等价的付出",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1RX2xYxEfR",
+    "event": "2024新国辩",
+    "stage": "复赛GH组第一场",
+    "date": "2024-10-13",
+    "teams": [
+      "澳门大学",
+      "澳门科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1WL24Y6EZv",
+    "title": "网络舆论审判，让我们离正义更近了/更远了",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1WL24Y6EZv",
+    "event": "2024新国辩",
+    "stage": "复赛EF组第二场",
+    "date": "2024-10-12",
+    "teams": [
+      "浙江理工大学",
+      "南京审计大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1q824YcEkN",
+    "title": "网络舆论审判，让我们离正义更近了更远了丨复赛EF组第一场 南京审计大学 vs 浙江理工大学",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1q824YcEkN",
+    "event": "2024新国辩",
+    "stage": "合集：资格赛",
+    "date": "2024-10-12",
+    "teams": [
+      "南京审计大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1xP2pYaESy",
+    "title": "网络舆论审判，让我们离正义更近了/更远了",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1xP2pYaESy",
+    "event": "2024新国辩",
+    "stage": "复赛CD组第二场",
+    "date": "2024-10-11",
+    "teams": [
+      "大连海事大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV19m2HYVEQZ",
+    "title": "网络舆论审判，让我们离正义更近了/更远了",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV19m2HYVEQZ",
+    "event": "2024新国辩",
+    "stage": "复赛CD组第一场",
+    "date": "2024-10-11",
+    "teams": [
+      "悉尼大学",
+      "大连海事大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1aQ2HY6ECP",
+    "title": "网络舆论审判，让我们离正义更近了/更远了",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1aQ2HY6ECP",
+    "event": "2024新国辩",
+    "stage": "复赛AB组第二场",
+    "date": "2024-10-09",
+    "teams": [
+      "复旦大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV17p2pYJEqk",
+    "title": "网络舆论审判，让我们离正义更近了/更远了",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV17p2pYJEqk",
+    "event": "2024新国辩",
+    "stage": "复赛AB组第一场",
+    "date": "2024-10-09",
+    "teams": [
+      "南开大学",
+      "复旦大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1LS421R7jk",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1LS421R7jk",
+    "event": "2024新国辩",
+    "stage": "初赛X组",
+    "date": "2024-07-05",
+    "teams": [
+      "中国人民大学",
+      "江西农业大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1NZ421T7B6",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1NZ421T7B6",
+    "event": "2024新国辩",
+    "stage": "初赛W组",
+    "date": "2024-07-05",
+    "teams": [
+      "早稻田大学",
+      "香港中文大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV16H4y1w7HD",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV16H4y1w7HD",
+    "event": "2024新国辩",
+    "stage": "初赛V组",
+    "date": "2024-07-05",
+    "teams": [
+      "中国海洋大学",
+      "爱丁堡大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ur421T7dt",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ur421T7dt",
+    "event": "2024新国辩",
+    "stage": "初赛U组",
+    "date": "2024-07-05",
+    "teams": [
+      "臺灣大學",
+      "福建师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1yw4m1a7pz",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1yw4m1a7pz",
+    "event": "2024新国辩",
+    "stage": "初赛T组",
+    "date": "2024-07-05",
+    "teams": [
+      "南京大学",
+      "安徽大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Sw4m1a7cD",
+    "title": "接受人生的荒谬是强大/懦弱的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Sw4m1a7cD",
+    "event": "2024新国辩",
+    "stage": "初赛S组",
+    "date": "2024-07-05",
+    "teams": [
+      "臺北科技大學",
+      "华南理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1zx4y1t767",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1zx4y1t767",
+    "event": "2024新国辩",
+    "stage": "初赛R组",
+    "date": "2024-07-05",
+    "teams": [
+      "东北师范大学",
+      "英属哥伦比亚大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1t4421U7ru",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1t4421U7ru",
+    "event": "2024新国辩",
+    "stage": "初赛Q组",
+    "date": "2024-07-05",
+    "teams": [
+      "华中师范大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1r4421U7Kg",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1r4421U7Kg",
+    "event": "2024新国辩",
+    "stage": "初赛P组",
+    "date": "2024-07-05",
+    "teams": [
+      "国际关系学院",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Qr421T7nq",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Qr421T7nq",
+    "event": "2024新国辩",
+    "stage": "初赛O组",
+    "date": "2024-07-05",
+    "teams": [
+      "马来西亚理科大学",
+      "四川大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Cb421n7zt",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Cb421n7zt",
+    "event": "2024新国辩",
+    "stage": "初赛N组",
+    "date": "2024-07-05",
+    "teams": [
+      "彰化師範大學",
+      "河北大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1yb421n7YT",
+    "title": "短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1yb421n7YT",
+    "event": "2024新国辩",
+    "stage": "初赛M组",
+    "date": "2024-07-05",
+    "teams": [
+      "宁波大学",
+      "武汉理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1yw4m1a7x2",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1yw4m1a7x2",
+    "event": "2024新国辩",
+    "stage": "初赛L组",
+    "date": "2024-07-05",
+    "teams": [
+      "广东外语外贸大学",
+      "香港浸会大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1MW421R7YG",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1MW421R7YG",
+    "event": "2024新国辩",
+    "stage": "初赛K组",
+    "date": "2024-07-04",
+    "teams": [
+      "中国计量大学",
+      "新加坡国立大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Sx4y1x7jR",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Sx4y1x7jR",
+    "event": "2024新国辩",
+    "stage": "初赛J组",
+    "date": "2024-07-04",
+    "teams": [
+      "纽约大学",
+      "南京工业大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Py411B75y",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Py411B75y",
+    "event": "2024新国辩",
+    "stage": "初赛I组",
+    "date": "2024-07-04",
+    "teams": [
+      "重庆大学",
+      "陕西师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ey411B7Es",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ey411B7Es",
+    "event": "2024新国辩",
+    "stage": "初赛H组",
+    "date": "2024-07-04",
+    "teams": [
+      "澳门科技大学",
+      "西南民族大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1XS411A7d2",
+    "title": "MBTI测试让年轻人更容易/更难了解自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1XS411A7d2",
+    "event": "2024新国辩",
+    "stage": "初赛G组",
+    "date": "2024-07-04",
+    "teams": [
+      "澳门大学",
+      "新南威尔士大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ww4m1Y7gM",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ww4m1Y7gM",
+    "event": "2024新国辩",
+    "stage": "初赛F组",
+    "date": "2024-07-04",
+    "teams": [
+      "浙江理工大学",
+      "海南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Br421T7sj",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Br421T7sj",
+    "event": "2024新国辩",
+    "stage": "初赛E组",
+    "date": "2024-07-04",
+    "teams": [
+      "莫纳什大学",
+      "南京审计大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Zw4m1a7CQ",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Zw4m1a7CQ",
+    "event": "2024新国辩",
+    "stage": "初赛D组",
+    "date": "2024-07-04",
+    "teams": [
+      "大连海事大学",
+      "湖南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1UM4m127c1",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1UM4m127c1",
+    "event": "2024新国辩",
+    "stage": "初赛C组",
+    "date": "2024-07-04",
+    "teams": [
+      "北京师范大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Jx4y1x71S",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Jx4y1x71S",
+    "event": "2024新国辩",
+    "stage": "初赛B组",
+    "date": "2024-07-04",
+    "teams": [
+      "复旦大学",
+      "山东大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1YS411c79f",
+    "title": "网络社交媒体适合/不适合探讨深刻话题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1YS411c79f",
+    "event": "2024新国辩",
+    "stage": "初赛A组",
+    "date": "2024-07-04",
+    "teams": [
+      "北京林业大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Jp4y1m7wA",
+    "title": "该/不该反对“利用人性下坠的力量挣钱”的商业模式",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Jp4y1m7wA",
+    "event": "2024新国辩",
+    "stage": "复赛第一场",
+    "date": "2024-01-26",
+    "teams": [
+      "清华大学",
+      "国防科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Rc411e7yS",
+    "title": "当个E人更好 / I人更好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Rc411e7yS",
+    "event": "2024新国辩",
+    "stage": "明星表演赛",
+    "date": "2024-01-24",
+    "teams": [],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能确定完整的双方学校或队伍。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1hK4y1i7cf",
+    "title": "第 出圈是小众亚文化之祸/福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hK4y1i7cf",
+    "event": "2024新国辩",
+    "stage": "十一届新国辩：up主跨界表演赛",
+    "date": "2024-01-24",
+    "teams": [],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能确定完整的双方学校或队伍。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ck4y1U7c2",
+    "title": "如果注定无法成功，该/不该继续努力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ck4y1U7c2",
+    "event": "2024新国辩",
+    "stage": "决赛",
+    "date": "2024-01-24",
+    "teams": [
+      "清华大学",
+      "天津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1sQ4y1c7gY",
+    "title": "人终将孤独/不孤独",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1sQ4y1c7gY",
+    "event": "2024新国辩",
+    "stage": "哲理辩论1V1",
+    "date": "2024-01-24",
+    "teams": [
+      "肖磊",
+      "黄执中"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1nQ4y1c7w6",
+    "title": "“真爱”是/不是谎言",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1nQ4y1c7w6",
+    "event": "2024新国辩",
+    "stage": "哲理辩论2V2",
+    "date": "2024-01-24",
+    "teams": [
+      "梁秋阳 马薇薇",
+      "詹青云 庞颖"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ek4y1U7YJ",
+    "title": "快一点/慢下来更有助于找到人生的答案",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ek4y1U7YJ",
+    "event": "2024新国辩",
+    "stage": "半决赛第二场",
+    "date": "2024-01-23",
+    "teams": [
+      "中国政法大学",
+      "天津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1oV411D7mj",
+    "title": "“恋爱脑”错了/没错",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1oV411D7mj",
+    "event": "2024新国辩",
+    "stage": "半决赛第一场",
+    "date": "2024-01-23",
+    "teams": [
+      "清华大学",
+      "伦敦政治经济学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1NQ4y1c7wZ",
+    "title": "当代年轻人，有/没有追求平凡的自由",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1NQ4y1c7wZ",
+    "event": "2024新国辩",
+    "stage": "新锐表演赛",
+    "date": "2024-01-23",
+    "teams": [],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能确定完整的双方学校或队伍。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1FW4y1c7Pt",
+    "title": "“强调情绪价值”对亲密关系利大于弊/弊大于利",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FW4y1c7Pt",
+    "event": "2024新国辩",
+    "stage": "复赛第四场",
+    "date": "2024-01-23",
+    "teams": [
+      "天津大学",
+      "北京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1s5411y7ra",
+    "title": "“乐子人”是/不是真正的快乐",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1s5411y7ra",
+    "event": "2024新国辩",
+    "stage": "复赛第三场",
+    "date": "2024-01-23",
+    "teams": [
+      "中国政法大学",
+      "中国人民大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1C5411v71S",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1C5411v71S",
+    "event": "2024新国辩",
+    "stage": "复赛第二场",
+    "date": "2024-01-22",
+    "teams": [
+      "伦敦政治经济学院",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV19e41117TQ",
+    "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV19e41117TQ",
+    "event": "2024新国辩",
+    "stage": "初赛G组第三场",
+    "date": "2024-01-22",
+    "teams": [
+      "天津大学",
+      "华南理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1q94y1K721",
+    "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1q94y1K721",
+    "event": "2024新国辩",
+    "stage": "初赛F组第三场",
+    "date": "2024-01-22",
+    "teams": [
+      "中国人民大学",
+      "马来亚大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1pb4y1N7H2",
+    "title": "在感情中，“纯爱战士”值得/不值得歌颂",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1pb4y1N7H2",
+    "event": "2024新国辩",
+    "stage": "初赛H组第三场",
+    "date": "2024-01-22",
+    "teams": [
+      "西南政法大学",
+      "北京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ra4y1y7nc",
+    "title": "刻意追求“富养自己”会/不会让人更幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ra4y1y7nc",
+    "event": "2024新国辩",
+    "stage": "初赛E组第三场",
+    "date": "2024-01-22",
+    "teams": [
+      "中国政法大学",
+      "墨尔本大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV11k4y1D7NQ",
+    "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV11k4y1D7NQ",
+    "event": "2024新国辩",
+    "stage": "初赛G组第二场",
+    "date": "2024-01-21",
+    "teams": [
+      "澳门大学",
+      "天津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1aK4y1B7ph",
+    "title": "在感情中，“纯爱战士”值得/不值得歌颂",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1aK4y1B7ph",
+    "event": "2024新国辩",
+    "stage": "初赛H组第二场",
+    "date": "2024-01-21",
+    "teams": [
+      "国际关系学院",
+      "西南政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1FV411Q7DC",
+    "title": "刻意追求“富养自己”会/不会让人更幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FV411Q7DC",
+    "event": "2024新国辩",
+    "stage": "初赛E组第二场",
+    "date": "2024-01-21",
+    "teams": [
+      "北京邮电大学",
+      "中国政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Hc411x7SS",
+    "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Hc411x7SS",
+    "event": "2024新国辩",
+    "stage": "初赛F组第二场",
+    "date": "2024-01-21",
+    "teams": [
+      "上海大学",
+      "中国人民大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ob4y1P7sR",
+    "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ob4y1P7sR",
+    "event": "2024新国辩",
+    "stage": "初赛G组第一场",
+    "date": "2024-01-21",
+    "teams": [
+      "华南理工大学",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1X5411C7U6",
+    "title": "在感情中，“纯爱战士”值得不值得歌颂丨 北京大学vs国际关系学院",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1X5411C7U6",
+    "event": "2024新国辩",
+    "stage": "初赛H组第一场",
+    "date": "2024-01-21",
+    "teams": [
+      "北京大学",
+      "国际关系学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ab4y1N78u",
+    "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ab4y1N78u",
+    "event": "2024新国辩",
+    "stage": "初赛F组第一场",
+    "date": "2024-01-21",
+    "teams": [
+      "马来亚大学",
+      "上海大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Fb4y1N7wD",
+    "title": "刻意追求“富养自己”会/不会让人更幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Fb4y1N7wD",
+    "event": "2024新国辩",
+    "stage": "初赛E组第一场",
+    "date": "2024-01-21",
+    "teams": [
+      "墨尔本大学",
+      "北京邮电大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1cQ4y1A7pV",
+    "title": "高考后填志愿应该/不应该以就业为第一考量",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1cQ4y1A7pV",
+    "event": "2024新国辩",
+    "stage": "初赛D组第三场",
+    "date": "2024-01-21",
+    "teams": [
+      "浙江理工大学",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Sg4y1173x",
+    "title": "直播带货有/没有让消费者体验变好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Sg4y1173x",
+    "event": "2024新国辩",
+    "stage": "初赛B组第三场",
+    "date": "2024-01-21",
+    "teams": [
+      "山东理工大学",
+      "武汉大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1xT4y1b7XR",
+    "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1xT4y1b7XR",
+    "event": "2024新国辩",
+    "stage": "初赛A组第三场",
+    "date": "2024-01-21",
+    "teams": [
+      "西南大学",
+      "清华大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV18k4y1D7DP",
+    "title": "企业“第一学历歧视”合理/不合理",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV18k4y1D7DP",
+    "event": "2024新国辩",
+    "stage": "初赛C组第三场",
+    "date": "2024-01-21",
+    "teams": [
+      "悉尼大学",
+      "伦敦政治经济学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1AK4y1i7sv",
+    "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1AK4y1i7sv",
+    "event": "2024新国辩",
+    "stage": "初赛A组第二场",
+    "date": "2024-01-20",
+    "teams": [
+      "南开大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1be411n7tD",
+    "title": "直播带货有/没有让消费者体验变好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1be411n7tD",
+    "event": "2024新国辩",
+    "stage": "初赛B组第二场",
+    "date": "2024-01-20",
+    "teams": [
+      "国防科技大学",
+      "山东理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1FQ4y1A7eF",
+    "title": "高考后填志愿应该/不应该以就业为第一考量",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FQ4y1A7eF",
+    "event": "2024新国辩",
+    "stage": "初赛D组第二场",
+    "date": "2024-01-20",
+    "teams": [
+      "中山大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1MV41197LX",
+    "title": "企业“第一学历歧视”合理/不合理",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1MV41197LX",
+    "event": "2024新国辩",
+    "stage": "初赛C组第二场",
+    "date": "2024-01-20",
+    "teams": [
+      "南京大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1he411n7gJ",
+    "title": "企业“第一学历歧视”合理/不合理",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1he411n7gJ",
+    "event": "2024新国辩",
+    "stage": "初赛C组第一场",
+    "date": "2024-01-20",
+    "teams": [
+      "伦敦政治经济学院",
+      "南京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ca4y1y72t",
+    "title": "高考后填志愿应该/不应该以就业为第一考量",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ca4y1y72t",
+    "event": "2024新国辩",
+    "stage": "初赛D组第一场",
+    "date": "2024-01-20",
+    "teams": [
+      "暨南大学",
+      "中山大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV12c411s7dA",
+    "title": "直播带货有/没有让消费者体验变好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV12c411s7dA",
+    "event": "2024新国辩",
+    "stage": "初赛B组第一场",
+    "date": "2024-01-20",
+    "teams": [
+      "武汉大学",
+      "国防科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Dc411s7tV",
+    "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Dc411s7tV",
+    "event": "2024新国辩",
+    "stage": "初赛A组第一场",
+    "date": "2024-01-20",
+    "teams": [
+      "清华大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "先去成为山/先去找到海",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=1",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "决赛",
+    "date": "2023-08-01",
+    "teams": [
+      "悉尼大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代都市年轻人更容易/更难获得“真朋友”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=2",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛上半赛区第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "山东理工大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代都市年轻人更容易/更难获得“真朋友”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=3",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛上半赛区第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "悉尼大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代都市年轻人更容易/更难获得“真朋友”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=4",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛上半赛区第三场",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江理工大学",
+      "山东理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“渴望得到认可”让人更快乐/更不快乐",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=5",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛下半赛区第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "西南大学",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“渴望得到认可”让人更快乐/更不快乐",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=6",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛下半赛区第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "澳门大学",
+      "国际关系学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“渴望得到认可”让人更快乐/更不快乐",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=7",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "半决赛下半赛区第三场",
+    "date": "2023-08-01",
+    "teams": [
+      "国际关系学院",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对AIGC技术的发展，当下我们更需要关注版权保护/推动创新",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=8",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "山东理工大学",
+      "马来西亚理科大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对AIGC技术的发展，当下我们更需要关注版权保护/推动创新",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=9",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "马来西亚理科大学",
+      "山东理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对AIGC技术的发展，当下我们更需要关注版权保护/推动创新",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=10",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "悉尼大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对AIGC技术的发展，当下我们更需要关注版权保护/推动创新",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=11",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "宁波大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“小作文”维权对社会利大于弊/弊大于利",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=12",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "武汉理工大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“小作文”维权对社会利大于弊/弊大于利",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=13",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江理工大学",
+      "武汉理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“小作文”维权对社会利大于弊/弊大于利",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=14",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "西南大学",
+      "北京林业大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“小作文”维权对社会利大于弊/弊大于利",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=15",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "北京林业大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "在精疲力尽的生活中强调松弛感，让我们更疲惫/更轻松",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=16",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江传媒学院",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "在精疲力尽的生活中强调松弛感，让我们更疲惫/更轻松",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=17",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "澳门大学",
+      "浙江传媒学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "在精疲力尽的生活中强调松弛感，让我们更疲惫/更轻松",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=18",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "同济大学",
+      "国际关系学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "在精疲力尽的生活中强调松弛感，让我们更疲惫/更轻松",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=19",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "晋级赛",
+    "date": "2023-08-01",
+    "teams": [
+      "国际关系学院",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "城市正在让人类更孤独/不孤独",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=20",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛A组",
+    "date": "2023-08-01",
+    "teams": [
+      "安徽财经大学",
+      "中南财经政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "城市正在让人类更孤独/不孤独",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=21",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛B组",
+    "date": "2023-08-01",
+    "teams": [
+      "山东理工大学",
+      "新南威尔士大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "城市正在让人类更孤独/不孤独",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=22",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛C组",
+    "date": "2023-08-01",
+    "teams": [
+      "马来西亚理科大学",
+      "海南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "城市正在让人类更孤独/不孤独",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=23",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛D组",
+    "date": "2023-08-01",
+    "teams": [
+      "香港大学",
+      "湘潭大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "痛彻心扉的感情，更应该淡忘/铭记",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=24",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛E组",
+    "date": "2023-08-01",
+    "teams": [
+      "中国海洋大学",
+      "江西财经大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "痛彻心扉的感情，更应该淡忘/铭记",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=25",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛F组",
+    "date": "2023-08-01",
+    "teams": [
+      "河北地质大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "痛彻心扉的感情，更应该淡忘/铭记",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=26",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛G组",
+    "date": "2023-08-01",
+    "teams": [
+      "广东外语外贸大学",
+      "广西民族大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "痛彻心扉的感情，更应该淡忘/铭记",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=27",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛H组",
+    "date": "2023-08-01",
+    "teams": [
+      "西北大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "美颜技术的盛行对人类审美是好事/坏事",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=28",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛I组",
+    "date": "2023-08-01",
+    "teams": [
+      "武汉理工大学",
+      "北京师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "美颜技术的盛行对人类审美是好事/坏事",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=29",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛J组",
+    "date": "2023-08-01",
+    "teams": [
+      "香港教育大学",
+      "格拉斯哥大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "美颜技术的盛行对人类审美是好事/坏事",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=30",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛K组",
+    "date": "2023-08-01",
+    "teams": [
+      "福建师范大学",
+      "广州大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "美颜技术的盛行对人类审美是好事/坏事",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=31",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛L组",
+    "date": "2023-08-01",
+    "teams": [
+      "哈尔滨工程大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=32",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛M组",
+    "date": "2023-08-01",
+    "teams": [
+      "南京工程学院",
+      "西南民族大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=33",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛N组",
+    "date": "2023-08-01",
+    "teams": [
+      "山东大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=34",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛O组",
+    "date": "2023-08-01",
+    "teams": [
+      "内蒙古师范大学",
+      "复旦大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=35",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛P组",
+    "date": "2023-08-01",
+    "teams": [
+      "北京林业大学",
+      "湖南财政经济学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代年轻人应该活得更现实/更理想",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=36",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛Q组",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江传媒学院",
+      "澳门科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代年轻人应该活得更现实/更理想",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=37",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛R组",
+    "date": "2023-08-01",
+    "teams": [
+      "爱丁堡大学",
+      "中国人民公安大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代年轻人应该活得更现实/更理想",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=38",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛S组",
+    "date": "2023-08-01",
+    "teams": [
+      "澳门大学",
+      "中国传媒大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "当代年轻人应该活得更现实/更理想",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=39",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛T组",
+    "date": "2023-08-01",
+    "teams": [
+      "大连海事大学",
+      "兰州大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "中华文化浪漫在繁/在简",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=40",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛U组",
+    "date": "2023-08-01",
+    "teams": [
+      "牛津大学",
+      "新加坡国立大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "中华文化浪漫在繁/在简",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=41",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛V组",
+    "date": "2023-08-01",
+    "teams": [
+      "云南财经大学",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "中华文化浪漫在繁/在简",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=42",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛W组",
+    "date": "2023-08-01",
+    "teams": [
+      "南京师范大学",
+      "国际关系学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "中华文化浪漫在繁/在简",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=43",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛X组",
+    "date": "2023-08-01",
+    "teams": [
+      "河南大学",
+      "天津师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=44",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛AB组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "中南财经政法大学",
+      "山东理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=45",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛AB组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "山东理工大学",
+      "中南财经政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=46",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛CD组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "马来西亚理科大学",
+      "湘潭大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "湘潭大学VS马来西亚理科大学（总院校）面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=47",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛CD组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "湘潭大学",
+      "马来西亚理科大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=48",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛EF组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "中国海洋大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "面对每个人都会遇到的微型网络暴力，我们更应该看开/抗争",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=49",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛EF组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "悉尼大学",
+      "中国海洋大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=50",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛GH组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "广西民族大学",
+      "宁波大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=51",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛GH组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "宁波大学",
+      "广西民族大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=52",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛IJ组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "武汉理工大学",
+      "格拉斯哥大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=53",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "初赛IJ组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "格拉斯哥大学",
+      "武汉理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=54",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛KL组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "广州大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "ChatGPT类工具的发展普及会提升/削弱普通人的思维能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=55",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛KL组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江理工大学",
+      "广州大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=56",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛MN组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "西南民族大学",
+      "西南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=57",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛MN组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "西南大学",
+      "西南民族大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=58",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛OP组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "复旦大学",
+      "北京林业大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=59",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛OP组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "北京林业大学",
+      "复旦大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=60",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛QR组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "浙江传媒学院",
+      "爱丁堡大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=61",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛QR组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "爱丁堡大学",
+      "浙江传媒学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=62",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛ST组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "澳门大学",
+      "兰州大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=63",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛ST组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "兰州大学",
+      "澳门大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=64",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛UV组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "牛津大学",
+      "同济大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=65",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛UV组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "同济大学",
+      "牛津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=66",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛WX组第一场",
+    "date": "2023-08-01",
+    "teams": [
+      "国际关系学院",
+      "天津师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1EN411h77x",
+    "title": "发达的网络社交媒体有利于/不利于当代人心理健康",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1EN411h77x?p=67",
+    "event": "2023国际华语辩论邀请赛",
+    "stage": "复赛WX组第二场",
+    "date": "2023-08-01",
+    "teams": [
+      "天津师范大学",
+      "国际关系学院"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1jh4y1J758",
+    "title": "“附近的消失”是/不是社会进步的体现",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1jh4y1J758",
+    "event": "2023新国辩",
+    "stage": "半决赛第二场",
+    "date": "2023-05-12",
+    "teams": [
+      "中山大学",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV13h411j7Ke",
+    "title": "“己所欲，施于人”/“己所不欲，勿施于人”是更好的道德原则",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV13h411j7Ke",
+    "event": "2023新国辩",
+    "stage": "半决赛第一场",
+    "date": "2023-05-05",
+    "teams": [
+      "北京大学",
+      "南京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV15h41177x2",
+    "title": "年轻人更应该有一颗善良的心/勇敢的心",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV15h41177x2",
+    "event": "2023新国辩",
+    "stage": "复赛第四场",
+    "date": "2023-04-28",
+    "teams": [
+      "西南政法大学",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1wX4y1z7da",
+    "title": "当代年轻人“社恐”是真问题/假问题",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1wX4y1z7da",
+    "event": "2023新国辩",
+    "stage": "复赛第三场",
+    "date": "2023-04-26",
+    "teams": [
+      "中山大学",
+      "澳门科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1yP411S7Bs",
+    "title": "当代年轻人应该活得更现实/更理想",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1yP411S7Bs",
+    "event": "2023新国辩",
+    "stage": "复赛第二场",
+    "date": "2023-04-21",
+    "teams": [
+      "南京大学",
+      "北京师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Tv4y1E7bn",
+    "title": "应该/不应该对初入职场的年轻人提倡“钝感”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Tv4y1E7bn",
+    "event": "2023新国辩",
+    "stage": "复赛第一场",
+    "date": "2023-04-19",
+    "teams": [
+      "华南理工大学",
+      "北京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1bv4y1V7No",
+    "title": "【第十届新国辩】“文明的冲突”可以/无法避免",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1bv4y1V7No",
+    "event": "2023新国辩",
+    "stage": "初赛H组第三场",
+    "date": "2023-04-14",
+    "teams": [
+      "暨南大学",
+      "国防科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1SL411X7bd",
+    "title": "【第十届新国辩】“文明的冲突”可以/无法避免",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1SL411X7bd",
+    "event": "2023新国辩",
+    "stage": "初赛H组第二场",
+    "date": "2023-04-12",
+    "teams": [
+      "南开大学",
+      "暨南大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Ts4y1U7GA",
+    "title": "【第十届新国辩】“文明的冲突”可以/无法避免",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ts4y1U7GA",
+    "event": "2023新国辩",
+    "stage": "初赛H组第一场",
+    "date": "2023-04-10",
+    "teams": [
+      "国防科技大学",
+      "南开大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1xM411M7JZ",
+    "title": "【第十届新国辩】唐山打人案中，“见义无为”的男性该/不该被谴责",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1xM411M7JZ",
+    "event": "2023新国辩",
+    "stage": "初赛G组第三场",
+    "date": "2023-04-07",
+    "teams": [
+      "浙江理工大学",
+      "悉尼大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1jL411S7aU",
+    "title": "【第十届新国辩】唐山打人案中，“见义无为”的男性该/不该被谴责",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1jL411S7aU",
+    "event": "2023新国辩",
+    "stage": "初赛G组第二场",
+    "date": "2023-04-05",
+    "teams": [
+      "西南政法大学",
+      "浙江理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1624y1L71C",
+    "title": "【第十届新国辩】唐山打人案中，“见义无为”的男性该/不该被谴责",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1624y1L71C",
+    "event": "2023新国辩",
+    "stage": "初赛G组第一场",
+    "date": "2023-04-03",
+    "teams": [
+      "悉尼大学",
+      "西南政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1o54y1K7tc",
+    "title": "【第十届新国辩】面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o54y1K7tc",
+    "event": "2023新国辩",
+    "stage": "初赛F组第三场",
+    "date": "2023-03-31",
+    "teams": [
+      "澳门科技大学",
+      "清华大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1c24y1u7Wx",
+    "title": "【第十届新国辩】面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1c24y1u7Wx",
+    "event": "2023新国辩",
+    "stage": "初赛F组第二场",
+    "date": "2023-03-29",
+    "teams": [
+      "香港大学",
+      "澳门科技大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Tk4y187Lw",
+    "title": "【第十届新国辩】面对精神内耗，我们更需要接纳自己/鞭策自己",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Tk4y187Lw",
+    "event": "2023新国辩",
+    "stage": "初赛F组第一场",
+    "date": "2023-03-27",
+    "teams": [
+      "清华大学",
+      "香港大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1wT411k7Js",
+    "title": "【第十届新国辩】VAR技术有/没有让足球运动变得更美好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1wT411k7Js",
+    "event": "2023新国辩",
+    "stage": "初赛E组第三场",
+    "date": "2023-03-24",
+    "teams": [
+      "中国人民大学",
+      "东吴大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1ZP411Z7vk",
+    "title": "【第十届新国辩】VAR技术有/没有让足球运动变得更美好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ZP411Z7vk",
+    "event": "2023新国辩",
+    "stage": "初赛E组第二场",
+    "date": "2023-03-22",
+    "teams": [
+      "中山大学",
+      "中国人民大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1qg4y147MQ",
+    "title": "【第十届新国辩】VAR技术有/没有让足球运动变得更美好",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1qg4y147MQ",
+    "event": "2023新国辩",
+    "stage": "初赛E组第一场",
+    "date": "2023-03-20",
+    "teams": [
+      "东吴大学",
+      "中山大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1hL411Z76Q",
+    "title": "【第十届新国辩】短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hL411Z76Q",
+    "event": "2023新国辩",
+    "stage": "初赛D组第三场",
+    "date": "2023-03-17",
+    "teams": [
+      "北京师范大学",
+      "天津大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV17A411y78L",
+    "title": "【第十届新国辩】短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV17A411y78L",
+    "event": "2023新国辩",
+    "stage": "初赛D组第二场",
+    "date": "2023-03-15",
+    "teams": [
+      "北京邮电大学",
+      "北京师范大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV16o4y1a7YE",
+    "title": "【第十届新国辩】短视频盛行提升了/降低了当代人的认知能力",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV16o4y1a7YE",
+    "event": "2023新国辩",
+    "stage": "初赛D组第一场",
+    "date": "2023-03-13",
+    "teams": [
+      "天津大学",
+      "北京邮电大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1L54y137Nq",
+    "title": "【第十届新国辩】未来十年，电动汽车将会/不会成为我国支柱产业",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1L54y137Nq",
+    "event": "2023新国辩",
+    "stage": "初赛C组第三场",
+    "date": "2023-03-10",
+    "teams": [
+      "南京大学",
+      "河北地质大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1VM41177c4",
+    "title": "【第十届新国辩】未来十年，电动汽车将会/不会成为我国支柱产业",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1VM41177c4",
+    "event": "2023新国辩",
+    "stage": "初赛C组第二场",
+    "date": "2023-03-08",
+    "teams": [
+      "哈尔滨工程大学",
+      "南京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1F54y137Rb",
+    "title": "【第十届新国辩】未来十年，电动汽车将会/不会成为我国支柱产业",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1F54y137Rb",
+    "event": "2023新国辩",
+    "stage": "初赛C组第一场",
+    "date": "2023-03-06",
+    "teams": [
+      "河北地质大学",
+      "哈尔滨工程大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1rg4y1J7LC",
+    "title": "【第十届新国辩】当今中国，拐卖妇女儿童应该/不应该“买卖同罪”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1rg4y1J7LC",
+    "event": "2023新国辩",
+    "stage": "初赛B组第三场",
+    "date": "2023-03-03",
+    "teams": [
+      "中国政法大学",
+      "武汉大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1v84y1E7kH",
+    "title": "【第十届新国辩】当今中国，拐卖妇女儿童应该/不应该“买卖同罪”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1v84y1E7kH",
+    "event": "2023新国辩",
+    "stage": "初赛B组第二场",
+    "date": "2023-03-01",
+    "teams": [
+      "北京大学",
+      "中国政法大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1uY4y1m7hb",
+    "title": "【第十届新国辩】当今中国，拐卖妇女儿童应该/不应该“买卖同罪”",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1uY4y1m7hb",
+    "event": "2023新国辩",
+    "stage": "初赛B组第一场",
+    "date": "2023-02-27",
+    "teams": [
+      "武汉大学",
+      "北京大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1fg4y1p7vG",
+    "title": "【第十届新国辩】未来五年，中国考研更应该扩招/缩招",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1fg4y1p7vG",
+    "event": "2023新国辩",
+    "stage": "初赛A组第三场",
+    "date": "2023-02-24",
+    "teams": [
+      "复旦大学",
+      "上海对外经贸大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1Rv4y1Y7zL",
+    "title": "【第十届新国辩】未来五年，中国考研更应该扩招/缩招",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1Rv4y1Y7zL",
+    "event": "2023新国辩",
+    "stage": "初赛A组第二场",
+    "date": "2023-02-22",
+    "teams": [
+      "华南理工大学",
+      "复旦大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1tA41127pe",
+    "title": "【第十届新国辩】未来五年，中国考研更应该扩招/缩招",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1tA41127pe",
+    "event": "2023新国辩",
+    "stage": "初赛A组第一场",
+    "date": "2023-02-20",
+    "teams": [
+      "上海对外经贸大学",
+      "华南理工大学"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV178411w7FH",
+    "title": "00后改变了/没改变职场",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV178411w7FH",
+    "event": "2023新国辩",
+    "stage": "up主跨界表演赛",
+    "date": "2023-01-20",
+    "teams": [],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能确定完整的双方学校或队伍。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV15M411t7zS",
+    "title": "放弃/坚持更难",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV15M411t7zS",
+    "event": "2023新国辩",
+    "stage": "明星表演赛",
+    "date": "2023-01-20",
+    "teams": [],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未找到明确的辩题字段，已使用清理后的视频标题。",
+      "未能确定完整的双方学校或队伍。",
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV1sA411R7ca",
+    "title": "决定相伴一生的爱侣，要/不要一起打上永远爱对方的“思想钢印”？",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1sA411R7ca",
+    "event": "2023新国辩",
+    "stage": "哲理辩论8.0Ⅱ",
+    "date": "2023-01-20",
+    "teams": [
+      "黄执中",
+      "熊浩"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  },
+  {
+    "bvId": "BV17Y411R7Ze",
+    "title": "AI绘画是/不是艺术？",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV17Y411R7Ze",
+    "event": "2023新国辩",
+    "stage": "哲理辩论8.0Ⅰ",
+    "date": "2023-01-20",
+    "teams": [
+      "张哲耀",
+      "梁秋阳"
+    ],
+    "speakerStatus": "missing",
+    "parseWarnings": [
+      "未能解析辩手名单。"
+    ]
+  }
+]

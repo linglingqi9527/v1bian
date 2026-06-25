@@ -1,0 +1,132 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-24T06:22:53.700Z",
+  "year": 2025,
+  "competitionType": "资格赛",
+  "rosterEntryCount": 328,
+  "rosterTeamCount": 48,
+  "rosterCoveredMissingMatchCount": 13,
+  "sampleSize": 5,
+  "transcriptionSuccessCount": 5,
+  "matchedVideoCount": 4,
+  "completeEightSpeakerCount": 1,
+  "matchedSpeakerCount": 21,
+  "highMatchCount": 8,
+  "mediumMatchCount": 13,
+  "lowMatchCount": 0,
+  "totalElapsedMs": 318,
+  "selectedMatches": [
+    {
+      "matchId": "match-BV1o7yzBJE6F",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸",
+            "叶钰琳"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1WoWizWEbd",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "广西民族大学",
+          "speakers": [
+            "李佳阳"
+          ]
+        },
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "吴兆勋",
+            "万子豪",
+            "杨耀文",
+            "方婷薇"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1F1WqzDECw",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "teams": [
+        {
+          "team": "哈尔滨工业大学（深圳）",
+          "speakers": [
+            "叶政国",
+            "高宇翔",
+            "范觉文",
+            "钱昊宇"
+          ]
+        },
+        {
+          "team": "江西财经大学",
+          "speakers": [
+            "张子韵",
+            "吴舟",
+            "柴钰维",
+            "温馨"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1c1WqzDEEi",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "戴有容",
+            "袁青骋",
+            "王勤"
+          ]
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "穆逸菲",
+            "曹龙延"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1FKWqz7Eei",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        },
+        {
+          "team": "天津大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "cached"
+    }
+  ],
+  "notes": [
+    "名单用于约束转写和候选匹配，结果不会自动写回 generatedMatches.json。",
+    "同音或模糊匹配仍需人工复核。"
+  ]
+}

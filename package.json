@@ -7,6 +7,11 @@
     "dev": "vite",
     "build": "vite build",
     "crawl:xgb": "node scripts/crawler/bilibili/crawlXinGuoBian.js",
+    "crawl:xgb:details": "node scripts/crawler/bilibili/cacheMissingDetails.js",
+    "speakers:select:2025": "node scripts/crawler/bilibili/speakerEnrichment/selectSpeakerTargets.js",
+    "speakers:audio:sample:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildSpeakerCandidateReport.js",
+    "speakers:roster:sample:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js",
+    "speakers:roster:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js --all --merge",
     "lint": "eslint .",
     "preview": "vite preview"
   },
@@ -41,6 +46,7 @@
     "eslint-plugin-react-hooks": "^7.1.1",
     "eslint-plugin-react-refresh": "^0.5.2",
     "globals": "^17.6.0",
+    "pinyin-pro": "file:.tmp/pinyin-pro-3.28.1.tgz",
     "vite": "^8.0.12"
   }
 }

@@ -194,6 +194,10 @@ function findSpeakers(text) {
     for (const value of pickFields(text, label)) speakers.push(...splitPeople(value))
   }
 
+  for (const label of ['正方', '反方']) {
+    for (const value of pickSectionValues(text, label)) speakers.push(...splitPeople(value))
+  }
+
   return unique(speakers.filter(Boolean))
 }
 
@@ -227,10 +231,21 @@ function pickFields(text, label) {
   return [...text.matchAll(pattern)].map((match) => match[1].trim()).filter(Boolean)
 }
 
+function pickSectionValues(text, label) {
+  const pattern = new RegExp(
+    `(?:^|\\n)\\s*${escapeRegExp(label)}\\s*[:：]\\s*(?:\\n\\s*)?([^\\n]+)`,
+    'gi',
+  )
+  return [...text.matchAll(pattern)].map((match) => match[1].trim()).filter(Boolean)
+}
+
 function cleanPerson(value) {
-  const person = String(value).replace(/[：:，,。；;|｜/]/g, '').trim()
-  if (!/^[\p{Script=Han}A-Za-z·]{2,20}$/u.test(person)) return ''
-  if (/(大学|学院|学校|代表队|辩手|选手|队员)$/.test(person)) return ''
+  const person = String(value)
+    .replace(/^@/, '')
+    .replace(/[：:，,。；;|｜/]/g, '')
+    .trim()
+  if (!/^[\p{Script=Han}A-Za-z\d_·-]{2,30}$/u.test(person)) return ''
+  if (/(大学|学院|中学|学校|书院|代表队|辩论队|辩手|选手|队员)$/.test(person)) return ''
   return person
 }
 

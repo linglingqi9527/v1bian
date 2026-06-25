@@ -7,28 +7,39 @@ import {
   fetchAllUploaderVideos,
   fetchOfficialSeasonVideos,
   fetchOfficialVideosBySearch,
+  fetchTargetedOfficialSearchVideos,
   fetchVideoDetail,
+  getKnownSupplementVideos,
   XIN_GUO_BIAN_MID,
   XIN_GUO_BIAN_SPACE_URL,
 } from './bilibiliApi.js'
 import { normalizeMatch, mergeGeneratedMatchState } from './normalizeMatch.js'
 import { parseBilibiliDescription } from './parseBilibiliDescription.js'
-import { filterVideosByYears, isLikelyMatchVideo } from './matchVideoFilter.js'
+import {
+  excludeMiddleSchoolCompetitionVideos,
+  filterVideosByYears,
+  isLikelyMatchVideo,
+  isMiddleSchoolCompetitionVideo,
+} from './matchVideoFilter.js'
 import { readCachedOfficialVideos } from './searchCache.js'
 import { expandMultipartVideos } from './expandMultipartVideos.js'
 import { readCachedSeasonVideos } from './seasonArchiveCache.js'
 import { mergeVideoSources } from './videoSources.js'
+import { createCrawlerReports } from './crawlerReports.js'
 
 const ROOT_DIR = fileURLToPath(new URL('../../../', import.meta.url))
 const OUTPUT_DIR = path.join(ROOT_DIR, 'src', 'data', 'generated')
 const RAW_OUTPUT_PATH = path.join(OUTPUT_DIR, 'rawBilibiliVideos.json')
 const MATCH_OUTPUT_PATH = path.join(OUTPUT_DIR, 'generatedMatches.json')
+const DATA_REPORT_PATH = path.join(OUTPUT_DIR, 'crawlerDataReport.json')
+const MISSING_SPEAKER_REPORT_PATH = path.join(OUTPUT_DIR, 'missingSpeakerReport.json')
 const SEARCH_CACHE_DIR = path.join(path.dirname(fileURLToPath(import.meta.url)), '.cache')
 
 const options = {
   delayMs: readPositiveInteger('BILIBILI_DELAY_MS', 900),
   maxPages: readOptionalLimit('BILIBILI_MAX_PAGES'),
   maxVideos: readOptionalLimit('BILIBILI_MAX_VIDEOS'),
+  includeMiddleSchool: readBoolean('BILIBILI_INCLUDE_MIDDLE_SCHOOL', false),
   pageSize: clamp(readPositiveInteger('BILIBILI_PAGE_SIZE', 30), 1, 50),
   searchMaxPages: clamp(readPositiveInteger('BILIBILI_SEARCH_MAX_PAGES', 50), 1, 50),
   source: readSource(),
@@ -47,14 +58,27 @@ async function main() {
   console.log(`[crawl:xgb] 请求间隔：${options.delayMs}ms`)
 
   const listedVideos = await fetchVideoList()
-  const selectedVideos = filterVideosByYears(listedVideos, options.years).slice(0, options.maxVideos)
+  const videosInSelectedYears = filterVideosByYears(listedVideos, options.years)
+  const middleSchoolVideos = videosInSelectedYears.filter(isMiddleSchoolCompetitionVideo)
+  const scopedVideos = options.includeMiddleSchool
+    ? videosInSelectedYears
+    : excludeMiddleSchoolCompetitionVideos(videosInSelectedYears)
+  const selectedVideos = scopedVideos.slice(0, options.maxVideos)
+  const excludedMiddleSchoolMatchCount = options.includeMiddleSchool
+    ? 0
+    : expandMultipartVideos(middleSchoolVideos).length
+  if (!options.includeMiddleSchool) {
+    console.log(
+      `[crawl:xgb] 已排除中学组：${middleSchoolVideos.length} 个源视频，${excludedMiddleSchoolMatchCount} 个比赛候选。`,
+    )
+  }
   console.log(`[crawl:xgb] 2023-2026 候选视频：${selectedVideos.length} 条。`)
 
   const detailedVideos = []
   let detailFailures = 0
 
   for (const [index, video] of selectedVideos.entries()) {
-    if (options.source === 'cache') {
+    if (options.source === 'cache' || hasUsefulDescription(video)) {
       detailedVideos.push(video)
       continue
     }
@@ -81,6 +105,12 @@ async function main() {
     throw new Error('所有视频详情请求均失败，为避免用空简介覆盖已有数据，本次不写入 JSON。')
   }
 
+  const referencedVideos = await fetchReferencedVideos(detailedVideos)
+  if (referencedVideos.length > 0) {
+    detailedVideos.push(...referencedVideos)
+    console.log(`[crawl:xgb] 简介同组 BV 扩展：新增 ${referencedVideos.length} 条。`)
+  }
+
   const matchVideos = expandMultipartVideos(detailedVideos)
   const multipartCount = matchVideos.length - detailedVideos.length
   if (multipartCount > 0) {
@@ -98,11 +128,23 @@ async function main() {
     .filter((match) => match.bvId)
   const dedupedMatches = dedupeMatches(normalizedMatches)
   const mergedMatches = mergeGeneratedMatchState(dedupedMatches, existingMatches)
+  const { dataReport, missingSpeakerReport } = createCrawlerReports({
+    candidateVideos: matchVideos,
+    matches: mergedMatches,
+    normalizedMatches,
+    rawVideos: detailedVideos,
+    scopeExclusions: {
+      middleSchoolMatchCandidateCount: excludedMiddleSchoolMatchCount,
+      middleSchoolSourceVideoCount: options.includeMiddleSchool ? 0 : middleSchoolVideos.length,
+    },
+  })
 
   await mkdir(OUTPUT_DIR, { recursive: true })
   await Promise.all([
     writeJsonAtomic(RAW_OUTPUT_PATH, detailedVideos),
     writeJsonAtomic(MATCH_OUTPUT_PATH, mergedMatches),
+    writeJsonAtomic(DATA_REPORT_PATH, dataReport),
+    writeJsonAtomic(MISSING_SPEAKER_REPORT_PATH, missingSpeakerReport),
   ])
 
   const warnings = mergedMatches.reduce(
@@ -111,6 +153,8 @@ async function main() {
   )
   console.log(`[crawl:xgb] 已写入 ${path.relative(ROOT_DIR, RAW_OUTPUT_PATH)}`)
   console.log(`[crawl:xgb] 已写入 ${path.relative(ROOT_DIR, MATCH_OUTPUT_PATH)}`)
+  console.log(`[crawl:xgb] 已写入 ${path.relative(ROOT_DIR, DATA_REPORT_PATH)}`)
+  console.log(`[crawl:xgb] 已写入 ${path.relative(ROOT_DIR, MISSING_SPEAKER_REPORT_PATH)}`)
   console.log(`[crawl:xgb] 生成比赛 ${mergedMatches.length} 条，解析警告 ${warnings} 条，详情失败 ${detailFailures} 条。`)
   console.log(`[crawl:xgb] 已过滤非正片候选 ${matchVideos.length - normalizedMatches.length} 条。`)
 }
@@ -125,6 +169,12 @@ async function fetchVideoList() {
   if (options.source === 'cache') return readVideoListFromCache()
 
   let seasonVideos = []
+  let uploaderVideos = []
+  let searchVideos = []
+  let targetedSearchVideos = []
+  let cachedVideos = []
+  const knownSupplementVideos = getKnownSupplementVideos({ years: options.years })
+
   try {
     seasonVideos = await fetchOfficialSeasonVideos({
       delayMs: options.delayMs,
@@ -137,32 +187,56 @@ async function fetchVideoList() {
   }
 
   try {
-    const videos = await fetchAllUploaderVideos({
+    uploaderVideos = await fetchAllUploaderVideos({
       delayMs: options.delayMs,
       maxPages: options.maxPages,
       mid: XIN_GUO_BIAN_MID,
       pageSize: options.pageSize,
     })
-    console.log(`[crawl:xgb] 空间投稿列表获取完成：${videos.length} 条。`)
-    return mergeVideoSources(seasonVideos, videos)
+    console.log(`[crawl:xgb] 空间投稿列表获取完成：${uploaderVideos.length} 条。`)
   } catch (error) {
     console.warn(`[crawl:xgb] 空间投稿列表不可用：${error?.message ?? error}`)
-    console.warn('[crawl:xgb] 改用分年公开视频搜索，并严格按目标 mid 过滤。')
-    try {
-      const videos = await fetchOfficialVideosBySearch({
-        delayMs: options.delayMs,
-        maxPagesPerYear: options.searchMaxPages,
-        mid: XIN_GUO_BIAN_MID,
-        years: options.years,
-      })
-      console.log(`[crawl:xgb] 搜索备用源获取完成：${videos.length} 条。`)
-      return mergeVideoSources(seasonVideos, videos)
-    } catch (searchError) {
-      console.warn(`[crawl:xgb] 在线搜索备用源不可用：${searchError?.message ?? searchError}`)
-      console.warn('[crawl:xgb] 尝试读取本地公开搜索缓存。')
-      return readVideoListFromCache()
-    }
   }
+
+  try {
+    searchVideos = await fetchOfficialVideosBySearch({
+      delayMs: options.delayMs,
+      maxPagesPerYear: options.searchMaxPages,
+      mid: XIN_GUO_BIAN_MID,
+      years: options.years,
+    })
+    console.log(`[crawl:xgb] 分年公开搜索获取完成：${searchVideos.length} 条。`)
+  } catch (error) {
+    console.warn(`[crawl:xgb] 分年公开搜索不可用：${error?.message ?? error}`)
+  }
+
+  try {
+    targetedSearchVideos = await fetchTargetedOfficialSearchVideos({
+      delayMs: options.delayMs,
+      mid: XIN_GUO_BIAN_MID,
+      years: options.years,
+    })
+    console.log(`[crawl:xgb] 目标关键词搜索获取完成：${targetedSearchVideos.length} 条。`)
+  } catch (error) {
+    console.warn(`[crawl:xgb] 目标关键词搜索不可用：${error?.message ?? error}`)
+  }
+
+  try {
+    cachedVideos = await readVideoListFromCache()
+  } catch (error) {
+    console.warn(`[crawl:xgb] 本地公开缓存不可用：${error?.message ?? error}`)
+  }
+
+  const videos = mergeVideoSources(
+    cachedVideos,
+    seasonVideos,
+    uploaderVideos,
+    searchVideos,
+    targetedSearchVideos,
+    knownSupplementVideos,
+  )
+  if (videos.length === 0) throw new Error('所有在线来源和本地缓存都没有目标账号的有效视频。')
+  return videos
 }
 
 async function readVideoListFromCache() {
@@ -229,4 +303,52 @@ function readYears() {
 function readSource() {
   const source = String(process.env.BILIBILI_SOURCE ?? 'auto').toLowerCase()
   return ['auto', 'cache'].includes(source) ? source : 'auto'
+}
+
+function readBoolean(name, fallback) {
+  const value = String(process.env[name] ?? '').trim().toLowerCase()
+  if (['1', 'true', 'yes'].includes(value)) return true
+  if (['0', 'false', 'no'].includes(value)) return false
+  return fallback
+}
+
+function hasUsefulDescription(video) {
+  const description = String(video.description ?? video.desc ?? '')
+  return description.length > 20 && /新国辩|辩手|正方|反方/.test(description)
+}
+
+async function fetchReferencedVideos(videos) {
+  const videosByBvid = new Map(videos.filter((video) => video?.bvid).map((video) => [video.bvid, video]))
+  const referencedVideos = []
+  const pendingBvids = collectReferencedBvids(videos).filter((bvid) => !videosByBvid.has(bvid))
+
+  for (const [index, bvid] of pendingBvids.entries()) {
+    try {
+      const detail = await fetchVideoDetail(bvid)
+      const corpus = `${detail.title ?? ''}\n${detail.description ?? detail.desc ?? ''}`
+      if (!/新国辩/.test(corpus)) continue
+
+      videosByBvid.set(bvid, detail)
+      referencedVideos.push({
+        ...detail,
+        source: 'description-reference',
+      })
+      console.log(`[crawl:xgb] 引用详情 ${index + 1}/${pendingBvids.length}: ${bvid}`)
+    } catch (error) {
+      console.warn(`[crawl:xgb] 引用详情失败 ${bvid}: ${error?.message ?? error}`)
+    }
+
+    if (index < pendingBvids.length - 1) await delay(options.delayMs)
+  }
+
+  return referencedVideos
+}
+
+function collectReferencedBvids(videos) {
+  const bvids = []
+  for (const video of videos) {
+    const text = `${video.description ?? ''}\n${video.desc ?? ''}\n${video.rawDescription ?? ''}`
+    for (const match of text.matchAll(/BV[a-zA-Z0-9]{10}/g)) bvids.push(match[0])
+  }
+  return [...new Set(bvids)]
 }

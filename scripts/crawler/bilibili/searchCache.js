@@ -32,6 +32,10 @@ export async function readCachedOfficialVideos(cacheDir, { mid }) {
     if (detail?.bvid) detailsByBvid.set(detail.bvid, detail)
   }
 
+  for (const [bvid, detail] of detailsByBvid) {
+    if (!videosByBvid.has(bvid)) videosByBvid.set(bvid, detail)
+  }
+
   return {
     invalidFileCount,
     videos: [...videosByBvid.values()].map((video) => ({

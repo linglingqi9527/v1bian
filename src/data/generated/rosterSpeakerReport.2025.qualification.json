@@ -1,0 +1,674 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-24T16:58:54.977Z",
+  "year": 2025,
+  "competitionType": "资格赛",
+  "mode": "full",
+  "rosterEntryCount": 328,
+  "rosterTeamCount": 48,
+  "rosterCoveredMissingMatchCount": 27,
+  "skippedNoRosterCount": 8,
+  "skippedNoRoster": [
+    {
+      "matchId": "match-BV1mhWqzFE8k",
+      "teams": [
+        "天津师范大学",
+        "东北林业大学"
+      ],
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "warnings": [
+        "名单库中找不到队伍：天津师范大学",
+        "名单库中找不到队伍：东北林业大学"
+      ]
+    },
+    {
+      "matchId": "match-BV1gsWqzNEvA",
+      "teams": [
+        "东北林业大学",
+        "西安交通大学"
+      ],
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "warnings": [
+        "名单库中找不到队伍：东北林业大学"
+      ]
+    },
+    {
+      "matchId": "match-BV1HyWqzHEvf",
+      "teams": [
+        "西安交通大学",
+        "天津师范大学"
+      ],
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "warnings": [
+        "名单库中找不到队伍：天津师范大学"
+      ]
+    },
+    {
+      "matchId": "match-BV11YWqzZEyr",
+      "teams": [
+        "天津大学",
+        "杭州师范大学"
+      ],
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "warnings": [
+        "名单库中找不到队伍：杭州师范大学"
+      ]
+    },
+    {
+      "matchId": "match-BV1FPWqzUE17",
+      "teams": [
+        "杭州师范大学",
+        "中国政法大学"
+      ],
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "warnings": [
+        "名单库中找不到队伍：杭州师范大学"
+      ]
+    },
+    {
+      "matchId": "match-BV1hKWBzKE3g",
+      "teams": [
+        "陕西师范大学",
+        "暨南大学"
+      ],
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "warnings": [
+        "名单库中找不到队伍：暨南大学"
+      ]
+    },
+    {
+      "matchId": "match-BV18TWBzvELm",
+      "teams": [
+        "暨南大学",
+        "中国海洋大学"
+      ],
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "warnings": [
+        "名单库中找不到队伍：暨南大学",
+        "名单库中找不到队伍：中国海洋大学"
+      ]
+    },
+    {
+      "matchId": "match-BV1acWBzzEXZ",
+      "teams": [
+        "中国海洋大学",
+        "陕西师范大学"
+      ],
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "warnings": [
+        "名单库中找不到队伍：中国海洋大学"
+      ]
+    }
+  ],
+  "sampleSize": 27,
+  "transcriptionSuccessCount": 27,
+  "matchedVideoCount": 23,
+  "completeEightSpeakerCount": 1,
+  "matchedSpeakerCount": 81,
+  "highMatchCount": 39,
+  "mediumMatchCount": 42,
+  "lowMatchCount": 0,
+  "totalElapsedMs": 1378799,
+  "mergeResult": {
+    "mergedMatchCount": 23,
+    "mergedSpeakerCount": 81
+  },
+  "selectedMatches": [
+    {
+      "matchId": "match-BV1o7yzBJE6F",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸",
+            "叶钰琳"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1WoWizWEbd",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "广西民族大学",
+          "speakers": [
+            "李佳阳"
+          ]
+        },
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "吴兆勋",
+            "万子豪",
+            "杨耀文",
+            "方婷薇"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1F1WqzDECw",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "teams": [
+        {
+          "team": "哈尔滨工业大学（深圳）",
+          "speakers": [
+            "叶政国",
+            "高宇翔",
+            "范觉文",
+            "钱昊宇"
+          ]
+        },
+        {
+          "team": "江西财经大学",
+          "speakers": [
+            "张子韵",
+            "吴舟",
+            "柴钰维",
+            "温馨"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1c1WqzDEEi",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "戴有容",
+            "袁青骋",
+            "王勤"
+          ]
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "穆逸菲",
+            "曹龙延"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1o7yzBJE4f",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": []
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "权莉茹",
+            "李玉晓",
+            "刘粤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1FKWqz7Eei",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        },
+        {
+          "team": "天津大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV161WqzSEae",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "teams": [
+        {
+          "team": "江西财经大学",
+          "speakers": [
+            "温馨",
+            "张子韵"
+          ]
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "刘粤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1ZDWqzjErN",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "温明璇",
+            "刘粤"
+          ]
+        },
+        {
+          "team": "哈尔滨工业大学（深圳）",
+          "speakers": [
+            "袁潇雅",
+            "高宇翔",
+            "范觉文"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1F1WqzDEo8",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "曹龙延"
+          ]
+        },
+        {
+          "team": "对外经济贸易大学",
+          "speakers": [
+            "郭嘉皓"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjq",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "对外经济贸易大学",
+          "speakers": []
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "袁青骋",
+            "王勤",
+            "江茜"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV161WqzSEE6",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            "李佳宸",
+            "白亦端"
+          ]
+        },
+        {
+          "team": "华东政法大学",
+          "speakers": [
+            "余心冰",
+            "王键智"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjb",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "华东政法大学",
+          "speakers": []
+        },
+        {
+          "team": "南京大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV161WqzSEDJ",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            "王靖雅"
+          ]
+        },
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            "言姝瑾",
+            "白亦端",
+            "李佳宸"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1i7yzBJEoX",
+      "title": "人终有一死，是/不是一件好事",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "温明璇",
+            "刘粤"
+          ]
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1VqWizTE21",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "戴有容",
+            "王勤"
+          ]
+        },
+        {
+          "team": "南京大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1TDWiztE3Z",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            "王靖雅"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "江茜"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1K9Wiz4ECY",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "权莉茹",
+            "刘粤"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "黄钰淇"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1TUWizfERx",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": []
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1UaWzzTExX",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "teams": [
+        {
+          "team": "西安交通大学",
+          "speakers": []
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1MYWzzqEC3",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": []
+        },
+        {
+          "team": "西安交通大学",
+          "speakers": [
+            "王雨峰"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 1,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1XWWzzkE8Q",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "叶钰琳"
+          ]
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            "潘严芷怡",
+            "史毓迪波",
+            "赵奕平"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1kCWzzfEU9",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            "敦译萱",
+            "史毓迪波"
+          ]
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1ejWqz6EQs",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "万子豪",
+            "杨耀文",
+            "方婷薇"
+          ]
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1XJWqzqEhF",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸"
+          ]
+        },
+        {
+          "team": "广西民族大学",
+          "speakers": [
+            "李佳阳"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1ZuWqz5EYq",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "厦门大学",
+          "speakers": [
+            "范可欣",
+            "吴泽荣"
+          ]
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            "赵亿嘉"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1G6WizNEu1",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            "敦译萱",
+            "史毓迪波"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1LeWizuEAp",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "胡文昊",
+            "赵书逸"
+          ]
+        },
+        {
+          "team": "厦门大学",
+          "speakers": [
+            "李庚尧",
+            "吕艺杭"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    }
+  ],
+  "notes": [
+    "已将通过门槛的名单姓名合并进 generatedMatches.json。",
+    "同音或模糊匹配仍需人工复核。"
+  ]
+}

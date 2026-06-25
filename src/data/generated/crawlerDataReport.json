@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-25T03:20:35.682Z",
+  "totalVideoCount": 350,
+  "expandedCandidateCount": 416,
+  "generatedMatchCount": 379,
+  "withBilibiliUrlCount": 379,
+  "withTitleCount": 379,
+  "withBvIdCount": 379,
+  "withTeamsCount": 367,
+  "withSpeakersCount": 164,
+  "speakerStatusCounts": {
+    "missing": 215,
+    "partial": 22,
+    "parsed": 142
+  },
+  "duplicateBvCount": 0,
+  "matchesSharingBvIdCount": 66,
+  "deduplicatedMatchCount": 0,
+  "filteredVideoCount": 37,
+  "scopeExclusions": {
+    "middleSchoolMatchCandidateCount": 345,
+    "middleSchoolSourceVideoCount": 196
+  },
+  "parseWarnings": {
+    "totalCount": 262,
+    "matchCount": 245,
+    "byMessage": {
+      "未能确定完整的双方学校或队伍。": 12,
+      "未能确定赛段。": 2,
+      "未能解析辩手名单。": 238,
+      "未找到明确的辩题字段，已使用清理后的视频标题。": 10
+    }
+  },
+  "speakerStatusRules": {
+    "missing": "没有解析到任何明确辩手姓名。",
+    "partial": "解析到部分姓名，但团队赛不足 8 人，或全场仅解析到 1 人。",
+    "parsed": "个人赛/表演赛解析到至少 2 人，或团队赛解析到至少 8 人。"
+  },
+  "fieldReliability": {
+    "bilibiliUrl": "high",
+    "bvId": "high",
+    "date": "high",
+    "event": "medium",
+    "speakers": "status-dependent",
+    "stage": "medium",
+    "teams": "medium",
+    "title": "high"
+  }
+}

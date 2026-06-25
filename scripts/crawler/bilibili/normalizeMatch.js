@@ -47,13 +47,23 @@ export function mergeGeneratedMatchState(matches, existingMatches = []) {
     if (!existing) return match
 
     const watched = Boolean(existing.watched)
+    const generatedSpeakers = Array.isArray(match.speakers) ? match.speakers : []
+    const existingSpeakers = Array.isArray(existing.speakers) ? existing.speakers : []
+    const preserveEnrichedSpeakers = existingSpeakers.length > generatedSpeakers.length
     return {
       ...match,
+      speakers: preserveEnrichedSpeakers ? existingSpeakers : generatedSpeakers,
       favorite: Boolean(existing.favorite),
       watched,
       reviewId: existing.reviewId ?? null,
       trainingIds: Array.isArray(existing.trainingIds) ? existing.trainingIds : [],
       status: watched ? '已看' : '未看',
+      raw: preserveEnrichedSpeakers
+        ? {
+            ...(match.raw ?? {}),
+            speakerEnrichment: existing.raw?.speakerEnrichment,
+          }
+        : match.raw,
     }
   })
 }

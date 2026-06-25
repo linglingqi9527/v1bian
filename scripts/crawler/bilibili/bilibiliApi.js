@@ -22,6 +22,38 @@ const MIXIN_KEY_ENC_TAB = [
   37, 48, 7, 16, 24, 55, 40, 61, 26, 17, 0, 1, 60, 51, 30, 4,
   22, 25, 54, 21, 56, 59, 6, 63, 57, 62, 11, 36, 20, 34, 44, 52,
 ]
+const KNOWN_SUPPLEMENT_VIDEOS = [
+  { year: 2025, bvid: 'BV1jFccedE9o', pubdate: 1736592792 },
+  { year: 2025, bvid: 'BV1jWcVeZE3j', pubdate: 1736684265 },
+  { year: 2025, bvid: 'BV1YAc9eeEPC', pubdate: 1736831695 },
+  { year: 2025, bvid: 'BV1KVcbeDEgX', pubdate: 1736835747 },
+  { year: 2025, bvid: 'BV1ohcbeMEv4', pubdate: 1736838385 },
+  { year: 2025, bvid: 'BV1L9cteeEkQ', pubdate: 1736840451 },
+  { year: 2025, bvid: 'BV1p6cteVEKU', pubdate: 1736843609 },
+  { year: 2025, bvid: 'BV1zActeBE4d', pubdate: 1736849109 },
+  { year: 2025, bvid: 'BV1Dsc8ewE9c', pubdate: 1736856722 },
+  { year: 2025, bvid: 'BV1iVc8ezEhy', pubdate: 1736862413 },
+  { year: 2025, bvid: 'BV1DacaeNEMn', pubdate: 1736868700 },
+  { year: 2025, bvid: 'BV1DUcheeEW4', pubdate: 1736877252 },
+  { year: 2025, bvid: 'BV1PJchesE6r', pubdate: 1736921015 },
+  { year: 2025, bvid: 'BV1dichekE6C', pubdate: 1736922485 },
+  { year: 2025, bvid: 'BV1Y8cee5E7T', pubdate: 1736922818 },
+  { year: 2025, bvid: 'BV1nocieeEaG', pubdate: 1736923905 },
+  { year: 2025, bvid: 'BV12mcie6EjB', pubdate: 1736928857 },
+  { year: 2025, bvid: 'BV11KcieBEan', pubdate: 1736932210 },
+  { year: 2025, bvid: 'BV1otcBewE1e', pubdate: 1736945066 },
+  { year: 2025, bvid: 'BV1MPcBeUEhk', pubdate: 1736949587 },
+  { year: 2025, bvid: 'BV1h1c6etE42', pubdate: 1736951477 },
+  { year: 2025, bvid: 'BV1yjc6e7EJY', pubdate: 1736955572 },
+  { year: 2025, bvid: 'BV1z4c6e6ELG', pubdate: 1737016006 },
+  { year: 2025, bvid: 'BV15ZwVebEgc', pubdate: 1737021475 },
+  { year: 2025, bvid: 'BV13pwVepELf', pubdate: 1737026077 },
+  { year: 2025, bvid: 'BV1tQw5eHEfv', pubdate: 1737113188 },
+  { year: 2025, bvid: 'BV1ngcReUEK6', pubdate: 1737116158 },
+  { year: 2025, bvid: 'BV1SicoeBEG1', pubdate: 1737120818 },
+  { year: 2025, bvid: 'BV16gwKe7Eym', pubdate: 1737198503 },
+  { year: 2025, bvid: 'BV1okwreGEH4', pubdate: 1737282208 },
+]
 
 let cachedMixinKey = null
 
@@ -96,10 +128,22 @@ export async function fetchOfficialVideosBySearch({
     let yearVideoCount = 0
 
     while (pageNumber <= maxPagesPerYear) {
-      const page = await fetchPublicSearchPage({
-        keyword: `${year}新国辩`,
-        pageNumber,
-      })
+      let page
+      try {
+        page = await fetchPublicSearchPage({
+          keyword: `${year}新国辩`,
+          pageNumber,
+        })
+      } catch (error) {
+        if (yearVideoCount > 0) {
+          console.warn(
+            `[crawl:xgb] ${year} 年公开搜索第 ${pageNumber} 页失败，保留已获取的 ${yearVideoCount} 条：${error?.message ?? error}`,
+          )
+          break
+        }
+
+        throw error
+      }
       const officialVideos = page.videos.filter((video) => (
         String(video.mid) === String(mid) && belongsToEventYear(video, year)
       ))
@@ -125,6 +169,73 @@ export async function fetchOfficialVideosBySearch({
   }
 
   return dedupedVideos
+}
+
+export async function fetchTargetedOfficialSearchVideos({
+  delayMs = 900,
+  maxPagesPerQuery = 2,
+  mid = XIN_GUO_BIAN_MID,
+  years = [2023, 2024, 2025, 2026],
+} = {}) {
+  const videos = []
+  const queries = buildTargetedSearchQueries(years)
+
+  for (const [queryIndex, query] of queries.entries()) {
+    const { keyword, year } = query
+    let pageNumber = 1
+
+    while (pageNumber <= maxPagesPerQuery) {
+      let page
+      try {
+        page = await fetchPublicSearchPage({ keyword, pageNumber })
+      } catch (error) {
+        console.warn(
+          `[crawl:xgb] 目标搜索“${keyword}”第 ${pageNumber} 页失败，跳过该页：${error?.message ?? error}`,
+        )
+        break
+      }
+
+      videos.push(...page.videos
+        .filter((video) => (
+          String(video.mid) === String(mid)
+          && belongsToEventYear(video, year)
+        ))
+        .map((video) => ({
+          ...video,
+          searchKeyword: keyword,
+          source: 'targeted-search',
+        })))
+
+      if (pageNumber >= page.totalPages || page.videos.length === 0) break
+
+      pageNumber += 1
+      await delay(Math.max(350, Math.floor(delayMs / 2)))
+    }
+
+    if (queryIndex < queries.length - 1) await delay(Math.max(350, Math.floor(delayMs / 2)))
+  }
+
+  return dedupeByBvid(videos)
+}
+
+export function getKnownSupplementVideos({
+  years = [2023, 2024, 2025, 2026],
+} = {}) {
+  const allowedYears = new Set(years.map(Number))
+  return KNOWN_SUPPLEMENT_VIDEOS
+    .filter((video) => allowedYears.has(video.year))
+    .map((video) => ({
+      aid: 0,
+      author: 'bilibili新国辩',
+      bvid: video.bvid,
+      description: `赛事名称：${video.year}新国辩`,
+      duration: 0,
+      eventLabel: `${video.year}新国辩`,
+      pubdate: video.pubdate,
+      source: 'known-supplement',
+      title: `${video.year}新国辩补充视频 ${video.bvid}`,
+      videoUrl: `https://www.bilibili.com/video/${video.bvid}`,
+    }))
 }
 
 export async function fetchOfficialSeasonVideos({
@@ -390,6 +501,38 @@ function belongsToEventYear(video, year) {
   const explicitYears = corpus.match(/20(?:23|24|25|26)/g) ?? []
   if (explicitYears.length > 0) return explicitYears.includes(String(year))
   return shanghaiYear(video.pubdate) === Number(year)
+}
+
+function buildTargetedSearchQueries(years) {
+  const groups = 'ABCDEFGHIJKL'.split('')
+  const stageFragments = [
+    '高校组 初赛',
+    '高校组 半决赛',
+    '高校组 决赛',
+    '国际华语辩论邀请赛',
+  ]
+  const invitationTopicFragments = [
+    '互联网上 共情能力',
+    '幸福若退让',
+    '面对原生家庭迟来的爱和关心',
+    '预制菜 特殊标注',
+    '卫生巾塌房',
+    '内娱没有活人',
+    '对加害者 事出有因',
+    '运动员偶像化',
+  ]
+  const queries = []
+
+  for (const year of years.map(Number)) {
+    if (year !== 2025) continue
+
+    const base = `${year}bilibili新国辩`
+    queries.push(...stageFragments.map((fragment) => ({ keyword: `${base} ${fragment}`, year })))
+    queries.push(...groups.map((group) => ({ keyword: `${base} 高校组 初赛${group}组`, year })))
+    queries.push(...invitationTopicFragments.map((fragment) => ({ keyword: `${base} ${fragment}`, year })))
+  }
+
+  return [...new Map(queries.map((query) => [query.keyword, query])).values()]
 }
 
 function shanghaiYear(timestamp) {

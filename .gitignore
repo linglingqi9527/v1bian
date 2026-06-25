@@ -93,6 +93,8 @@ dist
 
 # Gatsby files
 .cache/
+scripts/crawler/bilibili/.cache/audio/
+scripts/crawler/bilibili/.cache/transcripts/
 # Comment in the public line in if your project uses Gatsby and not Next.js
 # https://nextjs.org/blog/next-9-1#public-directory-support
 # public

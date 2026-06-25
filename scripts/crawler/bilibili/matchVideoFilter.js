@@ -34,6 +34,22 @@ export function filterVideosByYears(videos, years) {
   })
 }
 
+export function isMiddleSchoolCompetitionVideo(video) {
+  const corpus = [
+    video.title,
+    video.description ?? video.desc,
+    video.eventLabel,
+    video.seasonTitle,
+    video.parentTitle,
+  ].filter(Boolean).join('\n')
+
+  return /中学组/.test(corpus)
+}
+
+export function excludeMiddleSchoolCompetitionVideos(videos) {
+  return videos.filter((video) => !isMiddleSchoolCompetitionVideo(video))
+}
+
 function shanghaiYear(timestamp) {
   if (!Number(timestamp)) return 0
   return Number(new Intl.DateTimeFormat('en', {

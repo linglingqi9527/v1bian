@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-23T16:30:45.703Z",
+  "year": 2025,
+  "missingSpeakerVideoCount": 35,
+  "sampleSize": 1,
+  "selectedTargets": [
+    {
+      "matchId": "match-BV1o7yzBJE6F",
+      "bvId": "BV1o7yzBJE6F",
+      "cid": 33462946181,
+      "partIndex": 1,
+      "page": 1,
+      "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE6F",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "event": "2025新国辩",
+      "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
+      "date": "2025-10-28",
+      "year": 2025,
+      "speakerStatus": "missing",
+      "isMultipart": false,
+      "processable": true,
+      "warnings": []
+    }
+  ],
+  "audioStart": 0,
+  "audioDuration": 480,
+  "audioSuccessCount": 1,
+  "transcriptionSuccessCount": 1,
+  "transcriptionFailureCount": 0,
+  "highCandidateCount": 0,
+  "mediumCandidateCount": 8,
+  "lowCandidateCount": 0,
+  "noSpeakerDetectedCount": 0,
+  "unstableMultipartCount": 0,
+  "averageElapsedMs": 29,
+  "totalElapsedMs": 131,
+  "failureReasons": {
+    "tiny 模型仅生成待复核候选，姓名可能存在同音字或错字，禁止自动合并。": 1
+  },
+  "dependencies": {
+    "curl": true,
+    "yt-dlp": false,
+    "ffmpeg": false,
+    "python": false,
+    "whisper": false,
+    "faster-whisper": false
+  },
+  "notes": [
+    "本报告仅供人工复核，不会写入 generatedMatches.json。",
+    "年份优先取 event，date/title 仅作为回退。"
+  ]
+}

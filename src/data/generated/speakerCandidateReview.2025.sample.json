@@ -1,0 +1,100 @@
+[
+  {
+    "matchId": "match-BV1o7yzBJE6F",
+    "bvId": "BV1o7yzBJE6F",
+    "cid": 33462946181,
+    "partIndex": 1,
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE6F",
+    "title": "脱口秀/辩论能更好地回应世界",
+    "year": 2025,
+    "candidates": [
+      {
+        "name": "妙整支",
+        "side": "正方",
+        "role": "四辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "四辩妙整支",
+        "transcriptSnippet": "華國志 位置中國同政經法議 位置正法求大道學術 位置大學張法志情牌幾位你以我正方四辩妙整支三辩 順一周 二辩雷脫一辩白一果中國正法大學編輪隊溫後再場各位 大家照顧好坐在我左手邊的是反方來自南昌大學代表對的同"
+      },
+      {
+        "name": "順一周",
+        "side": "正方",
+        "role": "三辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "三辩 順一周",
+        "transcriptSnippet": "置中國同政經法議 位置正法求大道學術 位置大學張法志情牌幾位你以我正方四辩妙整支三辩 順一周 二辩雷脫一辩白一果中國正法大學編輪隊溫後再場各位 大家照顧好坐在我左手邊的是反方來自南昌大學代表對的同學們本場比赛他"
+      },
+      {
+        "name": "雷脫",
+        "side": "正方",
+        "role": "二辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "二辩雷脫",
+        "transcriptSnippet": "議 位置正法求大道學術 位置大學張法志情牌幾位你以我正方四辩妙整支三辩 順一周 二辩雷脫一辩白一果中國正法大學編輪隊溫後再場各位 大家照顧好坐在我左手邊的是反方來自南昌大學代表對的同學們本場比赛他們的立場"
+      },
+      {
+        "name": "白一果",
+        "side": "正方",
+        "role": "一辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "一辩白一果中國正法大學編輪隊溫後再場各位 大家照顧好坐在我左手邊的是",
+        "transcriptSnippet": "正法求大道學術 位置大學張法志情牌幾位你以我正方四辩妙整支三辩 順一周 二辩雷脫一辩白一果中國正法大學編輪隊溫後再場各位 大家照顧好坐在我左手邊的是反方來自南昌大學代表對的同學們本場比赛他們的立場是辯論能更好的回應事件下面有请他們做自我介紹反方一辩 主請溫反方二辩"
+      },
+      {
+        "name": "主請溫",
+        "side": "反方",
+        "role": "一辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "一辩 主請溫反方",
+        "transcriptSnippet": "代表對的同學們本場比赛他們的立場是辯論能更好的回應事件下面有请他們做自我介紹反方一辩 主請溫反方二辩 龍會雷反方三辩 始聽一反方四辩 領域領袭 南昌大學辯論對溫後再場各位在認識了双方辩手之後請雲修我為您介紹本場比"
+      },
+      {
+        "name": "龍會雷",
+        "side": "反方",
+        "role": "二辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "二辩 龍會雷反方",
+        "transcriptSnippet": "場比赛他們的立場是辯論能更好的回應事件下面有请他們做自我介紹反方一辩 主請溫反方二辩 龍會雷反方三辩 始聽一反方四辩 領域領袭 南昌大學辯論對溫後再場各位在認識了双方辩手之後請雲修我為您介紹本場比赛的評審他們是羅"
+      },
+      {
+        "name": "始聽一",
+        "side": "反方",
+        "role": "三辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "三辩 始聽一反方",
+        "transcriptSnippet": "是辯論能更好的回應事件下面有请他們做自我介紹反方一辩 主請溫反方二辩 龍會雷反方三辩 始聽一反方四辩 領域領袭 南昌大學辯論對溫後再場各位在認識了双方辩手之後請雲修我為您介紹本場比赛的評審他們是羅洪昆先生劉曉金先"
+      },
+      {
+        "name": "領域領袭",
+        "side": "反方",
+        "role": "四辩",
+        "source": "openingAudioTranscript",
+        "confidence": 0.58,
+        "confidenceLevel": "medium",
+        "rawText": "四辩 領域領袭 南昌大學辯論對溫後再場各位在認識了双方辩手之後請雲修我為您介紹本場比赛的評審他們是羅洪昆先生劉曉金先生丁貫與先生劉正心理事以其詳先生再比赛開始之前我將對本次比赛的提示雲修做出說明當總實場以極自由辯論時間勝於30秒時將聽到一聲領獻當總實場以極自由辯論時間用進時將有兩聲領獻請停止發言現在我先補2",
+        "transcriptSnippet": "應事件下面有请他們做自我介紹反方一辩 主請溫反方二辩 龍會雷反方三辩 始聽一反方四辩 領域領袭 南昌大學辯論對溫後再場各位在認識了双方辩手之後請雲修我為您介紹本場比赛的評審他們是羅洪昆先生劉曉金先生丁貫與先生劉正心理事以其詳先生再比赛開始之前我將對本次比赛的提示雲修做出說明當總實場以極自由辯論時間勝於30秒時將聽到一聲領獻當總實場以極自由辯論時間用進時將有兩聲領獻請停止發言現在我先補20205新國變高校組資格賽中國大陸賽道伴決賽第二場的"
+      }
+    ],
+    "warnings": [
+      "tiny 模型仅生成待复核候选，姓名可能存在同音字或错字，禁止自动合并。"
+    ],
+    "audioStatus": "cached",
+    "transcriptStatus": "cached",
+    "elapsedMs": 29,
+    "reviewStatus": "review-medium"
+  }
+]
