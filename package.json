@@ -12,6 +12,9 @@
     "speakers:audio:sample:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildSpeakerCandidateReport.js",
     "speakers:roster:sample:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js",
     "speakers:roster:2025": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js --all --merge",
+    "speakers:roster:2024:report": "node scripts/crawler/bilibili/speakerEnrichment/buildRoster2024QualificationReport.js",
+    "speakers:roster:sample:2024": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js --year 2024",
+    "speakers:roster:2024": "node scripts/crawler/bilibili/speakerEnrichment/buildRosterConstrainedReport.js --year 2024 --all",
     "lint": "eslint .",
     "preview": "vite preview"
   },

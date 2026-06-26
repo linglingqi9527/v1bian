@@ -1,13 +1,16 @@
 import { pinyin } from 'pinyin-pro'
+import { extractIntroSnippetText } from './transcriptIntroSnippet.js'
 
-const MIN_MATCH_SCORE = 0.8
+const MIN_AUTO_MATCH_SCORE = 0.8
+const MIN_CONTEXT_CANDIDATE_SCORE = 0.4
 const MIN_SCORE_MARGIN = 0.08
 const MAX_SPEAKERS_PER_TEAM = 4
 const MAX_ROLE_MARKERS = 16
 const MAX_SEGMENT_CHARS = 56
+const MAX_CONTEXT_WINDOW_START = 8
 
 export function matchRosterSpeakers({ rosterContext, transcriptText = '' }) {
-  const introText = extractIntroductionText(transcriptText)
+  const introText = extractIntroSnippetText(transcriptText)
   const segments = extractRoleFollowingSegments(introText)
   const members = flattenRosterMembers(rosterContext.teams)
   const candidates = segments
@@ -21,10 +24,14 @@ export function matchRosterSpeakers({ rosterContext, transcriptText = '' }) {
       .map(toSpeakerResult),
   }))
   const speakerCount = teams.reduce((total, team) => total + team.speakers.length, 0)
+  const autoMergeCount = teams.reduce((total, team) => (
+    total + team.speakers.filter((speaker) => speaker.autoMerge).length
+  ), 0)
   const warnings = []
 
   if (segments.length === 0) warnings.push('自我介绍区间内没有识别到“一辩/二辩/三辩/四辩”标记。')
   if (speakerCount === 0) warnings.push('转写成功，但没有与双方报名名单形成可靠匹配。')
+  if (speakerCount > autoMergeCount) warnings.push('存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。')
   if (speakerCount > 0 && speakerCount < 8) {
     warnings.push(`仅匹配到 ${speakerCount} 名辩手，需要人工复核或提高转写模型。`)
   }
@@ -41,30 +48,6 @@ export function matchRosterSpeakers({ rosterContext, transcriptText = '' }) {
   }
 }
 
-function extractIntroductionText(value) {
-  const text = normalizeTranscript(value)
-  const endMatch = /在\s*认识了?\s*双方\s*辩手\s*之后|比赛.{0,4}正[式是]\s*开始|首先.{0,8}[陈臣陳][词茨司茲]/.exec(text)
-  const endIndex = endMatch?.index ?? Math.min(text.length, 3000)
-  return text.slice(0, endIndex)
-}
-
-function normalizeTranscript(value) {
-  return String(value ?? '')
-    .replace(/\r\n?/g, '\n')
-    .replace(/[\t\u00a0]+/g, ' ')
-    .replace(/\s+/g, ' ')
-    .replace(/[雙双]/g, '双')
-    .replace(/[認认]識/g, '认识')
-    .replace(/[辯辨變变]手/g, '辩手')
-    .replace(/[一壹1]\s*[辩辯辨遍變变便]/g, '一辩')
-    .replace(/[二贰兩两而2]\s*[辩辯辨遍變变便]/g, '二辩')
-    .replace(/[三叁3]\s*[辩辯辨遍變变便]/g, '三辩')
-    .replace(/[四肆4]\s*[辩辯辨遍變变便]/g, '四辩')
-    .replace(/比賽/g, '比赛')
-    .replace(/開始/g, '开始')
-    .trim()
-}
-
 function extractRoleFollowingSegments(text) {
   const markers = [...text.matchAll(/一辩|二辩|三辩|四辩/g)].slice(0, MAX_ROLE_MARKERS)
   return markers.map((marker, index) => {
@@ -73,6 +56,7 @@ function extractRoleFollowingSegments(text) {
     const end = Math.min(nextMarkerIndex, start + MAX_SEGMENT_CHARS)
     return {
       id: index,
+      role: marker[0],
       text: text.slice(start, end),
       transcriptSnippet: text.slice(Math.max(0, marker.index - 12), Math.min(text.length, end + 12)),
     }
@@ -93,24 +77,45 @@ function bestRosterCandidate(segment, members) {
       ...member,
       ...compareSegmentToName(segment.text, member.name),
       segmentId: segment.id,
+      role: segment.role,
       transcriptSnippet: segment.transcriptSnippet,
     }))
     .sort((left, right) => right.score - left.score)
   const best = ranked[0]
   const second = ranked[1]
 
-  if (!best || best.score < MIN_MATCH_SCORE) return null
-  if (second && best.score - second.score < MIN_SCORE_MARGIN) return null
-  return best
+  if (!best) return null
+  const hasEnoughMargin = !second || best.score - second.score >= MIN_SCORE_MARGIN
+  if (best.score >= MIN_AUTO_MATCH_SCORE && hasEnoughMargin) {
+    return { ...best, autoMerge: true }
+  }
+  const contextCandidate = ranked.find((candidate) => (
+    candidate.score >= MIN_CONTEXT_CANDIDATE_SCORE
+    && candidate.windowStart <= MAX_CONTEXT_WINDOW_START
+  ))
+  if (
+    contextCandidate
+  ) {
+    return {
+      ...contextCandidate,
+      autoMerge: false,
+      method: `${contextCandidate.method}-role-context`,
+    }
+  }
+  return null
 }
 
 function compareSegmentToName(segmentText, officialName) {
   const officialLength = normalizeText(officialName).length
   const windows = candidateWindows(segmentText, officialLength)
   return windows
-    .map((recognizedText) => ({ recognizedText, ...compareNames(recognizedText, officialName) }))
+    .map((window) => ({
+      recognizedText: window.text,
+      windowStart: window.start,
+      ...compareNames(window.text, officialName),
+    }))
     .sort((left, right) => right.score - left.score)[0]
-    ?? { method: 'none', recognizedText: '', score: 0 }
+    ?? { method: 'none', recognizedText: '', score: 0, windowStart: Number.POSITIVE_INFINITY }
 }
 
 function candidateWindows(value, officialLength) {
@@ -119,7 +124,10 @@ function candidateWindows(value, officialLength) {
   const windows = []
   for (const length of lengths) {
     for (let index = 0; index <= Math.min(chinese.length - length, 32); index += 1) {
-      windows.push(chinese.slice(index, index + length))
+      windows.push({
+        start: index,
+        text: chinese.slice(index, index + length),
+      })
     }
   }
   return windows
@@ -135,24 +143,47 @@ function compareNames(left, right) {
   const rightPinyin = pinyin(normalizedRight, { toneType: 'none', type: 'array' })
   const pinyinDistance = levenshteinDistance(leftPinyin, rightPinyin)
   const pinyinSimilarity = 1 - pinyinDistance / Math.max(leftPinyin.length, rightPinyin.length)
+  const syllableSimilarity = averageSyllableSimilarity(leftPinyin, rightPinyin)
+  const characterSimilarity = alignedCharacterSimilarity(normalizedLeft, normalizedRight)
   if (pinyinSimilarity === 1) return { method: 'pinyin', score: 0.96 }
   if (
     leftPinyin.length === rightPinyin.length
-    && averageSyllableSimilarity(leftPinyin, rightPinyin) >= 0.8
+    && syllableSimilarity >= 0.8
   ) {
     return { method: 'pinyin-fuzzy', score: 0.88 }
   }
   if (pinyinSimilarity >= 2 / 3) return { method: 'pinyin-fuzzy', score: 0.82 }
+
+  const softScore = Math.max(
+    characterSimilarity * 0.72,
+    syllableSimilarity * 0.62,
+  )
+  if (softScore >= MIN_CONTEXT_CANDIDATE_SCORE) {
+    return { method: 'pinyin-soft', score: Math.min(0.72, softScore) }
+  }
+
   return { method: 'none', score: 0 }
 }
 
 function averageSyllableSimilarity(left, right) {
+  if (!left.length || !right.length) return 0
   const total = left.reduce((sum, syllable, index) => {
     const counterpart = right[index]
+    if (!counterpart) return sum
     const distance = levenshteinDistance(syllable, counterpart)
     return sum + 1 - distance / Math.max(syllable.length, counterpart.length)
   }, 0)
-  return total / left.length
+  return total / Math.max(left.length, right.length)
+}
+
+function alignedCharacterSimilarity(left, right) {
+  const length = Math.max(left.length, right.length)
+  if (!length) return 0
+  let matched = 0
+  for (let index = 0; index < length; index += 1) {
+    if (left[index] && left[index] === right[index]) matched += 1
+  }
+  return matched / length
 }
 
 function selectGlobalAssignments(candidates, teamCount) {
@@ -199,12 +230,20 @@ function betterAssignment(left, right) {
 function toSpeakerResult(assignment) {
   return {
     name: assignment.name,
+    role: assignment.role,
     recognizedText: assignment.recognizedText,
     confidence: Number(assignment.score.toFixed(2)),
-    confidenceLevel: assignment.score >= 0.9 ? 'high' : 'medium',
+    confidenceLevel: confidenceLevel(assignment.score),
+    autoMerge: assignment.autoMerge,
     matchMethod: assignment.method,
     transcriptSnippet: assignment.transcriptSnippet,
   }
+}
+
+function confidenceLevel(score) {
+  if (score >= 0.9) return 'high'
+  if (score >= MIN_AUTO_MATCH_SCORE) return 'medium'
+  return 'low'
 }
 
 function normalizeText(value) {

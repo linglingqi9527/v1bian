@@ -1,0 +1,2019 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-25T15:54:25.767Z",
+  "year": 2024,
+  "competitionType": "资格赛",
+  "source": {
+    "byStage": "scripts/crawler/bilibili/speakerEnrichment/rosters/team_roster_2024_qualification_by_stage.json",
+    "combinedBySchool": "scripts/crawler/bilibili/speakerEnrichment/rosters/team_roster_2024_qualification_combined_by_school.json"
+  },
+  "policy": {
+    "primary": "2024 资格赛识别先按学校使用 combinedBySchool 合并名单，同一学校线上/线下名单统一纳入候选池。",
+    "referenceOnly": "byStage 仅作为来源记录和后续人工追溯依据，不作为当前自动识别的筛选条件。"
+  },
+  "teams": [
+    {
+      "team": "爱丁堡大学",
+      "combinedSpeakers": [
+        "杨子江",
+        "吴舒扬",
+        "吕博文",
+        "赵雨彤",
+        "刘一帆",
+        "赵子源",
+        "韩天夏",
+        "鲍淹窒",
+        "李弄娅",
+        "南希诺"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-UV-UV组/005.jpg"
+          ],
+          "speakers": [
+            "杨子江",
+            "吴舒扬",
+            "吕博文",
+            "赵雨彤",
+            "刘一帆",
+            "赵子源",
+            "韩天夏"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "V2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-V-爱丁堡大学-V/002.jpg"
+          ],
+          "speakers": [
+            "吴舒扬",
+            "鲍淹窒",
+            "吕博文",
+            "赵雨彤",
+            "李弄娅",
+            "刘一帆",
+            "南希诺",
+            "韩天夏"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "V"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "安徽大学",
+      "combinedSpeakers": [
+        "杨光文",
+        "冯冠亚",
+        "王子仪",
+        "蒋林树",
+        "刘诗琪",
+        "李梓涵",
+        "钱季升",
+        "童传宇",
+        "杨泡文",
+        "方婷攻"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-ST-ST组/005.jpg"
+          ],
+          "speakers": [
+            "杨光文",
+            "冯冠亚",
+            "王子仪",
+            "蒋林树",
+            "刘诗琪",
+            "李梓涵",
+            "钱季升"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "T2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-T-安徽大学-T/002.jpg"
+          ],
+          "speakers": [
+            "童传宇",
+            "杨泡文",
+            "蒋林树",
+            "方婷攻",
+            "钱季升"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "T"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "澳门大学",
+      "combinedSpeakers": [
+        "雷瑶妍",
+        "王浩然",
+        "洪冰萌",
+        "贺子淇",
+        "张陈尔表",
+        "胡祖铭",
+        "陈泓熹",
+        "张钰肯",
+        "陈泓总"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-GH-GH组/002.jpg"
+          ],
+          "speakers": [
+            "雷瑶妍",
+            "王浩然",
+            "洪冰萌",
+            "贺子淇",
+            "张陈尔表",
+            "胡祖铭",
+            "陈泓熹"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "G1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-G-澳门大学-G/002.jpg"
+          ],
+          "speakers": [
+            "雷瑶妍",
+            "王浩然",
+            "张钰肯",
+            "张陈尔表",
+            "贺子淇",
+            "胡祖铭",
+            "陈泓总"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "G"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "澳门科技大学",
+      "combinedSpeakers": [
+        "常刁",
+        "曾梓翔",
+        "王雨萤",
+        "王凯圭",
+        "秦祖旭",
+        "李天吴",
+        "常吴",
+        "王雨营",
+        "王凯圳",
+        "秦视旭"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-GH-GH组/004.jpg"
+          ],
+          "speakers": [
+            "常刁",
+            "曾梓翔",
+            "王雨萤",
+            "王凯圭",
+            "秦祖旭",
+            "李天吴"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "H1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-H-澳门科技大学-H/002.jpg"
+          ],
+          "speakers": [
+            "常吴",
+            "曾梓翔",
+            "王雨营",
+            "王凯圳",
+            "秦视旭",
+            "李天吴"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "H"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "北京林业大学",
+      "combinedSpeakers": [
+        "张至人",
+        "杨昕堵",
+        "孙可欣",
+        "方梓洋"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-AB-AB组/002.jpg"
+          ],
+          "speakers": [
+            "张至人",
+            "杨昕堵",
+            "孙可欣",
+            "方梓洋"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "A1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "北京师范大学",
+      "combinedSpeakers": [
+        "袁天语",
+        "邹泻哲",
+        "王众",
+        "林子璇",
+        "赵度云",
+        "张晨跃"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-CD-CD组/002.jpg"
+          ],
+          "speakers": [
+            "袁天语",
+            "邹泻哲",
+            "王众",
+            "林子璇",
+            "赵度云",
+            "张晨跃"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "C1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "重庆大学",
+      "combinedSpeakers": [
+        "于是然",
+        "杜明浩",
+        "李伟杰",
+        "洪畅",
+        "杨粤粤"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-IJ-IJ组/002.jpg"
+          ],
+          "speakers": [
+            "于是然",
+            "杜明浩",
+            "李伟杰",
+            "洪畅",
+            "杨粤粤"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "I1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "大连海事大学",
+      "combinedSpeakers": [
+        "林钰凯",
+        "张怡婧",
+        "管德明",
+        "黄倪炜",
+        "唐洪哲",
+        "徐英杰",
+        "韩雄柏"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-CD-CD组/004.jpg"
+          ],
+          "speakers": [
+            "林钰凯",
+            "张怡婧",
+            "管德明",
+            "黄倪炜",
+            "唐洪哲"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "D1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-D-大连海事大学-D/002.jpg"
+          ],
+          "speakers": [
+            "徐英杰",
+            "黄倪炜",
+            "韩雄柏"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "D"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "东北师范大学",
+      "combinedSpeakers": [
+        "杨昊达",
+        "曹敬轩",
+        "张丁心",
+        "张佳奇",
+        "袁青对",
+        "尉迟豁嘉",
+        "廖发祖",
+        "屈巾彭"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-QR-QR组/004.jpg"
+          ],
+          "speakers": [
+            "杨昊达",
+            "曹敬轩",
+            "张丁心",
+            "张佳奇",
+            "袁青对",
+            "尉迟豁嘉",
+            "廖发祖"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "R1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-R-东北师范大学-R/002.jpg"
+          ],
+          "speakers": [
+            "张佳奇",
+            "屈巾彭"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "R"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "福建师范大学",
+      "combinedSpeakers": [
+        "王浩名",
+        "陈志杰",
+        "何浩然",
+        "林润发",
+        "鲍灵婧",
+        "陈窒昕",
+        "罗圣开",
+        "江宏杰",
+        "陈佳楠",
+        "袁星航"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-UV-UV组/003.jpg"
+          ],
+          "speakers": [
+            "王浩名",
+            "陈志杰",
+            "何浩然",
+            "林润发",
+            "鲍灵婧",
+            "陈窒昕",
+            "罗圣开",
+            "江宏杰"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "U2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-U-福建师范大学-U/002.jpg"
+          ],
+          "speakers": [
+            "鲍灵婧",
+            "罗圣开",
+            "陈佳楠",
+            "袁星航"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "U"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "复旦大学",
+      "combinedSpeakers": [
+        "方振宇",
+        "严哲涵",
+        "于润泽",
+        "曹龙延",
+        "管李",
+        "刘博涵",
+        "诸指庭",
+        "禁沁晨",
+        "谈嘉苦",
+        "陈泉"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-AB-AB组/004.jpg"
+          ],
+          "speakers": [
+            "方振宇",
+            "严哲涵",
+            "于润泽",
+            "曹龙延",
+            "管李",
+            "刘博涵"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "B1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-B-复旦大学-B/002.jpg"
+          ],
+          "speakers": [
+            "诸指庭",
+            "禁沁晨",
+            "谈嘉苦",
+            "陈泉"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "B"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "广东外语外大学",
+      "combinedSpeakers": [
+        "杨坤峰",
+        "吴晓月",
+        "张敬东",
+        "韦颖利",
+        "阮柯锐"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-KL-KL组/004.jpg"
+          ],
+          "speakers": [
+            "杨坤峰",
+            "吴晓月",
+            "张敬东",
+            "韦颖利",
+            "阮柯锐"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "L1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "广东外语外贸大学",
+      "combinedSpeakers": [
+        "吴晓月",
+        "刘凯琳",
+        "张敬东",
+        "陶讲宇",
+        "韦颖利",
+        "阮柯锐",
+        "马桢二"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-L-广东外语外贸大学-L/002.jpg"
+          ],
+          "speakers": [
+            "吴晓月",
+            "刘凯琳",
+            "张敬东",
+            "陶讲宇",
+            "韦颖利",
+            "阮柯锐",
+            "马桢二"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "L"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "国际关系学院",
+      "combinedSpeakers": [
+        "沈雨秒",
+        "徐东梁",
+        "曾烛婷",
+        "李荣俊",
+        "王妹权",
+        "于坤平",
+        "王心怡"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-OP-OP组/004.jpg"
+          ],
+          "speakers": [
+            "沈雨秒",
+            "徐东梁",
+            "曾烛婷",
+            "李荣俊",
+            "王妹权",
+            "于坤平",
+            "王心怡"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "P1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "海南大学",
+      "combinedSpeakers": [
+        "第十",
+        "张嵘森",
+        "李子彬",
+        "王昭霖",
+        "王佳慧",
+        "沈靖璐"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-EF-EF组/005.jpg"
+          ],
+          "speakers": [
+            "第十",
+            "张嵘森",
+            "李子彬",
+            "王昭霖",
+            "王佳慧",
+            "沈靖璐"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "F2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "河北大学",
+      "combinedSpeakers": [
+        "杨窒霖",
+        "何龙川",
+        "王痰",
+        "张钢豪",
+        "胡锦涛",
+        "盛琳",
+        "杨芮婷",
+        "刘子豪",
+        "王子轩",
+        "张雪硕",
+        "王志翔"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-MN-MN组/005.jpg"
+          ],
+          "speakers": [
+            "杨窒霖",
+            "何龙川",
+            "王痰",
+            "张钢豪",
+            "胡锦涛",
+            "盛琳"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "N2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-N-河北大学-N/002.jpg"
+          ],
+          "speakers": [
+            "杨芮婷",
+            "刘子豪",
+            "王子轩",
+            "张雪硕",
+            "王志翔"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "N"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "湖南大学",
+      "combinedSpeakers": [
+        "马起涛",
+        "票俊楷",
+        "于车远",
+        "陈双",
+        "陈诺凡",
+        "许林波",
+        "张思远",
+        "张甲申"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-CD-CD组/005.jpg"
+          ],
+          "speakers": [
+            "马起涛",
+            "票俊楷",
+            "于车远",
+            "陈双",
+            "陈诺凡",
+            "许林波",
+            "张思远",
+            "张甲申"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "D2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "华南理工大学",
+      "combinedSpeakers": [
+        "李沛雨",
+        "夏奉然",
+        "董康",
+        "林铮阳",
+        "何立时",
+        "徐靖轩",
+        "刘洛言",
+        "傅申惟"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-ST-ST组/003.jpg"
+          ],
+          "speakers": [
+            "李沛雨",
+            "夏奉然",
+            "董康",
+            "林铮阳",
+            "何立时",
+            "徐靖轩",
+            "刘洛言",
+            "傅申惟"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "S2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "华中师范大学",
+      "combinedSpeakers": [
+        "黄致远",
+        "郑瑶瑶",
+        "黄嘉伟",
+        "叶子",
+        "万永健",
+        "陈俊宇",
+        "涂哈铭",
+        "郑理瑶",
+        "涂喻铭"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-QR-QR组/002.jpg"
+          ],
+          "speakers": [
+            "黄致远",
+            "郑瑶瑶",
+            "黄嘉伟",
+            "叶子",
+            "万永健",
+            "陈俊宇",
+            "涂哈铭"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "Q1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-Q-华中师范大学-Q/002.jpg"
+          ],
+          "speakers": [
+            "黄致远",
+            "郑理瑶",
+            "黄嘉伟",
+            "叶子",
+            "陈俊宇",
+            "涂喻铭"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "Q"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "江西农业大学",
+      "combinedSpeakers": [
+        "杨阳",
+        "王保健",
+        "丁成仁杰",
+        "姚牧烛",
+        "胡瑾",
+        "曹俊杰"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-WX-WX组/005.jpg"
+          ],
+          "speakers": [
+            "杨阳",
+            "王保健",
+            "丁成仁杰",
+            "姚牧烛",
+            "胡瑾",
+            "曹俊杰"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "X2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "马来西亚理科大学(总院校)",
+      "combinedSpeakers": [
+        "蔡等洁",
+        "黄忠融",
+        "吕芳婷",
+        "曾建嘉",
+        "黄做铭",
+        "刘昭雄",
+        "温天雨"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-OP-OP组/002.jpg"
+          ],
+          "speakers": [
+            "蔡等洁",
+            "黄忠融",
+            "吕芳婷",
+            "曾建嘉",
+            "黄做铭",
+            "刘昭雄",
+            "温天雨"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "O1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "莫纳什大学",
+      "combinedSpeakers": [
+        "常爱梓",
+        "高恰阳",
+        "程旦恒",
+        "陈蔚蓝",
+        "彭刁",
+        "陆羽非",
+        "欧昕全",
+        "赵县子"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-EF-EF组/002.jpg"
+          ],
+          "speakers": [
+            "常爱梓",
+            "高恰阳",
+            "程旦恒",
+            "陈蔚蓝",
+            "彭刁",
+            "陆羽非",
+            "欧昕全",
+            "赵县子"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "E1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "南京大学",
+      "combinedSpeakers": [
+        "陈敏慧",
+        "高昕然",
+        "高心怡",
+        "王一凡",
+        "孟政屹",
+        "于同舟",
+        "张义非"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-ST-ST组/004.jpg"
+          ],
+          "speakers": [
+            "陈敏慧",
+            "高昕然",
+            "高心怡",
+            "王一凡",
+            "孟政屹",
+            "于同舟",
+            "张义非"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "T1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "南京工业大学",
+      "combinedSpeakers": [
+        "喻江雪",
+        "肖瑶",
+        "徐梦瑶",
+        "程鸣",
+        "夏张昱戏"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-IJ-IJ组/005.jpg"
+          ],
+          "speakers": [
+            "喻江雪",
+            "肖瑶",
+            "徐梦瑶",
+            "程鸣",
+            "夏张昱戏"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "J2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "南京审计大学",
+      "combinedSpeakers": [
+        "李炎希",
+        "胡子宁",
+        "卢意洋",
+        "周天",
+        "张俊彦",
+        "张窒婕",
+        "张害婕"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-EF-EF组/003.jpg"
+          ],
+          "speakers": [
+            "李炎希",
+            "胡子宁",
+            "卢意洋",
+            "周天",
+            "张俊彦",
+            "张窒婕"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "E2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-E-南京审计大学-E/002.jpg"
+          ],
+          "speakers": [
+            "李炎希",
+            "胡子宁",
+            "卢意洋",
+            "张俊彦",
+            "张害婕"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "E"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "南开大学",
+      "combinedSpeakers": [
+        "江英",
+        "吕良伟",
+        "刘金杭",
+        "王勤",
+        "孙嘉庆",
+        "刘映萤"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-AB-AB组/003.jpg"
+          ],
+          "speakers": [
+            "江英",
+            "吕良伟",
+            "刘金杭",
+            "王勤",
+            "孙嘉庆",
+            "刘映萤"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "A2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-A-南开大学-A/002.jpg"
+          ],
+          "speakers": [
+            "刘金杭",
+            "王勤",
+            "孙嘉庆",
+            "刘映萤"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "A"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "宁波大学",
+      "combinedSpeakers": [
+        "徐宁",
+        "周佳颖",
+        "赖赴",
+        "李奕彤",
+        "徐依凡",
+        "严梦馨",
+        "贺勇宁",
+        "金炳燕",
+        "肖湘婷"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-MN-MN组/002.jpg"
+          ],
+          "speakers": [
+            "徐宁",
+            "周佳颖",
+            "赖赴",
+            "李奕彤",
+            "徐依凡",
+            "严梦馨",
+            "贺勇宁",
+            "金炳燕"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "M1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-M-宁波大学-M/002.jpg"
+          ],
+          "speakers": [
+            "徐宁",
+            "肖湘婷",
+            "李奕彤",
+            "金炳燕",
+            "贺勇宁"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "M"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "纽约大学",
+      "combinedSpeakers": [
+        "杨弘谢",
+        "张子琪",
+        "王宇川",
+        "张雨琪",
+        "柳小佳",
+        "张嘉美",
+        "黎子毓",
+        "陈楚理",
+        "朱笛安",
+        "陈楚瑶",
+        "李哲瀚",
+        "陈晓琳"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-IJ-IJ组/004.jpg"
+          ],
+          "speakers": [
+            "杨弘谢",
+            "张子琪",
+            "王宇川",
+            "张雨琪",
+            "柳小佳",
+            "张嘉美",
+            "黎子毓",
+            "陈楚理"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "J1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-J-纽约大学-J/002.jpg"
+          ],
+          "speakers": [
+            "朱笛安",
+            "王宇川",
+            "张雨琪",
+            "陈楚瑶",
+            "李哲瀚",
+            "陈晓琳"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "J"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "山东大学",
+      "combinedSpeakers": [
+        "王梓竹",
+        "许惠贤",
+        "陶新宇",
+        "赵晨",
+        "刘戏恩",
+        "朱怡冰",
+        "旷依格",
+        "俞阳天"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-AB-AB组/005.jpg"
+          ],
+          "speakers": [
+            "王梓竹",
+            "许惠贤",
+            "陶新宇",
+            "赵晨",
+            "刘戏恩",
+            "朱怡冰",
+            "旷依格",
+            "俞阳天"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "B2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "陕西师范大学",
+      "combinedSpeakers": [
+        "南思源",
+        "刘房",
+        "曲泓宇",
+        "赵心竹",
+        "王语暗",
+        "朱压杰",
+        "王语瞳",
+        "胡润东",
+        "严陈幸子"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-IJ-IJ组/003.jpg"
+          ],
+          "speakers": [
+            "南思源",
+            "刘房",
+            "曲泓宇",
+            "赵心竹",
+            "王语暗"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "I2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-I-陕西师范大学-I/002.jpg"
+          ],
+          "speakers": [
+            "朱压杰",
+            "南思源",
+            "曲泓宇",
+            "王语瞳",
+            "胡润东",
+            "严陈幸子"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "I"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "四川大学",
+      "combinedSpeakers": [
+        "朱腾飞",
+        "李乐",
+        "马震",
+        "陈艺培",
+        "彭佐君",
+        "金康莹",
+        "陶思恒",
+        "祝佳欣",
+        "马霄"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-OP-OP组/003.jpg"
+          ],
+          "speakers": [
+            "朱腾飞",
+            "李乐",
+            "马震",
+            "陈艺培",
+            "彭佐君",
+            "金康莹",
+            "陶思恒",
+            "祝佳欣"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "O2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-O-四川大学-O/002.jpg"
+          ],
+          "speakers": [
+            "李乐",
+            "马霄",
+            "陈艺培",
+            "彭佐君",
+            "金康莹",
+            "陶思恒",
+            "祝佳欣"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "O"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "台北科技大学",
+      "combinedSpeakers": [
+        "讶哲需",
+        "丁启翔",
+        "洪停曼",
+        "王振巾",
+        "肖博文",
+        "洪惊归",
+        "王振峰"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-ST-ST组/002.jpg"
+          ],
+          "speakers": [
+            "讶哲需",
+            "丁启翔",
+            "洪停曼",
+            "王振巾",
+            "肖博文"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "S1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-S-台北科技大学-S/002.jpg"
+          ],
+          "speakers": [
+            "丁启翔",
+            "洪惊归",
+            "王振峰",
+            "肖博文"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "S"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "台湾大学",
+      "combinedSpeakers": [
+        "刘岳轩",
+        "林伯彦",
+        "纪泊均",
+        "部家滕"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-UV-UV组/002.jpg"
+          ],
+          "speakers": [
+            "刘岳轩",
+            "林伯彦",
+            "纪泊均",
+            "部家滕"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "U1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "同济大学",
+      "combinedSpeakers": [
+        "李高翔",
+        "江依茵",
+        "邓宇坤",
+        "陈厚德",
+        "陈寅",
+        "张艺涵",
+        "毕方锐",
+        "汤运佳"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-OP-OP组/005.jpg"
+          ],
+          "speakers": [
+            "李高翔",
+            "江依茵",
+            "邓宇坤",
+            "陈厚德"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "P2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-P-同济大学-P/002.jpg"
+          ],
+          "speakers": [
+            "陈寅",
+            "张艺涵",
+            "毕方锐",
+            "汤运佳",
+            "陈厚德"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "P"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "武汉理工大学",
+      "combinedSpeakers": [
+        "毕哲呈",
+        "刘源",
+        "汪佳洛",
+        "谭威",
+        "邓爱琳",
+        "黄琛敏"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-MN-MN组/003.jpg"
+          ],
+          "speakers": [
+            "毕哲呈",
+            "刘源",
+            "汪佳洛",
+            "谭威",
+            "邓爱琳",
+            "黄琛敏"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "M2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "西南大学",
+      "combinedSpeakers": [
+        "张盛",
+        "林明磊",
+        "刘旦冬",
+        "汪瑶瑶",
+        "张子立",
+        "张雨涛",
+        "李俊达"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-QR-QR组/003.jpg"
+          ],
+          "speakers": [
+            "张盛",
+            "林明磊",
+            "刘旦冬",
+            "汪瑶瑶",
+            "张子立",
+            "张雨涛",
+            "李俊达"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "Q2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "西南民族大学",
+      "combinedSpeakers": [
+        "周阳",
+        "刘星宇",
+        "吴佳骏",
+        "朱妍频",
+        "徐塞",
+        "王若歌",
+        "草艺轩",
+        "张晓美"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-GH-GH组/005.jpg"
+          ],
+          "speakers": [
+            "周阳",
+            "刘星宇",
+            "吴佳骏",
+            "朱妍频",
+            "徐塞",
+            "王若歌",
+            "草艺轩",
+            "张晓美"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "H2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "悉尼大学",
+      "combinedSpeakers": [
+        "张书鸣",
+        "孙笑云",
+        "周家琦",
+        "内诗悦",
+        "林奕杉",
+        "牛晨宇",
+        "牛娅力",
+        "鹤诗悦",
+        "范嘉昊",
+        "杨景党"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-CD-CD组/003.jpg"
+          ],
+          "speakers": [
+            "张书鸣",
+            "孙笑云",
+            "周家琦",
+            "内诗悦",
+            "林奕杉",
+            "牛晨宇",
+            "牛娅力"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "C2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-C-悉尼大学-C/002.jpg"
+          ],
+          "speakers": [
+            "张书鸣",
+            "孙笑云",
+            "周家琦",
+            "鹤诗悦",
+            "林奕杉",
+            "范嘉昊",
+            "杨景党",
+            "牛娅力"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "C"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "香港浸会大学",
+      "combinedSpeakers": [
+        "陈科宇",
+        "稚慧敏",
+        "杨斯涵",
+        "李品言",
+        "刘焰宕",
+        "类正正",
+        "倪瑞"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-KL-KL组/005.jpg"
+          ],
+          "speakers": [
+            "陈科宇",
+            "稚慧敏",
+            "杨斯涵",
+            "李品言",
+            "刘焰宕",
+            "类正正",
+            "倪瑞"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "L2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "香港中文大学",
+      "combinedSpeakers": [
+        "修梦伦",
+        "邹柏晋",
+        "郭晨欣",
+        "李敦沼",
+        "关怡然",
+        "钱怡凡",
+        "周可欣",
+        "邹若瑶",
+        "侯梦伦",
+        "李敦汤"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-WX-WX组/003.jpg"
+          ],
+          "speakers": [
+            "修梦伦",
+            "邹柏晋",
+            "郭晨欣",
+            "李敦沼",
+            "关怡然",
+            "钱怡凡",
+            "周可欣",
+            "邹若瑶"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "W2"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-W-香港中文大学-W/002.jpg"
+          ],
+          "speakers": [
+            "侯梦伦",
+            "邹柏晋",
+            "郭晨欣",
+            "李敦汤",
+            "关怡然",
+            "钱怡凡",
+            "邹若瑶"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "W"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "新加坡国立大学",
+      "combinedSpeakers": [
+        "张卓然",
+        "吴志宇",
+        "刘哲沛",
+        "印弘青",
+        "林瑞祥"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-KL-KL组/003.jpg"
+          ],
+          "speakers": [
+            "张卓然",
+            "吴志宇",
+            "刘哲沛",
+            "印弘青",
+            "林瑞祥"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "K2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "新南威尔士大学",
+      "combinedSpeakers": [
+        "徐菲",
+        "梁亮堂",
+        "仇惠婷",
+        "张彤",
+        "王奕苹",
+        "籍谦恒"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-GH-GH组/003.jpg"
+          ],
+          "speakers": [
+            "徐菲",
+            "梁亮堂",
+            "仇惠婷",
+            "张彤",
+            "王奕苹",
+            "籍谦恒"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "G2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "英属哥伦比亚大学",
+      "combinedSpeakers": [
+        "张逸潇",
+        "梁伦",
+        "万子畅",
+        "张未然",
+        "沈文赴",
+        "刘秀",
+        "吴社境"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-QR-QR组/005.jpg"
+          ],
+          "speakers": [
+            "张逸潇",
+            "梁伦",
+            "万子畅",
+            "张未然",
+            "沈文赴",
+            "刘秀",
+            "吴社境"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "R2"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "早稻田大学",
+      "combinedSpeakers": [
+        "威肖钰",
+        "尚婧洁",
+        "李厚德",
+        "舒喻聆",
+        "叶芷瑶"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-WX-WX组/002.jpg"
+          ],
+          "speakers": [
+            "威肖钰",
+            "尚婧洁",
+            "李厚德",
+            "舒喻聆",
+            "叶芷瑶"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "W1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "彰化师范大学",
+      "combinedSpeakers": [
+        "周进典",
+        "闻国廷",
+        "李超群",
+        "郭恩",
+        "杨孟污"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-MN-MN组/004.jpg"
+          ],
+          "speakers": [
+            "周进典",
+            "闻国廷",
+            "李超群",
+            "郭恩",
+            "杨孟污"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "N1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "浙江理工大学",
+      "combinedSpeakers": [
+        "徐冯君",
+        "于沈伟",
+        "余彤倩",
+        "金尺靶",
+        "张馨璐",
+        "陈子政",
+        "李嘉豪",
+        "谢营婧"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-EF-EF组/004.jpg"
+          ],
+          "speakers": [
+            "徐冯君",
+            "于沈伟",
+            "余彤倩",
+            "金尺靶",
+            "张馨璐"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "F1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-F-浙江理工大学-F/002.jpg"
+          ],
+          "speakers": [
+            "陈子政",
+            "于沈伟",
+            "余彤倩",
+            "金尺靶",
+            "李嘉豪",
+            "谢营婧"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "F"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "中国海洋大学",
+      "combinedSpeakers": [
+        "崔泽豪",
+        "王文竹",
+        "李天霖",
+        "杨怡婷",
+        "商俊杰",
+        "柳绪塞",
+        "颜子杰",
+        "吴牧阳"
+      ],
+      "hasDifferentStageRosters": false,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-UV-UV组/004.jpg"
+          ],
+          "speakers": [
+            "崔泽豪",
+            "王文竹",
+            "李天霖",
+            "杨怡婷",
+            "商俊杰",
+            "柳绪塞",
+            "颜子杰",
+            "吴牧阳"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "V1"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "中国计量大学",
+      "combinedSpeakers": [
+        "赵子钰",
+        "张砚棋",
+        "华豆豆",
+        "李凯茵",
+        "林宸伊",
+        "叶景由",
+        "刘凡赫",
+        "蒋涛",
+        "叶景纤",
+        "郭悦扬"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-KL-KL组/002.jpg"
+          ],
+          "speakers": [
+            "赵子钰",
+            "张砚棋",
+            "华豆豆",
+            "李凯茵",
+            "林宸伊",
+            "叶景由",
+            "刘凡赫",
+            "蒋涛"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "K1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-K-中国计量大学-K/002.jpg"
+          ],
+          "speakers": [
+            "华豆豆",
+            "赵子钰",
+            "张砚棋",
+            "林宸伊",
+            "叶景纤",
+            "蒋涛",
+            "郭悦扬"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "K"
+          ]
+        }
+      ]
+    },
+    {
+      "team": "中国人民大学",
+      "combinedSpeakers": [
+        "董欣怡",
+        "罗欣怀",
+        "刘天浩",
+        "江从越",
+        "李浅澄",
+        "杨一井",
+        "孙可嘉",
+        "宋铮",
+        "李浅湾",
+        "杨一弄"
+      ],
+      "hasDifferentStageRosters": true,
+      "stageRosters": [
+        {
+          "sourceImages": [
+            "线上赛段/2024-online-WX-WX组/004.jpg"
+          ],
+          "speakers": [
+            "董欣怡",
+            "罗欣怀",
+            "刘天浩",
+            "江从越",
+            "李浅澄",
+            "杨一井",
+            "孙可嘉",
+            "宋铮"
+          ],
+          "stageSegment": "线上赛段",
+          "teamCodes": [
+            "X1"
+          ]
+        },
+        {
+          "sourceImages": [
+            "线下赛段/2024-offline-X-中国人民大学-X/002.jpg"
+          ],
+          "speakers": [
+            "罗欣怀",
+            "董欣怡",
+            "刘天浩",
+            "李浅湾",
+            "江从越",
+            "杨一弄",
+            "宋铮",
+            "孙可嘉"
+          ],
+          "stageSegment": "线下赛段",
+          "teamCodes": [
+            "X"
+          ]
+        }
+      ]
+    }
+  ]
+}

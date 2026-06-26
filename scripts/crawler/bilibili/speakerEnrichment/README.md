@@ -37,6 +37,44 @@ npm run speakers:roster:2025 -- --duration 240 --model tiny
 
 批量命令会补齐公开 CID、复用缓存，并只修改 `generatedMatches.json` 的 `speakers` 与审计信息。私人状态字段会在写入前后校验，无法确认或名单缺失的比赛保持不变。
 
+默认只合并通过自动门槛的姓名。若人工确认当前低置信候选可接受，可显式加入：
+
+```bash
+npm run speakers:roster:2025 -- --duration 480 --model tiny --accept-low-confidence
+```
+
+该参数会把候选报告中的低置信姓名也同步到页面读取的 `generatedMatches.json`，并在 `raw.speakerEnrichment.acceptedLowConfidence` 中留下审计标记。
+
+## 2024 资格赛名单整理
+
+2024 资格赛名单有线上/线下赛段差异，但当前识别策略先按学校合并处理：同一学校不管线上还是线下，全部纳入同一个候选库，有匹配就进入候选。
+
+- `rosters/team_roster_2024_qualification_combined_by_school.json`：同校合并版，当前识别的主依据。
+- `rosters/team_roster_2024_qualification_by_stage.json`：按线上/线下赛段拆分，仅作为来源追溯和后续人工核对依据。
+
+先只生成索引和覆盖报告，不直接写入卡片：
+
+```bash
+npm run speakers:roster:2024:report
+```
+
+输出：
+
+- `src/data/generated/rosterIndex.2024.qualification.json`
+- `src/data/generated/rosterDataReport.2024.qualification.json`
+
+开始按学校合并名单做语音识别，仍然只输出候选报告，不写入卡片：
+
+```bash
+npm run speakers:roster:2024 -- --duration 480 --model tiny
+```
+
+输出：
+
+- `src/data/generated/rosterSpeakerCandidates.2024.qualification.json`
+- `src/data/generated/speakerIntroSnippets.2024.qualification.json`
+- `src/data/generated/rosterSpeakerReport.2024.qualification.json`
+
 ## 本机依赖
 
 Windows 示例：

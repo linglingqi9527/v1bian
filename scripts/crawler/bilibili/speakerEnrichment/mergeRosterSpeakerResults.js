@@ -7,7 +7,9 @@ const MATCHES_PATH = path.join(GENERATED_DIR, 'generatedMatches.json')
 const DATA_REPORT_PATH = path.join(GENERATED_DIR, 'crawlerDataReport.json')
 const MISSING_REPORT_PATH = path.join(GENERATED_DIR, 'missingSpeakerReport.json')
 
-export async function mergeRosterSpeakerResults(records) {
+export async function mergeRosterSpeakerResults(records, {
+  acceptLowConfidence = false,
+} = {}) {
   const matches = JSON.parse(await readFile(MATCHES_PATH, 'utf8'))
   const privateStateBefore = privateStateSnapshot(matches)
   const recordById = new Map(records.map((record) => [record.matchId, record]))
@@ -18,7 +20,9 @@ export async function mergeRosterSpeakerResults(records) {
     const record = recordById.get(match.id)
     if (!record) return match
     const recognizedNames = record.teams.flatMap((team) => (
-      team.speakers.map((speaker) => speaker.name)
+      team.speakers
+        .filter((speaker) => acceptLowConfidence || speaker.autoMerge !== false)
+        .map((speaker) => speaker.name)
     ))
     if (recognizedNames.length === 0) return match
 
@@ -32,8 +36,11 @@ export async function mergeRosterSpeakerResults(records) {
         ...(match.raw ?? {}),
         speakerEnrichment: {
           complete: speakers.length >= 8,
+          acceptedLowConfidence: acceptLowConfidence,
           matchedSpeakerCount: recognizedNames.length,
-          source: 'openingAudioRosterMatch',
+          source: acceptLowConfidence
+            ? 'openingAudioRosterMatchAcceptedCandidates'
+            : 'openingAudioRosterMatch',
           updatedAt: new Date().toISOString(),
         },
       },

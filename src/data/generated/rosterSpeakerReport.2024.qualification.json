@@ -1,0 +1,1447 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-26T04:44:43.988Z",
+  "year": 2024,
+  "competitionType": "资格赛",
+  "mode": "full",
+  "rosterEntryCount": 374,
+  "rosterTeamCount": 49,
+  "rosterCoveredMissingMatchCount": 0,
+  "skippedNoRosterCount": 0,
+  "skippedNoRoster": [],
+  "sampleSize": 66,
+  "transcriptionSuccessCount": 66,
+  "matchedVideoCount": 62,
+  "completeEightSpeakerCount": 1,
+  "matchedSpeakerCount": 247,
+  "highMatchCount": 75,
+  "mediumMatchCount": 128,
+  "lowMatchCount": 44,
+  "totalElapsedMs": 12,
+  "mergeResult": null,
+  "mergeOptions": {
+    "acceptLowConfidence": false
+  },
+  "selectedMatches": [
+    {
+      "matchId": "match-BV11N23YwEhn",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "teams": [
+        {
+          "team": "同济大学",
+          "speakers": [
+            "张艺涵",
+            "毕方锐",
+            "陈厚德"
+          ]
+        },
+        {
+          "team": "四川大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV12m2wYrEAs",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "张敬东",
+            "韦颖利"
+          ]
+        },
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "林宸伊",
+            "赵子钰",
+            "张砚棋",
+            "蒋涛"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV14ASnYKEBX",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "严陈幸子"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV15ASbYMEzv",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文"
+          ]
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "董欣怡",
+            "孙可嘉",
+            "杨一井"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV16H4y1w7HD",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            "商俊杰"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "吴舒扬",
+            "杨子江"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV17p2pYJEqk",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "王勤"
+          ]
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "诸指庭"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV18A24YUEtJ",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "胡润东",
+            "南思源",
+            "朱压杰"
+          ]
+        },
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "陈楚理",
+            "李哲瀚",
+            "张雨琪",
+            "王宇川"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV19m2HYVEQZ",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "teams": [
+        {
+          "team": "悉尼大学",
+          "speakers": []
+        },
+        {
+          "team": "大连海事大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1a3ynYwEaP",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "郭晨欣",
+            "侯梦伦"
+          ]
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "宋铮",
+            "杨一井",
+            "刘天浩",
+            "罗欣怀"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Ab2gYoE7t",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "廖发祖",
+            "曹敬轩",
+            "张佳奇",
+            "屈巾彭"
+          ]
+        },
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "叶子",
+            "黄致远",
+            "郑瑶瑶",
+            "黄嘉伟"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1aQ2HY6ECP",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "谈嘉苦",
+            "诸指庭"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "孙嘉庆",
+            "王勤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1BNSdYDEif",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "王振峰"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "韩天夏",
+            "吴舒扬",
+            "赵雨彤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Br421T7sj",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "莫纳什大学",
+          "speakers": [
+            "常爱梓"
+          ]
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "周天"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Cb421n7zt",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "彰化师范大学",
+          "speakers": []
+        },
+        {
+          "team": "河北大学",
+          "speakers": [
+            "何龙川",
+            "杨芮婷",
+            "盛琳"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1dt2wYsEDW",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "teams": [
+        {
+          "team": "河北大学",
+          "speakers": [
+            "刘子豪",
+            "王子轩",
+            "杨芮婷"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "徐宁"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1em2gYyEED",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "teams": [
+        {
+          "team": "四川大学",
+          "speakers": [
+            "金康莹",
+            "陈艺培",
+            "祝佳欣"
+          ]
+        },
+        {
+          "team": "同济大学",
+          "speakers": [
+            "张艺涵",
+            "陈厚德",
+            "陈寅"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Ey411B7Es",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "澳门科技大学",
+          "speakers": []
+        },
+        {
+          "team": "西南民族大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1hGSbYwE3P",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "肖湘婷",
+            "徐宁"
+          ]
+        },
+        {
+          "team": "同济大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1hXC2YKEm7",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "蒋林树",
+            "杨泡文",
+            "童传宇"
+          ]
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "丁启翔"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1HySxYkEgo",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁",
+            "张俊彦",
+            "卢意洋"
+          ]
+        },
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "陈泓熹"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1JSSxYuEMM",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "贺子淇",
+            "王浩然"
+          ]
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Jx4y1x71S",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "管李",
+            "方振宇",
+            "严哲涵"
+          ]
+        },
+        {
+          "team": "山东大学",
+          "speakers": [
+            "赵晨",
+            "王梓竹",
+            "陶新宇",
+            "俞阳天"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1LbSRYjEtu",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "肖湘婷",
+            "金炳燕",
+            "李奕彤"
+          ]
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "肖博文"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1LS421R7jk",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "宋铮",
+            "罗欣怀",
+            "孙可嘉"
+          ]
+        },
+        {
+          "team": "江西农业大学",
+          "speakers": [
+            "王保健",
+            "丁成仁杰"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1m6yJYpEiC",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "罗欣怀",
+            "孙可嘉"
+          ]
+        },
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "侯梦伦",
+            "郭晨欣",
+            "钱怡凡"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1M7S7YFEAC",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "王勤",
+            "江英"
+          ]
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "张窒婕"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1MW421R7YG",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "叶景纤",
+            "赵子钰",
+            "张砚棋"
+          ]
+        },
+        {
+          "team": "新加坡国立大学",
+          "speakers": [
+            "吴志宇",
+            "印弘青",
+            "林瑞祥"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1NJS4YUE77",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": [
+            "黄倪炜",
+            "张怡婧"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "王勤",
+            "刘金杭"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Nu2wYBEtR",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": []
+        },
+        {
+          "team": "河北大学",
+          "speakers": [
+            "杨芮婷"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 1,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1NZ421T7B6",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "早稻田大学",
+          "speakers": [
+            "尚婧洁",
+            "叶芷瑶",
+            "威肖钰",
+            "舒喻聆"
+          ]
+        },
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "邹若瑶",
+            "郭晨欣"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Py411B75y",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "重庆大学",
+          "speakers": [
+            "洪畅",
+            "于是然",
+            "杜明浩"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "王语瞳"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1q824YcEkN",
+      "title": "网络舆论审判，让我们离正义更近了更远了丨复赛EF组第一场 南京审计大学 vs 浙江理工大学",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁",
+            "张窒婕"
+          ]
+        },
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "陈子政",
+            "李嘉豪"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1qoStYGERA",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "孙可嘉",
+            "董欣怡",
+            "杨一井",
+            "宋铮"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "南希诺",
+            "吴舒扬",
+            "赵雨彤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Qr421T7nq",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "马来西亚理科大学(总院校)",
+          "speakers": [
+            "黄做铭",
+            "曾建嘉"
+          ]
+        },
+        {
+          "team": "四川大学",
+          "speakers": [
+            "李乐"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1r4421U7Kg",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "国际关系学院",
+          "speakers": [
+            "曾烛婷",
+            "于坤平"
+          ]
+        },
+        {
+          "team": "同济大学",
+          "speakers": [
+            "江依茵",
+            "陈厚德"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1RX2xYxEfR",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "张陈尔表",
+            "王浩然"
+          ]
+        },
+        {
+          "team": "澳门科技大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1sBSxY2E4D",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "曲泓宇"
+          ]
+        },
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "赵子钰"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1SLC2YhEpo",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文"
+          ]
+        },
+        {
+          "team": "福建师范大学",
+          "speakers": [
+            "袁星航",
+            "陈佳楠",
+            "鲍灵婧",
+            "罗圣开"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1Sw4m1a7cD",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "丁启翔"
+          ]
+        },
+        {
+          "team": "华南理工大学",
+          "speakers": [
+            "傅申惟",
+            "董康",
+            "李沛雨"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Sx4y1x7jR",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "张子琪",
+            "柳小佳",
+            "张雨琪",
+            "王宇川"
+          ]
+        },
+        {
+          "team": "南京工业大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1t4421U7ru",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "叶子",
+            "万永健",
+            "黄致远"
+          ]
+        },
+        {
+          "team": "西南大学",
+          "speakers": [
+            "张盛"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1t7SbYZEiJ",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "teams": [
+        {
+          "team": "同济大学",
+          "speakers": [
+            "陈厚德",
+            "陈寅",
+            "李高翔"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "徐宁",
+            "贺勇宁"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1taSxYDEeU",
+      "title": "“内容至上”是不是当下国产游戏的出路丨晋级赛IJKL组第二场 中国计量大学 vs 陕西师范大学",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "叶景由",
+            "赵子钰",
+            "蒋涛",
+            "张砚棋"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "曲泓宇",
+            "南思源"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1tFCmYhEgi",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "肖博文"
+          ]
+        },
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "童传宇"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1UC2wY5EPX",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "李哲瀚",
+            "张雨琪",
+            "王宇川"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "朱压杰",
+            "严陈幸子"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1UF23YvEup",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”“电子幻觉”丨复赛QR组第一场 华中师范大学 vs 东北师范大学",
+      "teams": [
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "陈俊宇",
+            "黄嘉伟",
+            "郑瑶瑶",
+            "黄致远"
+          ]
+        },
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "曹敬轩",
+            "张佳奇",
+            "杨昊达"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1UM4m127c1",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "北京师范大学",
+          "speakers": [
+            "林子璇",
+            "袁天语"
+          ]
+        },
+        {
+          "team": "悉尼大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Ur421T7dt",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "台湾大学",
+          "speakers": [
+            "刘岳轩"
+          ]
+        },
+        {
+          "team": "福建师范大学",
+          "speakers": [
+            "罗圣开"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1uZSJYzEps",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "王语瞳",
+            "刘房"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "王勤",
+            "孙嘉庆"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1WL24Y6EZv",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "teams": [
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "谢营婧",
+            "陈子政",
+            "于沈伟"
+          ]
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1ww4m1Y7gM",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "浙江理工大学",
+          "speakers": []
+        },
+        {
+          "team": "海南大学",
+          "speakers": [
+            "王昭霖",
+            "王佳慧"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1WxC2Y9E6a",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "teams": [
+        {
+          "team": "福建师范大学",
+          "speakers": [
+            "陈佳楠",
+            "鲍灵婧",
+            "罗圣开"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吴舒扬",
+            "赵雨彤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1WyStYnE64",
+      "title": "应该不应该对贫困生助学金使用情况进行公示丨晋级赛QRST组第二场 台北科技大学 vs 东北师范大学",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "肖博文"
+          ]
+        },
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "张佳奇",
+            "曹敬轩"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1x324YVE94",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "澳门科技大学",
+          "speakers": []
+        },
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "胡祖铭"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 1,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1xES4YJEHQ",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘映萤",
+            "孙嘉庆",
+            "刘金杭"
+          ]
+        },
+        {
+          "team": "大连海事大学",
+          "speakers": [
+            "张怡婧"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1xP2pYaESy",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": []
+        },
+        {
+          "team": "悉尼大学",
+          "speakers": [
+            "周家琦",
+            "张书鸣"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1xpSbYsEE6",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "曹敬轩",
+            "张佳奇"
+          ]
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "王振峰",
+            "肖博文"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1XS411A7d2",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "胡祖铭"
+          ]
+        },
+        {
+          "team": "新南威尔士大学",
+          "speakers": [
+            "王奕苹",
+            "张彤",
+            "徐菲"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1yb421n7YT",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": []
+        },
+        {
+          "team": "武汉理工大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1YS411c79f",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "北京林业大学",
+          "speakers": [
+            "方梓洋",
+            "张至人"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "江英",
+            "王勤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1YvSRYGEwZ",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文",
+            "李弄娅"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "肖湘婷",
+            "金炳燕"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 5,
+      "transcriptStatus": "cached"
+    },
+    {
+      "matchId": "match-BV1yw4m1a7pz",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": []
+        },
+        {
+          "team": "安徽大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 0,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1yw4m1a7x2",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "teams": [
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "吴晓月",
+            "韦颖利"
+          ]
+        },
+        {
+          "team": "香港浸会大学",
+          "speakers": [
+            "类正正"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1yX2wYMEEq",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": []
+        },
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "吴晓月",
+            "刘凯琳",
+            "马桢二"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1Zw4m1a7CQ",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": []
+        },
+        {
+          "team": "湖南大学",
+          "speakers": [
+            "陈双"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 1,
+      "transcriptStatus": "success"
+    },
+    {
+      "matchId": "match-BV1zx4y1t767",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "张丁心"
+          ]
+        },
+        {
+          "team": "英属哥伦比亚大学",
+          "speakers": [
+            "吴社境",
+            "梁伦"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "transcriptStatus": "success"
+    }
+  ],
+  "notes": [
+    "当前为只读 sample，不会写回 generatedMatches.json。",
+    "如使用 --missing-intro-only，本报告只包含尚无自我介绍片段缓存的目标。",
+    "如使用 --cleanup-audio，会在转写文本可用后删除本地 wav 音频缓存。",
+    "同音或模糊匹配仍需人工复核。"
+  ]
+}

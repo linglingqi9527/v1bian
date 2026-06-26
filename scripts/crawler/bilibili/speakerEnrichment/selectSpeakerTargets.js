@@ -3,6 +3,7 @@ import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
 import { getSpeakerStatus } from '../crawlerReports.js'
+import { determineYear } from './qualificationScope.js'
 
 export const ROOT_DIR = fileURLToPath(new URL('../../../../', import.meta.url))
 export const SPEAKER_CACHE_DIR = path.join(ROOT_DIR, 'scripts', 'crawler', 'bilibili', '.cache')
@@ -13,6 +14,10 @@ export const GENERATED_DIR = path.join(ROOT_DIR, 'src', 'data', 'generated')
 
 const MATCHES_PATH = path.join(GENERATED_DIR, 'generatedMatches.json')
 const NON_MATCH_PATTERN = /预告|花絮|战报|宣传|高光|名场面|纪录片|回顾|采访/
+
+export function getTargetManifestPath(year) {
+  return path.join(SPEAKER_CACHE_DIR, `speakerTargets.${year}.sample.json`)
+}
 
 export async function selectSpeakerTargets({ limit = 10, year = 2025, write = true } = {}) {
   const matches = JSON.parse(await readFile(MATCHES_PATH, 'utf8'))
@@ -34,9 +39,11 @@ export async function selectSpeakerTargets({ limit = 10, year = 2025, write = tr
     targets,
   }
 
+  const targetManifestPath = getTargetManifestPath(year)
+
   if (write) {
     await mkdir(SPEAKER_CACHE_DIR, { recursive: true })
-    await writeFile(TARGET_MANIFEST_PATH, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
+    await writeFile(targetManifestPath, `${JSON.stringify(manifest, null, 2)}\n`, 'utf8')
   }
 
   return manifest
@@ -45,20 +52,28 @@ export async function selectSpeakerTargets({ limit = 10, year = 2025, write = tr
 export function parseCliOptions(argv = process.argv.slice(2)) {
   const options = {
     all: false,
+    acceptLowConfidence: false,
+    cleanupAudio: false,
     duration: 480,
     force: false,
     limit: 10,
     merge: false,
+    missingIntroOnly: false,
     model: 'small',
+    year: 2025,
   }
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index]
+    if (argument === '--accept-low-confidence') options.acceptLowConfidence = true
     if (argument === '--all') options.all = true
+    if (argument === '--cleanup-audio') options.cleanupAudio = true
     if (argument === '--force') options.force = true
+    if (argument === '--missing-intro-only') options.missingIntroOnly = true
     if (argument === '--merge') options.merge = true
     if (argument === '--limit') options.limit = positiveNumber(argv[index += 1], options.limit)
     if (argument === '--duration') options.duration = positiveNumber(argv[index += 1], options.duration)
     if (argument === '--model') options.model = argv[index += 1] || options.model
+    if (argument === '--year') options.year = positiveNumber(argv[index += 1], options.year)
   }
   return options
 }
@@ -94,15 +109,6 @@ function createTarget(match) {
     processable: !(isMultipart && (!cid || !partIndex)),
     warnings,
   }
-}
-
-function determineYear(match) {
-  return Number(
-    String(match.event ?? '').match(/20\d{2}/)?.[0]
-      ?? String(match.date ?? '').match(/20\d{2}/)?.[0]
-      ?? String(match.title ?? '').match(/20\d{2}/)?.[0]
-      ?? 0,
-  )
 }
 
 function resolvePartIndex(match) {
@@ -152,14 +158,15 @@ function positiveNumber(value, fallback) {
 
 async function runCli() {
   const options = parseCliOptions()
-  const manifest = await selectSpeakerTargets({ limit: options.limit })
-  console.log(`[speakers:select:2025] 可选 ${manifest.eligibleCount} 条，已选择 ${manifest.targets.length} 条。`)
-  console.log(`[speakers:select:2025] ${path.relative(ROOT_DIR, TARGET_MANIFEST_PATH)}`)
+  const manifest = await selectSpeakerTargets({ limit: options.limit, year: options.year })
+  const targetManifestPath = getTargetManifestPath(options.year)
+  console.log(`[speakers:select:${options.year}] 可选 ${manifest.eligibleCount} 条，已选择 ${manifest.targets.length} 条。`)
+  console.log(`[speakers:select:${options.year}] ${path.relative(ROOT_DIR, targetManifestPath)}`)
 }
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   runCli().catch((error) => {
-    console.error(`[speakers:select:2025] ${error?.message ?? error}`)
+    console.error(`[speakers:select] ${error?.message ?? error}`)
     process.exitCode = 1
   })
 }

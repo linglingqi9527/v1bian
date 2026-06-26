@@ -1,0 +1,1849 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-25T15:54:25.772Z",
+  "year": 2024,
+  "competitionType": "资格赛",
+  "roster": {
+    "byStageRows": 445,
+    "byStageSchools": 49,
+    "combinedRows": 374,
+    "combinedSchools": 49,
+    "stageSegments": {
+      "线上赛段": 310,
+      "线下赛段": 135
+    },
+    "schoolsWithDifferentStageRosters": 23,
+    "differentStageRosterTeams": [
+      {
+        "team": "爱丁堡大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 8,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "安徽大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 5,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "澳门大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 7,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "澳门科技大学",
+        "stageCounts": [
+          {
+            "count": 6,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 6,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "大连海事大学",
+        "stageCounts": [
+          {
+            "count": 5,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 3,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "东北师范大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 2,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "福建师范大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 4,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "复旦大学",
+        "stageCounts": [
+          {
+            "count": 6,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 4,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "河北大学",
+        "stageCounts": [
+          {
+            "count": 6,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 5,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "华中师范大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 6,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "南京审计大学",
+        "stageCounts": [
+          {
+            "count": 6,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 5,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "南开大学",
+        "stageCounts": [
+          {
+            "count": 6,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 4,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "宁波大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 5,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "纽约大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 6,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "陕西师范大学",
+        "stageCounts": [
+          {
+            "count": 5,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 6,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "四川大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 7,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "台北科技大学",
+        "stageCounts": [
+          {
+            "count": 5,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 4,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "同济大学",
+        "stageCounts": [
+          {
+            "count": 4,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 5,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "悉尼大学",
+        "stageCounts": [
+          {
+            "count": 7,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 8,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "香港中文大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 7,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "浙江理工大学",
+        "stageCounts": [
+          {
+            "count": 5,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 6,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "中国计量大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 7,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      },
+      {
+        "team": "中国人民大学",
+        "stageCounts": [
+          {
+            "count": 8,
+            "stageSegment": "线上赛段"
+          },
+          {
+            "count": 8,
+            "stageSegment": "线下赛段"
+          }
+        ]
+      }
+    ]
+  },
+  "matches": {
+    "generated2024Count": 102,
+    "qualificationLikeCount": 66,
+    "bothTeamsCoveredBySchoolCount": 66,
+    "partialOrMissingRosterCount": 0,
+    "coverage": [
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1YvSRYGEwZ",
+        "bvId": "BV1YvSRYGEwZ",
+        "coverage": "school-combined",
+        "date": "2024-11-05",
+        "id": "match-BV1YvSRYGEwZ",
+        "stage": "半决赛下半区第三场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          }
+        ],
+        "title": "我们更有可能毁于我们所热爱/憎恶的事物"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1BNSdYDEif",
+        "bvId": "BV1BNSdYDEif",
+        "coverage": "school-combined",
+        "date": "2024-11-05",
+        "id": "match-BV1BNSdYDEif",
+        "stage": "半决赛下半区第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          }
+        ],
+        "title": "我们更有可能毁于我们所热爱/憎恶的事物"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1LbSRYjEtu",
+        "bvId": "BV1LbSRYjEtu",
+        "coverage": "school-combined",
+        "date": "2024-11-05",
+        "id": "match-BV1LbSRYjEtu",
+        "stage": "半决赛下半区第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          }
+        ],
+        "title": "我们更有可能毁于我们所热爱/憎恶的事物"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1uZSJYzEps",
+        "bvId": "BV1uZSJYzEps",
+        "coverage": "school-combined",
+        "date": "2024-11-04",
+        "id": "match-BV1uZSJYzEps",
+        "stage": "半决赛上半区第三场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          }
+        ],
+        "title": "当代年轻人人格独立的前提，是/不是经济独立"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV14ASnYKEBX",
+        "bvId": "BV14ASnYKEBX",
+        "coverage": "school-combined",
+        "date": "2024-11-04",
+        "id": "match-BV14ASnYKEBX",
+        "stage": "半决赛上半区第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          }
+        ],
+        "title": "当代年轻人人格独立的前提，是/不是经济独立"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1M7S7YFEAC",
+        "bvId": "BV1M7S7YFEAC",
+        "coverage": "school-combined",
+        "date": "2024-11-04",
+        "id": "match-BV1M7S7YFEAC",
+        "stage": "半决赛上半区第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          }
+        ],
+        "title": "当代年轻人人格独立的前提，是/不是经济独立"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1qoStYGERA",
+        "bvId": "BV1qoStYGERA",
+        "coverage": "school-combined",
+        "date": "2024-11-03",
+        "id": "match-BV1qoStYGERA",
+        "stage": "晋级赛UVWX组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国人民大学",
+            "rosterTeam": "中国人民大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          }
+        ],
+        "title": "应该/不应该对贫困生助学金使用情况进行公示"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV15ASbYMEzv",
+        "bvId": "BV15ASbYMEzv",
+        "coverage": "school-combined",
+        "date": "2024-11-03",
+        "id": "match-BV15ASbYMEzv",
+        "stage": "晋级赛UVWX组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国人民大学",
+            "rosterTeam": "中国人民大学"
+          }
+        ],
+        "title": "应该/不应该对贫困生助学金使用情况进行公示"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1WyStYnE64",
+        "bvId": "BV1WyStYnE64",
+        "coverage": "school-combined",
+        "date": "2024-11-03",
+        "id": "match-BV1WyStYnE64",
+        "stage": "合集：资格赛",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "东北师范大学",
+            "rosterTeam": "东北师范大学"
+          }
+        ],
+        "title": "应该不应该对贫困生助学金使用情况进行公示丨晋级赛QRST组第二场 台北科技大学 vs 东北师范大学"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1xpSbYsEE6",
+        "bvId": "BV1xpSbYsEE6",
+        "coverage": "school-combined",
+        "date": "2024-11-03",
+        "id": "match-BV1xpSbYsEE6",
+        "stage": "晋级赛QRST组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "东北师范大学",
+            "rosterTeam": "东北师范大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          }
+        ],
+        "title": "应该/不应该对贫困生助学金使用情况进行公示"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1t7SbYZEiJ",
+        "bvId": "BV1t7SbYZEiJ",
+        "coverage": "school-combined",
+        "date": "2024-11-02",
+        "id": "match-BV1t7SbYZEiJ",
+        "stage": "晋级赛MNOP组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "同济大学",
+            "rosterTeam": "同济大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          }
+        ],
+        "title": "“内容至上”是/不是当下国产游戏的出路"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1hGSbYwE3P",
+        "bvId": "BV1hGSbYwE3P",
+        "coverage": "school-combined",
+        "date": "2024-11-02",
+        "id": "match-BV1hGSbYwE3P",
+        "stage": "晋级赛MNOP组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "同济大学",
+            "rosterTeam": "同济大学"
+          }
+        ],
+        "title": "“内容至上”是/不是当下国产游戏的出路"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1taSxYDEeU",
+        "bvId": "BV1taSxYDEeU",
+        "coverage": "school-combined",
+        "date": "2024-11-02",
+        "id": "match-BV1taSxYDEeU",
+        "stage": "合集：资格赛",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国计量大学",
+            "rosterTeam": "中国计量大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          }
+        ],
+        "title": "“内容至上”是不是当下国产游戏的出路丨晋级赛IJKL组第二场 中国计量大学 vs 陕西师范大学"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1sBSxY2E4D",
+        "bvId": "BV1sBSxY2E4D",
+        "coverage": "school-combined",
+        "date": "2024-11-02",
+        "id": "match-BV1sBSxY2E4D",
+        "stage": "晋级赛IJKL组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国计量大学",
+            "rosterTeam": "中国计量大学"
+          }
+        ],
+        "title": "“内容至上”是/不是当下国产游戏的出路"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1JSSxYuEMM",
+        "bvId": "BV1JSSxYuEMM",
+        "coverage": "school-combined",
+        "date": "2024-11-01",
+        "id": "match-BV1JSSxYuEMM",
+        "stage": "晋级赛EFGH组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门大学",
+            "rosterTeam": "澳门大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          }
+        ],
+        "title": "反英雄形象是/不是一种现代社会必要的文化反思"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1HySxYkEgo",
+        "bvId": "BV1HySxYkEgo",
+        "coverage": "school-combined",
+        "date": "2024-11-01",
+        "id": "match-BV1HySxYkEgo",
+        "stage": "晋级赛EFGH组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门大学",
+            "rosterTeam": "澳门大学"
+          }
+        ],
+        "title": "反英雄形象是/不是一种现代社会必要的文化反思"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1NJS4YUE77",
+        "bvId": "BV1NJS4YUE77",
+        "coverage": "school-combined",
+        "date": "2024-11-01",
+        "id": "match-BV1NJS4YUE77",
+        "stage": "晋级赛ABCD组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "大连海事大学",
+            "rosterTeam": "大连海事大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          }
+        ],
+        "title": "反英雄形象是/不是一种现代社会必要的文化反思"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1xES4YJEHQ",
+        "bvId": "BV1xES4YJEHQ",
+        "coverage": "school-combined",
+        "date": "2024-11-01",
+        "id": "match-BV1xES4YJEHQ",
+        "stage": "晋级赛ABCD组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "大连海事大学",
+            "rosterTeam": "大连海事大学"
+          }
+        ],
+        "title": "反英雄形象是/不是一种现代社会必要的文化反思"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1m6yJYpEiC",
+        "bvId": "BV1m6yJYpEiC",
+        "coverage": "school-combined",
+        "date": "2024-10-30",
+        "id": "match-BV1m6yJYpEiC",
+        "stage": "复赛WX组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国人民大学",
+            "rosterTeam": "中国人民大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "香港中文大学",
+            "rosterTeam": "香港中文大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1a3ynYwEaP",
+        "bvId": "BV1a3ynYwEaP",
+        "coverage": "school-combined",
+        "date": "2024-10-30",
+        "id": "match-BV1a3ynYwEaP",
+        "stage": "复赛WX组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "香港中文大学",
+            "rosterTeam": "香港中文大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国人民大学",
+            "rosterTeam": "中国人民大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1SLC2YhEpo",
+        "bvId": "BV1SLC2YhEpo",
+        "coverage": "school-combined",
+        "date": "2024-10-27",
+        "id": "match-BV1SLC2YhEpo",
+        "stage": "复赛UV组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "福建师范大学",
+            "rosterTeam": "福建师范大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1WxC2Y9E6a",
+        "bvId": "BV1WxC2Y9E6a",
+        "coverage": "school-combined",
+        "date": "2024-10-27",
+        "id": "match-BV1WxC2Y9E6a",
+        "stage": "复赛UV组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "福建师范大学",
+            "rosterTeam": "福建师范大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1hXC2YKEm7",
+        "bvId": "BV1hXC2YKEm7",
+        "coverage": "school-combined",
+        "date": "2024-10-26",
+        "id": "match-BV1hXC2YKEm7",
+        "stage": "复赛ST组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "安徽大学",
+            "rosterTeam": "安徽大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1tFCmYhEgi",
+        "bvId": "BV1tFCmYhEgi",
+        "coverage": "school-combined",
+        "date": "2024-10-26",
+        "id": "match-BV1tFCmYhEgi",
+        "stage": "复赛ST组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "台北科技大学",
+            "rosterTeam": "台北科技大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "安徽大学",
+            "rosterTeam": "安徽大学"
+          }
+        ],
+        "title": "当今社会，年轻人“卷学历”是/不是明智的选择"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Ab2gYoE7t",
+        "bvId": "BV1Ab2gYoE7t",
+        "coverage": "school-combined",
+        "date": "2024-10-23",
+        "id": "match-BV1Ab2gYoE7t",
+        "stage": "复赛QR组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "东北师范大学",
+            "rosterTeam": "东北师范大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "华中师范大学",
+            "rosterTeam": "华中师范大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1UF23YvEup",
+        "bvId": "BV1UF23YvEup",
+        "coverage": "school-combined",
+        "date": "2024-10-23",
+        "id": "match-BV1UF23YvEup",
+        "stage": "合集：资格赛",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "华中师范大学",
+            "rosterTeam": "华中师范大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "东北师范大学",
+            "rosterTeam": "东北师范大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”“电子幻觉”丨复赛QR组第一场 华中师范大学 vs 东北师范大学"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV11N23YwEhn",
+        "bvId": "BV11N23YwEhn",
+        "coverage": "school-combined",
+        "date": "2024-10-20",
+        "id": "match-BV11N23YwEhn",
+        "stage": "复赛OP组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "同济大学",
+            "rosterTeam": "同济大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "四川大学",
+            "rosterTeam": "四川大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1em2gYyEED",
+        "bvId": "BV1em2gYyEED",
+        "coverage": "school-combined",
+        "date": "2024-10-20",
+        "id": "match-BV1em2gYyEED",
+        "stage": "复赛OP组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "四川大学",
+            "rosterTeam": "四川大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "同济大学",
+            "rosterTeam": "同济大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1dt2wYsEDW",
+        "bvId": "BV1dt2wYsEDW",
+        "coverage": "school-combined",
+        "date": "2024-10-19",
+        "id": "match-BV1dt2wYsEDW",
+        "stage": "复赛MN组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 11,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "河北大学",
+            "rosterTeam": "河北大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Nu2wYBEtR",
+        "bvId": "BV1Nu2wYBEtR",
+        "coverage": "school-combined",
+        "date": "2024-10-19",
+        "id": "match-BV1Nu2wYBEtR",
+        "stage": "复赛MN组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          },
+          {
+            "combinedSpeakerCount": 11,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "河北大学",
+            "rosterTeam": "河北大学"
+          }
+        ],
+        "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV12m2wYrEAs",
+        "bvId": "BV12m2wYrEAs",
+        "coverage": "school-combined",
+        "date": "2024-10-18",
+        "id": "match-BV12m2wYrEAs",
+        "stage": "复赛KL组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "广东外语外贸大学",
+            "rosterTeam": "广东外语外贸大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国计量大学",
+            "rosterTeam": "中国计量大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1yX2wYMEEq",
+        "bvId": "BV1yX2wYMEEq",
+        "coverage": "school-combined",
+        "date": "2024-10-18",
+        "id": "match-BV1yX2wYMEEq",
+        "stage": "复赛KL组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国计量大学",
+            "rosterTeam": "中国计量大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "广东外语外贸大学",
+            "rosterTeam": "广东外语外贸大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1UC2wY5EPX",
+        "bvId": "BV1UC2wY5EPX",
+        "coverage": "school-combined",
+        "date": "2024-10-16",
+        "id": "match-BV1UC2wY5EPX",
+        "stage": "复赛IJ组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 12,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "纽约大学",
+            "rosterTeam": "纽约大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV18A24YUEtJ",
+        "bvId": "BV18A24YUEtJ",
+        "coverage": "school-combined",
+        "date": "2024-10-16",
+        "id": "match-BV18A24YUEtJ",
+        "stage": "复赛IJ组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          },
+          {
+            "combinedSpeakerCount": 12,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "纽约大学",
+            "rosterTeam": "纽约大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1x324YVE94",
+        "bvId": "BV1x324YVE94",
+        "coverage": "school-combined",
+        "date": "2024-10-13",
+        "id": "match-BV1x324YVE94",
+        "stage": "复赛GH组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门科技大学",
+            "rosterTeam": "澳门科技大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门大学",
+            "rosterTeam": "澳门大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1RX2xYxEfR",
+        "bvId": "BV1RX2xYxEfR",
+        "coverage": "school-combined",
+        "date": "2024-10-13",
+        "id": "match-BV1RX2xYxEfR",
+        "stage": "复赛GH组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门大学",
+            "rosterTeam": "澳门大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门科技大学",
+            "rosterTeam": "澳门科技大学"
+          }
+        ],
+        "title": "在恋爱关系中，应该/不应该追求等价的付出"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1WL24Y6EZv",
+        "bvId": "BV1WL24Y6EZv",
+        "coverage": "school-combined",
+        "date": "2024-10-12",
+        "id": "match-BV1WL24Y6EZv",
+        "stage": "复赛EF组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "浙江理工大学",
+            "rosterTeam": "浙江理工大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了/更远了"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1q824YcEkN",
+        "bvId": "BV1q824YcEkN",
+        "coverage": "school-combined",
+        "date": "2024-10-12",
+        "id": "match-BV1q824YcEkN",
+        "stage": "合集：资格赛",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "浙江理工大学",
+            "rosterTeam": "浙江理工大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了更远了丨复赛EF组第一场 南京审计大学 vs 浙江理工大学"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1xP2pYaESy",
+        "bvId": "BV1xP2pYaESy",
+        "coverage": "school-combined",
+        "date": "2024-10-11",
+        "id": "match-BV1xP2pYaESy",
+        "stage": "复赛CD组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "大连海事大学",
+            "rosterTeam": "大连海事大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "悉尼大学",
+            "rosterTeam": "悉尼大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了/更远了"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV19m2HYVEQZ",
+        "bvId": "BV19m2HYVEQZ",
+        "coverage": "school-combined",
+        "date": "2024-10-11",
+        "id": "match-BV19m2HYVEQZ",
+        "stage": "复赛CD组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "悉尼大学",
+            "rosterTeam": "悉尼大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "大连海事大学",
+            "rosterTeam": "大连海事大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了/更远了"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1aQ2HY6ECP",
+        "bvId": "BV1aQ2HY6ECP",
+        "coverage": "school-combined",
+        "date": "2024-10-09",
+        "id": "match-BV1aQ2HY6ECP",
+        "stage": "复赛AB组第二场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "复旦大学",
+            "rosterTeam": "复旦大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了/更远了"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV17p2pYJEqk",
+        "bvId": "BV17p2pYJEqk",
+        "coverage": "school-combined",
+        "date": "2024-10-09",
+        "id": "match-BV17p2pYJEqk",
+        "stage": "复赛AB组第一场",
+        "teams": [
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "复旦大学",
+            "rosterTeam": "复旦大学"
+          }
+        ],
+        "title": "网络舆论审判，让我们离正义更近了/更远了"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1LS421R7jk",
+        "bvId": "BV1LS421R7jk",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1LS421R7jk",
+        "stage": "初赛X组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国人民大学",
+            "rosterTeam": "中国人民大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "江西农业大学",
+            "rosterTeam": "江西农业大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1NZ421T7B6",
+        "bvId": "BV1NZ421T7B6",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1NZ421T7B6",
+        "stage": "初赛W组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 5,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "早稻田大学",
+            "rosterTeam": "早稻田大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "香港中文大学",
+            "rosterTeam": "香港中文大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV16H4y1w7HD",
+        "bvId": "BV16H4y1w7HD",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV16H4y1w7HD",
+        "stage": "初赛V组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "中国海洋大学",
+            "rosterTeam": "中国海洋大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "爱丁堡大学",
+            "rosterTeam": "爱丁堡大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Ur421T7dt",
+        "bvId": "BV1Ur421T7dt",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1Ur421T7dt",
+        "stage": "初赛U组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 4,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "臺灣大學",
+            "rosterTeam": "台湾大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "福建师范大学",
+            "rosterTeam": "福建师范大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1yw4m1a7pz",
+        "bvId": "BV1yw4m1a7pz",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1yw4m1a7pz",
+        "stage": "初赛T组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "南京大学",
+            "rosterTeam": "南京大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "安徽大学",
+            "rosterTeam": "安徽大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Sw4m1a7cD",
+        "bvId": "BV1Sw4m1a7cD",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1Sw4m1a7cD",
+        "stage": "初赛S组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "臺北科技大學",
+            "rosterTeam": "台北科技大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "华南理工大学",
+            "rosterTeam": "华南理工大学"
+          }
+        ],
+        "title": "接受人生的荒谬是强大/懦弱的体现"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1zx4y1t767",
+        "bvId": "BV1zx4y1t767",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1zx4y1t767",
+        "stage": "初赛R组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "东北师范大学",
+            "rosterTeam": "东北师范大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "英属哥伦比亚大学",
+            "rosterTeam": "英属哥伦比亚大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1t4421U7ru",
+        "bvId": "BV1t4421U7ru",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1t4421U7ru",
+        "stage": "初赛Q组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "华中师范大学",
+            "rosterTeam": "华中师范大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "西南大学",
+            "rosterTeam": "西南大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1r4421U7Kg",
+        "bvId": "BV1r4421U7Kg",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1r4421U7Kg",
+        "stage": "初赛P组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "国际关系学院",
+            "rosterTeam": "国际关系学院"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "同济大学",
+            "rosterTeam": "同济大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Qr421T7nq",
+        "bvId": "BV1Qr421T7nq",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1Qr421T7nq",
+        "stage": "初赛O组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "马来西亚理科大学",
+            "rosterTeam": "马来西亚理科大学(总院校)"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "四川大学",
+            "rosterTeam": "四川大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Cb421n7zt",
+        "bvId": "BV1Cb421n7zt",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1Cb421n7zt",
+        "stage": "初赛N组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 5,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "彰化師範大學",
+            "rosterTeam": "彰化师范大学"
+          },
+          {
+            "combinedSpeakerCount": 11,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "河北大学",
+            "rosterTeam": "河北大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1yb421n7YT",
+        "bvId": "BV1yb421n7YT",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1yb421n7YT",
+        "stage": "初赛M组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "宁波大学",
+            "rosterTeam": "宁波大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "武汉理工大学",
+            "rosterTeam": "武汉理工大学"
+          }
+        ],
+        "title": "短视频盛行提升了/降低了当代人的认知能力"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1yw4m1a7x2",
+        "bvId": "BV1yw4m1a7x2",
+        "coverage": "school-combined",
+        "date": "2024-07-05",
+        "id": "match-BV1yw4m1a7x2",
+        "stage": "初赛L组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "广东外语外贸大学",
+            "rosterTeam": "广东外语外贸大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "香港浸会大学",
+            "rosterTeam": "香港浸会大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1MW421R7YG",
+        "bvId": "BV1MW421R7YG",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1MW421R7YG",
+        "stage": "初赛K组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "中国计量大学",
+            "rosterTeam": "中国计量大学"
+          },
+          {
+            "combinedSpeakerCount": 5,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "新加坡国立大学",
+            "rosterTeam": "新加坡国立大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Sx4y1x7jR",
+        "bvId": "BV1Sx4y1x7jR",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Sx4y1x7jR",
+        "stage": "初赛J组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 12,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "纽约大学",
+            "rosterTeam": "纽约大学"
+          },
+          {
+            "combinedSpeakerCount": 5,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "南京工业大学",
+            "rosterTeam": "南京工业大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Py411B75y",
+        "bvId": "BV1Py411B75y",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Py411B75y",
+        "stage": "初赛I组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 5,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "重庆大学",
+            "rosterTeam": "重庆大学"
+          },
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "陕西师范大学",
+            "rosterTeam": "陕西师范大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Ey411B7Es",
+        "bvId": "BV1Ey411B7Es",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Ey411B7Es",
+        "stage": "初赛H组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门科技大学",
+            "rosterTeam": "澳门科技大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "西南民族大学",
+            "rosterTeam": "西南民族大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1XS411A7d2",
+        "bvId": "BV1XS411A7d2",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1XS411A7d2",
+        "stage": "初赛G组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 9,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "澳门大学",
+            "rosterTeam": "澳门大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "新南威尔士大学",
+            "rosterTeam": "新南威尔士大学"
+          }
+        ],
+        "title": "MBTI测试让年轻人更容易/更难了解自己"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1ww4m1Y7gM",
+        "bvId": "BV1ww4m1Y7gM",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1ww4m1Y7gM",
+        "stage": "初赛F组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "浙江理工大学",
+            "rosterTeam": "浙江理工大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "海南大学",
+            "rosterTeam": "海南大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Br421T7sj",
+        "bvId": "BV1Br421T7sj",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Br421T7sj",
+        "stage": "初赛E组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "莫纳什大学",
+            "rosterTeam": "莫纳什大学"
+          },
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南京审计大学",
+            "rosterTeam": "南京审计大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Zw4m1a7CQ",
+        "bvId": "BV1Zw4m1a7CQ",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Zw4m1a7CQ",
+        "stage": "初赛D组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 7,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "大连海事大学",
+            "rosterTeam": "大连海事大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "湖南大学",
+            "rosterTeam": "湖南大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1UM4m127c1",
+        "bvId": "BV1UM4m127c1",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1UM4m127c1",
+        "stage": "初赛C组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "北京师范大学",
+            "rosterTeam": "北京师范大学"
+          },
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "悉尼大学",
+            "rosterTeam": "悉尼大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1Jx4y1x71S",
+        "bvId": "BV1Jx4y1x71S",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1Jx4y1x71S",
+        "stage": "初赛B组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 10,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "复旦大学",
+            "rosterTeam": "复旦大学"
+          },
+          {
+            "combinedSpeakerCount": 8,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "山东大学",
+            "rosterTeam": "山东大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      },
+      {
+        "bilibiliUrl": "https://www.bilibili.com/video/BV1YS411c79f",
+        "bvId": "BV1YS411c79f",
+        "coverage": "school-combined",
+        "date": "2024-07-04",
+        "id": "match-BV1YS411c79f",
+        "stage": "初赛A组",
+        "teams": [
+          {
+            "combinedSpeakerCount": 4,
+            "hasDifferentStageRosters": false,
+            "matchTeam": "北京林业大学",
+            "rosterTeam": "北京林业大学"
+          },
+          {
+            "combinedSpeakerCount": 6,
+            "hasDifferentStageRosters": true,
+            "matchTeam": "南开大学",
+            "rosterTeam": "南开大学"
+          }
+        ],
+        "title": "网络社交媒体适合/不适合探讨深刻话题"
+      }
+    ]
+  },
+  "notes": [
+    "本报告只整理 2024 资格赛名单与现有比赛卡片的覆盖关系，不写入 generatedMatches.json。",
+    "当前策略按学校使用合并名单：同一学校线上/线下辩手全部纳入同一个识别库，有匹配就进入候选。",
+    "byStage 版本保留为来源追溯，不参与当前覆盖判断。"
+  ]
+}

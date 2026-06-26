@@ -1,643 +1,108 @@
 [
   {
-    "audioStatus": "cached",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE6F",
-    "bvId": "BV1o7yzBJE6F",
-    "cid": 33462946181,
-    "matchId": "match-BV1o7yzBJE6F",
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1TUWizfERx",
+    "bvId": "BV1TUWizfERx",
+    "cid": 33129366748,
+    "matchId": "match-BV1TUWizfERx",
     "partIndex": 1,
-    "roleMarkerCount": 7,
-    "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
+    "roleMarkerCount": 16,
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第二场",
     "teams": [
       {
-        "team": "中国政法大学",
-        "speakers": []
-      },
-      {
-        "team": "南昌大学",
+        "team": "陕西师范大学",
         "speakers": [
           {
-            "name": "龙慧玲",
-            "recognizedText": "龍會領",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "介紹反方一辩 朱敬文反方二辩 龍會領反方三辩 始聽一反方四辩 葉"
-          },
-          {
-            "name": "史天逸",
-            "recognizedText": "始聽一",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "敬文反方二辩 龍會領反方三辩 始聽一反方四辩 葉玉零鞋 南昌大學"
-          },
-          {
-            "name": "叶钰琳",
-            "recognizedText": "葉玉零",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "會領反方三辩 始聽一反方四辩 葉玉零鞋 南昌大學辯對握後再唱歌位在认识了 双方辩手之後請雲虛我為您介紹本廠比赛的評審他們是羅洪昆先生劉曉金先生丁貫與先生劉正心女士以"
-          }
-        ]
-      }
-    ],
-    "title": "脱口秀/辩论能更好地回应世界",
-    "transcriptStatus": "cached",
-    "warnings": [
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "中国政法大学匹配到 0 人，未达到 4 人。",
-      "南昌大学匹配到 3 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "cached",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1WoWizWEbd",
-    "bvId": "BV1WoWizWEbd",
-    "cid": 33126615182,
-    "matchId": "match-BV1WoWizWEbd",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 复赛STU组第一场",
-    "teams": [
-      {
-        "team": "广西民族大学",
-        "speakers": [
-          {
-            "name": "李佳阳",
-            "recognizedText": "立家语",
-            "confidence": 0.82,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": ",正方一辩黄基害。 正方二辩立家语。 正方三辩也没好。正方四辩离新"
-          }
-        ]
-      },
-      {
-        "team": "安徽大学",
-        "speakers": [
-          {
-            "name": "吴兆勋",
-            "recognizedText": "无赵君",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "公盐、论质昂洋,我是反方一辩无赵君。 反方二辩万次好。 反方三辩洋"
-          },
-          {
-            "name": "万子豪",
-            "recognizedText": "万次好",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "是反方一辩无赵君。 反方二辩万次好。 反方三辩洋药文。反方四辩方订"
-          },
-          {
-            "name": "杨耀文",
-            "recognizedText": "洋药文",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": " 反方二辩万次好。 反方三辩洋药文。反方四辩方订为紧代表安慰大学"
-          },
-          {
-            "name": "方婷薇",
-            "recognizedText": "方订为",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "。 反方三辩洋药文。反方四辩方订为紧代表安慰大学问后再作各位。"
-          }
-        ]
-      }
-    ],
-    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "cached",
-    "warnings": [
-      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
-      "广西民族大学匹配到 1 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "cached",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1F1WqzDECw",
-    "bvId": "BV1F1WqzDECw",
-    "cid": 33121765873,
-    "matchId": "match-BV1F1WqzDECw",
-    "partIndex": 1,
-    "roleMarkerCount": 10,
-    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第一场",
-    "teams": [
-      {
-        "team": "哈尔滨工业大学（深圳）",
-        "speakers": [
-          {
-            "name": "叶政国",
-            "recognizedText": "业中国",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "我介绍。各位上午好,正方一辩,业中国。正方二辩高于想,正方三辩,反"
-          },
-          {
-            "name": "高宇翔",
-            "recognizedText": "高于想",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": ",正方一辩,业中国。正方二辩高于想,正方三辩,反觉文。正方四辩请"
-          },
-          {
-            "name": "范觉文",
-            "recognizedText": "反觉文",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "国。正方二辩高于想,正方三辩,反觉文。正方四辩请号与代表正方二辩工"
-          },
-          {
-            "name": "钱昊宇",
-            "recognizedText": "请号与",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": ",正方三辩,反觉文。正方四辩请号与代表正方二辩工业大学深圳问大家好"
-          }
-        ]
-      },
-      {
-        "team": "江西财经大学",
-        "speakers": [
-          {
-            "name": "张子韵",
-            "recognizedText": "张子运",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "一二弥兼阳四辩熊峰,反方四辩将西才经大学张子运。反方三辩,五周。反方二辩将西"
-          },
-          {
-            "name": "吴舟",
-            "recognizedText": "五周",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "将西才经大学张子运。反方三辩,五周。反方二辩将西才经大学才语为。"
-          },
-          {
-            "name": "柴钰维",
-            "recognizedText": "才语为",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "运。反方三辩,五周。反方二辩将西才经大学才语为。反方一辩温星,写我帮三位辩有"
-          },
-          {
-            "name": "温馨",
-            "recognizedText": "温星",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "将西才经大学才语为。反方一辩温星,写我帮三位辩有进代表将西才经大学校辩论对问后再场各位。大家上午好。在认识了双方辩守之后,请余徐我为您介绍本场比赛的平省。他们是王同"
-          }
-        ]
-      }
-    ],
-    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
-    "transcriptStatus": "cached",
-    "warnings": []
-  },
-  {
-    "audioStatus": "cached",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1c1WqzDEEi",
-    "bvId": "BV1c1WqzDEEi",
-    "cid": 33119537526,
-    "matchId": "match-BV1c1WqzDEEi",
-    "partIndex": 1,
-    "roleMarkerCount": 7,
-    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第一场",
-    "teams": [
-      {
-        "team": "南开大学",
-        "speakers": [
-          {
-            "name": "戴有容",
-            "recognizedText": "代表荣",
-            "confidence": 0.82,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "意不复人害,一向封。正方一辩南开大学代表荣。各位好,中方二辩南开大学院新成。正方"
-          },
-          {
-            "name": "袁青骋",
-            "recognizedText": "院新成",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "大学代表荣。各位好,中方二辩南开大学院新成。正方三辩南开大学王亲。对方四"
-          },
-          {
-            "name": "王勤",
-            "recognizedText": "王亲",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "二辩南开大学院新成。正方三辩南开大学王亲。对方四辩南开大学生家亲,前南"
-          }
-        ]
-      },
-      {
-        "team": "复旦大学",
-        "speakers": [
-          {
-            "name": "穆逸菲",
-            "recognizedText": "墓一飞",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "正方一辩张师傅。好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封"
-          },
-          {
-            "name": "曹龙延",
-            "recognizedText": "仇龙盐",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封辩手之后,请你许我问您介绍本昌比赛的平省。他们是流息远女士。比南线省,引起详线省。在比赛开始之前,我将对本次比赛的提"
-          }
-        ]
-      }
-    ],
-    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "cached",
-    "warnings": [
-      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
-      "南开大学匹配到 3 人，未达到 4 人。",
-      "复旦大学匹配到 2 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE4f",
-    "bvId": "BV1o7yzBJE4f",
-    "cid": 33462485319,
-    "matchId": "match-BV1o7yzBJE4f",
-    "partIndex": 1,
-    "roleMarkerCount": 7,
-    "stage": "高校组·资格赛中国大陆赛道 半决赛上半赛区",
-    "teams": [
-      {
-        "team": "南开大学",
-        "speakers": []
-      },
-      {
-        "team": "华南师范大学",
-        "speakers": [
-          {
-            "name": "权莉茹",
-            "recognizedText": "权莉茹",
-            "confidence": 1,
-            "confidenceLevel": "high",
-            "matchMethod": "exact",
-            "transcriptSnippet": "方、一辩、真士厅。反方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨"
-          },
-          {
-            "name": "李玉晓",
-            "recognizedText": "李玉晓",
-            "confidence": 1,
-            "confidenceLevel": "high",
-            "matchMethod": "exact",
-            "transcriptSnippet": "方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨。有请他们做自我介绍暂放一辩 真是停暂放二辩 全"
-          },
-          {
-            "name": "刘粤",
-            "recognizedText": "留月",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "是停暂放二辩 全力如暂放三辩留月暂放四辩 李宇少完了十分大学"
-          }
-        ]
-      }
-    ],
-    "title": "脱口秀/辩论能更好地回应世界",
-    "transcriptStatus": "success",
-    "warnings": [
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "南开大学匹配到 0 人，未达到 4 人。",
-      "华南师范大学匹配到 3 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "cached",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1FKWqz7Eei",
-    "bvId": "BV1FKWqz7Eei",
-    "cid": 33126286137,
-    "matchId": "match-BV1FKWqz7Eei",
-    "partIndex": 1,
-    "roleMarkerCount": 10,
-    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第三场",
-    "teams": [
-      {
-        "team": "中国政法大学",
-        "speakers": []
-      },
-      {
-        "team": "天津大学",
-        "speakers": []
-      }
-    ],
-    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
-    "transcriptStatus": "cached",
-    "warnings": [
-      "转写成功，但没有与双方报名名单形成可靠匹配。",
-      "中国政法大学匹配到 0 人，未达到 4 人。",
-      "天津大学匹配到 0 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEae",
-    "bvId": "BV161WqzSEae",
-    "cid": 33122157283,
-    "matchId": "match-BV161WqzSEae",
-    "partIndex": 1,
-    "roleMarkerCount": 12,
-    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第二场",
-    "teams": [
-      {
-        "team": "江西财经大学",
-        "speakers": [
-          {
-            "name": "温馨",
-            "recognizedText": "溫星",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "們做自我介紹大家好 正方一辩溫星至方二辩 才預為這網絲沒有五"
-          },
-          {
-            "name": "张子韵",
-            "recognizedText": "張子雲",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": " 大家下午好各位好 正方四辩張子雲引警代表江西田英大學 溫後再成各位本稱比赛他們的立場是從成遠看優先推動加公資更利於實現社會公平下面有請他們做自我介紹各位好 反方一"
+            "name": "南思源",
+            "role": "四辩",
+            "recognizedText": "辩四辩",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩。请代表善息十分大学谈一辩论对我后再成功位。他們的立場是 要盡量晚一點 同世界和投降下面有請他"
           }
         ]
       },
       {
         "team": "华南师范大学",
-        "speakers": [
-          {
-            "name": "刘粤",
-            "recognizedText": "留月",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "二辩溫星反方三辩溫星繁草三辩留月大方四辩留下警大表 環難十分"
-          }
-        ]
-      }
-    ],
-    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
-    "transcriptStatus": "success",
-    "warnings": [
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "江西财经大学匹配到 2 人，未达到 4 人。",
-      "华南师范大学匹配到 1 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1ZDWqzjErN",
-    "bvId": "BV1ZDWqzjErN",
-    "cid": 33122550442,
-    "matchId": "match-BV1ZDWqzjErN",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第三场",
-    "teams": [
-      {
-        "team": "华南师范大学",
-        "speakers": [
-          {
-            "name": "温明璇",
-            "recognizedText": "文明旋",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "一辩,方名其。对好,正方二辩、文明旋。正方三辩、留月。正方四辩、留"
-          },
-          {
-            "name": "刘粤",
-            "recognizedText": "留月",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": ",正方二辩、文明旋。正方三辩、留月。正方四辩、留月、文明旋、文明"
-          }
-        ]
-      },
-      {
-        "team": "哈尔滨工业大学（深圳）",
-        "speakers": [
-          {
-            "name": "袁潇雅",
-            "recognizedText": "元消雅",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "旋、文明旋、文明旋。反方一辩、元消雅。反方二辩、高于翔。反方三辩、"
-          },
-          {
-            "name": "高宇翔",
-            "recognizedText": "高于翔",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "。反方一辩、元消雅。反方二辩、高于翔。反方三辩、犯罪文。"
-          },
-          {
-            "name": "范觉文",
-            "recognizedText": "犯罪文",
-            "confidence": 0.82,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "。反方二辩、高于翔。反方三辩、犯罪文。"
-          }
-        ]
-      }
-    ],
-    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
-    "transcriptStatus": "success",
-    "warnings": [
-      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
-      "华南师范大学匹配到 2 人，未达到 4 人。",
-      "哈尔滨工业大学（深圳）匹配到 3 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1F1WqzDEo8",
-    "bvId": "BV1F1WqzDEo8",
-    "cid": 33119930848,
-    "matchId": "match-BV1F1WqzDEo8",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第二场",
-    "teams": [
-      {
-        "team": "复旦大学",
-        "speakers": [
-          {
-            "name": "曹龙延",
-            "recognizedText": "草龙盐",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "家好。这方二辩目区。正方三辩草龙盐。正方四辩机认中,请代表负弹大"
-          }
-        ]
-      },
-      {
-        "team": "对外经济贸易大学",
-        "speakers": [
-          {
-            "name": "郭嘉皓",
-            "recognizedText": "身家好",
-            "confidence": 0.82,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "有请他们做自我介绍。这方一辩,身家好。这方二辩目区。正方三辩草龙盐"
-          }
-        ]
-      }
-    ],
-    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "success",
-    "warnings": [
-      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
-      "复旦大学匹配到 1 人，未达到 4 人。",
-      "对外经济贸易大学匹配到 1 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1n1WqzDEjq",
-    "bvId": "BV1n1WqzDEjq",
-    "cid": 33120194234,
-    "matchId": "match-BV1n1WqzDEjq",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第三场",
-    "teams": [
-      {
-        "team": "对外经济贸易大学",
         "speakers": []
-      },
-      {
-        "team": "南开大学",
-        "speakers": [
-          {
-            "name": "袁青骋",
-            "recognizedText": "员心成",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": ",南开大学适逐就能。反方二辩,南开大学员心成。档档三辩,南开大学王亲。反方"
-          },
-          {
-            "name": "王勤",
-            "recognizedText": "王亲",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "辩,南开大学员心成。档档三辩,南开大学王亲。反方四辩,南开大学生家庭,前"
-          },
-          {
-            "name": "江茜",
-            "recognizedText": "庭前",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "三辩,南开大学王亲。反方四辩,南开大学生家庭,前南开大学员队问候,在场各位。在认识了双方变守之后,请允许我为您介绍奔昌比赛的平省。他们是刘西然女士。比南先生。引其祥"
-          }
-        ]
       }
     ],
-    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "success",
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "transcriptStatus": "cached",
     "warnings": [
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "对外经济贸易大学匹配到 0 人，未达到 4 人。",
-      "南开大学匹配到 3 人，未达到 4 人。"
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 1 名辩手，需要人工复核或提高转写模型。",
+      "陕西师范大学匹配到 1 人，未达到 4 人。",
+      "华南师范大学匹配到 0 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEE6",
-    "bvId": "BV161WqzSEE6",
-    "cid": 33120584990,
-    "matchId": "match-BV161WqzSEE6",
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1acWBzzEXZ",
+    "bvId": "BV1acWBzzEXZ",
+    "cid": 33123667964,
+    "matchId": "match-BV1acWBzzEXZ",
     "partIndex": 1,
     "roleMarkerCount": 9,
-    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第一场",
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第三场",
     "teams": [
       {
-        "team": "上海戏剧学院",
+        "team": "中国海洋大学",
         "speakers": [
           {
-            "name": "李佳宸",
-            "recognizedText": "立家城",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "美,正方一辩喉若千。正方二辩,立家城,正方三辩寄云。正方四辩,白易"
-          },
-          {
-            "name": "白亦端",
-            "recognizedText": "白易端",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "家城,正方三辩寄云。正方四辩,白易端代表上海继续学院问候在场各位。作在我左手边的是反方。来自华东正法大学代表对的同学们。本场比赛他们的立场是。不应该允许假视员、预设"
+            "name": "康浩然",
+            "role": "三辩",
+            "recognizedText": "康套人",
+            "confidence": 0.48,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "方二辩未有好大家好 主帕三辩 出早這次康套人 請代表中國航大學校邊輪社我們後台有個北台玩好好 正方二辩 出早坐在我左手邊的"
           }
         ]
       },
       {
-        "team": "华东政法大学",
+        "team": "陕西师范大学",
         "speakers": [
           {
-            "name": "余心冰",
-            "recognizedText": "于新水",
-            "confidence": 0.82,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "以辩会有反方华东正法大学一辩于新水。二辩成任心,三辩王建制。"
+            "name": "曲泓宇",
+            "role": "二辩",
+            "recognizedText": "出攻宇",
+            "confidence": 0.43,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "一辩 牛子如大家好 反方二辩 出攻宇各位好 正方三辩 男學反方四辩好 今"
           },
           {
-            "name": "王键智",
-            "recognizedText": "王建制",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "一辩于新水。二辩成任心,三辩王建制。四辩,软遇,虽我方三辩便"
+            "name": "郝静娅",
+            "role": "四辩",
+            "recognizedText": "好今天",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "位好 正方三辩 男學反方四辩好 今天要寫 寫寫示範大學 彈一辩 論對 問後再常各位"
           }
         ]
       }
     ],
-    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "success",
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "transcriptStatus": "cached",
     "warnings": [
-      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
-      "上海戏剧学院匹配到 2 人，未达到 4 人。",
-      "华东政法大学匹配到 2 人，未达到 4 人。"
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+      "中国海洋大学匹配到 1 人，未达到 4 人。",
+      "陕西师范大学匹配到 2 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1n1WqzDEjb",
     "bvId": "BV1n1WqzDEjb",
     "cid": 33120911439,
@@ -656,8 +121,10 @@
       }
     ],
     "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
       "自我介绍区间内没有识别到“一辩/二辩/三辩/四辩”标记。",
       "转写成功，但没有与双方报名名单形成可靠匹配。",
       "华东政法大学匹配到 0 人，未达到 4 人。",
@@ -665,68 +132,7 @@
     ]
   },
   {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEDJ",
-    "bvId": "BV161WqzSEDJ",
-    "cid": 33121306013,
-    "matchId": "match-BV161WqzSEDJ",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第三场",
-    "teams": [
-      {
-        "team": "南京大学",
-        "speakers": [
-          {
-            "name": "王靖雅",
-            "recognizedText": "王晉雅",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "業災正方二辩 朝日後正方三辩王晉雅正方四辩案 董敵 警代表正方"
-          }
-        ]
-      },
-      {
-        "team": "上海戏剧学院",
-        "speakers": [
-          {
-            "name": "言姝瑾",
-            "recognizedText": "嚴書僅",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "獨立時飛唱論這山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲"
-          },
-          {
-            "name": "白亦端",
-            "recognizedText": "白易端",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲反方四辩李嘉誠代"
-          },
-          {
-            "name": "李佳宸",
-            "recognizedText": "李嘉誠",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": " 白易端反方三辩計雲反方四辩李嘉誠代表上海細菌學院問候在場各位在认识了双方片手之後請允許我為您介紹本場比赛的評審他們是謝宇先生王成宇先生逃復航先生在比赛开始之前我將"
-          }
-        ]
-      }
-    ],
-    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
-    "transcriptStatus": "success",
-    "warnings": [
-      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
-      "南京大学匹配到 1 人，未达到 4 人。",
-      "上海戏剧学院匹配到 3 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1i7yzBJEoX",
     "bvId": "BV1i7yzBJEoX",
     "cid": 33463535317,
@@ -740,17 +146,21 @@
         "speakers": [
           {
             "name": "温明璇",
+            "role": "二辩",
             "recognizedText": "温明选",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "辩、方明琴。各位好,正方二辩、温明选。正方三辩、留月。正方四辩、留"
           },
           {
             "name": "刘粤",
+            "role": "三辩",
             "recognizedText": "留月",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": ",正方二辩、温明选。正方三辩、留月。正方四辩、留一勺,完了十分大"
           }
@@ -758,258 +168,112 @@
       },
       {
         "team": "中国政法大学",
-        "speakers": []
+        "speakers": [
+          {
+            "name": "缪正之",
+            "role": "四辩",
+            "recognizedText": "有正知",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "张法这形怀几位你我,反方四辩、没有正知。三辩、孫一周,二辩、留一"
+          },
+          {
+            "name": "孙一洲",
+            "role": "三辩",
+            "recognizedText": "孫一周",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "我,反方四辩、没有正知。三辩、孫一周,二辩、留一拓。一辩、白一"
+          },
+          {
+            "name": "白一果",
+            "role": "一辩",
+            "recognizedText": "白一国",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "、孫一周,二辩、留一拓。一辩、白一国。中国正法大学辩认对,温后再场各位,大家笑不好。"
+          }
+        ]
       }
     ],
     "title": "人终有一死，是/不是一件好事",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
       "华南师范大学匹配到 2 人，未达到 4 人。",
-      "中国政法大学匹配到 0 人，未达到 4 人。"
+      "中国政法大学匹配到 3 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1VqWizTE21",
-    "bvId": "BV1VqWizTE21",
-    "cid": 33128579748,
-    "matchId": "match-BV1VqWizTE21",
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE6F",
+    "bvId": "BV1o7yzBJE6F",
+    "cid": 33462946181,
+    "matchId": "match-BV1o7yzBJE6F",
     "partIndex": 1,
-    "roleMarkerCount": 9,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第一场",
+    "roleMarkerCount": 7,
+    "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
     "teams": [
       {
-        "team": "南开大学",
+        "team": "中国政法大学",
+        "speakers": []
+      },
+      {
+        "team": "南昌大学",
         "speakers": [
           {
-            "name": "戴有容",
-            "recognizedText": "戴友荣",
+            "name": "龙慧玲",
+            "role": "二辩",
+            "recognizedText": "龍會領",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
-            "transcriptSnippet": "求知真理无情绪不舍。中方一辩、南开大学、戴友荣。中方二辩、南开大学、云青城。"
+            "transcriptSnippet": "介紹反方一辩 朱敬文反方二辩 龍會領反方三辩 始聽一反方四辩 葉"
           },
           {
-            "name": "王勤",
-            "recognizedText": "王琴",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "双,反双二辩、夜飞。反双三辩、王琴。反双四辩、南京大学、董敌、写"
-          }
-        ]
-      },
-      {
-        "team": "南京大学",
-        "speakers": []
-      }
-    ],
-    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
-      "南开大学匹配到 2 人，未达到 4 人。",
-      "南京大学匹配到 0 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1TDWiztE3Z",
-    "bvId": "BV1TDWiztE3Z",
-    "cid": 33128843551,
-    "matchId": "match-BV1TDWiztE3Z",
-    "partIndex": 1,
-    "roleMarkerCount": 9,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第二场",
-    "teams": [
-      {
-        "team": "南京大学",
-        "speakers": [
-          {
-            "name": "王靖雅",
-            "recognizedText": "王晶亞",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "辩夜飛周防二辩陳子星正方三辩王晶亞正方四辩洞迪協反而且正方南京"
-          }
-        ]
-      },
-      {
-        "team": "南开大学",
-        "speakers": [
-          {
-            "name": "江茜",
-            "recognizedText": "請前",
+            "name": "史天逸",
+            "role": "三辩",
+            "recognizedText": "始聽一",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "大學王晶反方四辩南開大學三辩請前南開大學問候在場各位在這時了双方編輸之後請威許偶為您介紹本場比赛的評審他們是無見標先生照陽心與先生王春身先生在比赛开始之前我將對本次"
-          }
-        ]
-      }
-    ],
-    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
-      "南京大学匹配到 1 人，未达到 4 人。",
-      "南开大学匹配到 1 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1K9Wiz4ECY",
-    "bvId": "BV1K9Wiz4ECY",
-    "cid": 33129103971,
-    "matchId": "match-BV1K9Wiz4ECY",
-    "partIndex": 1,
-    "roleMarkerCount": 9,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第一场",
-    "teams": [
-      {
-        "team": "华南师范大学",
-        "speakers": [
-          {
-            "name": "权莉茹",
-            "recognizedText": "全立如",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "。正方一辩,真是停。正方二辩,全立如。正方三辩,留月。正方四辩的旅"
+            "transcriptSnippet": "敬文反方二辩 龍會領反方三辩 始聽一反方四辩 葉玉零鞋 南昌大學"
           },
           {
-            "name": "刘粤",
-            "recognizedText": "留月",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "。正方二辩,全立如。正方三辩,留月。正方四辩的旅上,请代表华南师"
-          }
-        ]
-      },
-      {
-        "team": "陕西师范大学",
-        "speakers": [
-          {
-            "name": "黄钰淇",
-            "recognizedText": "黄玉琪",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "做自我介绍。大家好,反方一辩黄玉琪。大家好,反方二辩,请允许。各位好,反"
+            "name": "叶钰琳",
+            "role": "四辩",
+            "recognizedText": "葉玉零",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "會領反方三辩 始聽一反方四辩 葉玉零鞋 南昌大學辯對握後再唱歌位在认识了 双方辩手之後請雲虛我為您介紹本廠比赛的評審他們是羅洪昆先生劉曉金先生丁貫與先生劉正心女士以"
           }
         ]
       }
     ],
-    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
-    "transcriptStatus": "success",
+    "title": "脱口秀/辩论能更好地回应世界",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
       "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "华南师范大学匹配到 2 人，未达到 4 人。",
-      "陕西师范大学匹配到 1 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1TUWizfERx",
-    "bvId": "BV1TUWizfERx",
-    "cid": 33129366748,
-    "matchId": "match-BV1TUWizfERx",
-    "partIndex": 1,
-    "roleMarkerCount": 16,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第二场",
-    "teams": [
-      {
-        "team": "陕西师范大学",
-        "speakers": []
-      },
-      {
-        "team": "华南师范大学",
-        "speakers": []
-      }
-    ],
-    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "转写成功，但没有与双方报名名单形成可靠匹配。",
-      "陕西师范大学匹配到 0 人，未达到 4 人。",
-      "华南师范大学匹配到 0 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1UaWzzTExX",
-    "bvId": "BV1UaWzzTExX",
-    "cid": 33129630518,
-    "matchId": "match-BV1UaWzzTExX",
-    "partIndex": 1,
-    "roleMarkerCount": 10,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第一场",
-    "teams": [
-      {
-        "team": "西安交通大学",
-        "speakers": []
-      },
-      {
-        "team": "中国政法大学",
-        "speakers": []
-      }
-    ],
-    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "转写成功，但没有与双方报名名单形成可靠匹配。",
-      "西安交通大学匹配到 0 人，未达到 4 人。",
-      "中国政法大学匹配到 0 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1MYWzzqEC3",
-    "bvId": "BV1MYWzzqEC3",
-    "cid": 33129955849,
-    "matchId": "match-BV1MYWzzqEC3",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第二场",
-    "teams": [
-      {
-        "team": "中国政法大学",
-        "speakers": []
-      },
-      {
-        "team": "西安交通大学",
-        "speakers": [
-          {
-            "name": "王雨峰",
-            "recognizedText": "王玉凡",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": ",反方四辩、妙远韩。反方三辩、王玉凡。反方二辩、上树腾。反方一辩、"
-          }
-        ]
-      }
-    ],
-    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 1 名辩手，需要人工复核或提高转写模型。",
       "中国政法大学匹配到 0 人，未达到 4 人。",
-      "西安交通大学匹配到 1 人，未达到 4 人。"
+      "南昌大学匹配到 3 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1XWWzzkE8Q",
     "bvId": "BV1XWWzzkE8Q",
     "cid": 33130154488,
@@ -1023,17 +287,21 @@
         "speakers": [
           {
             "name": "龙慧玲",
+            "role": "二辩",
             "recognizedText": "龙会林",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "。正方一辩、朱敬文、正方二辩、龙会林。正方三辩是听。正方四辩、一御"
           },
           {
             "name": "叶钰琳",
+            "role": "四辩",
             "recognizedText": "一御林",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "会林。正方三辩是听。正方四辩、一御林、鞋、南昌大学辩们对握后再场归大、下握好。作在我左手边的是反方、来自上海大学员代表对的同学们、本场比赛、他们的立场是、奴障二对学"
           }
@@ -1044,25 +312,31 @@
         "speakers": [
           {
             "name": "潘严芷怡",
+            "role": "一辩",
             "recognizedText": "判严之一",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "有请他们做自我介绍。反方一辩、判严之一。二辩恨不忍反方三辩 十余"
           },
           {
             "name": "史毓迪波",
+            "role": "三辩",
             "recognizedText": "十余地波",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "判严之一。二辩恨不忍反方三辩 十余地波反方四辩抓一平協下大学变得对"
           },
           {
             "name": "赵奕平",
+            "role": "四辩",
             "recognizedText": "抓一平",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "忍反方三辩 十余地波反方四辩抓一平協下大学变得对握护家人个位在认识了双方便守之后请于是我为您介绍本昌比赛的平神他们是劉晓军先生劉振心女士请其晓先生在比赛开始之前我将"
           }
@@ -1070,78 +344,17 @@
       }
     ],
     "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
       "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
       "南昌大学匹配到 2 人，未达到 4 人。",
       "上海大学匹配到 3 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1kCWzzfEU9",
-    "bvId": "BV1kCWzzfEU9",
-    "cid": 33130415504,
-    "matchId": "match-BV1kCWzzfEU9",
-    "partIndex": 1,
-    "roleMarkerCount": 8,
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第二场",
-    "teams": [
-      {
-        "team": "上海大学",
-        "speakers": [
-          {
-            "name": "敦译萱",
-            "recognizedText": "堆一圈",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "有请他们做自我介绍。双方一辩堆一圈。二辩恋恋恋。三辩十余的波"
-          },
-          {
-            "name": "史毓迪波",
-            "recognizedText": "十余的波",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "一辩堆一圈。二辩恋恋恋。三辩十余的波。正凡四辩装一品鞋上的学们对欧"
-          }
-        ]
-      },
-      {
-        "team": "南昌大学",
-        "speakers": [
-          {
-            "name": "龙慧玲",
-            "recognizedText": "龙会临",
-            "confidence": 0.88,
-            "confidenceLevel": "medium",
-            "matchMethod": "pinyin-fuzzy",
-            "transcriptSnippet": "绍。反方一辩王师寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇"
-          },
-          {
-            "name": "史天逸",
-            "recognizedText": "十天一",
-            "confidence": 0.96,
-            "confidenceLevel": "high",
-            "matchMethod": "pinyin",
-            "transcriptSnippet": "寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇灵鞋南昌大学变成"
-          }
-        ]
-      }
-    ],
-    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "transcriptStatus": "success",
-    "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
-      "上海大学匹配到 2 人，未达到 4 人。",
-      "南昌大学匹配到 2 人，未达到 4 人。"
-    ]
-  },
-  {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1ejWqz6EQs",
     "bvId": "BV1ejWqz6EQs",
     "cid": 33126877175,
@@ -1155,25 +368,31 @@
         "speakers": [
           {
             "name": "万子豪",
+            "role": "二辩",
             "recognizedText": "万次好",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "双深多世,极资上相。正方二辩,万次好。正方三辩,洋药文。正方四辩,"
           },
           {
             "name": "杨耀文",
+            "role": "三辩",
             "recognizedText": "洋药文",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "。正方二辩,万次好。正方三辩,洋药文。正方四辩,方定位,紧代表安慧"
           },
           {
             "name": "方婷薇",
+            "role": "四辩",
             "recognizedText": "方定位",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "。正方三辩,洋药文。正方四辩,方定位,紧代表安慧大学带过后再场各位。坐在我左手边的是反方,来自南昌大学代表对的同学们。本场比赛,他们的立场是,英雄联盟职业联赛不应该"
           }
@@ -1184,17 +403,21 @@
         "speakers": [
           {
             "name": "龙慧玲",
+            "role": "二辩",
             "recognizedText": "龙会离",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "绍。反方一辩王师寒,反方二辩龙会离。反方三辩使听意。反方四辩,英"
           },
           {
             "name": "史天逸",
+            "role": "三辩",
             "recognizedText": "使听意",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "寒,反方二辩龙会离。反方三辩使听意。反方四辩,英雄联系南昌大学辩"
           }
@@ -1202,16 +425,455 @@
       }
     ],
     "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
       "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
       "安徽大学匹配到 3 人，未达到 4 人。",
       "南昌大学匹配到 2 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1mhWqzFE8k",
+    "bvId": "BV1mhWqzFE8k",
+    "cid": 33124257429,
+    "matchId": "match-BV1mhWqzFE8k",
+    "partIndex": 1,
+    "roleMarkerCount": 10,
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第一场",
+    "teams": [
+      {
+        "team": "天津师范大学",
+        "speakers": [
+          {
+            "name": "王雅昕",
+            "role": "二辩",
+            "recognizedText": "网阿星",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "痕。正方一辩、关心。正方二辩、网阿星。双方三辩、姚姚。正方四辩中期"
+          },
+          {
+            "name": "钟奇山",
+            "role": "四辩",
+            "recognizedText": "中期山",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "星。双方三辩、姚姚。正方四辩中期山代表正方、天津师范大学校面的对文后再上个位,各位早上好。坐在我左手边的事与反方来自东北临业大学代表对的同学们。本场比赛、他们的立场"
+          }
+        ]
+      },
+      {
+        "team": "东北林业大学",
+        "speakers": [
+          {
+            "name": "路雅涵",
+            "role": "一辩",
+            "recognizedText": "路亚喊",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "有请他们做自我介绍。反方一辩、路亚喊。反方二辩、立家银。反方三辩、"
+          },
+          {
+            "name": "李嘉澄",
+            "role": "二辩",
+            "recognizedText": "立家银",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "。反方一辩、路亚喊。反方二辩、立家银。反方三辩、黄一鸣。反方四辩犯"
+          },
+          {
+            "name": "黄一鸣",
+            "role": "三辩",
+            "recognizedText": "黄一鸣",
+            "confidence": 1,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "exact",
+            "transcriptSnippet": "。反方二辩、立家银。反方三辩、黄一鸣。反方四辩犯阵期协东北临大学校"
+          }
+        ]
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+      "天津师范大学匹配到 2 人，未达到 4 人。",
+      "东北林业大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1o7yzBJE4f",
+    "bvId": "BV1o7yzBJE4f",
+    "cid": 33462485319,
+    "matchId": "match-BV1o7yzBJE4f",
+    "partIndex": 1,
+    "roleMarkerCount": 7,
+    "stage": "高校组·资格赛中国大陆赛道 半决赛上半赛区",
+    "teams": [
+      {
+        "team": "南开大学",
+        "speakers": []
+      },
+      {
+        "team": "华南师范大学",
+        "speakers": [
+          {
+            "name": "权莉茹",
+            "role": "二辩",
+            "recognizedText": "权莉茹",
+            "confidence": 1,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "exact",
+            "transcriptSnippet": "方、一辩、真士厅。反方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨"
+          },
+          {
+            "name": "李玉晓",
+            "role": "四辩",
+            "recognizedText": "李玉晓",
+            "confidence": 1,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "exact",
+            "transcriptSnippet": "方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨。有请他们做自我介绍暂放一辩 真是停暂放二辩 全"
+          },
+          {
+            "name": "刘粤",
+            "role": "三辩",
+            "recognizedText": "留月",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "是停暂放二辩 全力如暂放三辩留月暂放四辩 李宇少完了十分大学"
+          }
+        ]
+      }
+    ],
+    "title": "脱口秀/辩论能更好地回应世界",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+      "南开大学匹配到 0 人，未达到 4 人。",
+      "华南师范大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1VqWizTE21",
+    "bvId": "BV1VqWizTE21",
+    "cid": 33128579748,
+    "matchId": "match-BV1VqWizTE21",
+    "partIndex": 1,
+    "roleMarkerCount": 9,
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第一场",
+    "teams": [
+      {
+        "team": "南开大学",
+        "speakers": [
+          {
+            "name": "戴有容",
+            "role": "一辩",
+            "recognizedText": "戴友荣",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "求知真理无情绪不舍。中方一辩、南开大学、戴友荣。中方二辩、南开大学、云青城。"
+          },
+          {
+            "name": "袁青骋",
+            "role": "二辩",
+            "recognizedText": "云青城",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": false,
+            "matchMethod": "pinyin-fuzzy-role-context",
+            "transcriptSnippet": "、南开大学、戴友荣。中方二辩、南开大学、云青城。中方双辩、南开大学、王琴。作在我左手边的是反方、来自南京大学代表对的同学们。在这时的双方辩手之后,请允许我为您介绍奔"
+          },
+          {
+            "name": "王勤",
+            "role": "三辩",
+            "recognizedText": "王琴",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "双,反双二辩、夜飞。反双三辩、王琴。反双四辩、南京大学、董敌、写"
+          }
+        ]
+      },
+      {
+        "team": "南京大学",
+        "speakers": [
+          {
+            "name": "王靖雅",
+            "role": "四辩",
+            "recognizedText": "南京大",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "飞。反双三辩、王琴。反双四辩、南京大学、董敌、写、反方、南京大学、辩论队、问候、在场、各位。在这时的双方辩手之后,请允许我为您介绍奔昌比赛的平时、他们时、国陷标陷手"
+          }
+        ]
+      }
+    ],
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "南开大学匹配到 3 人，未达到 4 人。",
+      "南京大学匹配到 1 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1TDWiztE3Z",
+    "bvId": "BV1TDWiztE3Z",
+    "cid": 33128843551,
+    "matchId": "match-BV1TDWiztE3Z",
+    "partIndex": 1,
+    "roleMarkerCount": 9,
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第二场",
+    "teams": [
+      {
+        "team": "南京大学",
+        "speakers": [
+          {
+            "name": "王靖雅",
+            "role": "三辩",
+            "recognizedText": "王晶亞",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "辩夜飛周防二辩陳子星正方三辩王晶亞正方四辩洞迪協反而且正方南京"
+          }
+        ]
+      },
+      {
+        "team": "南开大学",
+        "speakers": [
+          {
+            "name": "江茜",
+            "role": "三辩",
+            "recognizedText": "請前",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "大學王晶反方四辩南開大學三辩請前南開大學問候在場各位在這時了双方編輸之後請威許偶為您介紹本場比赛的評審他們是無見標先生照陽心與先生王春身先生在比赛开始之前我將對本次"
+          }
+        ]
+      }
+    ],
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+      "南京大学匹配到 1 人，未达到 4 人。",
+      "南开大学匹配到 1 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1K9Wiz4ECY",
+    "bvId": "BV1K9Wiz4ECY",
+    "cid": 33129103971,
+    "matchId": "match-BV1K9Wiz4ECY",
+    "partIndex": 1,
+    "roleMarkerCount": 9,
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第一场",
+    "teams": [
+      {
+        "team": "华南师范大学",
+        "speakers": [
+          {
+            "name": "权莉茹",
+            "role": "二辩",
+            "recognizedText": "全立如",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。正方一辩,真是停。正方二辩,全立如。正方三辩,留月。正方四辩的旅"
+          },
+          {
+            "name": "刘粤",
+            "role": "三辩",
+            "recognizedText": "留月",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。正方二辩,全立如。正方三辩,留月。正方四辩的旅上,请代表华南师"
+          }
+        ]
+      },
+      {
+        "team": "陕西师范大学",
+        "speakers": [
+          {
+            "name": "黄钰淇",
+            "role": "一辩",
+            "recognizedText": "黄玉琪",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "做自我介绍。大家好,反方一辩黄玉琪。大家好,反方二辩,请允许。各位好,反"
+          },
+          {
+            "name": "南思源",
+            "role": "三辩",
+            "recognizedText": "南师范",
+            "confidence": 0.45,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "辩,请允许。各位好,反方三辩南师范。反方四辩,好进啊,协反方,舍"
+          },
+          {
+            "name": "郝静娅",
+            "role": "四辩",
+            "recognizedText": "好进啊",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "好,反方三辩南师范。反方四辩,好进啊,协反方,舍西师范大学,谈一辩论对,问后再长各位。"
+          }
+        ]
+      }
+    ],
+    "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+      "华南师范大学匹配到 2 人，未达到 4 人。",
+      "陕西师范大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1kCWzzfEU9",
+    "bvId": "BV1kCWzzfEU9",
+    "cid": 33130415504,
+    "matchId": "match-BV1kCWzzfEU9",
+    "partIndex": 1,
+    "roleMarkerCount": 8,
+    "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第二场",
+    "teams": [
+      {
+        "team": "上海大学",
+        "speakers": [
+          {
+            "name": "敦译萱",
+            "role": "一辩",
+            "recognizedText": "堆一圈",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "有请他们做自我介绍。双方一辩堆一圈。二辩恋恋恋。三辩十余的波"
+          },
+          {
+            "name": "史毓迪波",
+            "role": "三辩",
+            "recognizedText": "十余的波",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "一辩堆一圈。二辩恋恋恋。三辩十余的波。正凡四辩装一品鞋上的学们对欧"
+          },
+          {
+            "name": "赵奕平",
+            "role": "四辩",
+            "recognizedText": "装一品",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "恋恋。三辩十余的波。正凡四辩装一品鞋上的学们对欧战人各位。坐在我左手边的是反方,来自南昌大学代表对的同学们。本场比赛他们的立场是,恋家二对身肉替股的改变,弱化的恋家"
+          }
+        ]
+      },
+      {
+        "team": "南昌大学",
+        "speakers": [
+          {
+            "name": "龙慧玲",
+            "role": "二辩",
+            "recognizedText": "龙会临",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "绍。反方一辩王师寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇"
+          },
+          {
+            "name": "史天逸",
+            "role": "三辩",
+            "recognizedText": "十天一",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇灵鞋南昌大学变成"
+          },
+          {
+            "name": "叶钰琳",
+            "role": "四辩",
+            "recognizedText": "一遇灵",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "临。反方三辩十天一。反方四辩一遇灵鞋南昌大学变成对于欧战场贵。在认识了双方遍守之后,请于虽我为您介绍本场比赛的平省。他们是,留小军先生。留占新女士。引起响先生。在比"
+          }
+        ]
+      }
+    ],
+    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+      "上海大学匹配到 3 人，未达到 4 人。",
+      "南昌大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1XJWqzqEhF",
     "bvId": "BV1XJWqzqEhF",
     "cid": 33127205327,
@@ -1225,17 +887,21 @@
         "speakers": [
           {
             "name": "龙慧玲",
+            "role": "二辩",
             "recognizedText": "龙会饼",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "。正方一辩、朱敬温,正方二辩、龙会饼。正方三辩、十平一。正方四辩、"
           },
           {
             "name": "史天逸",
+            "role": "三辩",
             "recognizedText": "十平一",
             "confidence": 0.82,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": ",正方二辩、龙会饼。正方三辩、十平一。正方四辩、议员联系南长大学辩"
           }
@@ -1245,27 +911,50 @@
         "team": "广西民族大学",
         "speakers": [
           {
-            "name": "李佳阳",
+            "name": "栗嘉宁",
+            "role": "一辩",
             "recognizedText": "立家语",
             "confidence": 0.82,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "做自我介绍。当然好,反方一辩,立家语。反方二辩,立心。反方三辩,也"
+          },
+          {
+            "name": "黎欣",
+            "role": "二辩",
+            "recognizedText": "立心",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": ",反方一辩,立家语。反方二辩,立心。反方三辩,也为好。反方四辩、"
+          },
+          {
+            "name": "黄集海",
+            "role": "四辩",
+            "recognizedText": "黄基派",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "。反方三辩,也为好。反方四辩、黄基派、写广西民族大学,握在两个位,大家晚上好。在认识了双方辩守之后,请允许我为您介绍本场比赛的平省。他们是张泽民先生。游戏远御时,王"
           }
         ]
       }
     ],
     "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
       "南昌大学匹配到 2 人，未达到 4 人。",
-      "广西民族大学匹配到 1 人，未达到 4 人。"
+      "广西民族大学匹配到 3 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1ZuWqz5EYq",
     "bvId": "BV1ZuWqz5EYq",
     "cid": 33127467717,
@@ -1279,17 +968,21 @@
         "speakers": [
           {
             "name": "范可欣",
+            "role": "一辩",
             "recognizedText": "放可心",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "央兩方之牆 明日動良正方一辩 放可心正方二辩 旅行正方三辩 旅行"
           },
           {
             "name": "吴泽荣",
+            "role": "四辩",
             "recognizedText": "無則容",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": " 旅行正方三辩 旅行正方四辩 無則容些下面大學輪隊問後再想各位大家早上好作在我左手邊的事反方來自上海大學代表對的同學們本場比赛 他們的立場是英雄聯盟職業聯賽不應該在"
           }
@@ -1300,26 +993,59 @@
         "speakers": [
           {
             "name": "赵亿嘉",
+            "role": "一辩",
             "recognizedText": "照一家",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "自我介紹大家早上好 反方一辩照一家各位好 等到二辩航國內反方三辩 十余"
+          },
+          {
+            "name": "黄国锐",
+            "role": "二辩",
+            "recognizedText": "航國內",
+            "confidence": 0.44,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "方一辩照一家各位好 等到二辩航國內反方三辩 十余對我反方四辩 "
+          },
+          {
+            "name": "史毓迪波",
+            "role": "三辩",
+            "recognizedText": "十余對我",
+            "confidence": 0.49,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "位好 等到二辩航國內反方三辩 十余對我反方四辩 裝一品 寫下大學們"
+          },
+          {
+            "name": "赵奕平",
+            "role": "四辩",
+            "recognizedText": "裝一品",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "內反方三辩 十余對我反方四辩 裝一品 寫下大學們的隊問後再讓各位早上好在认识了双方辩手之後請允許我問您介紹本場比赛的評審他們是謝宇先生劉正先生曹副航先生在比赛开始之"
           }
         ]
       }
     ],
     "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
-      "厦门大学匹配到 2 人，未达到 4 人。",
-      "上海大学匹配到 1 人，未达到 4 人。"
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+      "厦门大学匹配到 2 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1G6WizNEu1",
     "bvId": "BV1G6WizNEu1",
     "cid": 33127796221,
@@ -1333,17 +1059,21 @@
         "speakers": [
           {
             "name": "敦译萱",
+            "role": "一辩",
             "recognizedText": "堆一圈",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "做自我介绍。大家好,周方一辩、堆一圈。正方二辩,很不热。正方三辩,"
           },
           {
             "name": "史毓迪波",
+            "role": "三辩",
             "recognizedText": "十余直播",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "。正方二辩,很不热。正方三辩,十余直播。"
           }
@@ -1355,16 +1085,17 @@
       }
     ],
     "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
       "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
       "上海大学匹配到 2 人，未达到 4 人。",
       "宁波大学匹配到 0 人，未达到 4 人。"
     ]
   },
   {
-    "audioStatus": "success",
+    "audioStatus": "dependency_missing",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1LeWizuEAp",
     "bvId": "BV1LeWizuEAp",
     "cid": 33128123378,
@@ -1378,17 +1109,21 @@
         "speakers": [
           {
             "name": "胡文昊",
+            "role": "一辩",
             "recognizedText": "胡文號",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "面有請他們做自我介紹正方一辩胡文號正方二辩胡文號人總統三辩的一"
           },
           {
             "name": "赵书逸",
+            "role": "四辩",
             "recognizedText": "照取一",
             "confidence": 0.82,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "文號人總統三辩的一場正方四辩照取一些我相信你不大學校朋友跟我後再上溝圍大家晚上好坐在我左手邊的是反方來自下門大學代表對的同學們本場比赛他們的立場是英雄免盟職業聯賽不"
           }
@@ -1398,18 +1133,32 @@
         "team": "厦门大学",
         "speakers": [
           {
+            "name": "陈显龙",
+            "role": "一辩",
+            "recognizedText": "陈淺楼",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "江安方之强 明日动凉反方一辩 陈淺楼早上二辩 三个星反方三辩 李"
+          },
+          {
             "name": "李庚尧",
+            "role": "三辩",
             "recognizedText": "李更遥",
             "confidence": 0.96,
             "confidenceLevel": "high",
+            "autoMerge": true,
             "matchMethod": "pinyin",
             "transcriptSnippet": "淺楼早上二辩 三个星反方三辩 李更遥反方四辩 女一行 协我方三辩"
           },
           {
             "name": "吕艺杭",
+            "role": "四辩",
             "recognizedText": "女一行",
             "confidence": 0.88,
             "confidenceLevel": "medium",
+            "autoMerge": true,
             "matchMethod": "pinyin-fuzzy",
             "transcriptSnippet": "个星反方三辩 李更遥反方四辩 女一行 协我方三辩有代表下门大学 辩论"
           }
@@ -1417,12 +1166,1046 @@
       }
     ],
     "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "transcriptStatus": "success",
+    "transcriptStatus": "cached",
     "warnings": [
-      "缺少 cid；yt-dlp 仍可尝试单 P URL，但定位可靠性降低。",
-      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
       "宁波大学匹配到 2 人，未达到 4 人。",
-      "厦门大学匹配到 2 人，未达到 4 人。"
+      "厦门大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1gsWqzNEvA",
+    "bvId": "BV1gsWqzNEvA",
+    "cid": 33124714809,
+    "matchId": "match-BV1gsWqzNEvA",
+    "partIndex": 1,
+    "roleMarkerCount": 5,
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第二场",
+    "teams": [
+      {
+        "team": "东北林业大学",
+        "speakers": []
+      },
+      {
+        "team": "西安交通大学",
+        "speakers": [
+          {
+            "name": "欣芭特",
+            "role": "四辩",
+            "recognizedText": "习马特",
+            "confidence": 0.45,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "学为九州,设计人财,反望四辩,习马特。粉方三辩,王余凡。反方二辩,"
+          },
+          {
+            "name": "王羽凡",
+            "role": "三辩",
+            "recognizedText": "王余凡",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": ",反望四辩,习马特。粉方三辩,王余凡。反方二辩,苗余函。反方一辩,"
+          },
+          {
+            "name": "苗宇涵",
+            "role": "二辩",
+            "recognizedText": "苗余函",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。粉方三辩,王余凡。反方二辩,苗余函。反方一辩,谢子函,其西安交通"
+          },
+          {
+            "name": "谢梓涵",
+            "role": "一辩",
+            "recognizedText": "谢子函",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。反方二辩,苗余函。反方一辩,谢子函,其西安交通大学,四辩学社问候再场各位,大"
+          }
+        ]
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "东北林业大学匹配到 0 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1HyWqzHEvf",
+    "bvId": "BV1HyWqzHEvf",
+    "cid": 33125236901,
+    "matchId": "match-BV1HyWqzHEvf",
+    "partIndex": 1,
+    "roleMarkerCount": 10,
+    "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第三场",
+    "teams": [
+      {
+        "team": "西安交通大学",
+        "speakers": [
+          {
+            "name": "尚书腾",
+            "role": "四辩",
+            "recognizedText": "上处疼",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "。学业九州设计人财,正方四辩上处疼。正方三辩、姚雨韩。正方二辩、"
+          },
+          {
+            "name": "苗宇涵",
+            "role": "三辩",
+            "recognizedText": "姚雨韩",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "财,正方四辩上处疼。正方三辩、姚雨韩。正方二辩、王雨凡。正方一辩,"
+          },
+          {
+            "name": "王羽凡",
+            "role": "二辩",
+            "recognizedText": "王雨凡",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。正方三辩、姚雨韩。正方二辩、王雨凡。正方一辩,董家新,先交通大学"
+          },
+          {
+            "name": "董嘉兴",
+            "role": "一辩",
+            "recognizedText": "董家新",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "。正方二辩、王雨凡。正方一辩,董家新,先交通大学辩论对握后再产歌为大家晚上好。作在我左手边的是反方,来自天津师犯大学代表对的同学们。本场比赛、他们的立场是,对话是A"
+          }
+        ]
+      },
+      {
+        "team": "天津师范大学",
+        "speakers": []
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "天津师范大学匹配到 0 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV11YWqzZEyr",
+    "bvId": "BV11YWqzZEyr",
+    "cid": 33125630355,
+    "matchId": "match-BV11YWqzZEyr",
+    "partIndex": 1,
+    "roleMarkerCount": 3,
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第一场",
+    "teams": [
+      {
+        "team": "天津大学",
+        "speakers": []
+      },
+      {
+        "team": "杭州师范大学",
+        "speakers": [
+          {
+            "name": "李玥",
+            "role": "一辩",
+            "recognizedText": "理月",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "面有请他们做做介绍。正方一辩、航舟失范大学的理月。准够二辩、航舟失范大学、洋潘"
+          },
+          {
+            "name": "杨潘俊",
+            "role": "二辩",
+            "recognizedText": "洋潘郡",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": false,
+            "matchMethod": "pinyin-role-context",
+            "transcriptSnippet": "航舟失范大学的理月。准够二辩、航舟失范大学、洋潘郡、王思玉、反方四辩、航舟失范大学、陈江"
+          },
+          {
+            "name": "陈江悦",
+            "role": "四辩",
+            "recognizedText": "陈江岳",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "学、洋潘郡、王思玉、反方四辩、航舟失范大学、陈江岳、代表航舟失范大学、陈江岳、游示范大学问候在场格谎.在认识了双封辩手之後請是我問您介紹文章比赛的評審他們是胡健標先"
+          }
+        ]
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+      "天津大学匹配到 0 人，未达到 4 人。",
+      "杭州师范大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FPWqzUE17",
+    "bvId": "BV1FPWqzUE17",
+    "cid": 33125960419,
+    "matchId": "match-BV1FPWqzUE17",
+    "partIndex": 1,
+    "roleMarkerCount": 13,
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第二场",
+    "teams": [
+      {
+        "team": "杭州师范大学",
+        "speakers": [
+          {
+            "name": "蓝培姚",
+            "role": "一辩",
+            "recognizedText": "藍培養",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "大家好 航舟失敗大學針方一辩藍培養航舟失敗大學針方二辩旅餘舟失敗大學針方二"
+          },
+          {
+            "name": "周琦",
+            "role": "二辩",
+            "recognizedText": "舟失",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "辩藍培養航舟失敗大學針方二辩旅餘舟失敗大學針方二辩旅餘舟失敗大學針方二"
+          }
+        ]
+      },
+      {
+        "team": "中国政法大学",
+        "speakers": [
+          {
+            "name": "白一果",
+            "role": "四辩",
+            "recognizedText": "白一國",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "學徵法之情懷繼為女物反方四辩白一國三辩隨一周二辩雷托一辩才"
+          },
+          {
+            "name": "孙一洲",
+            "role": "三辩",
+            "recognizedText": "隨一周",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "懷繼為女物反方四辩白一國三辩隨一周二辩雷托一辩才增中國徵法"
+          },
+          {
+            "name": "雷拓",
+            "role": "二辩",
+            "recognizedText": "雷托",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "反方四辩白一國三辩隨一周二辩雷托一辩才增中國徵法大學校面"
+          }
+        ]
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+      "杭州师范大学匹配到 2 人，未达到 4 人。",
+      "中国政法大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1FKWqz7Eei",
+    "bvId": "BV1FKWqz7Eei",
+    "cid": 33126286137,
+    "matchId": "match-BV1FKWqz7Eei",
+    "partIndex": 1,
+    "roleMarkerCount": 10,
+    "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第三场",
+    "teams": [
+      {
+        "team": "中国政法大学",
+        "speakers": [
+          {
+            "name": "缪正之",
+            "role": "四辩",
+            "recognizedText": "妙政職",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "法這情法來幾位你以我中華四辩妙政職三辩孫一週二辩雷托一辩蔡"
+          },
+          {
+            "name": "孙一洲",
+            "role": "三辩",
+            "recognizedText": "孫一週",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "幾位你以我中華四辩妙政職三辩孫一週二辩雷托一辩蔡森中華政法"
+          },
+          {
+            "name": "雷拓",
+            "role": "二辩",
+            "recognizedText": "雷托",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "中華四辩妙政職三辩孫一週二辩雷托一辩蔡森中華政法大學面臨"
+          }
+        ]
+      },
+      {
+        "team": "天津大学",
+        "speakers": [
+          {
+            "name": "陈哲",
+            "role": "一辩",
+            "recognizedText": "陳折",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "財中長 中可成長陳彩反方一辩 聽聽大學陳折反方二辩 聽聽大學文運氣反方"
+          },
+          {
+            "name": "闫俊淇",
+            "role": "二辩",
+            "recognizedText": "文運氣",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "方一辩 聽聽大學陳折反方二辩 聽聽大學文運氣反方三辩 聽大學 李洋反方四"
+          },
+          {
+            "name": "李洋",
+            "role": "三辩",
+            "recognizedText": "李洋",
+            "confidence": 1,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "exact",
+            "transcriptSnippet": "二辩 聽聽大學文運氣反方三辩 聽大學 李洋反方四辩 天經大學 張明洛隨"
+          }
+        ]
+      }
+    ],
+    "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+      "中国政法大学匹配到 3 人，未达到 4 人。",
+      "天津大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEae",
+    "bvId": "BV161WqzSEae",
+    "cid": 33122157283,
+    "matchId": "match-BV161WqzSEae",
+    "partIndex": 1,
+    "roleMarkerCount": 12,
+    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第二场",
+    "teams": [
+      {
+        "team": "江西财经大学",
+        "speakers": [
+          {
+            "name": "温馨",
+            "role": "一辩",
+            "recognizedText": "溫星",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "們做自我介紹大家好 正方一辩溫星至方二辩 才預為這網絲沒有五"
+          },
+          {
+            "name": "吴舟",
+            "role": "二辩",
+            "recognizedText": "五周",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": false,
+            "matchMethod": "pinyin-role-context",
+            "transcriptSnippet": "大家好 正方一辩溫星至方二辩 才預為這網絲沒有五周 大家下午好各位好 正方四辩張子雲引警代表江西田"
+          },
+          {
+            "name": "张子韵",
+            "role": "四辩",
+            "recognizedText": "張子雲",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": " 大家下午好各位好 正方四辩張子雲引警代表江西田英大學 溫後再成各位本稱比赛他們的立場是從成遠看優先推動加公資更利於實現社會公平下面有請他們做自我介紹各位好 反方一"
+          }
+        ]
+      },
+      {
+        "team": "华南师范大学",
+        "speakers": [
+          {
+            "name": "刘粤",
+            "role": "三辩",
+            "recognizedText": "留月",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "二辩溫星反方三辩溫星繁草三辩留月大方四辩留下警大表 環難十分"
+          }
+        ]
+      }
+    ],
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "江西财经大学匹配到 3 人，未达到 4 人。",
+      "华南师范大学匹配到 1 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1ZDWqzjErN",
+    "bvId": "BV1ZDWqzjErN",
+    "cid": 33122550442,
+    "matchId": "match-BV1ZDWqzjErN",
+    "partIndex": 1,
+    "roleMarkerCount": 8,
+    "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第三场",
+    "teams": [
+      {
+        "team": "华南师范大学",
+        "speakers": [
+          {
+            "name": "温明璇",
+            "role": "二辩",
+            "recognizedText": "文明旋",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "一辩,方名其。对好,正方二辩、文明旋。正方三辩、留月。正方四辩、留"
+          },
+          {
+            "name": "刘粤",
+            "role": "三辩",
+            "recognizedText": "留月",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": ",正方二辩、文明旋。正方三辩、留月。正方四辩、留月、文明旋、文明"
+          }
+        ]
+      },
+      {
+        "team": "哈尔滨工业大学深圳",
+        "speakers": [
+          {
+            "name": "袁潇雅",
+            "role": "一辩",
+            "recognizedText": "元消雅",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "旋、文明旋、文明旋。反方一辩、元消雅。反方二辩、高于翔。反方三辩、"
+          },
+          {
+            "name": "高宇翔",
+            "role": "二辩",
+            "recognizedText": "高于翔",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。反方一辩、元消雅。反方二辩、高于翔。反方三辩、犯罪文。"
+          },
+          {
+            "name": "范觉文",
+            "role": "三辩",
+            "recognizedText": "犯罪文",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "。反方二辩、高于翔。反方三辩、犯罪文。"
+          }
+        ]
+      }
+    ],
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+      "华南师范大学匹配到 2 人，未达到 4 人。",
+      "哈尔滨工业大学深圳匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1hKWBzKE3g",
+    "bvId": "BV1hKWBzKE3g",
+    "cid": 33122946953,
+    "matchId": "match-BV1hKWBzKE3g",
+    "partIndex": 1,
+    "roleMarkerCount": 9,
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第一场",
+    "teams": [
+      {
+        "team": "陕西师范大学",
+        "speakers": [
+          {
+            "name": "南思源",
+            "role": "三辩",
+            "recognizedText": "男士员",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "二辩,穷鱼。各位好,正方三辩男士员。正方四辩好,今天的写写习十分"
+          },
+          {
+            "name": "郝静娅",
+            "role": "四辩",
+            "recognizedText": "好今天",
+            "confidence": 0.41,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "好,正方三辩男士员。正方四辩好,今天的写写习十分大学,谈一辩论队问候再场各位。作"
+          }
+        ]
+      },
+      {
+        "team": "暨南大学",
+        "speakers": [
+          {
+            "name": "张洋",
+            "role": "一辩",
+            "recognizedText": "正方",
+            "confidence": 0.48,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "我介绍。在家上午好,正方一辩,立若逼。大家好,正方二辩,穷鱼。各位好,正方"
+          },
+          {
+            "name": "张柏林",
+            "role": "四辩",
+            "recognizedText": "张伯林",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "。反方三辩,立若逸。反方四辩,张伯林,请代表,既然他学会画一辩的顿位,大家早上好。"
+          }
+        ]
+      }
+    ],
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "陕西师范大学匹配到 2 人，未达到 4 人。",
+      "暨南大学匹配到 2 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV18TWBzvELm",
+    "bvId": "BV18TWBzvELm",
+    "cid": 33123274198,
+    "matchId": "match-BV18TWBzvELm",
+    "partIndex": 1,
+    "roleMarkerCount": 6,
+    "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第二场",
+    "teams": [
+      {
+        "team": "暨南大学",
+        "speakers": [
+          {
+            "name": "张洋",
+            "role": "一辩",
+            "recognizedText": "張陽",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "他們做自我介紹大家好正方一辩張陽大家好正方二辩 李嘉陽這張森辯和慾"
+          },
+          {
+            "name": "李佳阳",
+            "role": "二辩",
+            "recognizedText": "李嘉陽",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "好正方一辩張陽大家好正方二辩 李嘉陽這張森辯和慾陽這張森辯風扯邪技能大學辯論對問候再場各位大家下午好坐在我左手邊的示範方來自中國海洋大學代表對的同學們本場比赛他們的"
+          }
+        ]
+      },
+      {
+        "team": "中国海洋大学",
+        "speakers": [
+          {
+            "name": "崔泽豪",
+            "role": "三辩",
+            "recognizedText": "吃得好",
+            "confidence": 0.45,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "反方二辩為榮耗要好 反方三辩吃得好我們是反方 反方四辩看後然今天表中國航大"
+          },
+          {
+            "name": "康浩然",
+            "role": "四辩",
+            "recognizedText": "看後然",
+            "confidence": 0.43,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "辩吃得好我們是反方 反方四辩看後然今天表中國航大學校變成社會問候做各位 大家下午好在认识了双方辩手之後請榮耗我為您介紹本場比赛的評審他們是劉曉君簽手盯管與簽手王春深"
+          }
+        ]
+      }
+    ],
+    "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "暨南大学匹配到 2 人，未达到 4 人。",
+      "中国海洋大学匹配到 2 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1c1WqzDEEi",
+    "bvId": "BV1c1WqzDEEi",
+    "cid": 33119537526,
+    "matchId": "match-BV1c1WqzDEEi",
+    "partIndex": 1,
+    "roleMarkerCount": 7,
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第一场",
+    "teams": [
+      {
+        "team": "南开大学",
+        "speakers": [
+          {
+            "name": "戴有容",
+            "role": "一辩",
+            "recognizedText": "代表荣",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "意不复人害,一向封。正方一辩南开大学代表荣。各位好,中方二辩南开大学院新成。正方"
+          },
+          {
+            "name": "袁青骋",
+            "role": "二辩",
+            "recognizedText": "院新成",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "大学代表荣。各位好,中方二辩南开大学院新成。正方三辩南开大学王亲。对方四"
+          },
+          {
+            "name": "王勤",
+            "role": "三辩",
+            "recognizedText": "王亲",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "二辩南开大学院新成。正方三辩南开大学王亲。对方四辩南开大学生家亲,前南"
+          },
+          {
+            "name": "孙嘉庆",
+            "role": "四辩",
+            "recognizedText": "生家亲",
+            "confidence": 0.44,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "方三辩南开大学王亲。对方四辩南开大学生家亲,前南开大学问候,再尝各位。作在我左手边的是反风,来自负弹大学代表对的同学们。文章比赛他们的立场是,不应该允许驾驶员,预设"
+          }
+        ]
+      },
+      {
+        "team": "复旦大学",
+        "speakers": [
+          {
+            "name": "穆逸菲",
+            "role": "二辩",
+            "recognizedText": "墓一飞",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "正方一辩张师傅。好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封"
+          },
+          {
+            "name": "曹龙延",
+            "role": "三辩",
+            "recognizedText": "仇龙盐",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封辩手之后,请你许我问您介绍本昌比赛的平省。他们是流息远女士。比南线省,引起详线省。在比赛开始之前,我将对本次比赛的提"
+          }
+        ]
+      }
+    ],
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+      "复旦大学匹配到 2 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1F1WqzDEo8",
+    "bvId": "BV1F1WqzDEo8",
+    "cid": 33119930848,
+    "matchId": "match-BV1F1WqzDEo8",
+    "partIndex": 1,
+    "roleMarkerCount": 8,
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第二场",
+    "teams": [
+      {
+        "team": "复旦大学",
+        "speakers": [
+          {
+            "name": "曹龙延",
+            "role": "三辩",
+            "recognizedText": "草龙盐",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "家好。这方二辩目区。正方三辩草龙盐。正方四辩机认中,请代表负弹大"
+          }
+        ]
+      },
+      {
+        "team": "对外经济贸易大学",
+        "speakers": [
+          {
+            "name": "郭嘉皓",
+            "role": "一辩",
+            "recognizedText": "身家好",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "有请他们做自我介绍。这方一辩,身家好。这方二辩目区。正方三辩草龙盐"
+          }
+        ]
+      }
+    ],
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+      "复旦大学匹配到 1 人，未达到 4 人。",
+      "对外经济贸易大学匹配到 1 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV1n1WqzDEjq",
+    "bvId": "BV1n1WqzDEjq",
+    "cid": 33120194234,
+    "matchId": "match-BV1n1WqzDEjq",
+    "partIndex": 1,
+    "roleMarkerCount": 8,
+    "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第三场",
+    "teams": [
+      {
+        "team": "对外经济贸易大学",
+        "speakers": [
+          {
+            "name": "常芊芊",
+            "role": "一辩",
+            "recognizedText": "长清先",
+            "confidence": 0.46,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "有请他们做自我介绍。正方一辩,长清先。正方二辩虽习。正方三辩,有力"
+          }
+        ]
+      },
+      {
+        "team": "南开大学",
+        "speakers": [
+          {
+            "name": "袁青骋",
+            "role": "二辩",
+            "recognizedText": "员心成",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": ",南开大学适逐就能。反方二辩,南开大学员心成。档档三辩,南开大学王亲。反方"
+          },
+          {
+            "name": "王勤",
+            "role": "三辩",
+            "recognizedText": "王亲",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "辩,南开大学员心成。档档三辩,南开大学王亲。反方四辩,南开大学生家庭,前"
+          },
+          {
+            "name": "江茜",
+            "role": "四辩",
+            "recognizedText": "庭前",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "三辩,南开大学王亲。反方四辩,南开大学生家庭,前南开大学员队问候,在场各位。在认识了双方变守之后,请允许我为您介绍奔昌比赛的平省。他们是刘西然女士。比南先生。引其祥"
+          }
+        ]
+      }
+    ],
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "对外经济贸易大学匹配到 1 人，未达到 4 人。",
+      "南开大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEE6",
+    "bvId": "BV161WqzSEE6",
+    "cid": 33120584990,
+    "matchId": "match-BV161WqzSEE6",
+    "partIndex": 1,
+    "roleMarkerCount": 9,
+    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第一场",
+    "teams": [
+      {
+        "team": "上海戏剧学院",
+        "speakers": [
+          {
+            "name": "李佳宸",
+            "role": "二辩",
+            "recognizedText": "立家城",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "美,正方一辩喉若千。正方二辩,立家城,正方三辩寄云。正方四辩,白易"
+          },
+          {
+            "name": "白亦端",
+            "role": "四辩",
+            "recognizedText": "白易端",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "家城,正方三辩寄云。正方四辩,白易端代表上海继续学院问候在场各位。作在我左手边的是反方。来自华东正法大学代表对的同学们。本场比赛他们的立场是。不应该允许假视员、预设"
+          }
+        ]
+      },
+      {
+        "team": "华东政法大学",
+        "speakers": [
+          {
+            "name": "余心冰",
+            "role": "一辩",
+            "recognizedText": "于新水",
+            "confidence": 0.82,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "以辩会有反方华东正法大学一辩于新水。二辩成任心,三辩王建制。"
+          },
+          {
+            "name": "陈振欣",
+            "role": "二辩",
+            "recognizedText": "成任心",
+            "confidence": 0.48,
+            "confidenceLevel": "low",
+            "autoMerge": false,
+            "matchMethod": "pinyin-soft-role-context",
+            "transcriptSnippet": "华东正法大学一辩于新水。二辩成任心,三辩王建制。四辩,软遇,"
+          },
+          {
+            "name": "王键智",
+            "role": "三辩",
+            "recognizedText": "王建制",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "一辩于新水。二辩成任心,三辩王建制。四辩,软遇,虽我方三辩便"
+          }
+        ]
+      }
+    ],
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+      "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+      "上海戏剧学院匹配到 2 人，未达到 4 人。",
+      "华东政法大学匹配到 3 人，未达到 4 人。"
+    ]
+  },
+  {
+    "audioStatus": "dependency_missing",
+    "bilibiliUrl": "https://www.bilibili.com/video/BV161WqzSEDJ",
+    "bvId": "BV161WqzSEDJ",
+    "cid": 33121306013,
+    "matchId": "match-BV161WqzSEDJ",
+    "partIndex": 1,
+    "roleMarkerCount": 8,
+    "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第三场",
+    "teams": [
+      {
+        "team": "南京大学",
+        "speakers": [
+          {
+            "name": "王靖雅",
+            "role": "三辩",
+            "recognizedText": "王晉雅",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": "業災正方二辩 朝日後正方三辩王晉雅正方四辩案 董敵 警代表正方"
+          }
+        ]
+      },
+      {
+        "team": "上海戏剧学院",
+        "speakers": [
+          {
+            "name": "言姝瑾",
+            "role": "一辩",
+            "recognizedText": "嚴書僅",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "獨立時飛唱論這山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲"
+          },
+          {
+            "name": "白亦端",
+            "role": "二辩",
+            "recognizedText": "白易端",
+            "confidence": 0.96,
+            "confidenceLevel": "high",
+            "autoMerge": true,
+            "matchMethod": "pinyin",
+            "transcriptSnippet": "山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲反方四辩李嘉誠代"
+          },
+          {
+            "name": "李佳宸",
+            "role": "四辩",
+            "recognizedText": "李嘉誠",
+            "confidence": 0.88,
+            "confidenceLevel": "medium",
+            "autoMerge": true,
+            "matchMethod": "pinyin-fuzzy",
+            "transcriptSnippet": " 白易端反方三辩計雲反方四辩李嘉誠代表上海細菌學院問候在場各位在认识了双方片手之後請允許我為您介紹本場比赛的評審他們是謝宇先生王成宇先生逃復航先生在比赛开始之前我將"
+          }
+        ]
+      }
+    ],
+    "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+    "transcriptStatus": "cached",
+    "warnings": [
+      "请安装 ffmpeg：winget install Gyan.FFmpeg",
+      "使用已有 Whisper raw 缓存恢复转写文本。",
+      "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+      "南京大学匹配到 1 人，未达到 4 人。",
+      "上海戏剧学院匹配到 3 人，未达到 4 人。"
     ]
   }
 ]

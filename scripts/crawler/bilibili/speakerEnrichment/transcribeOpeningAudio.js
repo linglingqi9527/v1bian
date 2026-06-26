@@ -1,6 +1,7 @@
 import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { spawn, spawnSync } from 'node:child_process'
 import path from 'node:path'
+import process from 'node:process'
 import { TRANSCRIPT_CACHE_DIR } from './selectSpeakerTargets.js'
 
 export async function transcribeOpeningAudio(target, audioResult, {
@@ -27,13 +28,18 @@ export async function transcribeOpeningAudio(target, audioResult, {
     initialPrompt,
     model,
   })
+  const rawCachedText = await readRawWhisperText(audioResult.audioPath)
+  if (!force && rawCachedText) return persistRawCache(cachePath, transcript, rawCachedText, startedAt)
+
   if (!['success', 'cached'].includes(audioResult.status)) {
+    if (rawCachedText) return persistRawCache(cachePath, transcript, rawCachedText, startedAt)
     transcript.warnings.push(...audioResult.warnings, '音频未生成，跳过转写。')
     return persistResult(cachePath, transcript, 'failed', startedAt)
   }
 
   const backend = detectWhisperBackend()
   if (!backend) {
+    if (rawCachedText) return persistRawCache(cachePath, transcript, rawCachedText, startedAt)
     transcript.warnings.push(
       '缺少 Whisper：请先安装 Python，再运行 pip install -U openai-whisper；或安装 faster-whisper。',
     )
@@ -54,6 +60,10 @@ export async function transcribeOpeningAudio(target, audioResult, {
       startedAt,
     )
   } catch (error) {
+    if (rawCachedText) {
+      transcript.warnings.push(`重新转写失败，已回退到 raw 缓存：${error?.message ?? String(error)}`)
+      return persistRawCache(cachePath, transcript, rawCachedText, startedAt)
+    }
     transcript.warnings.push(error?.message ?? String(error))
     return persistResult(cachePath, transcript, 'failed', startedAt)
   }
@@ -61,7 +71,7 @@ export async function transcribeOpeningAudio(target, audioResult, {
 
 export function checkTranscriptionDependencies() {
   const whisperCli = Boolean(detectWhisperCli())
-  const pythonCommand = ['python', 'python3', 'py']
+  const pythonCommand = pythonCommands()
     .find((command) => commandExists(command, ['--version'])) ?? null
   const fasterWhisper = pythonCommand
     ? commandExists(pythonCommand, ['-c', 'import faster_whisper'])
@@ -96,7 +106,7 @@ function createTranscriptRecord(target, { audioDuration, audioStart, initialProm
 function detectWhisperBackend() {
   const whisperCli = detectWhisperCli()
   if (whisperCli) return whisperCli
-  for (const command of ['python', 'python3', 'py']) {
+  for (const command of pythonCommands()) {
     if (commandExists(command, ['-c', 'import faster_whisper'])) {
       return { type: 'faster-whisper', command }
     }
@@ -105,15 +115,25 @@ function detectWhisperBackend() {
 }
 
 function detectWhisperCli() {
-  if (commandExists('whisper', ['--help'])) {
-    return { type: 'whisper-cli', command: 'whisper', prefixArgs: [] }
+  const whisperCommand = process.env.WHISPER_BIN || 'whisper'
+  if (commandExists(whisperCommand, ['--help'])) {
+    return { type: 'whisper-cli', command: whisperCommand, prefixArgs: [] }
   }
-  for (const command of ['python', 'python3', 'py']) {
+  for (const command of pythonCommands()) {
     if (commandExists(command, ['-m', 'whisper', '--help'])) {
       return { type: 'whisper-cli', command, prefixArgs: ['-m', 'whisper'] }
     }
   }
   return null
+}
+
+function pythonCommands() {
+  return [
+    process.env.PYTHON_BIN,
+    'python',
+    'python3',
+    'py',
+  ].filter(Boolean)
 }
 
 async function transcribeWithWhisperCli(backend, audioPath, model, initialPrompt) {
@@ -159,11 +179,33 @@ async function persistResult(cachePath, transcript, status, startedAt) {
   return { ...transcript, cachePath, status, elapsedMs: Date.now() - startedAt }
 }
 
+function persistRawCache(cachePath, transcript, transcriptText, startedAt) {
+  transcript.transcriptText = transcriptText
+  transcript.transcriptSource = 'whisperRawCache'
+  transcript.warnings.push('使用已有 Whisper raw 缓存恢复转写文本。')
+  return persistResult(cachePath, transcript, 'cached', startedAt)
+}
+
 async function readTranscriptCache(cachePath) {
   try {
     return JSON.parse(await readFile(cachePath, 'utf8'))
   } catch {
     return null
+  }
+}
+
+async function readRawWhisperText(audioPath) {
+  if (!audioPath) return ''
+  const outputPath = path.join(
+    TRANSCRIPT_CACHE_DIR,
+    'raw',
+    `${path.parse(audioPath).name}.json`,
+  )
+  try {
+    const payload = JSON.parse(await readFile(outputPath, 'utf8'))
+    return String(payload.text ?? '').trim()
+  } catch {
+    return ''
   }
 }
 

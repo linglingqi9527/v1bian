@@ -1,4 +1,4 @@
-import { mkdir, writeFile } from 'node:fs/promises'
+import { mkdir, readFile, unlink, writeFile } from 'node:fs/promises'
 import process from 'node:process'
 import { fileURLToPath } from 'node:url'
 import path from 'node:path'
@@ -7,27 +7,37 @@ import { matchRosterSpeakers } from './matchRosterSpeakers.js'
 import { mergeRosterSpeakerResults } from './mergeRosterSpeakerResults.js'
 import {
   GENERATED_DIR,
+  AUDIO_CACHE_DIR,
   parseCliOptions,
   selectSpeakerTargets,
 } from './selectSpeakerTargets.js'
 import { loadTeamRoster, resolveTargetRoster } from './teamRoster.js'
 import { transcribeOpeningAudio } from './transcribeOpeningAudio.js'
 import { resolveTargetMedia } from './resolveTargetMedia.js'
+import { createIntroSnippetRecord } from './transcriptIntroSnippet.js'
+import { isQualificationScopeMatch } from './qualificationScope.js'
 
 export async function buildRosterConstrainedReport(options = {}) {
   const startedAt = Date.now()
   const limit = options.all ? Number.POSITIVE_INFINITY : options.limit ?? 5
-  const outputPaths = createOutputPaths(options.all)
-  const rosterRows = await loadTeamRoster()
-  const baseManifest = await selectSpeakerTargets({ limit: 200, write: false })
+  const year = options.year ?? 2025
+  const outputPaths = createOutputPaths(options.all, year)
+  const rosterRows = await loadTeamRoster({ year })
+  const baseManifest = await selectSpeakerTargets({ limit: 500, write: false, year })
+  const existingIntroSnippetIds = options.missingIntroOnly
+    ? await readNonEmptyIntroSnippetIds(outputPaths.introSnippets)
+    : null
   const rosterCandidates = baseManifest.targets
-    .filter((target) => target.stage.includes('资格赛'))
+    .filter((target) => isQualificationScopeMatch(target, { year }))
     .map((target) => ({ target, roster: resolveTargetRoster(target, rosterRows) }))
   const skippedNoRoster = rosterCandidates.filter((item) => !item.roster.covered)
-  const eligible = rosterCandidates.filter((item) => item.roster.covered && item.target.processable)
+  const eligible = rosterCandidates
+    .filter((item) => item.roster.covered && item.target.processable)
+    .filter((item) => !existingIntroSnippetIds?.has(item.target.matchId))
   const selected = options.all ? eligible : selectDiverseRosterTargets(eligible, limit)
   const records = []
-  const commandLabel = options.all ? 'speakers:roster:2025' : 'speakers:roster:sample:2025'
+  const commandLabel = options.all ? `speakers:roster:${year}` : `speakers:roster:sample:${year}`
+  const introSnippets = []
 
   for (const [index, item] of selected.entries()) {
     const { roster, target } = item
@@ -45,7 +55,7 @@ export async function buildRosterConstrainedReport(options = {}) {
     const transcript = await transcribeOpeningAudio(resolvedTarget, audio, {
       audioDuration: options.duration,
       audioStart: 0,
-      cacheNamespace: 'roster-2025-qualification',
+      cacheNamespace: `roster-${year}-qualification`,
       force: options.force,
       initialPrompt: roster.prompt,
       model: options.model,
@@ -54,6 +64,12 @@ export async function buildRosterConstrainedReport(options = {}) {
       rosterContext: roster,
       transcriptText: transcript.transcriptText,
     })
+    introSnippets.push(createIntroSnippetRecord({
+      matched,
+      target: resolvedTarget,
+      transcript,
+    }))
+    await cleanupAudioCache(audio, transcript, options)
     records.push({
       audioStatus: audio.status,
       bilibiliUrl: target.bilibiliUrl,
@@ -75,26 +91,78 @@ export async function buildRosterConstrainedReport(options = {}) {
         ...matched.warnings,
       ]),
     })
+    if (!options.merge) {
+      await writeProgress({
+        eligibleCount: eligible.length,
+        outputPaths,
+        records,
+        rosterRows,
+        skippedNoRoster,
+        startedAt,
+        introSnippets,
+        options,
+        year,
+      })
+    }
   }
 
   const mergeResult = options.merge
-    ? await mergeRosterSpeakerResults(records)
+    ? await mergeRosterSpeakerResults(records, {
+      acceptLowConfidence: options.acceptLowConfidence,
+    })
     : null
   const report = createReport({
     elapsedMs: Date.now() - startedAt,
     eligibleCount: eligible.length,
     mergeResult,
     mode: options.all ? 'full' : 'sample',
-    records,
+    records: options.merge ? records : await mergeRecords(outputPaths.candidates, records),
     rosterRows,
     skippedNoRoster,
+    options,
+    year,
   })
   await mkdir(GENERATED_DIR, { recursive: true })
+  const mergedIntroSnippets = await mergeIntroSnippets(outputPaths.introSnippets, introSnippets)
+  const mergedRecords = options.merge ? records : await mergeRecords(outputPaths.candidates, records)
   await Promise.all([
-    writeJson(outputPaths.candidates, records),
+    writeJson(outputPaths.candidates, mergedRecords),
+    writeJson(outputPaths.introSnippets, mergedIntroSnippets),
     writeJson(outputPaths.report, report),
   ])
   return { records, report }
+}
+
+async function writeProgress({
+  eligibleCount,
+  outputPaths,
+  records,
+  rosterRows,
+  skippedNoRoster,
+  startedAt,
+  introSnippets,
+  options,
+  year,
+}) {
+  await mkdir(GENERATED_DIR, { recursive: true })
+  const mergedIntroSnippets = await mergeIntroSnippets(outputPaths.introSnippets, introSnippets)
+  const mergedRecords = await mergeRecords(outputPaths.candidates, records)
+  const report = createReport({
+    elapsedMs: Date.now() - startedAt,
+    eligibleCount,
+    mergeResult: null,
+    mode: options.all ? 'full' : 'sample',
+    records: mergedRecords,
+    rosterRows,
+    skippedNoRoster,
+    options,
+    year,
+  })
+  await Promise.all([
+    writeJson(outputPaths.candidates, mergedRecords),
+    writeJson(outputPaths.introSnippets, mergedIntroSnippets),
+    writeJson(outputPaths.report, report),
+  ])
 }
 
 function selectDiverseRosterTargets(items, limit) {
@@ -122,6 +190,8 @@ function createReport({
   records,
   rosterRows,
   skippedNoRoster,
+  options,
+  year,
 }) {
   const allSpeakers = records.flatMap((record) => (
     record.teams.flatMap((team) => team.speakers)
@@ -129,7 +199,7 @@ function createReport({
   return {
     schemaVersion: 1,
     generatedAt: new Date().toISOString(),
-    year: 2025,
+    year,
     competitionType: '资格赛',
     mode,
     rosterEntryCount: rosterRows.length,
@@ -156,6 +226,9 @@ function createReport({
     lowMatchCount: allSpeakers.filter((speaker) => speaker.confidenceLevel === 'low').length,
     totalElapsedMs: elapsedMs,
     mergeResult,
+    mergeOptions: {
+      acceptLowConfidence: Boolean(options.acceptLowConfidence),
+    },
     selectedMatches: records.map((record) => ({
       matchId: record.matchId,
       title: record.title,
@@ -168,23 +241,29 @@ function createReport({
     })),
     notes: [
       mergeResult
-        ? '已将通过门槛的名单姓名合并进 generatedMatches.json。'
+        ? '已将名单姓名合并进 generatedMatches.json。默认只合并通过门槛的姓名；如 acceptLowConfidence 为 true，则包含低置信候选。'
         : '当前为只读 sample，不会写回 generatedMatches.json。',
+      '如使用 --missing-intro-only，本报告只包含尚无自我介绍片段缓存的目标。',
+      '如使用 --cleanup-audio，会在转写文本可用后删除本地 wav 音频缓存。',
       '同音或模糊匹配仍需人工复核。',
     ],
   }
 }
 
-function createOutputPaths(isFullRun) {
+function createOutputPaths(isFullRun, year) {
   const suffix = isFullRun ? '' : '.sample'
   return {
     candidates: path.join(
       GENERATED_DIR,
-      `rosterSpeakerCandidates.2025.qualification${suffix}.json`,
+      `rosterSpeakerCandidates.${year}.qualification${suffix}.json`,
+    ),
+    introSnippets: path.join(
+      GENERATED_DIR,
+      `speakerIntroSnippets.${year}.qualification${suffix}.json`,
     ),
     report: path.join(
       GENERATED_DIR,
-      `rosterSpeakerReport.2025.qualification${suffix}.json`,
+      `rosterSpeakerReport.${year}.qualification${suffix}.json`,
     ),
   }
 }
@@ -201,10 +280,71 @@ async function writeJson(filePath, value) {
   await writeFile(filePath, `${JSON.stringify(value, null, 2)}\n`, 'utf8')
 }
 
+async function mergeIntroSnippets(filePath, records) {
+  const existing = await readOptionalJson(filePath)
+  const recordByMatchId = new Map(
+    (existing?.snippets ?? []).map((record) => [record.matchId, record]),
+  )
+  for (const record of records) recordByMatchId.set(record.matchId, record)
+
+  return {
+    schemaVersion: 1,
+    generatedAt: new Date().toISOString(),
+    purpose: '缓存每场缺辩手视频的开场自我介绍片段，便于名单修正后快速重匹配。',
+    snippets: [...recordByMatchId.values()]
+      .sort((left, right) => String(left.date).localeCompare(String(right.date))
+        || String(left.matchId).localeCompare(String(right.matchId))),
+  }
+}
+
+async function mergeRecords(filePath, records) {
+  const existing = await readOptionalJson(filePath)
+  const recordByMatchId = new Map(
+    (Array.isArray(existing) ? existing : []).map((record) => [record.matchId, record]),
+  )
+  for (const record of records) recordByMatchId.set(record.matchId, record)
+
+  return [...recordByMatchId.values()]
+    .sort((left, right) => String(left.matchId).localeCompare(String(right.matchId)))
+}
+
+async function readOptionalJson(filePath) {
+  try {
+    return JSON.parse(await readFile(filePath, 'utf8'))
+  } catch {
+    return null
+  }
+}
+
+async function readNonEmptyIntroSnippetIds(filePath) {
+  const payload = await readOptionalJson(filePath)
+  return new Set((payload?.snippets ?? [])
+    .filter((record) => record.introText)
+    .map((record) => record.matchId))
+}
+
+async function cleanupAudioCache(audio, transcript, options) {
+  if (!options.cleanupAudio || !transcript.transcriptText || !audio.audioPath) return
+  if (!isPathInside(audio.audioPath, AUDIO_CACHE_DIR)) return
+
+  try {
+    await unlink(audio.audioPath)
+  } catch (error) {
+    if (error?.code !== 'ENOENT') throw error
+  }
+}
+
+function isPathInside(filePath, parentPath) {
+  const relativePath = path.relative(parentPath, filePath)
+  return Boolean(relativePath)
+    && !relativePath.startsWith('..')
+    && !path.isAbsolute(relativePath)
+}
+
 async function runCli() {
   const options = parseCliOptions()
   const { report } = await buildRosterConstrainedReport(options)
-  const commandLabel = options.all ? 'speakers:roster:2025' : 'speakers:roster:sample:2025'
+  const commandLabel = options.all ? `speakers:roster:${options.year}` : `speakers:roster:sample:${options.year}`
   console.log(
     `[${commandLabel}] ${report.sampleSize} 条视频，`
     + `${report.matchedVideoCount} 条产生名单匹配，共 ${report.matchedSpeakerCount} 名候选。`,
@@ -220,7 +360,7 @@ async function runCli() {
 
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   runCli().catch((error) => {
-    console.error(`[speakers:roster:sample:2025] ${error?.message ?? error}`)
+    console.error(`[speakers:roster] ${error?.message ?? error}`)
     process.exitCode = 1
   })
 }

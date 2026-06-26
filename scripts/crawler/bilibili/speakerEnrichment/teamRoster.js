@@ -5,15 +5,34 @@ export const QUALIFICATION_ROSTER_PATH = fileURLToPath(
   new URL('./rosters/team_roster_2025_qualification.json', import.meta.url),
 )
 
+export const QUALIFICATION_ROSTER_2024_BY_STAGE_PATH = fileURLToPath(
+  new URL('./rosters/team_roster_2024_qualification_by_stage.json', import.meta.url),
+)
+
+export const QUALIFICATION_ROSTER_2024_COMBINED_PATH = fileURLToPath(
+  new URL('./rosters/team_roster_2024_qualification_combined_by_school.json', import.meta.url),
+)
+
+export function getQualificationRosterPath({
+  mode = 'byStage',
+  year = 2025,
+} = {}) {
+  if (year === 2024 && mode === 'combined') return QUALIFICATION_ROSTER_2024_COMBINED_PATH
+  if (year === 2024) return QUALIFICATION_ROSTER_2024_BY_STAGE_PATH
+  return QUALIFICATION_ROSTER_PATH
+}
+
 export async function loadTeamRoster({
   competitionType = '资格赛',
-  rosterPath = QUALIFICATION_ROSTER_PATH,
   year = 2025,
+  mode = year === 2024 ? 'combined' : 'byStage',
+  rosterPath = getQualificationRosterPath({ mode, year }),
+  stageSegment,
 } = {}) {
   const rows = JSON.parse(await readFile(rosterPath, 'utf8'))
   return rows.filter((row) => (
     Number(row.year) === year && row.competitionType === competitionType
-  ))
+  )).filter((row) => !stageSegment || row.stageSegment === stageSegment)
 }
 
 export function resolveTargetRoster(target, rosterRows) {
@@ -47,6 +66,12 @@ export function resolveTargetRoster(target, rosterRows) {
 
 export function normalizeTeamName(value) {
   return String(value ?? '')
+    .replace(/臺/g, '台')
+    .replace(/灣/g, '湾')
+    .replace(/學/g, '学')
+    .replace(/師/g, '师')
+    .replace(/範/g, '范')
+    .replace(/門/g, '门')
     .replace(/[（(].*?[）)]/g, '')
     .replace(/\s+/g, '')
     .replace(/代表队|辩论队/g, '')

@@ -10,6 +10,13 @@
       "华南师范大学",
       "中国政法大学"
     ],
+    "speakers": [
+      "温明璇",
+      "刘粤",
+      "缪正之",
+      "孙一洲",
+      "白一果"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -25,6 +32,11 @@
     "teams": [
       "中国政法大学",
       "南昌大学"
+    ],
+    "speakers": [
+      "龙慧玲",
+      "史天逸",
+      "叶钰琳"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -42,6 +54,11 @@
       "南开大学",
       "华南师范大学"
     ],
+    "speakers": [
+      "权莉茹",
+      "李玉晓",
+      "刘粤"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -57,6 +74,12 @@
     "teams": [
       "南开大学",
       "南京大学"
+    ],
+    "speakers": [
+      "戴有容",
+      "王勤",
+      "袁青骋",
+      "王靖雅"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -74,6 +97,10 @@
       "南京大学",
       "南开大学"
     ],
+    "speakers": [
+      "王靖雅",
+      "江茜"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -89,6 +116,13 @@
     "teams": [
       "华南师范大学",
       "陕西师范大学"
+    ],
+    "speakers": [
+      "权莉茹",
+      "刘粤",
+      "黄钰淇",
+      "南思源",
+      "郝静娅"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -106,37 +140,8 @@
       "陕西师范大学",
       "华南师范大学"
     ],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1UaWzzTExX",
-    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1UaWzzTExX",
-    "event": "2025新国辩",
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第一场",
-    "date": "2025-10-18",
-    "teams": [
-      "西安交通大学",
-      "中国政法大学"
-    ],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1MYWzzqEC3",
-    "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1MYWzzqEC3",
-    "event": "2025新国辩",
-    "stage": "高校组·资格赛中国大陆赛道 晋级赛M-R组第二场",
-    "date": "2025-10-18",
-    "teams": [
-      "中国政法大学",
-      "西安交通大学"
+    "speakers": [
+      "南思源"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -154,6 +159,13 @@
       "南昌大学",
       "上海大学"
     ],
+    "speakers": [
+      "龙慧玲",
+      "叶钰琳",
+      "潘严芷怡",
+      "史毓迪波",
+      "赵奕平"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -170,21 +182,13 @@
       "上海大学",
       "南昌大学"
     ],
-    "speakerStatus": "partial",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1WoWizWEbd",
-    "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1WoWizWEbd",
-    "event": "2025新国辩",
-    "stage": "高校组·资格赛中国大陆赛道 复赛STU组第一场",
-    "date": "2025-10-17",
-    "teams": [
-      "广西民族大学",
-      "安徽大学"
+    "speakers": [
+      "敦译萱",
+      "史毓迪波",
+      "龙慧玲",
+      "史天逸",
+      "赵奕平",
+      "叶钰琳"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -202,6 +206,13 @@
       "安徽大学",
       "南昌大学"
     ],
+    "speakers": [
+      "万子豪",
+      "杨耀文",
+      "方婷薇",
+      "龙慧玲",
+      "史天逸"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -217,6 +228,14 @@
     "teams": [
       "南昌大学",
       "广西民族大学"
+    ],
+    "speakers": [
+      "龙慧玲",
+      "史天逸",
+      "李佳阳",
+      "栗嘉宁",
+      "黎欣",
+      "黄集海"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -234,6 +253,14 @@
       "厦门大学",
       "上海大学"
     ],
+    "speakers": [
+      "范可欣",
+      "吴泽荣",
+      "赵亿嘉",
+      "黄国锐",
+      "史毓迪波",
+      "赵奕平"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -249,6 +276,10 @@
     "teams": [
       "上海大学",
       "宁波大学"
+    ],
+    "speakers": [
+      "敦译萱",
+      "史毓迪波"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -266,6 +297,13 @@
       "宁波大学",
       "厦门大学"
     ],
+    "speakers": [
+      "胡文昊",
+      "赵书逸",
+      "李庚尧",
+      "吕艺杭",
+      "陈显龙"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -282,7 +320,14 @@
       "天津师范大学",
       "东北林业大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "钟奇山",
+      "路雅涵",
+      "李嘉澄",
+      "黄一鸣",
+      "王雅昕"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -298,7 +343,13 @@
       "东北林业大学",
       "西安交通大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "王羽凡",
+      "苗宇涵",
+      "谢梓涵",
+      "欣芭特"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -314,7 +365,13 @@
       "西安交通大学",
       "天津师范大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "尚书腾",
+      "苗宇涵",
+      "王羽凡",
+      "董嘉兴"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -330,7 +387,12 @@
       "天津大学",
       "杭州师范大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "李玥",
+      "陈江悦",
+      "杨潘俊"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -346,7 +408,14 @@
       "杭州师范大学",
       "中国政法大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "蓝培姚",
+      "白一果",
+      "孙一洲",
+      "雷拓",
+      "周琦"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -362,7 +431,15 @@
       "中国政法大学",
       "天津大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "缪正之",
+      "孙一洲",
+      "雷拓",
+      "陈哲",
+      "李洋",
+      "闫俊淇"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -377,6 +454,12 @@
     "teams": [
       "江西财经大学",
       "华南师范大学"
+    ],
+    "speakers": [
+      "温馨",
+      "张子韵",
+      "刘粤",
+      "吴舟"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -394,6 +477,13 @@
       "华南师范大学",
       "哈尔滨工业大学"
     ],
+    "speakers": [
+      "温明璇",
+      "刘粤",
+      "袁潇雅",
+      "高宇翔",
+      "范觉文"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -410,7 +500,13 @@
       "陕西师范大学",
       "暨南大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "南思源",
+      "张柏林",
+      "郝静娅",
+      "张洋"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -426,7 +522,13 @@
       "暨南大学",
       "中国海洋大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "张洋",
+      "李佳阳",
+      "崔泽豪",
+      "康浩然"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -442,7 +544,12 @@
       "中国海洋大学",
       "陕西师范大学"
     ],
-    "speakerStatus": "missing",
+    "speakers": [
+      "康浩然",
+      "曲泓宇",
+      "郝静娅"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -457,6 +564,14 @@
     "teams": [
       "南开大学",
       "复旦大学"
+    ],
+    "speakers": [
+      "戴有容",
+      "袁青骋",
+      "王勤",
+      "穆逸菲",
+      "曹龙延",
+      "孙嘉庆"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -474,6 +589,10 @@
       "复旦大学",
       "对外经济贸易大学"
     ],
+    "speakers": [
+      "曹龙延",
+      "郭嘉皓"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -489,6 +608,12 @@
     "teams": [
       "对外经济贸易大学",
       "南开大学"
+    ],
+    "speakers": [
+      "袁青骋",
+      "王勤",
+      "江茜",
+      "常芊芊"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -506,6 +631,13 @@
       "上海戏剧学院",
       "华东政法大学"
     ],
+    "speakers": [
+      "李佳宸",
+      "白亦端",
+      "余心冰",
+      "王键智",
+      "陈振欣"
+    ],
     "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -522,6 +654,7 @@
       "华东政法大学",
       "南京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -537,6 +670,12 @@
     "teams": [
       "南京大学",
       "上海戏剧学院"
+    ],
+    "speakers": [
+      "王靖雅",
+      "言姝瑾",
+      "白亦端",
+      "李佳宸"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -554,6 +693,7 @@
       "爱丁堡大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -570,6 +710,7 @@
       "台北科技大学",
       "爱丁堡大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -586,6 +727,7 @@
       "宁波大学",
       "台北科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -602,6 +744,7 @@
       "陕西师范大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -618,6 +761,7 @@
       "南京审计大学",
       "陕西师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -634,6 +778,7 @@
       "南开大学",
       "南京审计大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -650,6 +795,7 @@
       "中国人民大学",
       "爱丁堡大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -666,6 +812,7 @@
       "爱丁堡大学",
       "中国人民大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -682,6 +829,7 @@
       "台北科技大学",
       "东北师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -699,6 +847,7 @@
       "东北师范大学",
       "台北科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -715,6 +864,7 @@
       "同济大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -731,6 +881,7 @@
       "宁波大学",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -747,6 +898,7 @@
       "中国计量大学",
       "陕西师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -764,6 +916,7 @@
       "陕西师范大学",
       "中国计量大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -780,6 +933,7 @@
       "澳门大学",
       "南京审计大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -796,6 +950,7 @@
       "南京审计大学",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -812,6 +967,7 @@
       "大连海事大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -828,6 +984,7 @@
       "南开大学",
       "大连海事大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -844,6 +1001,7 @@
       "中国人民大学",
       "香港中文大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -860,6 +1018,7 @@
       "香港中文大学",
       "中国人民大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -876,6 +1035,7 @@
       "爱丁堡大学",
       "福建师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -892,6 +1052,7 @@
       "福建师范大学",
       "爱丁堡大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -908,6 +1069,7 @@
       "安徽大学",
       "台北科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -924,6 +1086,7 @@
       "台北科技大学",
       "安徽大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -940,6 +1103,7 @@
       "东北师范大学",
       "华中师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -956,6 +1120,7 @@
       "华中师范大学",
       "东北师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -973,6 +1138,7 @@
       "同济大学",
       "四川大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -989,6 +1155,7 @@
       "四川大学",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1005,6 +1172,7 @@
       "河北大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1021,6 +1189,7 @@
       "宁波大学",
       "河北大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1037,6 +1206,7 @@
       "广东外语外贸大学",
       "中国计量大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1053,6 +1223,7 @@
       "中国计量大学",
       "广东外语外贸大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1069,6 +1240,7 @@
       "纽约大学",
       "陕西师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1085,6 +1257,7 @@
       "陕西师范大学",
       "纽约大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1101,6 +1274,7 @@
       "澳门科技大学",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1117,6 +1291,7 @@
       "澳门大学",
       "澳门科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1133,6 +1308,7 @@
       "浙江理工大学",
       "南京审计大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1149,6 +1325,7 @@
       "南京审计大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -1166,6 +1343,7 @@
       "大连海事大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1182,6 +1360,7 @@
       "悉尼大学",
       "大连海事大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1198,6 +1377,7 @@
       "复旦大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1214,6 +1394,7 @@
       "南开大学",
       "复旦大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1230,6 +1411,7 @@
       "中国人民大学",
       "江西农业大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1246,6 +1428,7 @@
       "早稻田大学",
       "香港中文大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1262,6 +1445,7 @@
       "中国海洋大学",
       "爱丁堡大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1278,6 +1462,7 @@
       "臺灣大學",
       "福建师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1294,6 +1479,7 @@
       "南京大学",
       "安徽大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1310,6 +1496,7 @@
       "臺北科技大學",
       "华南理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1326,6 +1513,7 @@
       "东北师范大学",
       "英属哥伦比亚大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1342,6 +1530,7 @@
       "华中师范大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1358,6 +1547,7 @@
       "国际关系学院",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1374,6 +1564,7 @@
       "马来西亚理科大学",
       "四川大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1390,6 +1581,7 @@
       "彰化師範大學",
       "河北大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1406,6 +1598,7 @@
       "宁波大学",
       "武汉理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1422,6 +1615,7 @@
       "广东外语外贸大学",
       "香港浸会大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1438,6 +1632,7 @@
       "中国计量大学",
       "新加坡国立大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1454,6 +1649,7 @@
       "纽约大学",
       "南京工业大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1470,6 +1666,7 @@
       "重庆大学",
       "陕西师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1486,6 +1683,7 @@
       "澳门科技大学",
       "西南民族大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1502,6 +1700,7 @@
       "澳门大学",
       "新南威尔士大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1518,6 +1717,7 @@
       "浙江理工大学",
       "海南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1534,6 +1734,7 @@
       "莫纳什大学",
       "南京审计大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1550,6 +1751,7 @@
       "大连海事大学",
       "湖南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1566,6 +1768,7 @@
       "北京师范大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1582,6 +1785,7 @@
       "复旦大学",
       "山东大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1598,6 +1802,7 @@
       "北京林业大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1614,6 +1819,7 @@
       "清华大学",
       "国防科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1627,6 +1833,7 @@
     "stage": "明星表演赛",
     "date": "2024-01-24",
     "teams": [],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -1642,6 +1849,7 @@
     "stage": "十一届新国辩：up主跨界表演赛",
     "date": "2024-01-24",
     "teams": [],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -1660,6 +1868,7 @@
       "清华大学",
       "天津大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1676,6 +1885,7 @@
       "肖磊",
       "黄执中"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1692,6 +1902,7 @@
       "梁秋阳 马薇薇",
       "詹青云 庞颖"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1708,6 +1919,7 @@
       "中国政法大学",
       "天津大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1724,6 +1936,7 @@
       "清华大学",
       "伦敦政治经济学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1737,6 +1950,7 @@
     "stage": "新锐表演赛",
     "date": "2024-01-23",
     "teams": [],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能确定完整的双方学校或队伍。",
@@ -1754,6 +1968,7 @@
       "天津大学",
       "北京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1770,6 +1985,7 @@
       "中国政法大学",
       "中国人民大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1786,6 +2002,7 @@
       "伦敦政治经济学院",
       "暨南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1802,6 +2019,7 @@
       "天津大学",
       "华南理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1818,6 +2036,7 @@
       "中国人民大学",
       "马来亚大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1834,6 +2053,7 @@
       "西南政法大学",
       "北京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1850,6 +2070,7 @@
       "中国政法大学",
       "墨尔本大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1866,6 +2087,7 @@
       "澳门大学",
       "天津大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1882,6 +2104,7 @@
       "国际关系学院",
       "西南政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1898,6 +2121,7 @@
       "北京邮电大学",
       "中国政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1914,6 +2138,7 @@
       "上海大学",
       "中国人民大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1930,6 +2155,7 @@
       "华南理工大学",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1946,6 +2172,7 @@
       "北京大学",
       "国际关系学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -1963,6 +2190,7 @@
       "马来亚大学",
       "上海大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1979,6 +2207,7 @@
       "墨尔本大学",
       "北京邮电大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -1995,6 +2224,7 @@
       "浙江理工大学",
       "暨南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2011,6 +2241,7 @@
       "山东理工大学",
       "武汉大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2027,6 +2258,7 @@
       "西南大学",
       "清华大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2043,6 +2275,7 @@
       "悉尼大学",
       "伦敦政治经济学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2059,6 +2292,7 @@
       "南开大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2075,6 +2309,7 @@
       "国防科技大学",
       "山东理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2091,6 +2326,7 @@
       "中山大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2107,6 +2343,7 @@
       "南京大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2123,6 +2360,7 @@
       "伦敦政治经济学院",
       "南京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2139,6 +2377,7 @@
       "暨南大学",
       "中山大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2155,6 +2394,7 @@
       "武汉大学",
       "国防科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2171,6 +2411,7 @@
       "清华大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2187,6 +2428,7 @@
       "悉尼大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2203,6 +2445,7 @@
       "山东理工大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2219,6 +2462,7 @@
       "悉尼大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2235,6 +2479,7 @@
       "浙江理工大学",
       "山东理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2251,6 +2496,7 @@
       "西南大学",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2267,6 +2513,7 @@
       "澳门大学",
       "国际关系学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2283,6 +2530,7 @@
       "国际关系学院",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2299,6 +2547,7 @@
       "山东理工大学",
       "马来西亚理科大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2315,6 +2564,7 @@
       "马来西亚理科大学",
       "山东理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2331,6 +2581,7 @@
       "悉尼大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2347,6 +2598,7 @@
       "宁波大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2363,6 +2615,7 @@
       "武汉理工大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2379,6 +2632,7 @@
       "浙江理工大学",
       "武汉理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2395,6 +2649,7 @@
       "西南大学",
       "北京林业大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2411,6 +2666,7 @@
       "北京林业大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2427,6 +2683,7 @@
       "浙江传媒学院",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2443,6 +2700,7 @@
       "澳门大学",
       "浙江传媒学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2459,6 +2717,7 @@
       "同济大学",
       "国际关系学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2475,6 +2734,7 @@
       "国际关系学院",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2491,6 +2751,7 @@
       "安徽财经大学",
       "中南财经政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2507,6 +2768,7 @@
       "山东理工大学",
       "新南威尔士大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2523,6 +2785,7 @@
       "马来西亚理科大学",
       "海南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2539,6 +2802,7 @@
       "香港大学",
       "湘潭大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2555,6 +2819,7 @@
       "中国海洋大学",
       "江西财经大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2571,6 +2836,7 @@
       "河北地质大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2587,6 +2853,7 @@
       "广东外语外贸大学",
       "广西民族大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2603,6 +2870,7 @@
       "西北大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2619,6 +2887,7 @@
       "武汉理工大学",
       "北京师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2635,6 +2904,7 @@
       "香港教育大学",
       "格拉斯哥大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2651,6 +2921,7 @@
       "福建师范大学",
       "广州大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2667,6 +2938,7 @@
       "哈尔滨工程大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2683,6 +2955,7 @@
       "南京工程学院",
       "西南民族大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2699,6 +2972,7 @@
       "山东大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2715,6 +2989,7 @@
       "内蒙古师范大学",
       "复旦大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2731,6 +3006,7 @@
       "北京林业大学",
       "湖南财政经济学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2747,6 +3023,7 @@
       "浙江传媒学院",
       "澳门科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2763,6 +3040,7 @@
       "爱丁堡大学",
       "中国人民公安大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2779,6 +3057,7 @@
       "澳门大学",
       "中国传媒大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2795,6 +3074,7 @@
       "大连海事大学",
       "兰州大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2811,6 +3091,7 @@
       "牛津大学",
       "新加坡国立大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2827,6 +3108,7 @@
       "云南财经大学",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2843,6 +3125,7 @@
       "南京师范大学",
       "国际关系学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2859,6 +3142,7 @@
       "河南大学",
       "天津师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2875,6 +3159,7 @@
       "中南财经政法大学",
       "山东理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2891,6 +3176,7 @@
       "山东理工大学",
       "中南财经政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2907,6 +3193,7 @@
       "马来西亚理科大学",
       "湘潭大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2923,6 +3210,7 @@
       "湘潭大学",
       "马来西亚理科大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -2940,6 +3228,7 @@
       "中国海洋大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2956,6 +3245,7 @@
       "悉尼大学",
       "中国海洋大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2972,6 +3262,7 @@
       "广西民族大学",
       "宁波大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -2988,6 +3279,7 @@
       "宁波大学",
       "广西民族大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3004,6 +3296,7 @@
       "武汉理工大学",
       "格拉斯哥大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3020,6 +3313,7 @@
       "格拉斯哥大学",
       "武汉理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3036,6 +3330,7 @@
       "广州大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3052,6 +3347,7 @@
       "浙江理工大学",
       "广州大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3068,6 +3364,7 @@
       "西南民族大学",
       "西南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3084,6 +3381,7 @@
       "西南大学",
       "西南民族大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3100,6 +3398,7 @@
       "复旦大学",
       "北京林业大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3116,6 +3415,7 @@
       "北京林业大学",
       "复旦大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3132,6 +3432,7 @@
       "浙江传媒学院",
       "爱丁堡大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3148,6 +3449,7 @@
       "爱丁堡大学",
       "浙江传媒学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3164,6 +3466,7 @@
       "澳门大学",
       "兰州大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3180,6 +3483,7 @@
       "兰州大学",
       "澳门大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3196,6 +3500,7 @@
       "牛津大学",
       "同济大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3212,6 +3517,7 @@
       "同济大学",
       "牛津大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3228,6 +3534,7 @@
       "国际关系学院",
       "天津师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3244,6 +3551,7 @@
       "天津师范大学",
       "国际关系学院"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3260,6 +3568,7 @@
       "中山大学",
       "暨南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3276,6 +3585,7 @@
       "北京大学",
       "南京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3292,6 +3602,7 @@
       "西南政法大学",
       "暨南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3308,6 +3619,7 @@
       "中山大学",
       "澳门科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3324,6 +3636,7 @@
       "南京大学",
       "北京师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3340,6 +3653,7 @@
       "华南理工大学",
       "北京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3356,6 +3670,7 @@
       "暨南大学",
       "国防科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3372,6 +3687,7 @@
       "南开大学",
       "暨南大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3388,6 +3704,7 @@
       "国防科技大学",
       "南开大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3404,6 +3721,7 @@
       "浙江理工大学",
       "悉尼大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3420,6 +3738,7 @@
       "西南政法大学",
       "浙江理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3436,6 +3755,7 @@
       "悉尼大学",
       "西南政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3452,6 +3772,7 @@
       "澳门科技大学",
       "清华大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3468,6 +3789,7 @@
       "香港大学",
       "澳门科技大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3484,6 +3806,7 @@
       "清华大学",
       "香港大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3500,6 +3823,7 @@
       "中国人民大学",
       "东吴大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3516,6 +3840,7 @@
       "中山大学",
       "中国人民大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3532,6 +3857,7 @@
       "东吴大学",
       "中山大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3548,6 +3874,7 @@
       "北京师范大学",
       "天津大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3564,6 +3891,7 @@
       "北京邮电大学",
       "北京师范大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3580,6 +3908,7 @@
       "天津大学",
       "北京邮电大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3596,6 +3925,7 @@
       "南京大学",
       "河北地质大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3612,6 +3942,7 @@
       "哈尔滨工程大学",
       "南京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3628,6 +3959,7 @@
       "河北地质大学",
       "哈尔滨工程大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3644,6 +3976,7 @@
       "中国政法大学",
       "武汉大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3660,6 +3993,7 @@
       "北京大学",
       "中国政法大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3676,6 +4010,7 @@
       "武汉大学",
       "北京大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3692,6 +4027,7 @@
       "复旦大学",
       "上海对外经贸大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3708,6 +4044,7 @@
       "华南理工大学",
       "复旦大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3724,6 +4061,7 @@
       "上海对外经贸大学",
       "华南理工大学"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3737,6 +4075,7 @@
     "stage": "up主跨界表演赛",
     "date": "2023-01-20",
     "teams": [],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -3752,6 +4091,7 @@
     "stage": "明星表演赛",
     "date": "2023-01-20",
     "teams": [],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
@@ -3770,6 +4110,7 @@
       "黄执中",
       "熊浩"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"
@@ -3786,6 +4127,7 @@
       "张哲耀",
       "梁秋阳"
     ],
+    "speakers": [],
     "speakerStatus": "missing",
     "parseWarnings": [
       "未能解析辩手名单。"

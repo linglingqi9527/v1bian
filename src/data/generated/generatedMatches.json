@@ -3054,7 +3054,10 @@
     ],
     "speakers": [
       "温明璇",
-      "刘粤"
+      "刘粤",
+      "缪正之",
+      "孙一洲",
+      "白一果"
     ],
     "favorite": false,
     "watched": false,
@@ -3106,9 +3109,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 决赛\n人终有一死，是/不是一件好事\n\n正方：华南师范大学\n持方：人终有一死，是一件好事\n\n反方：中国政法大学\n持方：人终有一死，不是一件好事",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 2,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3184,9 +3188,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 半决赛下半赛区\n脱口秀/辩论能更好地回应世界\n\n正方：中国政法大学\n持方：脱口秀能更好地回应世界\n\n反方：南昌大学\n持方：辩论能更好地回应世界",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3262,9 +3267,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 半决赛上半赛区\n脱口秀/辩论能更好地回应世界\n\n正方：南开大学\n持方：脱口秀能更好地回应世界\n\n反方：华南师范大学\n持方：辩论能更好地回应世界",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3284,7 +3290,9 @@
     ],
     "speakers": [
       "戴有容",
-      "王勤"
+      "王勤",
+      "袁青骋",
+      "王靖雅"
     ],
     "favorite": false,
     "watched": false,
@@ -3339,9 +3347,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛A-F组第一场\n要争取早一点与世界和解/要尽量晚一点向世界投降\n\n正方：南开大学\n持方：要争取早一点与世界和解\n\n反方：南京大学\n持方：要尽量晚一点向世界投降",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 2,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3416,9 +3425,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛A-F组第二场\n要争取早一点与世界和解/要尽量晚一点向世界投降\n\n正方：南京大学\n持方：要争取早一点与世界和解\n\n反方：南开大学\n持方：要尽量晚一点向世界投降",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 2,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3439,7 +3449,9 @@
     "speakers": [
       "权莉茹",
       "刘粤",
-      "黄钰淇"
+      "黄钰淇",
+      "南思源",
+      "郝静娅"
     ],
     "favorite": false,
     "watched": false,
@@ -3494,9 +3506,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛G-L组第一场\n要争取早一点与世界和解/要尽量晚一点向世界投降\n\n正方：华南师范大学\n持方：要争取早一点与世界和解\n\n反方：陕西师范大学\n持方：要尽量晚一点向世界投降",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3514,7 +3527,9 @@
       "陕西师范大学",
       "华南师范大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "南思源"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -3565,7 +3580,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛G-L组第二场\n要争取早一点与世界和解/要尽量晚一点向世界投降\n\n正方：陕西师范大学\n持方：要争取早一点与世界和解\n\n反方：华南师范大学\n持方：要尽量晚一点向世界投降"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛G-L组第二场\n要争取早一点与世界和解/要尽量晚一点向世界投降\n\n正方：陕西师范大学\n持方：要争取早一点与世界和解\n\n反方：华南师范大学\n持方：要尽量晚一点向世界投降",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 1,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -3582,7 +3604,16 @@
       "西安交通大学",
       "中国政法大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "欣芭特",
+      "王羽凡",
+      "尚书腾",
+      "苗宇涵",
+      "缪正之",
+      "孙一洲",
+      "雷拓",
+      "白一果"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -3633,7 +3664,13 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛M-R组第一场\n《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神\n\n正方：西安交通大学\n持方：《哪吒2》对“削肉剔骨”的改编，深化了哪吒的反抗精神\n\n反方：中国政法大学\n持方：《哪吒2》对“削肉剔骨”的改编，弱化了哪吒的反抗精神"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛M-R组第一场\n《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神\n\n正方：西安交通大学\n持方：《哪吒2》对“削肉剔骨”的改编，深化了哪吒的反抗精神\n\n反方：中国政法大学\n持方：《哪吒2》对“削肉剔骨”的改编，弱化了哪吒的反抗精神",
+      "speakerEnrichment": {
+        "complete": true,
+        "matchedSpeakerCount": 8,
+        "source": "openingAudioRosterMatch",
+        "updatedAt": "2026-06-25T05:03:30.101Z"
+      }
     }
   },
   {
@@ -3651,7 +3688,14 @@
       "西安交通大学"
     ],
     "speakers": [
-      "王雨峰"
+      "王雨峰",
+      "孙一洲",
+      "雷拓",
+      "白一果",
+      "苗宇涵",
+      "王羽凡",
+      "尚书腾",
+      "欣芭特"
     ],
     "favorite": false,
     "watched": false,
@@ -3705,10 +3749,10 @@
       ],
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛M-R组第二场\n《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神\n\n正方：中国政法大学\n持方：《哪吒2》对“削肉剔骨”的改编，深化了哪吒的反抗精神\n\n反方：西安交通大学\n持方：《哪吒2》对“削肉剔骨”的改编，弱化了哪吒的反抗精神",
       "speakerEnrichment": {
-        "complete": false,
-        "matchedSpeakerCount": 1,
+        "complete": true,
+        "matchedSpeakerCount": 7,
         "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "updatedAt": "2026-06-25T05:03:30.101Z"
       }
     }
   },
@@ -3786,9 +3830,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛S-X组第一场\n《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神\n\n正方：南昌大学\n持方：《哪吒2》对“削肉剔骨”的改编，深化了哪吒的反抗精神\n\n反方：上海大学\n持方：《哪吒2》对“削肉剔骨”的改编，弱化了哪吒的反抗精神",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 5,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3810,7 +3855,9 @@
       "敦译萱",
       "史毓迪波",
       "龙慧玲",
-      "史天逸"
+      "史天逸",
+      "赵奕平",
+      "叶钰琳"
     ],
     "favorite": false,
     "watched": false,
@@ -3865,9 +3912,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 晋级赛S-X组第二场\n《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神\n\n正方：上海大学\n持方：《哪吒2》对“削肉剔骨”的改编，深化了哪吒的反抗精神\n\n反方：南昌大学\n持方：《哪吒2》对“削肉剔骨”的改编，弱化了哪吒的反抗精神",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 4,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 6,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -3890,7 +3938,10 @@
       "吴兆勋",
       "万子豪",
       "杨耀文",
-      "方婷薇"
+      "方婷薇",
+      "黄集海",
+      "栗嘉宁",
+      "黎欣"
     ],
     "favorite": false,
     "watched": false,
@@ -3944,10 +3995,10 @@
       ],
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛STU组第一场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：广西民族大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：安徽大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
-        "complete": false,
-        "matchedSpeakerCount": 5,
+        "complete": true,
+        "matchedSpeakerCount": 7,
         "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "updatedAt": "2026-06-25T05:03:30.101Z"
       }
     }
   },
@@ -4025,9 +4076,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛STU组第二场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：安徽大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：南昌大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 5,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4048,7 +4100,10 @@
     "speakers": [
       "龙慧玲",
       "史天逸",
-      "李佳阳"
+      "李佳阳",
+      "栗嘉宁",
+      "黎欣",
+      "黄集海"
     ],
     "favorite": false,
     "watched": false,
@@ -4103,9 +4158,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛STU组第三场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：南昌大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：广西民族大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4126,7 +4182,10 @@
     "speakers": [
       "范可欣",
       "吴泽荣",
-      "赵亿嘉"
+      "赵亿嘉",
+      "黄国锐",
+      "史毓迪波",
+      "赵奕平"
     ],
     "favorite": false,
     "watched": false,
@@ -4181,9 +4240,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛VWX组第一场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：厦门大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：上海大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 6,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4258,9 +4318,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛VWX组第二场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：上海大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：宁波大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 2,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4282,7 +4343,8 @@
       "胡文昊",
       "赵书逸",
       "李庚尧",
-      "吕艺杭"
+      "吕艺杭",
+      "陈显龙"
     ],
     "favorite": false,
     "watched": false,
@@ -4337,9 +4399,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛VWX组第三场\n英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助\n\n正方：宁波大学\n持方：英雄联盟职业联赛应该在美洲赛区开放一级战队博彩品牌赞助\n\n反方：厦门大学\n持方：英雄联盟职业联赛不应该在美洲赛区开放一级战队博彩品牌赞助",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 4,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4357,7 +4420,13 @@
       "天津师范大学",
       "东北林业大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "钟奇山",
+      "路雅涵",
+      "李嘉澄",
+      "黄一鸣",
+      "王雅昕"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4408,7 +4477,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第一场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：天津师范大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：东北林业大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第一场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：天津师范大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：东北林业大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4425,7 +4501,12 @@
       "东北林业大学",
       "西安交通大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "王羽凡",
+      "苗宇涵",
+      "谢梓涵",
+      "欣芭特"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4476,7 +4557,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第二场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：东北林业大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：西安交通大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第二场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：东北林业大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：西安交通大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4493,7 +4581,12 @@
       "西安交通大学",
       "天津师范大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "尚书腾",
+      "苗宇涵",
+      "王羽凡",
+      "董嘉兴"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4544,7 +4637,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第三场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：西安交通大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：天津师范大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛MNO组第三场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：西安交通大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：天津师范大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4561,7 +4661,11 @@
       "天津大学",
       "杭州师范大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "李玥",
+      "陈江悦",
+      "杨潘俊"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4612,7 +4716,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第一场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：天津大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：杭州师范大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第一场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：天津大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：杭州师范大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 3,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4629,7 +4740,13 @@
       "杭州师范大学",
       "中国政法大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "蓝培姚",
+      "白一果",
+      "孙一洲",
+      "雷拓",
+      "周琦"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4680,7 +4797,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第二场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：杭州师范大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：中国政法大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第二场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：杭州师范大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：中国政法大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4697,7 +4821,14 @@
       "中国政法大学",
       "天津大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "缪正之",
+      "孙一洲",
+      "雷拓",
+      "陈哲",
+      "李洋",
+      "闫俊淇"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -4748,7 +4879,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第三场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：中国政法大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：天津大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛PQR组第三场\n对话式AI应该/不应该具备主动干预用户情感依赖的中断机制\n\n正方：中国政法大学\n持方：对话式AI应该具备主动干预用户情感依赖的中断机制\n\n反方：天津大学\n持方：对话式AI不应该具备主动干预用户情感依赖的中断机制",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 6,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -4851,7 +4989,8 @@
     "speakers": [
       "温馨",
       "张子韵",
-      "刘粤"
+      "刘粤",
+      "吴舟"
     ],
     "favorite": false,
     "watched": false,
@@ -4906,9 +5045,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛GHI组第二场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：江西财经大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：华南师范大学\n持方：从长远看，优先推动加工资更利于实现社会公平",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -4986,9 +5126,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛GHI组第三场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：华南师范大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：哈尔滨工业大学（深圳）\n持方：从长远看，优先推动加工资更利于实现社会公平",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 5,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -5006,7 +5147,12 @@
       "陕西师范大学",
       "暨南大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "南思源",
+      "张柏林",
+      "郝静娅",
+      "张洋"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -5057,7 +5203,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第一场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：陕西师范大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：暨南大学\n持方：从长远看，优先推动加工资更利于实现社会公平"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第一场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：陕西师范大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：暨南大学\n持方：从长远看，优先推动加工资更利于实现社会公平",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -5074,7 +5227,12 @@
       "暨南大学",
       "中国海洋大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "张洋",
+      "李佳阳",
+      "崔泽豪",
+      "康浩然"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -5125,7 +5283,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第二场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：暨南大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：中国海洋大学\n持方：从长远看，优先推动加工资更利于实现社会公平"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第二场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：暨南大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：中国海洋大学\n持方：从长远看，优先推动加工资更利于实现社会公平",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -5142,7 +5307,11 @@
       "中国海洋大学",
       "陕西师范大学"
     ],
-    "speakers": [],
+    "speakers": [
+      "康浩然",
+      "曲泓宇",
+      "郝静娅"
+    ],
     "favorite": false,
     "watched": false,
     "reviewId": null,
@@ -5193,7 +5362,14 @@
       "parseWarnings": [
         "未能解析辩手名单。"
       ],
-      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第三场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：中国海洋大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：陕西师范大学\n持方：从长远看，优先推动加工资更利于实现社会公平"
+      "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛JKL组第三场\n从长远看，优先推动减工时/加工资更利于实现社会公平\n\n正方：中国海洋大学\n持方：从长远看，优先推动减工时更利于实现社会公平\n\n反方：陕西师范大学\n持方：从长远看，优先推动加工资更利于实现社会公平",
+      "speakerEnrichment": {
+        "complete": false,
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 3,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
+      }
     }
   },
   {
@@ -5215,7 +5391,8 @@
       "袁青骋",
       "王勤",
       "穆逸菲",
-      "曹龙延"
+      "曹龙延",
+      "孙嘉庆"
     ],
     "favorite": false,
     "watched": false,
@@ -5270,9 +5447,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛ABC组第一场\n应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n正方：南开大学\n持方：应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n反方：复旦大学\n持方：不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 5,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 6,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -5347,9 +5525,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛ABC组第二场\n应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n正方：复旦大学\n持方：应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n反方：对外经济贸易大学\n持方：不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 2,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -5370,7 +5549,8 @@
     "speakers": [
       "袁青骋",
       "王勤",
-      "江茜"
+      "江茜",
+      "常芊芊"
     ],
     "favorite": false,
     "watched": false,
@@ -5425,9 +5605,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛ABC组第三场\n应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n正方：对外经济贸易大学\n持方：应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n反方：南开大学\n持方：不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 3,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 4,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -5449,7 +5630,8 @@
       "李佳宸",
       "白亦端",
       "余心冰",
-      "王键智"
+      "王键智",
+      "陈振欣"
     ],
     "favorite": false,
     "watched": false,
@@ -5504,9 +5686,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛DEF组第一场\n应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n正方：上海戏剧学院\n持方：应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n反方：华东政法大学\n持方：不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
       "speakerEnrichment": {
         "complete": false,
-        "matchedSpeakerCount": 4,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "acceptedLowConfidence": true,
+        "matchedSpeakerCount": 5,
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },
@@ -5651,9 +5834,10 @@
       "rawDescription": "2025新国辩高校组·资格赛中国大陆赛道 复赛DEF组第三场\n应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n正方：南京大学\n持方：应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好\n\n反方：上海戏剧学院\n持方：不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
       "speakerEnrichment": {
         "complete": false,
+        "acceptedLowConfidence": true,
         "matchedSpeakerCount": 4,
-        "source": "openingAudioRosterMatch",
-        "updatedAt": "2026-06-24T16:58:54.970Z"
+        "source": "openingAudioRosterMatchAcceptedCandidates",
+        "updatedAt": "2026-06-25T15:04:26.521Z"
       }
     }
   },

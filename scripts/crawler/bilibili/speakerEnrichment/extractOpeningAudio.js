@@ -1,6 +1,7 @@
 import { access, mkdir, readdir } from 'node:fs/promises'
 import { spawn, spawnSync } from 'node:child_process'
 import path from 'node:path'
+import process from 'node:process'
 import { AUDIO_CACHE_DIR } from './selectSpeakerTargets.js'
 
 const INSTALL_HINTS = {
@@ -10,10 +11,12 @@ const INSTALL_HINTS = {
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36'
 
 export function checkAudioDependencies() {
+  const ffmpegCommand = audioCommand('ffmpeg')
+  const ytdlpCommand = audioCommand('yt-dlp')
   return {
     curl: commandExists('curl.exe', ['--version']),
-    'yt-dlp': commandExists('yt-dlp', ['--version']),
-    ffmpeg: commandExists('ffmpeg', ['-version']),
+    'yt-dlp': commandExists(ytdlpCommand, ['--version']),
+    ffmpeg: commandExists(ffmpegCommand, ['-version']),
   }
 }
 
@@ -24,6 +27,7 @@ export async function extractOpeningAudio(target, {
 } = {}) {
   const startedAt = Date.now()
   const dependencies = checkAudioDependencies()
+  const ytdlpCommand = audioCommand('yt-dlp')
   const missingDependencies = []
   if (!dependencies.ffmpeg) missingDependencies.push('ffmpeg')
   if (!dependencies.curl && !dependencies['yt-dlp']) missingDependencies.push('yt-dlp')
@@ -77,7 +81,7 @@ export async function extractOpeningAudio(target, {
 
   if (dependencies['yt-dlp']) {
     try {
-      await runCommand('yt-dlp', args, 15 * 60 * 1000)
+      await runCommand(ytdlpCommand, args, 15 * 60 * 1000)
       const resolvedPath = await findAudioPath(baseName)
       if (!resolvedPath) throw new Error('yt-dlp 已结束，但没有找到生成的 wav 文件。')
       return result('success', resolvedPath, startedAt, errors)
@@ -110,7 +114,7 @@ async function extractWithPublicPlayUrl(target, audioPath, { duration, start }) 
   const mediaUrl = payload.code === 0 ? payload.data?.durl?.[0]?.url : null
   if (!mediaUrl) throw new Error(`B站 playurl 未返回媒体地址：${payload.message ?? payload.code}`)
 
-  await runCommand('ffmpeg', [
+  await runCommand(audioCommand('ffmpeg'), [
     '-nostdin',
     '-hide_banner',
     '-loglevel', 'error',
@@ -124,6 +128,12 @@ async function extractWithPublicPlayUrl(target, audioPath, { duration, start }) 
     '-y',
     audioPath,
   ], 15 * 60 * 1000)
+}
+
+function audioCommand(command) {
+  if (command === 'ffmpeg') return process.env.FFMPEG_BIN || 'ffmpeg'
+  if (command === 'yt-dlp') return process.env.YTDLP_BIN || 'yt-dlp'
+  return command
 }
 
 function result(status, audioPath, startedAt, warnings = []) {
