@@ -53,26 +53,38 @@ export function parseCliOptions(argv = process.argv.slice(2)) {
   const options = {
     all: false,
     acceptLowConfidence: false,
+    autoWindow: false,
     cleanupAudio: false,
     duration: 480,
     force: false,
     limit: 10,
+    matchId: '',
     merge: false,
+    maxStart: 1200,
     missingIntroOnly: false,
     model: 'small',
+    start: 0,
+    windowDuration: 180,
     year: 2025,
   }
   for (let index = 0; index < argv.length; index += 1) {
     const argument = argv[index]
     if (argument === '--accept-low-confidence') options.acceptLowConfidence = true
     if (argument === '--all') options.all = true
+    if (argument === '--auto-window') options.autoWindow = true
     if (argument === '--cleanup-audio') options.cleanupAudio = true
     if (argument === '--force') options.force = true
     if (argument === '--missing-intro-only') options.missingIntroOnly = true
     if (argument === '--merge') options.merge = true
     if (argument === '--limit') options.limit = positiveNumber(argv[index += 1], options.limit)
+    if (argument === '--match-id') options.matchId = argv[index += 1] || options.matchId
+    if (argument === '--max-start') options.maxStart = nonNegativeNumber(argv[index += 1], options.maxStart)
     if (argument === '--duration') options.duration = positiveNumber(argv[index += 1], options.duration)
     if (argument === '--model') options.model = argv[index += 1] || options.model
+    if (argument === '--start') options.start = nonNegativeNumber(argv[index += 1], options.start)
+    if (argument === '--window-duration') {
+      options.windowDuration = positiveNumber(argv[index += 1], options.windowDuration)
+    }
     if (argument === '--year') options.year = positiveNumber(argv[index += 1], options.year)
   }
   return options
@@ -154,6 +166,11 @@ function selectDiverseTargets(targets, limit) {
 function positiveNumber(value, fallback) {
   const number = Number(value)
   return Number.isFinite(number) && number > 0 ? number : fallback
+}
+
+function nonNegativeNumber(value, fallback) {
+  const number = Number(value)
+  return Number.isFinite(number) && number >= 0 ? number : fallback
 }
 
 async function runCli() {

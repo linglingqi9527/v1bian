@@ -1,0 +1,3487 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-27T01:48:27.097Z",
+  "year": 2025,
+  "purpose": "2025 资格赛缓存自我介绍文本的二次展开复核清单；只读缓存文本，不下载音频，不合并页面。",
+  "records": [
+    {
+      "matchId": "match-BV11YWqzZEyr",
+      "bvId": "BV11YWqzZEyr",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "天津大学",
+          "speakers": [
+            {
+              "name": "李洋",
+              "confidence": 0.96,
+              "confidenceLevel": "high",
+              "recognizedText": "立场",
+              "role": "",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-team-block-second-pass",
+              "transcriptSnippet": "迎各位光临。下面有请双方辩手入席。下面请训我问您介绍今天比赛的正反双方、其他们各自的立场。作在我右手边的使正方来自天清大学代表对的同学们,本产比赛他"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "李沁阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "翁凌俞",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "闫俊淇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈哲",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高赫遥",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "杭州师范大学",
+          "speakers": [
+            {
+              "name": "杨潘俊",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "洋潘郡",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "航舟失范大学的理月。准够二辩、航舟失范大学、洋潘郡、王思玉、反方四辩、航舟失范大学、陈江"
+            },
+            {
+              "name": "陈江悦",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "陈江岳",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "学、洋潘郡、王思玉、反方四辩、航舟失范大学、陈江岳、代表航舟失范大学、陈江岳、游示范大学问候在场格谎.在认识了双封辩手之後請是我問您介紹文章比赛的評審他們是胡健標先"
+            },
+            {
+              "name": "李玥",
+              "confidence": 0.76,
+              "confidenceLevel": "low",
+              "recognizedText": "理月",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "面有请他们做做介绍。正方一辩、航舟失范大学的理月。准够二辩、航舟失范大学、洋潘"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 3,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "天津大学匹配到 0 人，未达到 4 人。",
+        "杭州师范大学匹配到 3 人，未达到 4 人。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "天津大学匹配到 1 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEae",
+      "bvId": "BV161WqzSEae",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "江西财经大学",
+          "speakers": [
+            {
+              "name": "温馨",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "溫星",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "們做自我介紹大家好 正方一辩溫星至方二辩 才預為這網絲沒有五"
+            },
+            {
+              "name": "吴舟",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "五周",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "大家好 正方一辩溫星至方二辩 才預為這網絲沒有五周 大家下午好各位好 正方四辩張子雲引警代表江西田"
+            },
+            {
+              "name": "张子韵",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "張子雲",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": " 大家下午好各位好 正方四辩張子雲引警代表江西田英大學 溫後再成各位本稱比赛他們的立場是從成遠看優先推動加公資更利於實現社會公平下面有請他們做自我介紹各位好 反方一"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            {
+              "name": "刘粤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "留月",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "二辩溫星反方三辩溫星繁草三辩留月大方四辩留下警大表 環難十分"
+            },
+            {
+              "name": "温明璇",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "溫星反",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "好 反方一辩 方明齊反方二辩溫星反方三辩溫星反方二辩溫星反方"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "权莉茹",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李玉晓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "江西财经大学匹配到 3 人，未达到 4 人。",
+        "华南师范大学匹配到 1 人，未达到 4 人。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "华南师范大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEDJ",
+      "bvId": "BV161WqzSEDJ",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            {
+              "name": "王靖雅",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王晉雅",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "業災正方二辩 朝日後正方三辩王晉雅正方四辩案 董敵 警代表正方"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "于同舟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "张义斐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "董翟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵昱昊",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高昕然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            {
+              "name": "言姝瑾",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "嚴書僅",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "獨立時飛唱論這山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲"
+            },
+            {
+              "name": "白亦端",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "白易端",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "山之美反方一辩嚴書僅反方二辩 白易端反方三辩計雲反方四辩李嘉誠代"
+            },
+            {
+              "name": "李佳宸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "李嘉誠",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": " 白易端反方三辩計雲反方四辩李嘉誠代表上海細菌學院問候在場各位在认识了双方片手之後請允許我為您介紹本場比赛的評審他們是謝宇先生王成宇先生逃復航先生在比赛开始之前我將"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "晏心灵",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "袁子贤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "郑熙瀚",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈玥琦",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 9,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "南京大学匹配到 1 人，未达到 4 人。",
+        "上海戏剧学院匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEE6",
+      "bvId": "BV161WqzSEE6",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            {
+              "name": "李佳宸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "立家城",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "美,正方一辩喉若千。正方二辩,立家城,正方三辩寄云。正方四辩,白易"
+            },
+            {
+              "name": "白亦端",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "白易端",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "家城,正方三辩寄云。正方四辩,白易端代表上海继续学院问候在场各位。作在我左手边的是反方。来自华东正法大学代表对的同学们。本场比赛他们的立场是。不应该允许假视员、预设"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "晏心灵",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "袁子贤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "言姝瑾",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "郑熙瀚",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈玥琦",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "华东政法大学",
+          "speakers": [
+            {
+              "name": "余心冰",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "于新",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "以辩会有反方华东正法大学一辩于新水。二辩成任心,三辩王建制。"
+            },
+            {
+              "name": "王键智",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王建制",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "一辩于新水。二辩成任心,三辩王建制。四辩,软遇,虽我方三辩便"
+            },
+            {
+              "name": "陈振欣",
+              "confidence": 0.84,
+              "confidenceLevel": "medium",
+              "recognizedText": "成任心",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "华东正法大学一辩于新水。二辩成任心,三辩王建制。四辩,软遇,"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "上海戏剧学院匹配到 2 人，未达到 4 人。",
+        "华东政法大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV18TWBzvELm",
+      "bvId": "BV18TWBzvELm",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "暨南大学",
+          "speakers": [
+            {
+              "name": "张洋",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "張陽",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "他們做自我介紹大家好正方一辩張陽大家好正方二辩 李嘉陽這張森辯和慾"
+            },
+            {
+              "name": "侯煜洋",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "慾陽",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "好正方一辩張陽大家好正方二辩 李嘉陽這張森辯和慾陽這張森辯風扯邪技能大學辯論對問候再場各位大家下午好坐在我左手邊的示範方來自中國海洋大學代表對的同學們本場比赛他們的"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            {
+              "name": "崔泽豪",
+              "confidence": 0.81,
+              "confidenceLevel": "medium",
+              "recognizedText": "吃得好",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "反方二辩為榮耗要好 反方三辩吃得好我們是反方 反方四辩看後然今天表中國航大"
+            },
+            {
+              "name": "康浩然",
+              "confidence": 0.79,
+              "confidenceLevel": "low",
+              "recognizedText": "看後然",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "辩吃得好我們是反方 反方四辩看後然今天表中國航大學校變成社會問候做各位 大家下午好在认识了双方辩手之後請榮耗我為您介紹本場比赛的評審他們是劉曉君簽手盯管與簽手王春深"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "暨南大学匹配到 2 人，未达到 4 人。",
+        "中国海洋大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1acWBzzEXZ",
+      "bvId": "BV1acWBzzEXZ",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            {
+              "name": "康浩然",
+              "confidence": 0.76,
+              "confidenceLevel": "low",
+              "recognizedText": "康套人",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "方二辩未有好大家好 主帕三辩 出早這次康套人 請代表中國航大學校邊輪社我們後台有個北台玩好好 正方二辩 出早坐在我左手邊的"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            {
+              "name": "曲泓宇",
+              "confidence": 0.79,
+              "confidenceLevel": "low",
+              "recognizedText": "出攻宇",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "一辩 牛子如大家好 反方二辩 出攻宇各位好 正方三辩 男學反方四辩好 今"
+            },
+            {
+              "name": "郝静娅",
+              "confidence": 0.77,
+              "confidenceLevel": "low",
+              "recognizedText": "好今天",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "位好 正方三辩 男學反方四辩好 今天要寫 寫寫示範大學 彈一辩 論對 問後再常各位"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "南思源",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王语瞳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡润东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈瑞阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "黄钰淇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 3,
+      "secondPassSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "中国海洋大学匹配到 1 人，未达到 4 人。",
+        "陕西师范大学匹配到 2 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1c1WqzDEEi",
+      "bvId": "BV1c1WqzDEEi",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            {
+              "name": "戴有容",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "代表荣",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "意不复人害,一向封。正方一辩南开大学代表荣。各位好,中方二辩南开大学院新成。正方"
+            },
+            {
+              "name": "袁青骋",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "院新成",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "大学代表荣。各位好,中方二辩南开大学院新成。正方三辩南开大学王亲。对方四"
+            },
+            {
+              "name": "王勤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王亲",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "二辩南开大学院新成。正方三辩南开大学王亲。对方四辩南开大学生家亲,前南"
+            },
+            {
+              "name": "孙嘉庆",
+              "confidence": 0.72,
+              "confidenceLevel": "low",
+              "recognizedText": "生家亲",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "方三辩南开大学王亲。对方四辩南开大学生家亲,前南开大学问候,再尝各位。作在我左手边的是反风,来自负弹大学代表对的同学们。文章比赛他们的立场是,不应该允许驾驶员,预设"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "江茜",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "石瑶琅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            {
+              "name": "穆逸菲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "墓一飞",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "正方一辩张师傅。好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封"
+            },
+            {
+              "name": "曹龙延",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "仇龙盐",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "好,反方二辩墓一飞。反方三辩仇龙盐。在认识了收封辩手之后,请你许我问您介绍本昌比赛的平省。他们是流息远女士。比南线省,引起详线省。在比赛开始之前,我将对本次比赛的提"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "于润泽",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "秘正中",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 6,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+        "复旦大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1ejWqz6EQs",
+      "bvId": "BV1ejWqz6EQs",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛STU组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "安徽大学",
+          "speakers": [
+            {
+              "name": "万子豪",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "万次好",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "双深多世,极资上相。正方二辩,万次好。正方三辩,洋药文。正方四辩,"
+            },
+            {
+              "name": "杨耀文",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "洋药文",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。正方二辩,万次好。正方三辩,洋药文。正方四辩,方定位,紧代表安慧"
+            },
+            {
+              "name": "方婷薇",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "方定位",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。正方三辩,洋药文。正方四辩,方定位,紧代表安慧大学带过后再场各位。坐在我左手边的是反方,来自南昌大学代表对的同学们。本场比赛,他们的立场是,英雄联盟职业联赛不应该"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            {
+              "name": "龙慧玲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "龙会离",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "绍。反方一辩王师寒,反方二辩龙会离。反方三辩使听意。反方四辩,英"
+            },
+            {
+              "name": "史天逸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "使听意",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "寒,反方二辩龙会离。反方三辩使听意。反方四辩,英雄联系南昌大学辩"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "叶钰琳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "田佳乐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "安徽大学匹配到 3 人，未达到 4 人。",
+        "南昌大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1F1WqzDEo8",
+      "bvId": "BV1F1WqzDEo8",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            {
+              "name": "曹龙延",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "草龙盐",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "家好。这方二辩目区。正方三辩草龙盐。正方四辩机认中,请代表负弹大"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "于润泽",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "秘正中",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "穆逸菲",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "对外经济贸易大学",
+          "speakers": [
+            {
+              "name": "郭嘉皓",
+              "confidence": 0.76,
+              "confidenceLevel": "low",
+              "recognizedText": "家好",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "有请他们做自我介绍。这方一辩,身家好。这方二辩目区。正方三辩草龙盐"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 2,
+      "secondPassSpeakerCount": 2,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+        "复旦大学匹配到 1 人，未达到 4 人。",
+        "对外经济贸易大学匹配到 1 人，未达到 4 人。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1FKWqz7Eei",
+      "bvId": "BV1FKWqz7Eei",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            {
+              "name": "缪正之",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "妙政職",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "法這情法來幾位你以我中華四辩妙政職三辩孫一週二辩雷托一辩蔡"
+            },
+            {
+              "name": "孙一洲",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "孫一週",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "幾位你以我中華四辩妙政職三辩孫一週二辩雷托一辩蔡森中華政法"
+            },
+            {
+              "name": "雷拓",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "雷托",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "中華四辩妙政職三辩孫一週二辩雷托一辩蔡森中華政法大學面臨"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "白一果",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陆瑶",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "天津大学",
+          "speakers": [
+            {
+              "name": "陈哲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "陳折",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "財中長 中可成長陳彩反方一辩 聽聽大學陳折反方二辩 聽聽大學文運氣反方"
+            },
+            {
+              "name": "李沁阳",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "李洋",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "二辩 聽聽大學文運氣反方三辩 聽大學 李洋反方四辩 天經大學 張明洛隨"
+            },
+            {
+              "name": "闫俊淇",
+              "confidence": 0.69,
+              "confidenceLevel": "low",
+              "recognizedText": "文運氣",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "方一辩 聽聽大學陳折反方二辩 聽聽大學文運氣反方三辩 聽大學 李洋反方四"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "李洋",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "翁凌俞",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高赫遥",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 6,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+        "中国政法大学匹配到 3 人，未达到 4 人。",
+        "天津大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1FPWqzUE17",
+      "bvId": "BV1FPWqzUE17",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "杭州师范大学",
+          "speakers": [
+            {
+              "name": "蓝培姚",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "藍培養",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "大家好 航舟失敗大學針方一辩藍培養航舟失敗大學針方二辩旅餘舟失敗大學針方二"
+            },
+            {
+              "name": "周琦",
+              "confidence": 0.77,
+              "confidenceLevel": "low",
+              "recognizedText": "舟失",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "辩藍培養航舟失敗大學針方二辩旅餘舟失敗大學針方二辩旅餘舟失敗大學針方二"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            {
+              "name": "白一果",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "白一國",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "學徵法之情懷繼為女物反方四辩白一國三辩隨一周二辩雷托一辩才"
+            },
+            {
+              "name": "孙一洲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "隨一周",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "懷繼為女物反方四辩白一國三辩隨一周二辩雷托一辩才增中國徵法"
+            },
+            {
+              "name": "雷拓",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "雷托",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "反方四辩白一國三辩隨一周二辩雷托一辩才增中國徵法大學校面"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "缪正之",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陆瑶",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "杭州师范大学匹配到 2 人，未达到 4 人。",
+        "中国政法大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1G6WizNEu1",
+      "bvId": "BV1G6WizNEu1",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            {
+              "name": "敦译萱",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "堆一圈",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "做自我介绍。大家好,周方一辩、堆一圈。正方二辩,很不热。正方三辩,"
+            },
+            {
+              "name": "史毓迪波",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "十余直播",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。正方二辩,很不热。正方三辩,十余直播。"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            {
+              "name": "徐依凡",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "一繁",
+              "role": "",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-team-block-second-pass",
+              "transcriptSnippet": "资格赛、中国大陆赛道、复赛、为WX组、第二场的比赛现场。我是本场主席成一繁。再次代表主办方、花影各位光灵。下面有请双方辩手入习。下面请允许我问您介绍"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "曾俊熙",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李奕彤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡文昊",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡皓然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵书逸",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "龚寅东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 2,
+      "secondPassSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+        "上海大学匹配到 2 人，未达到 4 人。",
+        "宁波大学匹配到 0 人，未达到 4 人。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "宁波大学匹配到 1 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1gsWqzNEvA",
+      "bvId": "BV1gsWqzNEvA",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "东北林业大学",
+          "speakers": [],
+          "completionCandidates": []
+        },
+        {
+          "team": "西安交通大学",
+          "speakers": [
+            {
+              "name": "王羽凡",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王余凡",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": ",反望四辩,习马特。粉方三辩,王余凡。反方二辩,苗余函。反方一辩,"
+            },
+            {
+              "name": "苗宇涵",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "苗余函",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。粉方三辩,王余凡。反方二辩,苗余函。反方一辩,谢子函,其西安交通"
+            },
+            {
+              "name": "谢梓涵",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "谢子函",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。反方二辩,苗余函。反方一辩,谢子函,其西安交通大学,四辩学社问候再场各位,大"
+            },
+            {
+              "name": "欣芭特",
+              "confidence": 0.81,
+              "confidenceLevel": "medium",
+              "recognizedText": "习马特",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "学为九州,设计人财,反望四辩,习马特。粉方三辩,王余凡。反方二辩,"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "东北林业大学匹配到 0 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1hKWBzKE3g",
+      "bvId": "BV1hKWBzKE3g",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            {
+              "name": "南思源",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "男士员",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "二辩,穷鱼。各位好,正方三辩男士员。正方四辩好,今天的写写习十分"
+            },
+            {
+              "name": "郝静娅",
+              "confidence": 0.77,
+              "confidenceLevel": "low",
+              "recognizedText": "好今天",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "好,正方三辩男士员。正方四辩好,今天的写写习十分大学,谈一辩论队问候再场各位。作"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "曲泓宇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王语瞳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡润东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈瑞阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "黄钰淇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "暨南大学",
+          "speakers": [
+            {
+              "name": "张柏林",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "张伯林",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。反方三辩,立若逸。反方四辩,张伯林,请代表,既然他学会画一辩的顿位,大家早上好。"
+            },
+            {
+              "name": "张洋",
+              "confidence": 0.32,
+              "confidenceLevel": "low",
+              "recognizedText": "正方",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "辩,立若逼。大家好,正方二辩,穷鱼。各位好,正方三辩男士员。正方四辩好,"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "陕西师范大学匹配到 2 人，未达到 4 人。",
+        "暨南大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1HyWqzHEvf",
+      "bvId": "BV1HyWqzHEvf",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "西安交通大学",
+          "speakers": [
+            {
+              "name": "尚书滕",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "上处疼",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。学业九州设计人财,正方四辩上处疼。正方三辩、姚雨韩。正方二辩、"
+            },
+            {
+              "name": "苗宇涵",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "姚雨韩",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "财,正方四辩上处疼。正方三辩、姚雨韩。正方二辩、王雨凡。正方一辩,"
+            },
+            {
+              "name": "王羽凡",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王雨凡",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。正方三辩、姚雨韩。正方二辩、王雨凡。正方一辩,董家新,先交通大学"
+            },
+            {
+              "name": "董嘉兴",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "董家新",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。正方二辩、王雨凡。正方一辩,董家新,先交通大学辩论对握后再产歌为大家晚上好。作在我左手边的是反方,来自天津师犯大学代表对的同学们。本场比赛、他们的立场是,对话是A"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "天津师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            {
+              "name": "余濯然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "孙浩翔",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李锦扬",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "杨阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王雅昕",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵悦含",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "钟奇山",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 7,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "天津师范大学匹配到 0 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1LeWizuEAp",
+      "bvId": "BV1LeWizuEAp",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            {
+              "name": "胡文昊",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "胡文號",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "面有請他們做自我介紹正方一辩胡文號正方二辩胡文號人總統三辩的一"
+            },
+            {
+              "name": "徐依凡",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "一反",
+              "role": "",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-team-block-second-pass",
+              "transcriptSnippet": "格赛、中国大陆赛导复赛、为WX组、第三场的比赛现场、我是本场主席成一反、在此外表主办方、欢迎各位光临。下面有请双方辩手入习。卐州的引擎夏年请云续博为"
+            },
+            {
+              "name": "赵书逸",
+              "confidence": 0.76,
+              "confidenceLevel": "low",
+              "recognizedText": "照取一",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "文號人總統三辩的一場正方四辩照取一些我相信你不大學校朋友跟我後再上溝圍大家晚上好坐在我左手邊的是反方來自下門大學代表對的同學們本場比赛他們的立場是英雄免盟職業聯賽不"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "曾俊熙",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李奕彤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡皓然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "龚寅东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "厦门大学",
+          "speakers": [
+            {
+              "name": "李庚尧",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "李更遥",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "淺楼早上二辩 三个星反方三辩 李更遥反方四辩 女一行 协我方三辩"
+            },
+            {
+              "name": "吕艺杭",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "女一行",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "个星反方三辩 李更遥反方四辩 女一行 协我方三辩有代表下门大学 辩论"
+            },
+            {
+              "name": "陈显龙",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "陈淺楼",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "江安方之强 明日动凉反方一辩 陈淺楼早上二辩 三个星反方三辩 李"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "宁波大学匹配到 2 人，未达到 4 人。",
+        "厦门大学匹配到 3 人，未达到 4 人。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+        "宁波大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1mhWqzFE8k",
+      "bvId": "BV1mhWqzFE8k",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "天津师范大学",
+          "speakers": [
+            {
+              "name": "钟奇山",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "中期山",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "星。双方三辩、姚姚。正方四辩中期山代表正方、天津师范大学校面的对文后再上个位,各位早上好。坐在我左手边的事与反方来自东北临业大学代表对的同学们。本场比赛、他们的立场"
+            },
+            {
+              "name": "王雅昕",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "网阿星",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "痕。正方一辩、关心。正方二辩、网阿星。双方三辩、姚姚。正方四辩中期"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "余濯然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "孙浩翔",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李锦扬",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "杨阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵悦含",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "东北林业大学",
+          "speakers": [
+            {
+              "name": "路雅涵",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "路亚喊",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "有请他们做自我介绍。反方一辩、路亚喊。反方二辩、立家银。反方三辩、"
+            },
+            {
+              "name": "李嘉澄",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "立家",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。反方一辩、路亚喊。反方二辩、立家银。反方三辩、黄一鸣。反方四辩犯"
+            },
+            {
+              "name": "黄一鸣",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "黄一鸣",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "exact-second-pass",
+              "transcriptSnippet": "。反方二辩、立家银。反方三辩、黄一鸣。反方四辩犯阵期协东北临大学校"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "天津师范大学匹配到 2 人，未达到 4 人。",
+        "东北林业大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjb",
+      "bvId": "BV1n1WqzDEjb",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第二场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "华东政法大学",
+          "speakers": [],
+          "completionCandidates": []
+        },
+        {
+          "team": "南京大学",
+          "speakers": [],
+          "completionCandidates": [
+            {
+              "name": "于同舟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "张义斐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王靖雅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "董翟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵昱昊",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高昕然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 0,
+      "secondPassSpeakerCount": 0,
+      "matchedSpeakerCount": 0,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "自我介绍区间内没有识别到“一辩/二辩/三辩/四辩”标记。",
+        "转写成功，但没有与双方报名名单形成可靠匹配。",
+        "华东政法大学匹配到 0 人，未达到 4 人。",
+        "南京大学匹配到 0 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjq",
+      "bvId": "BV1n1WqzDEjq",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "对外经济贸易大学",
+          "speakers": [
+            {
+              "name": "常芊芊",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "长清先",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "有请他们做自我介绍。正方一辩,长清先。正方二辩虽习。正方三辩,有力"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            {
+              "name": "袁青骋",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "员心成",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": ",南开大学适逐就能。反方二辩,南开大学员心成。档档三辩,南开大学王亲。反方"
+            },
+            {
+              "name": "王勤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王亲",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "辩,南开大学员心成。档档三辩,南开大学王亲。反方四辩,南开大学生家庭,前"
+            },
+            {
+              "name": "江茜",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "庭前",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "三辩,南开大学王亲。反方四辩,南开大学生家庭,前南开大学员队问候,在场各位。在认识了双方变守之后,请允许我为您介绍奔昌比赛的平省。他们是刘西然女士。比南先生。引其祥"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "孙嘉庆",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "戴有容",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "石瑶琅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "对外经济贸易大学匹配到 1 人，未达到 4 人。",
+        "南开大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1XJWqzqEhF",
+      "bvId": "BV1XJWqzqEhF",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛STU组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            {
+              "name": "龙慧玲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "龙会饼",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。正方一辩、朱敬温,正方二辩、龙会饼。正方三辩、十平一。正方四辩、"
+            },
+            {
+              "name": "史天逸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "十平一",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": ",正方二辩、龙会饼。正方三辩、十平一。正方四辩、议员联系南长大学辩"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "叶钰琳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "田佳乐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "广西民族大学",
+          "speakers": [
+            {
+              "name": "栗嘉宁",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "立家",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "做自我介绍。当然好,反方一辩,立家语。反方二辩,立心。反方三辩,也"
+            },
+            {
+              "name": "黎欣",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "立心",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": ",反方一辩,立家语。反方二辩,立心。反方三辩,也为好。反方四辩、"
+            },
+            {
+              "name": "言玮浩",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "为好",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "语。反方二辩,立心。反方三辩,也为好。反方四辩、黄基派、写广西民族"
+            },
+            {
+              "name": "黄集海",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "黄基派",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。反方三辩,也为好。反方四辩、黄基派、写广西民族大学,握在两个位,大家晚上好。在认识了双方辩守之后,请允许我为您介绍本场比赛的平省。他们是张泽民先生。游戏远御时,王"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "刘梅宁",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "文子欣",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "林凡迪",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "南昌大学匹配到 2 人，未达到 4 人。",
+        "广西民族大学匹配到 3 人，未达到 4 人。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1ZDWqzjErN",
+      "bvId": "BV1ZDWqzjErN",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第三场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            {
+              "name": "温明璇",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "文明旋",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "一辩,方名其。对好,正方二辩、文明旋。正方三辩、留月。正方四辩、留"
+            },
+            {
+              "name": "刘粤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "留月",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": ",正方二辩、文明旋。正方三辩、留月。正方四辩、留月、文明旋、文明"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "权莉茹",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李玉晓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "哈尔滨工业大学深圳",
+          "speakers": [
+            {
+              "name": "袁潇雅",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "元消雅",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "旋、文明旋、文明旋。反方一辩、元消雅。反方二辩、高于翔。反方三辩、"
+            },
+            {
+              "name": "高宇翔",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "高于翔",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。反方一辩、元消雅。反方二辩、高于翔。反方三辩、犯罪文。"
+            },
+            {
+              "name": "范觉文",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "犯罪文",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。反方二辩、高于翔。反方三辩、犯罪文。"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "叶政国",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "钱昊宇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈渝",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "华南师范大学匹配到 2 人，未达到 4 人。",
+        "哈尔滨工业大学深圳匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1ZuWqz5EYq",
+      "bvId": "BV1ZuWqz5EYq",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第一场",
+      "date": "2025-10-17",
+      "teams": [
+        {
+          "team": "厦门大学",
+          "speakers": [
+            {
+              "name": "范可欣",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "放可心",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "央兩方之牆 明日動良正方一辩 放可心正方二辩 旅行正方三辩 旅行"
+            },
+            {
+              "name": "吴泽荣",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "無則容",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": " 旅行正方三辩 旅行正方四辩 無則容些下面大學輪隊問後再想各位大家早上好作在我左手邊的事反方來自上海大學代表對的同學們本場比赛 他們的立場是英雄聯盟職業聯賽不應該在"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            {
+              "name": "赵亿嘉",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "照一家",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "自我介紹大家早上好 反方一辩照一家各位好 等到二辩航國內反方三辩 十余"
+            },
+            {
+              "name": "史毓迪波",
+              "confidence": 0.85,
+              "confidenceLevel": "medium",
+              "recognizedText": "十余對我",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "位好 等到二辩航國內反方三辩 十余對我反方四辩 裝一品 寫下大學們"
+            },
+            {
+              "name": "赵奕平",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "裝一品",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "內反方三辩 十余對我反方四辩 裝一品 寫下大學們的隊問後再讓各位早上好在认识了双方辩手之後請允許我問您介紹本場比赛的評審他們是謝宇先生劉正先生曹副航先生在比赛开始之"
+            },
+            {
+              "name": "黄国锐",
+              "confidence": 0.8,
+              "confidenceLevel": "medium",
+              "recognizedText": "航國內",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "方一辩照一家各位好 等到二辩航國內反方三辩 十余對我反方四辩 "
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 6,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+        "厦门大学匹配到 2 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1K9Wiz4ECY",
+      "bvId": "BV1K9Wiz4ECY",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第一场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            {
+              "name": "权莉茹",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "全立如",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。正方一辩,真是停。正方二辩,全立如。正方三辩,留月。正方四辩的旅"
+            },
+            {
+              "name": "刘粤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "留月",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "。正方二辩,全立如。正方三辩,留月。正方四辩的旅上,请代表华南师"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "李玉晓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "温明璇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            {
+              "name": "黄钰淇",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "黄玉琪",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "做自我介绍。大家好,反方一辩黄玉琪。大家好,反方二辩,请允许。各位好,反"
+            },
+            {
+              "name": "郝静娅",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "好进啊",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "好,反方三辩南师范。反方四辩,好进啊,协反方,舍西师范大学,谈一辩论对,问后再长各位。"
+            },
+            {
+              "name": "南思源",
+              "confidence": 0.81,
+              "confidenceLevel": "medium",
+              "recognizedText": "南师范",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "辩,请允许。各位好,反方三辩南师范。反方四辩,好进啊,协反方,舍"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "曲泓宇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王语瞳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡润东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈瑞阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "华南师范大学匹配到 2 人，未达到 4 人。",
+        "陕西师范大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1kCWzzfEU9",
+      "bvId": "BV1kCWzzfEU9",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第二场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            {
+              "name": "敦译萱",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "堆一圈",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "有请他们做自我介绍。双方一辩堆一圈。二辩恋恋恋。三辩十余的波"
+            },
+            {
+              "name": "史毓迪波",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "十余的波",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "一辩堆一圈。二辩恋恋恋。三辩十余的波。正凡四辩装一品鞋上的学们对欧"
+            },
+            {
+              "name": "赵奕平",
+              "confidence": 0.41,
+              "confidenceLevel": "low",
+              "recognizedText": "装一品",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "恋恋。三辩十余的波。正凡四辩装一品鞋上的学们对欧战人各位。坐在我左手边的是反方,来自南昌大学代表对的同学们。本场比赛他们的立场是,恋家二对身肉替股的改变,弱化的恋家"
+            }
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            {
+              "name": "龙慧玲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "龙会临",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "绍。反方一辩王师寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇"
+            },
+            {
+              "name": "史天逸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "十天一",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "寒。反方二辩龙会临。反方三辩十天一。反方四辩一遇灵鞋南昌大学变成"
+            },
+            {
+              "name": "叶钰琳",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "一遇灵",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "临。反方三辩十天一。反方四辩一遇灵鞋南昌大学变成对于欧战场贵。在认识了双方遍守之后,请于虽我为您介绍本场比赛的平省。他们是,留小军先生。留占新女士。引起响先生。在比"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "田佳乐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 6,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。",
+        "上海大学匹配到 3 人，未达到 4 人。",
+        "南昌大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1TDWiztE3Z",
+      "bvId": "BV1TDWiztE3Z",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第二场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            {
+              "name": "王靖雅",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "王晶亞",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "辩夜飛周防二辩陳子星正方三辩王晶亞正方四辩洞迪協反而且正方南京"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "于同舟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "张义斐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "董翟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵昱昊",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高昕然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            {
+              "name": "江茜",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "請前",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "大學王晶反方四辩南開大學三辩請前南開大學問候在場各位在這時了双方編輸之後請威許偶為您介紹本場比赛的評審他們是無見標先生照陽心與先生王春身先生在比赛开始之前我將對本次"
+            },
+            {
+              "name": "王勤",
+              "confidence": 0.74,
+              "confidenceLevel": "low",
+              "recognizedText": "王晶",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "方二辩南開大學編輯成本方三辩南開大學王晶反方四辩南開大學三辩請前南開"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "孙嘉庆",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "戴有容",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "石瑶琅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "袁青骋",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 2,
+      "secondPassSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 9,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 2 名辩手，需要人工复核或提高转写模型。",
+        "南京大学匹配到 1 人，未达到 4 人。",
+        "南开大学匹配到 1 人，未达到 4 人。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "南开大学匹配到 2 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1TUWizfERx",
+      "bvId": "BV1TUWizfERx",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第二场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            {
+              "name": "南思源",
+              "confidence": 0.35,
+              "confidenceLevel": "low",
+              "recognizedText": "辩四辩",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩、四辩。请代表善息十分大学谈一辩论对我后再成功位。他們的立場是 要盡量晚一點 同世界和投降下面有請他"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "曲泓宇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王语瞳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "胡润东",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "郝静娅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陈瑞阳",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "黄钰淇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-7",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            {
+              "name": "刘粤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "权莉茹",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李玉晓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "温明璇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 1,
+      "secondPassSpeakerCount": 1,
+      "matchedSpeakerCount": 1,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 10,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 1 名辩手，需要人工复核或提高转写模型。",
+        "陕西师范大学匹配到 1 人，未达到 4 人。",
+        "华南师范大学匹配到 0 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1VqWizTE21",
+      "bvId": "BV1VqWizTE21",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第一场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            {
+              "name": "戴有容",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "戴友荣",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "求知真理无情绪不舍。中方一辩、南开大学、戴友荣。中方二辩、南开大学、云青城。"
+            },
+            {
+              "name": "王勤",
+              "confidence": 0.9,
+              "confidenceLevel": "medium",
+              "recognizedText": "王琴",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "双,反双二辩、夜飞。反双三辩、王琴。反双四辩、南京大学、董敌、写"
+            },
+            {
+              "name": "袁青骋",
+              "confidence": 0.74,
+              "confidenceLevel": "low",
+              "recognizedText": "云青城",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "、南开大学、戴友荣。中方二辩、南开大学、云青城。中方双辩、南开大学、王琴。作在我左手边的是反方、来自南京大学代表对的同学们。在这时的双方辩手之后,请允许我为您介绍奔"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "孙嘉庆",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "江茜",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "石瑶琅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "南京大学",
+          "speakers": [
+            {
+              "name": "王靖雅",
+              "confidence": 0.77,
+              "confidenceLevel": "low",
+              "recognizedText": "南京大",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "飞。反双三辩、王琴。反双四辩、南京大学、董敌、写、反方、南京大学、辩论队、问候、在场、各位。在这时的双方辩手之后,请允许我为您介绍奔昌比赛的平时、他们时、国陷标陷手"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "于同舟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "张义斐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "董翟",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "赵昱昊",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "高昕然",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 4,
+      "secondPassSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 8,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 4 名辩手，需要人工复核或提高转写模型。",
+        "南开大学匹配到 3 人，未达到 4 人。",
+        "南京大学匹配到 1 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1XWWzzkE8Q",
+      "bvId": "BV1XWWzzkE8Q",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第一场",
+      "date": "2025-10-18",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            {
+              "name": "龙慧玲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "龙会林",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "。正方一辩、朱敬文、正方二辩、龙会林。正方三辩是听。正方四辩、一御"
+            },
+            {
+              "name": "叶钰琳",
+              "confidence": 0.82,
+              "confidenceLevel": "medium",
+              "recognizedText": "一御林",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "会林。正方三辩是听。正方四辩、一御林、鞋、南昌大学辩们对握后再场归大、下握好。作在我左手边的是反方、来自上海大学员代表对的同学们、本场比赛、他们的立场是、奴障二对学"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "史天逸",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "田佳乐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            {
+              "name": "潘严芷怡",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "判严之一",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "有请他们做自我介绍。反方一辩、判严之一。二辩恨不忍反方三辩 十余"
+            },
+            {
+              "name": "史毓迪波",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "十余地波",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "判严之一。二辩恨不忍反方三辩 十余地波反方四辩抓一平協下大学变得对"
+            },
+            {
+              "name": "赵奕平",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "抓一平",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "忍反方三辩 十余地波反方四辩抓一平協下大学变得对握护家人个位在认识了双方便守之后请于是我为您介绍本昌比赛的平神他们是劉晓军先生劉振心女士请其晓先生在比赛开始之前我将"
+            }
+          ],
+          "completionCandidates": []
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "南昌大学匹配到 2 人，未达到 4 人。",
+        "上海大学匹配到 3 人，未达到 4 人。"
+      ]
+    },
+    {
+      "matchId": "match-BV1i7yzBJEoX",
+      "bvId": "BV1i7yzBJEoX",
+      "title": "人终有一死，是/不是一件好事",
+      "stage": "高校组·资格赛中国大陆赛道 决赛",
+      "date": "2025-10-28",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            {
+              "name": "温明璇",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "温明选",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "辩、方明琴。各位好,正方二辩、温明选。正方三辩、留月。正方四辩、留"
+            },
+            {
+              "name": "刘粤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "留月",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": ",正方二辩、温明选。正方三辩、留月。正方四辩、留一勺,完了十分大"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "权莉茹",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "李玉晓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            {
+              "name": "缪正之",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "正知",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "张法这形怀几位你我,反方四辩、没有正知。三辩、孫一周,二辩、留一"
+            },
+            {
+              "name": "孙一洲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "孫一周",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "我,反方四辩、没有正知。三辩、孫一周,二辩、留一拓。一辩、白一"
+            },
+            {
+              "name": "白一果",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "白一国",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "、孫一周,二辩、留一拓。一辩、白一国。中国正法大学辩认对,温后再场各位,大家笑不好。"
+            },
+            {
+              "name": "雷拓",
+              "confidence": 0.77,
+              "confidenceLevel": "low",
+              "recognizedText": "一拓",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-soft-second-pass",
+              "transcriptSnippet": "没有正知。三辩、孫一周,二辩、留一拓。一辩、白一国。中国正法大"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "陆瑶",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 5,
+      "secondPassSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "addedSpeakerCount": 1,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 5 名辩手，需要人工复核或提高转写模型。",
+        "华南师范大学匹配到 2 人，未达到 4 人。",
+        "中国政法大学匹配到 3 人，未达到 4 人。",
+        "存在低置信辩位候选，仅写入候选报告，不会自动合并进卡片。",
+        "仅匹配到 6 名辩手，需要人工复核或提高转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1o7yzBJE4f",
+      "bvId": "BV1o7yzBJE4f",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "stage": "高校组·资格赛中国大陆赛道 半决赛上半赛区",
+      "date": "2025-10-28",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [],
+          "completionCandidates": [
+            {
+              "name": "孙嘉庆",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "戴有容",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "江茜",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "王勤",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "石瑶琅",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "袁青骋",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-6",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            {
+              "name": "权莉茹",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "权莉茹",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "exact-second-pass",
+              "transcriptSnippet": "方、一辩、真士厅。反方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨"
+            },
+            {
+              "name": "李玉晓",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "李玉晓",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "exact-second-pass",
+              "transcriptSnippet": "方、二辩、权莉茹。反方、四辩、李玉晓,反正是分辨。有请他们做自我介绍暂放一辩 真是停暂放二辩 全"
+            },
+            {
+              "name": "刘粤",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "留月",
+              "role": "三辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "是停暂放二辩 全力如暂放三辩留月暂放四辩 李宇少完了十分大学"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "温明璇",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 3,
+      "secondPassSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 7,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "南开大学匹配到 0 人，未达到 4 人。",
+        "华南师范大学匹配到 3 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    },
+    {
+      "matchId": "match-BV1o7yzBJE6F",
+      "bvId": "BV1o7yzBJE6F",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
+      "date": "2025-10-28",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [],
+          "completionCandidates": [
+            {
+              "name": "孙一洲",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "白一果",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "缪正之",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "陆瑶",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            },
+            {
+              "name": "雷拓",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-5",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            {
+              "name": "史天逸",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "试一",
+              "role": "一辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": ",就通我第一辩。凡方方向一辩朱景文的话,关闻为你们要考试一下试内南处。然后我们在这一边请呢请明显眼办大rien我这里看到我的天主,我看老公对势情,常对wipehil"
+            },
+            {
+              "name": "龙慧玲",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "龍會領",
+              "role": "二辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-second-pass",
+              "transcriptSnippet": "介紹反方一辩 朱敬文反方二辩 龍會領反方三辩 始聽一反方四辩 葉"
+            },
+            {
+              "name": "叶钰琳",
+              "confidence": 1,
+              "confidenceLevel": "high",
+              "recognizedText": "葉玉零",
+              "role": "四辩",
+              "sourcePass": "firstPass",
+              "matchMethod": "pinyin-fuzzy-second-pass",
+              "transcriptSnippet": "會領反方三辩 始聽一反方四辩 葉玉零鞋 南昌大學辯對握後再唱歌位在认识了 双方辩手之後請雲虛我為您介紹本廠比赛的評審他們是羅洪昆先生劉曉金先生丁貫與先生劉正心女士以"
+            }
+          ],
+          "completionCandidates": [
+            {
+              "name": "田佳乐",
+              "confidence": 0.3,
+              "confidenceLevel": "candidate",
+              "matchMethod": "tight-roster-pool-4",
+              "sourcePass": "tightRosterCompletion"
+            }
+          ]
+        }
+      ],
+      "baselineSpeakerCount": 3,
+      "secondPassSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "addedSpeakerCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "warnings": [
+        "使用已有 Whisper raw 缓存恢复转写文本。",
+        "仅匹配到 3 名辩手，需要人工复核或提高转写模型。",
+        "中国政法大学匹配到 0 人，未达到 4 人。",
+        "南昌大学匹配到 3 人，未达到 4 人。",
+        "二次展开后仍低于 4 人，建议人工核查或换更强转写模型。"
+      ]
+    }
+  ]
+}

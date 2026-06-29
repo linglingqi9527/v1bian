@@ -40,7 +40,38 @@ export function formatMatchTeams(match) {
 }
 
 export function formatMatchSpeakers(match) {
-  return Array.isArray(match?.speakers) ? match.speakers.join(' ') : ''
+  const groupedSpeakers = getMatchSpeakerGroups(match)
+    .flatMap((group) => group.speakers)
+
+  return groupedSpeakers.length > 0
+    ? groupedSpeakers.join(' ')
+    : Array.isArray(match?.speakers) ? match.speakers.join(' ') : ''
+}
+
+export function getMatchSpeakerGroups(match) {
+  if (Array.isArray(match?.speakerGroups) && match.speakerGroups.length > 0) {
+    return match.speakerGroups.map((group, index) => ({
+      side: group.side ?? (index === 0 ? '正方' : '反方'),
+      team: group.team ?? match.teams?.[index] ?? '',
+      speakers: Array.isArray(group.speakers) ? group.speakers.slice(0, 4) : [],
+    }))
+  }
+
+  const speakers = Array.isArray(match?.speakers) ? match.speakers : []
+  if (!speakers.length) return []
+
+  return [
+    {
+      side: '正方',
+      team: match?.teams?.[0] ?? '',
+      speakers: speakers.slice(0, 4),
+    },
+    {
+      side: '反方',
+      team: match?.teams?.[1] ?? '',
+      speakers: speakers.slice(4, 8),
+    },
+  ].filter((group) => group.speakers.length > 0)
 }
 
 export function getMatchReviewRoute(match) {
@@ -83,6 +114,7 @@ function createMatchSearchText(match) {
     match.bvId,
     ...(Array.isArray(match.teams) ? match.teams : []),
     ...(Array.isArray(match.speakers) ? match.speakers : []),
+    ...getMatchSpeakerGroups(match).flatMap((group) => [group.team, ...group.speakers]),
   ].filter(Boolean).join(' '))
 }
 

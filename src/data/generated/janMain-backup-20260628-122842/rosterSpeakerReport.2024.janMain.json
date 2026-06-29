@@ -1,0 +1,1013 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-28T04:27:01.529Z",
+  "year": 2024,
+  "competitionType": "第十一届新国辩",
+  "scope": "janMain",
+  "mode": "sample",
+  "rosterEntryCount": 141,
+  "rosterTeamCount": 24,
+  "targetMatchCount": 31,
+  "selectedMatchCount": 1,
+  "processedMatchCount": 31,
+  "skippedNoRosterCount": 0,
+  "skippedNoRoster": [],
+  "transcriptionSuccessCount": 31,
+  "matchedVideoCount": 31,
+  "autoMergeVideoCount": 31,
+  "matchedSpeakerCount": 216,
+  "autoMergeSpeakerCount": 206,
+  "highMatchCount": 154,
+  "mediumMatchCount": 57,
+  "lowMatchCount": 5,
+  "completeEightSpeakerCount": 13,
+  "atLeastSixSpeakerCount": 25,
+  "atLeastFourSpeakerCount": 28,
+  "totalElapsedMs": 1345104,
+  "selectedMatches": [
+    {
+      "matchId": "match-BV12c411s7dA",
+      "title": "直播带货有/没有让消费者体验变好",
+      "stage": "初赛B组第一场",
+      "audioStart": 1260,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 8,
+      "teams": [
+        {
+          "team": "武汉大学",
+          "speakers": [
+            "黄楚莹",
+            "王悦",
+            "张依然",
+            "闫宇辰"
+          ]
+        },
+        {
+          "team": "国防科技大学",
+          "speakers": [
+            "胡伶",
+            "王思鑫",
+            "刘正昕",
+            "张源"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1AK4y1i7sv",
+      "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+      "stage": "初赛A组第二场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "王勤",
+            "江茜",
+            "邢嘉豪",
+            "吕良伟"
+          ]
+        },
+        {
+          "team": "西南大学",
+          "speakers": [
+            "刘昱冬",
+            "张盛",
+            "安子欣",
+            "林明磊"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1be411n7tD",
+      "title": "直播带货有/没有让消费者体验变好",
+      "stage": "初赛B组第二场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 7,
+      "teams": [
+        {
+          "team": "国防科技大学",
+          "speakers": [
+            "胡伶",
+            "王思鑫",
+            "刘正昕",
+            "张源"
+          ]
+        },
+        {
+          "team": "山东理工大学",
+          "speakers": [
+            "王菁菁",
+            "赵雨潇",
+            "张捷"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1Ca4y1y72t",
+      "title": "高考后填志愿应该/不应该以就业为第一考量",
+      "stage": "初赛D组第一场",
+      "audioStart": 1260,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 8,
+      "teams": [
+        {
+          "team": "暨南大学",
+          "speakers": [
+            "黄健航",
+            "刘曦冉",
+            "曾乙曼",
+            "张子睿"
+          ]
+        },
+        {
+          "team": "中山大学",
+          "speakers": [
+            "李珞霏",
+            "胡嘉晴",
+            "易晓雪",
+            "余宝蓝"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1Dc411s7tV",
+      "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+      "stage": "初赛A组第一场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "清华大学",
+          "speakers": [
+            "郑博中"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "吕良伟",
+            "江茜",
+            "邢嘉豪",
+            "陈卓"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "autoMergeSpeakerCount": 5,
+      "transcriptStatus": "success",
+      "reviewStatus": "minimum-usable"
+    },
+    {
+      "matchId": "match-BV1FQ4y1A7eF",
+      "title": "高考后填志愿应该/不应该以就业为第一考量",
+      "stage": "初赛D组第二场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 7,
+      "teams": [
+        {
+          "team": "中山大学",
+          "speakers": [
+            "程翔",
+            "胡嘉晴",
+            "易晓雪",
+            "余宝蓝"
+          ]
+        },
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "龚梦芹",
+            "郑瑶瑶",
+            "徐冯君"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1he411n7gJ",
+      "title": "企业“第一学历歧视”合理/不合理",
+      "stage": "初赛C组第一场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "伦敦政治经济学院",
+          "speakers": [
+            "谭子芮",
+            "鲍羿岑",
+            "李子姜",
+            "李思成"
+          ]
+        },
+        {
+          "team": "南京大学",
+          "speakers": [
+            "颜颖萱",
+            "高昕然"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "autoMergeSpeakerCount": 6,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1MV41197LX",
+      "title": "企业“第一学历歧视”合理/不合理",
+      "stage": "初赛C组第二场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            "高昕然",
+            "颜颖萱"
+          ]
+        },
+        {
+          "team": "悉尼大学",
+          "speakers": [
+            "牛晨宇",
+            "张心怡",
+            "范嘉昊",
+            "张书鸣"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "autoMergeSpeakerCount": 6,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV11k4y1D7NQ",
+      "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+      "stage": "初赛G组第二场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "胡祖铭",
+            "张钰芃",
+            "王浩然"
+          ]
+        },
+        {
+          "team": "天津大学",
+          "speakers": [
+            "张翔宁",
+            "唐龙",
+            "王春深",
+            "孙超然"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV18k4y1D7DP",
+      "title": "企业“第一学历歧视”合理/不合理",
+      "stage": "初赛C组第三场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "悉尼大学",
+          "speakers": [
+            "范嘉昊"
+          ]
+        },
+        {
+          "team": "伦敦政治经济学院",
+          "speakers": [
+            "纪丰",
+            "鲍羿岑",
+            "李子姜",
+            "李思成"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 5,
+      "transcriptStatus": "success",
+      "reviewStatus": "minimum-usable"
+    },
+    {
+      "matchId": "match-BV1ab4y1N78u",
+      "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+      "stage": "初赛F组第一场",
+      "audioStart": 1440,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 9,
+      "teams": [
+        {
+          "team": "马来亚大学",
+          "speakers": [
+            "陈佩盈",
+            "黄子恩",
+            "陈俊杰",
+            "邱俊伟"
+          ]
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            "赵赞平",
+            "韩彦",
+            "史毓迪波",
+            "金泓宇"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1aK4y1B7ph",
+      "title": "在感情中，“纯爱战士”值得/不值得歌颂",
+      "stage": "初赛H组第二场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 7,
+      "teams": [
+        {
+          "team": "国际关系学院",
+          "speakers": [
+            "卢瑞锋",
+            "宋济坤",
+            "赵锦成"
+          ]
+        },
+        {
+          "team": "西南政法大学",
+          "speakers": [
+            "陈文浩",
+            "张琦琦",
+            "张书闻"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 6,
+      "autoMergeSpeakerCount": 6,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1cQ4y1A7pV",
+      "title": "高考后填志愿应该/不应该以就业为第一考量",
+      "stage": "初赛D组第三场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 7,
+      "teams": [
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "陈子璇",
+            "徐冯君",
+            "郑瑶瑶",
+            "余彤倩"
+          ]
+        },
+        {
+          "team": "暨南大学",
+          "speakers": [
+            "冯诗然",
+            "刘曦冉",
+            "张子睿"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1Fb4y1N7wD",
+      "title": "刻意追求“富养自己”会/不会让人更幸福",
+      "stage": "初赛E组第一场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window-best-effort",
+      "scannedWindowCount": 14,
+      "teams": [
+        {
+          "team": "墨尔本大学",
+          "speakers": [
+            "杨一帆",
+            "沈棋昊",
+            "刘轩仪"
+          ]
+        },
+        {
+          "team": "北京邮电大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 3,
+      "autoMergeSpeakerCount": 3,
+      "transcriptStatus": "cached",
+      "reviewStatus": "needs-review"
+    },
+    {
+      "matchId": "match-BV1FV411Q7DC",
+      "title": "刻意追求“富养自己”会/不会让人更幸福",
+      "stage": "初赛E组第二场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "北京邮电大学",
+          "speakers": [
+            "胡容晴川",
+            "曹富珩",
+            "尹棋翔",
+            "张家怡"
+          ]
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "陆瑶",
+            "陈荣耀",
+            "孙一洲",
+            "赵信博"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1Hc411x7SS",
+      "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+      "stage": "初赛F组第二场",
+      "audioStart": 1260,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 8,
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            "赵赞平",
+            "韩彦",
+            "史毓迪波",
+            "金泓宇"
+          ]
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "邱安琪",
+            "马骋",
+            "赵杨星宇",
+            "谢贤良"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1ob4y1P7sR",
+      "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+      "stage": "初赛G组第一场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "华南理工大学",
+          "speakers": [
+            "董康",
+            "李沛雨",
+            "张添",
+            "赖香君"
+          ]
+        },
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "熊韵杰",
+            "张钰芃",
+            "王浩然"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1Sg4y1173x",
+      "title": "直播带货有/没有让消费者体验变好",
+      "stage": "初赛B组第三场",
+      "audioStart": 180,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 2,
+      "teams": [
+        {
+          "team": "山东理工大学",
+          "speakers": [
+            "张捷"
+          ]
+        },
+        {
+          "team": "武汉大学",
+          "speakers": []
+        }
+      ],
+      "matchedSpeakerCount": 2,
+      "autoMergeSpeakerCount": 1,
+      "transcriptStatus": "success",
+      "reviewStatus": "needs-review"
+    },
+    {
+      "matchId": "match-BV1X5411C7U6",
+      "title": "在感情中，“纯爱战士”值得不值得歌颂丨 北京大学vs国际关系学院",
+      "stage": "初赛H组第一场",
+      "audioStart": 1440,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 9,
+      "teams": [
+        {
+          "team": "北京大学",
+          "speakers": [
+            "陈楚怡",
+            "潘凌子",
+            "崔德方",
+            "陈晓彤"
+          ]
+        },
+        {
+          "team": "国际关系学院",
+          "speakers": [
+            "宋济坤",
+            "卢瑞锋",
+            "沈雨禾",
+            "陶缙"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1xT4y1b7XR",
+      "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
+      "stage": "初赛A组第三场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "西南大学",
+          "speakers": [
+            "张盛",
+            "安子欣"
+          ]
+        },
+        {
+          "team": "清华大学",
+          "speakers": [
+            "吴芋璇",
+            "周士尊",
+            "雷梦瑶"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 5,
+      "transcriptStatus": "success",
+      "reviewStatus": "minimum-usable"
+    },
+    {
+      "matchId": "match-BV19e41117TQ",
+      "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
+      "stage": "初赛G组第三场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "天津大学",
+          "speakers": [
+            "朱丹妮",
+            "孙超然",
+            "王春深",
+            "唐龙"
+          ]
+        },
+        {
+          "team": "华南理工大学",
+          "speakers": [
+            "赖香君",
+            "张盼",
+            "李沛雨",
+            "夏蔚然"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1C5411v71S",
+      "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
+      "stage": "复赛第二场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 7,
+      "teams": [
+        {
+          "team": "伦敦政治经济学院",
+          "speakers": [
+            "胡天一",
+            "谭子芮",
+            "李子姜",
+            "李思成"
+          ]
+        },
+        {
+          "team": "暨南大学",
+          "speakers": [
+            "冯诗然",
+            "刘曦冉",
+            "曾乙曼",
+            "张子睿"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1pb4y1N7H2",
+      "title": "在感情中，“纯爱战士”值得/不值得歌颂",
+      "stage": "初赛H组第三场",
+      "audioStart": 900,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 6,
+      "teams": [
+        {
+          "team": "西南政法大学",
+          "speakers": [
+            "罗锋萍",
+            "张津康",
+            "张琦琦",
+            "张书闻"
+          ]
+        },
+        {
+          "team": "北京大学",
+          "speakers": [
+            "李诗阳",
+            "崔德方",
+            "潘凌子",
+            "苟子彦"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1q94y1K721",
+      "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
+      "stage": "初赛F组第三场",
+      "audioStart": 1440,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 9,
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "裴若言",
+            "马骋",
+            "赵杨星宇",
+            "谢贤良"
+          ]
+        },
+        {
+          "team": "马来亚大学",
+          "speakers": [
+            "许明亮",
+            "黄子恩",
+            "陈俊杰"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1Ra4y1y7nc",
+      "title": "刻意追求“富养自己”会/不会让人更幸福",
+      "stage": "初赛E组第三场",
+      "audioStart": 0,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 1,
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "陆瑶",
+            "赵信博",
+            "王昕璐"
+          ]
+        },
+        {
+          "team": "墨尔本大学",
+          "speakers": [
+            "王思颖",
+            "沈棋昊",
+            "刘轩仪",
+            "钟汉珊"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1ek4y1U7YJ",
+      "title": "快一点/慢下来更有助于找到人生的答案",
+      "stage": "半决赛第二场",
+      "audioStart": 900,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 6,
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "陆瑶",
+            "陈荣耀",
+            "孙一洲",
+            "王昕璐"
+          ]
+        },
+        {
+          "team": "天津大学",
+          "speakers": [
+            "朱丹妮",
+            "孙超然",
+            "王春深",
+            "唐龙"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1FW4y1c7Pt",
+      "title": "“强调情绪价值”对亲密关系利大于弊/弊大于利",
+      "stage": "复赛第四场",
+      "audioStart": 1440,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 9,
+      "teams": [
+        {
+          "team": "天津大学",
+          "speakers": [
+            "朱丹妮",
+            "孙超然",
+            "王春深",
+            "唐龙"
+          ]
+        },
+        {
+          "team": "北京大学",
+          "speakers": [
+            "苟子彦",
+            "潘凌子",
+            "崔德方",
+            "陈晓彤"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1oV411D7mj",
+      "title": "“恋爱脑”错了/没错",
+      "stage": "半决赛第一场",
+      "audioStart": 1080,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window-best-effort",
+      "scannedWindowCount": 14,
+      "teams": [
+        {
+          "team": "清华大学",
+          "speakers": []
+        },
+        {
+          "team": "伦敦政治经济学院",
+          "speakers": [
+            "纪丰",
+            "谭子芮",
+            "李子姜"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 4,
+      "autoMergeSpeakerCount": 3,
+      "transcriptStatus": "success",
+      "reviewStatus": "needs-review"
+    },
+    {
+      "matchId": "match-BV1s5411y7ra",
+      "title": "“乐子人”是/不是真正的快乐",
+      "stage": "复赛第三场",
+      "audioStart": 1800,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 11,
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "孙一洲",
+            "陈荣耀",
+            "赵信博",
+            "秦梓翔"
+          ]
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "赵海若",
+            "赵杨星宇",
+            "马骋",
+            "谢贤良"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 8,
+      "autoMergeSpeakerCount": 8,
+      "transcriptStatus": "success",
+      "reviewStatus": "complete"
+    },
+    {
+      "matchId": "match-BV1Ck4y1U7c2",
+      "title": "如果注定无法成功，该/不该继续努力",
+      "stage": "决赛",
+      "audioStart": 180,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 2,
+      "teams": [
+        {
+          "team": "清华大学",
+          "speakers": [
+            "周士尊",
+            "郑博中",
+            "雷梦瑶"
+          ]
+        },
+        {
+          "team": "天津大学",
+          "speakers": [
+            "朱丹妮",
+            "孙超然",
+            "王春深",
+            "唐龙"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 7,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    },
+    {
+      "matchId": "match-BV1Jp4y1m7wA",
+      "title": "该/不该反对“利用人性下坠的力量挣钱”的商业模式",
+      "stage": "复赛第一场",
+      "audioStart": 1440,
+      "audioDuration": 180,
+      "windowStrategy": "auto-window",
+      "scannedWindowCount": 9,
+      "teams": [
+        {
+          "team": "清华大学",
+          "speakers": [
+            "郑博中",
+            "雷梦瑶"
+          ]
+        },
+        {
+          "team": "国防科技大学",
+          "speakers": [
+            "胡伶",
+            "王思鑫",
+            "刘正昕",
+            "张源"
+          ]
+        }
+      ],
+      "matchedSpeakerCount": 7,
+      "autoMergeSpeakerCount": 6,
+      "transcriptStatus": "success",
+      "reviewStatus": "usable"
+    }
+  ],
+  "notes": [
+    "本报告不修改 generatedMatches.json。",
+    "正式卡片只能合并 autoMerge=true 或人工确认的人名。",
+    "低分候选只保留在复核报告中，不能为了补满人数自动入库。",
+    "音频缓存可用 --cleanup-audio 在转写文本生成后删除；intro 文本缓存会保留。"
+  ]
+}

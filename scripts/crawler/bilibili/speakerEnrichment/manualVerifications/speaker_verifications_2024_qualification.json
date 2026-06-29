@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "year": 2024,
+  "competitionType": "资格赛",
+  "purpose": "人工核验后的 2024 新国辩资格赛登场辩手确认名单。仅保存用户明确确认过的候选，不保存未经确认的候选池。",
+  "records": [
+    {
+      "matchId": "match-BV1JSSxYuEMM",
+      "bvId": "BV1JSSxYuEMM",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁",
+            "张睿婕",
+            "李炎希",
+            "卢意洋"
+          ]
+        }
+      ],
+      "verifiedBy": "user",
+      "verifiedAt": "2026-06-26"
+    },
+    {
+      "matchId": "match-BV1Cb421n7zt",
+      "bvId": "BV1Cb421n7zt",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "teams": [
+        {
+          "team": "彰化师范大学",
+          "speakers": [
+            "周进典",
+            "李超群",
+            "杨孟沅",
+            "郑國廷"
+          ]
+        }
+      ],
+      "verifiedBy": "user",
+      "verifiedAt": "2026-06-26"
+    },
+    {
+      "matchId": "match-BV1BNSdYDEif",
+      "bvId": "BV1BNSdYDEif",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "洪悖旻",
+            "丁启翔",
+            "肖博文",
+            "王振煦"
+          ]
+        }
+      ],
+      "verifiedBy": "user",
+      "verifiedAt": "2026-06-26"
+    }
+  ]
+}

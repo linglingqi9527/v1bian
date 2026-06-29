@@ -4,6 +4,7 @@ import { DEMO_USER_ID } from './userModel.js'
 export function createMatchModel(match = {}) {
   const teams = Array.isArray(match.teams) ? match.teams : []
   const speakers = Array.isArray(match.speakers) ? match.speakers : []
+  const speakerGroups = Array.isArray(match.speakerGroups) ? match.speakerGroups : []
   const trainingIds = Array.isArray(match.trainingIds) ? match.trainingIds : []
 
   return {
@@ -18,6 +19,7 @@ export function createMatchModel(match = {}) {
     bilibiliUrl: match.bilibiliUrl ?? match.sourceUrl ?? '',
     teams,
     speakers,
+    speakerGroups,
     favorite: Boolean(match.favorite),
     watched: Boolean(match.watched ?? match.status === '已看'),
     reviewId: match.reviewId ?? null,

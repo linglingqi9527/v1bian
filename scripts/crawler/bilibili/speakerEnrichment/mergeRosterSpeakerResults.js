@@ -9,6 +9,9 @@ const MISSING_REPORT_PATH = path.join(GENERATED_DIR, 'missingSpeakerReport.json'
 
 export async function mergeRosterSpeakerResults(records, {
   acceptLowConfidence = false,
+  replaceSpeakers = false,
+  source = '',
+  writeSpeakerGroups = false,
 } = {}) {
   const matches = JSON.parse(await readFile(MATCHES_PATH, 'utf8'))
   const privateStateBefore = privateStateSnapshot(matches)
@@ -19,28 +22,29 @@ export async function mergeRosterSpeakerResults(records, {
   const mergedMatches = matches.map((match) => {
     const record = recordById.get(match.id)
     if (!record) return match
-    const recognizedNames = record.teams.flatMap((team) => (
-      team.speakers
-        .filter((speaker) => acceptLowConfidence || speaker.autoMerge !== false)
-        .map((speaker) => speaker.name)
-    ))
+    const acceptedGroups = collectAcceptedGroups(record, { acceptLowConfidence })
+    const recognizedNames = acceptedGroups.flatMap((group) => group.speakers)
     if (recognizedNames.length === 0) return match
 
-    const speakers = [...new Set([...(match.speakers ?? []), ...recognizedNames])]
+    const speakers = replaceSpeakers
+      ? recognizedNames.slice(0, 8)
+      : [...new Set([...(match.speakers ?? []), ...recognizedNames])]
     mergedMatchCount += 1
     mergedSpeakerCount += speakers.length - (match.speakers?.length ?? 0)
     return {
       ...match,
       speakers,
+      ...(writeSpeakerGroups ? { speakerGroups: acceptedGroups } : {}),
       raw: {
         ...(match.raw ?? {}),
         speakerEnrichment: {
           complete: speakers.length >= 8,
           acceptedLowConfidence: acceptLowConfidence,
           matchedSpeakerCount: recognizedNames.length,
-          source: acceptLowConfidence
+          source: source || (acceptLowConfidence
             ? 'openingAudioRosterMatchAcceptedCandidates'
-            : 'openingAudioRosterMatch',
+            : 'openingAudioRosterMatch'),
+          ...(writeSpeakerGroups ? { speakerGroups: acceptedGroups } : {}),
           updatedAt: new Date().toISOString(),
         },
       },
@@ -53,7 +57,23 @@ export async function mergeRosterSpeakerResults(records, {
   return { mergedMatchCount, mergedSpeakerCount }
 }
 
-async function refreshSpeakerReports(matches) {
+function collectAcceptedGroups(record, {
+  acceptLowConfidence = false,
+} = {}) {
+  return (record.teams ?? []).map((team, teamIndex) => {
+    const speakers = (team.speakers ?? [])
+      .filter((speaker) => Boolean(speaker?.name))
+      .filter((speaker) => acceptLowConfidence || speaker.autoMerge !== false)
+      .map((speaker) => speaker.name)
+    return {
+      side: teamIndex === 0 ? '正方' : '反方',
+      team: team.team,
+      speakers: [...new Set(speakers)].slice(0, 4),
+    }
+  }).filter((group) => group.speakers.length > 0)
+}
+
+export async function refreshSpeakerReports(matches) {
   const statusCounts = { missing: 0, parsed: 0, partial: 0 }
   for (const match of matches) statusCounts[getSpeakerStatus(match)] += 1
 
@@ -84,7 +104,7 @@ async function refreshSpeakerReports(matches) {
   await writeJson(MISSING_REPORT_PATH, missingSpeakerReport)
 }
 
-function privateStateSnapshot(matches) {
+export function privateStateSnapshot(matches) {
   return JSON.stringify(matches.map((match) => ({
     id: match.id,
     favorite: match.favorite,
@@ -94,7 +114,7 @@ function privateStateSnapshot(matches) {
   })))
 }
 
-function assertPrivateStateUnchanged(before, after) {
+export function assertPrivateStateUnchanged(before, after) {
   if (before !== after) throw new Error('合并辩手姓名时检测到私人状态字段变化，已停止写入。')
 }
 

@@ -1,0 +1,1222 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-27T01:48:27.098Z",
+  "year": 2025,
+  "competitionType": "资格赛",
+  "mode": "secondPass",
+  "source": {
+    "firstPassCandidates": "F:\\MY project\\BIAN\\v1bian\\src\\data\\generated\\rosterSpeakerCandidates.2025.qualification.json",
+    "introSnippets": "F:\\MY project\\BIAN\\v1bian\\src\\data\\generated\\speakerIntroSnippets.2025.qualification.json"
+  },
+  "targetRule": "使用 2025 校准后巡礼名单，处理全部缓存自我介绍文本，基于队伍名单约束重匹配和候选扩展。",
+  "targetMatchCount": 31,
+  "belowFourBeforeCount": 9,
+  "improvedMatchCount": 7,
+  "reachedAtLeastFourCount": 23,
+  "stillBelowFourCount": 8,
+  "reachedAtLeastSixCount": 7,
+  "completeEightSpeakerCount": 0,
+  "expandedReachedAtLeastFourCount": 31,
+  "expandedReachedAtLeastSixCount": 25,
+  "expandedCompleteEightSpeakerCount": 13,
+  "overallConfirmedAtLeastFourCount": 23,
+  "overallConfirmedAtLeastSixCount": 7,
+  "overallExpandedAtLeastFourCount": 31,
+  "overallExpandedAtLeastSixCount": 25,
+  "completionPoolMaxSize": 7,
+  "totalAddedSpeakerCount": 7,
+  "totalCompletionCandidateCount": 140,
+  "totalMatchedSpeakerCount": 132,
+  "reviewStatusCounts": {
+    "minimum-usable": 16,
+    "needs-review": 8,
+    "usable": 7
+  },
+  "expandedReviewStatusCounts": {
+    "usable": 12,
+    "complete": 13,
+    "minimum-usable": 6
+  },
+  "selectedMatches": [
+    {
+      "matchId": "match-BV11YWqzZEyr",
+      "bvId": "BV11YWqzZEyr",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "天津大学",
+          "speakers": [
+            "李洋"
+          ],
+          "completionCandidates": [
+            "李沁阳",
+            "翁凌俞",
+            "闫俊淇",
+            "陈哲",
+            "高赫遥"
+          ]
+        },
+        {
+          "team": "杭州师范大学",
+          "speakers": [
+            "杨潘俊",
+            "陈江悦",
+            "李玥"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEae",
+      "bvId": "BV161WqzSEae",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "江西财经大学",
+          "speakers": [
+            "温馨",
+            "吴舟",
+            "张子韵"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "刘粤",
+            "温明璇"
+          ],
+          "completionCandidates": [
+            "权莉茹",
+            "李玉晓"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEDJ",
+      "bvId": "BV161WqzSEDJ",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 9,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            "王靖雅"
+          ],
+          "completionCandidates": [
+            "于同舟",
+            "张义斐",
+            "董翟",
+            "赵昱昊",
+            "高昕然"
+          ]
+        },
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            "言姝瑾",
+            "白亦端",
+            "李佳宸"
+          ],
+          "completionCandidates": [
+            "晏心灵",
+            "袁子贤",
+            "郑熙瀚",
+            "陈玥琦"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV161WqzSEE6",
+      "bvId": "BV161WqzSEE6",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "上海戏剧学院",
+          "speakers": [
+            "李佳宸",
+            "白亦端"
+          ],
+          "completionCandidates": [
+            "晏心灵",
+            "袁子贤",
+            "言姝瑾",
+            "郑熙瀚",
+            "陈玥琦"
+          ]
+        },
+        {
+          "team": "华东政法大学",
+          "speakers": [
+            "余心冰",
+            "王键智",
+            "陈振欣"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV18TWBzvELm",
+      "bvId": "BV18TWBzvELm",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "暨南大学",
+          "speakers": [
+            "张洋",
+            "侯煜洋"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            "崔泽豪",
+            "康浩然"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1acWBzzEXZ",
+      "bvId": "BV1acWBzzEXZ",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            "康浩然"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "曲泓宇",
+            "郝静娅"
+          ],
+          "completionCandidates": [
+            "南思源",
+            "王语瞳",
+            "胡润东",
+            "陈瑞阳",
+            "黄钰淇"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1c1WqzDEEi",
+      "bvId": "BV1c1WqzDEEi",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "戴有容",
+            "袁青骋",
+            "王勤",
+            "孙嘉庆"
+          ],
+          "completionCandidates": [
+            "江茜",
+            "石瑶琅"
+          ]
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "穆逸菲",
+            "曹龙延"
+          ],
+          "completionCandidates": [
+            "于润泽",
+            "秘正中"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1ejWqz6EQs",
+      "bvId": "BV1ejWqz6EQs",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛STU组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "万子豪",
+            "杨耀文",
+            "方婷薇"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸"
+          ],
+          "completionCandidates": [
+            "叶钰琳",
+            "田佳乐"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1F1WqzDEo8",
+      "bvId": "BV1F1WqzDEo8",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "曹龙延"
+          ],
+          "completionCandidates": [
+            "于润泽",
+            "秘正中",
+            "穆逸菲"
+          ]
+        },
+        {
+          "team": "对外经济贸易大学",
+          "speakers": [
+            "郭嘉皓"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1FKWqz7Eei",
+      "bvId": "BV1FKWqz7Eei",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "缪正之",
+            "孙一洲",
+            "雷拓"
+          ],
+          "completionCandidates": [
+            "白一果",
+            "陆瑶"
+          ]
+        },
+        {
+          "team": "天津大学",
+          "speakers": [
+            "陈哲",
+            "李沁阳",
+            "闫俊淇"
+          ],
+          "completionCandidates": [
+            "李洋",
+            "翁凌俞",
+            "高赫遥"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1FPWqzUE17",
+      "bvId": "BV1FPWqzUE17",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛PQR组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "杭州师范大学",
+          "speakers": [
+            "蓝培姚",
+            "周琦"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "白一果",
+            "孙一洲",
+            "雷拓"
+          ],
+          "completionCandidates": [
+            "缪正之",
+            "陆瑶"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1G6WizNEu1",
+      "bvId": "BV1G6WizNEu1",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            "敦译萱",
+            "史毓迪波"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "徐依凡"
+          ],
+          "completionCandidates": [
+            "曾俊熙",
+            "李奕彤",
+            "胡文昊",
+            "胡皓然",
+            "赵书逸",
+            "龚寅东"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1gsWqzNEvA",
+      "bvId": "BV1gsWqzNEvA",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "东北林业大学",
+          "speakers": [],
+          "completionCandidates": []
+        },
+        {
+          "team": "西安交通大学",
+          "speakers": [
+            "王羽凡",
+            "苗宇涵",
+            "谢梓涵",
+            "欣芭特"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1hKWBzKE3g",
+      "bvId": "BV1hKWBzKE3g",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛JKL组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "南思源",
+            "郝静娅"
+          ],
+          "completionCandidates": [
+            "曲泓宇",
+            "王语瞳",
+            "胡润东",
+            "陈瑞阳",
+            "黄钰淇"
+          ]
+        },
+        {
+          "team": "暨南大学",
+          "speakers": [
+            "张柏林",
+            "张洋"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1HyWqzHEvf",
+      "bvId": "BV1HyWqzHEvf",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 7,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "西安交通大学",
+          "speakers": [
+            "尚书滕",
+            "苗宇涵",
+            "王羽凡",
+            "董嘉兴"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "天津师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            "余濯然",
+            "孙浩翔",
+            "李锦扬",
+            "杨阳",
+            "王雅昕",
+            "赵悦含",
+            "钟奇山"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1LeWizuEAp",
+      "bvId": "BV1LeWizuEAp",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "胡文昊",
+            "徐依凡",
+            "赵书逸"
+          ],
+          "completionCandidates": [
+            "曾俊熙",
+            "李奕彤",
+            "胡皓然",
+            "龚寅东"
+          ]
+        },
+        {
+          "team": "厦门大学",
+          "speakers": [
+            "李庚尧",
+            "吕艺杭",
+            "陈显龙"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1mhWqzFE8k",
+      "bvId": "BV1mhWqzFE8k",
+      "title": "对话式AI应该/不应该具备主动干预用户情感依赖的中断机制",
+      "stage": "高校组·资格赛中国大陆赛道 复赛MNO组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "天津师范大学",
+          "speakers": [
+            "钟奇山",
+            "王雅昕"
+          ],
+          "completionCandidates": [
+            "余濯然",
+            "孙浩翔",
+            "李锦扬",
+            "杨阳",
+            "赵悦含"
+          ]
+        },
+        {
+          "team": "东北林业大学",
+          "speakers": [
+            "路雅涵",
+            "李嘉澄",
+            "黄一鸣"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjb",
+      "bvId": "BV1n1WqzDEjb",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛DEF组第二场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 0,
+      "matchedSpeakerCount": 0,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "华东政法大学",
+          "speakers": [],
+          "completionCandidates": []
+        },
+        {
+          "team": "南京大学",
+          "speakers": [],
+          "completionCandidates": [
+            "于同舟",
+            "张义斐",
+            "王靖雅",
+            "董翟",
+            "赵昱昊",
+            "高昕然"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1n1WqzDEjq",
+      "bvId": "BV1n1WqzDEjq",
+      "title": "应该/不应该允许驾驶员预设无人驾驶系统在“电车难题”中的决策偏好",
+      "stage": "高校组·资格赛中国大陆赛道 复赛ABC组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "对外经济贸易大学",
+          "speakers": [
+            "常芊芊"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "袁青骋",
+            "王勤",
+            "江茜"
+          ],
+          "completionCandidates": [
+            "孙嘉庆",
+            "戴有容",
+            "石瑶琅"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1XJWqzqEhF",
+      "bvId": "BV1XJWqzqEhF",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛STU组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸"
+          ],
+          "completionCandidates": [
+            "叶钰琳",
+            "田佳乐"
+          ]
+        },
+        {
+          "team": "广西民族大学",
+          "speakers": [
+            "栗嘉宁",
+            "黎欣",
+            "言玮浩",
+            "黄集海"
+          ],
+          "completionCandidates": [
+            "刘梅宁",
+            "文子欣",
+            "林凡迪"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1ZDWqzjErN",
+      "bvId": "BV1ZDWqzjErN",
+      "title": "从长远看，优先推动减工时/加工资更利于实现社会公平",
+      "stage": "高校组·资格赛中国大陆赛道 复赛GHI组第三场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "温明璇",
+            "刘粤"
+          ],
+          "completionCandidates": [
+            "权莉茹",
+            "李玉晓"
+          ]
+        },
+        {
+          "team": "哈尔滨工业大学深圳",
+          "speakers": [
+            "袁潇雅",
+            "高宇翔",
+            "范觉文"
+          ],
+          "completionCandidates": [
+            "叶政国",
+            "钱昊宇",
+            "陈渝"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1ZuWqz5EYq",
+      "bvId": "BV1ZuWqz5EYq",
+      "title": "英雄联盟职业联赛应该/不应该在美洲赛区开放一级战队博彩品牌赞助",
+      "stage": "高校组·资格赛中国大陆赛道 复赛VWX组第一场",
+      "date": "2025-10-17",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "厦门大学",
+          "speakers": [
+            "范可欣",
+            "吴泽荣"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            "赵亿嘉",
+            "史毓迪波",
+            "赵奕平",
+            "黄国锐"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1K9Wiz4ECY",
+      "bvId": "BV1K9Wiz4ECY",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第一场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "权莉茹",
+            "刘粤"
+          ],
+          "completionCandidates": [
+            "李玉晓",
+            "温明璇"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "黄钰淇",
+            "郝静娅",
+            "南思源"
+          ],
+          "completionCandidates": [
+            "曲泓宇",
+            "王语瞳",
+            "胡润东",
+            "陈瑞阳"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1kCWzzfEU9",
+      "bvId": "BV1kCWzzfEU9",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第二场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "上海大学",
+          "speakers": [
+            "敦译萱",
+            "史毓迪波",
+            "赵奕平"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "史天逸",
+            "叶钰琳"
+          ],
+          "completionCandidates": [
+            "田佳乐"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1TDWiztE3Z",
+      "bvId": "BV1TDWiztE3Z",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第二场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 9,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [
+            "王靖雅"
+          ],
+          "completionCandidates": [
+            "于同舟",
+            "张义斐",
+            "董翟",
+            "赵昱昊",
+            "高昕然"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "江茜",
+            "王勤"
+          ],
+          "completionCandidates": [
+            "孙嘉庆",
+            "戴有容",
+            "石瑶琅",
+            "袁青骋"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1TUWizfERx",
+      "bvId": "BV1TUWizfERx",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛G-L组第二场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 1,
+      "matchedSpeakerCount": 1,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 10,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "南思源"
+          ],
+          "completionCandidates": [
+            "曲泓宇",
+            "王语瞳",
+            "胡润东",
+            "郝静娅",
+            "陈瑞阳",
+            "黄钰淇"
+          ]
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            "刘粤",
+            "权莉茹",
+            "李玉晓",
+            "温明璇"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1VqWizTE21",
+      "bvId": "BV1VqWizTE21",
+      "title": "要争取早一点与世界和解/要尽量晚一点向世界投降",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛A-F组第一场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 8,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "戴有容",
+            "王勤",
+            "袁青骋"
+          ],
+          "completionCandidates": [
+            "孙嘉庆",
+            "江茜",
+            "石瑶琅"
+          ]
+        },
+        {
+          "team": "南京大学",
+          "speakers": [
+            "王靖雅"
+          ],
+          "completionCandidates": [
+            "于同舟",
+            "张义斐",
+            "董翟",
+            "赵昱昊",
+            "高昕然"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1XWWzzkE8Q",
+      "bvId": "BV1XWWzzkE8Q",
+      "title": "《哪吒2》对“削肉剔骨”的改编，深化/弱化了哪吒的反抗精神",
+      "stage": "高校组·资格赛中国大陆赛道 晋级赛S-X组第一场",
+      "date": "2025-10-18",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "龙慧玲",
+            "叶钰琳"
+          ],
+          "completionCandidates": [
+            "史天逸",
+            "田佳乐"
+          ]
+        },
+        {
+          "team": "上海大学",
+          "speakers": [
+            "潘严芷怡",
+            "史毓迪波",
+            "赵奕平"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1i7yzBJEoX",
+      "bvId": "BV1i7yzBJEoX",
+      "title": "人终有一死，是/不是一件好事",
+      "stage": "高校组·资格赛中国大陆赛道 决赛",
+      "date": "2025-10-28",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "温明璇",
+            "刘粤"
+          ],
+          "completionCandidates": [
+            "权莉茹",
+            "李玉晓"
+          ]
+        },
+        {
+          "team": "中国政法大学",
+          "speakers": [
+            "缪正之",
+            "孙一洲",
+            "白一果",
+            "雷拓"
+          ],
+          "completionCandidates": [
+            "陆瑶"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1o7yzBJE4f",
+      "bvId": "BV1o7yzBJE4f",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "stage": "高校组·资格赛中国大陆赛道 半决赛上半赛区",
+      "date": "2025-10-28",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 7,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [],
+          "completionCandidates": [
+            "孙嘉庆",
+            "戴有容",
+            "江茜",
+            "王勤",
+            "石瑶琅",
+            "袁青骋"
+          ]
+        },
+        {
+          "team": "华南师范大学",
+          "speakers": [
+            "权莉茹",
+            "李玉晓",
+            "刘粤"
+          ],
+          "completionCandidates": [
+            "温明璇"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1o7yzBJE6F",
+      "bvId": "BV1o7yzBJE6F",
+      "title": "脱口秀/辩论能更好地回应世界",
+      "stage": "高校组·资格赛中国大陆赛道 半决赛下半赛区",
+      "date": "2025-10-28",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "中国政法大学",
+          "speakers": [],
+          "completionCandidates": [
+            "孙一洲",
+            "白一果",
+            "缪正之",
+            "陆瑶",
+            "雷拓"
+          ]
+        },
+        {
+          "team": "南昌大学",
+          "speakers": [
+            "史天逸",
+            "龙慧玲",
+            "叶钰琳"
+          ],
+          "completionCandidates": [
+            "田佳乐"
+          ]
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "本报告不下载音频、不转写、不修改 generatedMatches.json。",
+    "secondPass 会更重视“一辩/二辩/三辩/四辩”后的姓名窗口，并使用 2025 校准后巡礼名单约束。",
+    "expandedSpeakerCount 包含 tightRosterCompletion 候选，只表示待复核名单池，不等同于音频确认识别。",
+    "tightRosterCompletion 不应自动合并进正式卡片；正式卡片应优先只使用转写文本直接匹配到的姓名。",
+    "低置信候选仍需人工复核；不建议直接无审计合并。"
+  ]
+}

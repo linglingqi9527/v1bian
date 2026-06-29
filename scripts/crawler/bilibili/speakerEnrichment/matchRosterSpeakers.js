@@ -3,20 +3,40 @@ import { extractIntroSnippetText } from './transcriptIntroSnippet.js'
 
 const MIN_AUTO_MATCH_SCORE = 0.8
 const MIN_CONTEXT_CANDIDATE_SCORE = 0.4
+const MIN_SECOND_PASS_CANDIDATE_SCORE = 0.28
+const STRONG_ROLE_CONTEXT_BONUS = 0.18
+const TEAM_HINT_BONUS = 0.18
+const TEAM_HINT_PENALTY = 0.24
 const MIN_SCORE_MARGIN = 0.08
 const MAX_SPEAKERS_PER_TEAM = 4
 const MAX_ROLE_MARKERS = 16
 const MAX_SEGMENT_CHARS = 56
 const MAX_CONTEXT_WINDOW_START = 8
+const SECOND_PASS_TOP_CANDIDATES_PER_SEGMENT = 8
 
-export function matchRosterSpeakers({ rosterContext, transcriptText = '' }) {
+export function matchRosterSpeakers({
+  rosterContext,
+  strategy = 'standard',
+  transcriptText = '',
+} = {}) {
+  const isSecondPass = strategy === 'secondPass'
   const introText = extractIntroSnippetText(transcriptText)
   const segments = extractRoleFollowingSegments(introText)
   const members = flattenRosterMembers(rosterContext.teams)
-  const candidates = segments
-    .map((segment) => bestRosterCandidate(segment, members))
-    .filter(Boolean)
-  const assignments = selectGlobalAssignments(candidates, rosterContext.teams.length)
+  const assignments = isSecondPass
+    ? selectSecondPassAssignments([
+      ...segments.flatMap((segment) => secondPassRosterCandidates(segment, members)),
+      ...teamBlockRosterCandidates({
+        members,
+        teamBlocks: extractTeamIntroBlocks(introText, rosterContext.teams.length),
+      }),
+    ])
+    : selectGlobalAssignments(
+      segments
+        .map((segment) => bestRosterCandidate(segment, members))
+        .filter(Boolean),
+      rosterContext.teams.length,
+    )
   const teams = rosterContext.teams.map((team, teamIndex) => ({
     team: team.rosterTeam,
     speakers: assignments
@@ -50,15 +70,25 @@ export function matchRosterSpeakers({ rosterContext, transcriptText = '' }) {
 
 function extractRoleFollowingSegments(text) {
   const markers = [...text.matchAll(/一辩|二辩|三辩|四辩/g)].slice(0, MAX_ROLE_MARKERS)
+  let currentTeamHint = 0
+  let previousRoleNumber = 0
   return markers.map((marker, index) => {
+    const roleNumber = roleToNumber(marker[0])
+    if (index > 0 && roleNumber <= previousRoleNumber) currentTeamHint += 1
+    previousRoleNumber = roleNumber
     const start = marker.index + marker[0].length
     const nextMarkerIndex = markers[index + 1]?.index ?? text.length
     const end = Math.min(nextMarkerIndex, start + MAX_SEGMENT_CHARS)
+    const transcriptSnippet = text.slice(
+      Math.max(0, marker.index - 12),
+      Math.min(text.length, end + 12),
+    )
     return {
       id: index,
       role: marker[0],
       text: text.slice(start, end),
-      transcriptSnippet: text.slice(Math.max(0, marker.index - 12), Math.min(text.length, end + 12)),
+      teamHintIndex: inferTeamHintIndex(transcriptSnippet, Math.min(currentTeamHint, 1)),
+      transcriptSnippet,
     }
   })
 }
@@ -105,9 +135,87 @@ function bestRosterCandidate(segment, members) {
   return null
 }
 
-function compareSegmentToName(segmentText, officialName) {
+function secondPassRosterCandidates(segment, members) {
+  return members
+    .map((member) => {
+      const compared = compareSegmentToName(segment.text, member.name, {
+        allowShortWindow: true,
+      })
+      const teamHintMatched = segment.teamHintIndex === member.teamIndex
+      const roleBonus = roleContextBonus(compared.windowStart)
+      const teamHintScore = teamHintMatched ? TEAM_HINT_BONUS : -TEAM_HINT_PENALTY
+      const score = clampScore(compared.score + roleBonus + teamHintScore)
+      return {
+        ...member,
+        ...compared,
+        baseScore: compared.score,
+        method: `${compared.method}-second-pass`,
+        role: segment.role,
+        score,
+        segmentId: segment.id,
+        teamHintIndex: segment.teamHintIndex,
+        teamHintMatched,
+        transcriptSnippet: segment.transcriptSnippet,
+      }
+    })
+    .filter((candidate) => (
+      candidate.baseScore > 0
+      && candidate.score >= MIN_SECOND_PASS_CANDIDATE_SCORE
+      && candidate.windowStart <= MAX_CONTEXT_WINDOW_START + 4
+    ))
+    .sort((left, right) => right.score - left.score)
+    .slice(0, SECOND_PASS_TOP_CANDIDATES_PER_SEGMENT)
+    .map((candidate) => ({
+      ...candidate,
+      autoMerge: candidate.score >= MIN_AUTO_MATCH_SCORE,
+    }))
+}
+
+function teamBlockRosterCandidates({
+  members,
+  teamBlocks,
+}) {
+  return teamBlocks.flatMap((block) => {
+    const blockMembers = members.filter((member) => member.teamIndex === block.teamIndex)
+    return blockMembers
+      .map((member) => {
+        const compared = compareSegmentToName(block.text, member.name, {
+          allowShortWindow: true,
+          maxWindowStart: 120,
+        })
+        const score = clampScore(compared.score + 0.08)
+        return {
+          ...member,
+          ...compared,
+          baseScore: compared.score,
+          method: `${compared.method}-team-block-second-pass`,
+          role: '',
+          score,
+          segmentId: `block:${block.teamIndex}:${member.id}`,
+          teamHintIndex: block.teamIndex,
+          teamHintMatched: true,
+          transcriptSnippet: snippetAround(block.text, compared.windowStart, compared.recognizedText.length),
+          autoMerge: score >= MIN_AUTO_MATCH_SCORE,
+        }
+      })
+      .filter((candidate) => (
+        candidate.baseScore >= 0.58
+        && candidate.windowStart <= 96
+      ))
+      .sort((left, right) => right.score - left.score)
+      .slice(0, MAX_SPEAKERS_PER_TEAM + 2)
+  })
+}
+
+function compareSegmentToName(segmentText, officialName, {
+  allowShortWindow = false,
+  maxWindowStart = 32,
+} = {}) {
   const officialLength = normalizeText(officialName).length
-  const windows = candidateWindows(segmentText, officialLength)
+  const windows = candidateWindows(segmentText, officialLength, {
+    allowShortWindow,
+    maxStart: maxWindowStart,
+  })
   return windows
     .map((window) => ({
       recognizedText: window.text,
@@ -118,12 +226,20 @@ function compareSegmentToName(segmentText, officialName) {
     ?? { method: 'none', recognizedText: '', score: 0, windowStart: Number.POSITIVE_INFINITY }
 }
 
-function candidateWindows(value, officialLength) {
+function candidateWindows(value, officialLength, {
+  allowShortWindow = false,
+  maxStart = 32,
+} = {}) {
   const chinese = String(value ?? '').replace(/[^\u4e00-\u9fff·]/g, '')
-  const lengths = [...new Set([officialLength, officialLength + 1])]
+  const lengths = [
+    ...new Set(allowShortWindow
+      ? [officialLength - 2, officialLength - 1, officialLength, officialLength + 1]
+      : [officialLength, officialLength + 1]),
+  ]
+    .filter((length) => length > 1)
   const windows = []
   for (const length of lengths) {
-    for (let index = 0; index <= Math.min(chinese.length - length, 32); index += 1) {
+    for (let index = 0; index <= Math.min(chinese.length - length, maxStart); index += 1) {
       windows.push({
         start: index,
         text: chinese.slice(index, index + length),
@@ -131,6 +247,22 @@ function candidateWindows(value, officialLength) {
     }
   }
   return windows
+}
+
+function extractTeamIntroBlocks(text, teamCount) {
+  if (teamCount <= 1) return [{ teamIndex: 0, text }]
+  const secondTeamMatch = /反方是|本方是|坐在.{0,12}左手边.{0,8}反方/.exec(text)
+  const secondStart = secondTeamMatch?.index ?? -1
+  if (secondStart <= 0) {
+    return [
+      { teamIndex: 0, text },
+      { teamIndex: 1, text },
+    ]
+  }
+  return [
+    { teamIndex: 0, text: text.slice(0, secondStart) },
+    { teamIndex: 1, text: text.slice(secondStart) },
+  ]
 }
 
 function compareNames(left, right) {
@@ -191,6 +323,30 @@ function selectGlobalAssignments(candidates, teamCount) {
   return best.assignments
 }
 
+function selectSecondPassAssignments(candidates) {
+  const assignments = []
+  const usedMembers = new Set()
+  const usedSegments = new Set()
+  const teamCounts = []
+  const ranked = [...candidates].sort((left, right) => (
+    right.score - left.score
+    || Number(right.teamHintMatched) - Number(left.teamHintMatched)
+  ))
+
+  for (const candidate of ranked) {
+    if (usedMembers.has(candidate.id)) continue
+    if (usedSegments.has(candidate.segmentId)) continue
+    if ((teamCounts[candidate.teamIndex] ?? 0) >= MAX_SPEAKERS_PER_TEAM) continue
+
+    assignments.push(candidate)
+    usedMembers.add(candidate.id)
+    usedSegments.add(candidate.segmentId)
+    teamCounts[candidate.teamIndex] = (teamCounts[candidate.teamIndex] ?? 0) + 1
+  }
+
+  return assignments
+}
+
 function searchAssignments(candidates, index, usedMembers, teamCounts) {
   if (index >= candidates.length) return { assignments: [], score: 0 }
 
@@ -244,6 +400,42 @@ function confidenceLevel(score) {
   if (score >= 0.9) return 'high'
   if (score >= MIN_AUTO_MATCH_SCORE) return 'medium'
   return 'low'
+}
+
+function roleContextBonus(windowStart) {
+  if (!Number.isFinite(windowStart)) return 0
+  if (windowStart <= 2) return STRONG_ROLE_CONTEXT_BONUS
+  if (windowStart <= MAX_CONTEXT_WINDOW_START) {
+    return STRONG_ROLE_CONTEXT_BONUS * (1 - windowStart / (MAX_CONTEXT_WINDOW_START + 1))
+  }
+  return 0
+}
+
+function roleToNumber(role) {
+  return {
+    一辩: 1,
+    二辩: 2,
+    三辩: 3,
+    四辩: 4,
+  }[role] ?? 0
+}
+
+function inferTeamHintIndex(snippet, fallback) {
+  const text = String(snippet ?? '')
+  if (/反方|本方/.test(text)) return 1
+  if (/正方|中方|这方/.test(text)) return 0
+  return fallback
+}
+
+function clampScore(score) {
+  return Math.max(0, Math.min(1, score))
+}
+
+function snippetAround(text, index = 0, length = 0) {
+  if (!Number.isFinite(index)) return String(text ?? '').slice(0, 120)
+  const start = Math.max(0, index - 24)
+  const end = Math.min(String(text ?? '').length, index + length + 48)
+  return String(text ?? '').slice(start, end)
 }
 
 function normalizeText(value) {

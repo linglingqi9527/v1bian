@@ -5,6 +5,10 @@ export const QUALIFICATION_ROSTER_PATH = fileURLToPath(
   new URL('./rosters/team_roster_2025_qualification.json', import.meta.url),
 )
 
+export const QUALIFICATION_ROSTER_2025_VERIFIED_PATH = fileURLToPath(
+  new URL('./rosters/team_roster_2025_verified.json', import.meta.url),
+)
+
 export const QUALIFICATION_ROSTER_2024_BY_STAGE_PATH = fileURLToPath(
   new URL('./rosters/team_roster_2024_qualification_by_stage.json', import.meta.url),
 )
@@ -13,10 +17,18 @@ export const QUALIFICATION_ROSTER_2024_COMBINED_PATH = fileURLToPath(
   new URL('./rosters/team_roster_2024_qualification_combined_by_school.json', import.meta.url),
 )
 
+export const QUALIFICATION_ROSTER_2024_VERIFIED_COMBINED_PATH = fileURLToPath(
+  new URL('./rosters/team_roster_2024_verified_combined_by_school.json', import.meta.url),
+)
+
 export function getQualificationRosterPath({
   mode = 'byStage',
   year = 2025,
 } = {}) {
+  if (year === 2025 && mode === 'verified') return QUALIFICATION_ROSTER_2025_VERIFIED_PATH
+  if (year === 2024 && mode === 'verifiedCombined') {
+    return QUALIFICATION_ROSTER_2024_VERIFIED_COMBINED_PATH
+  }
   if (year === 2024 && mode === 'combined') return QUALIFICATION_ROSTER_2024_COMBINED_PATH
   if (year === 2024) return QUALIFICATION_ROSTER_2024_BY_STAGE_PATH
   return QUALIFICATION_ROSTER_PATH
@@ -25,7 +37,7 @@ export function getQualificationRosterPath({
 export async function loadTeamRoster({
   competitionType = '资格赛',
   year = 2025,
-  mode = year === 2024 ? 'combined' : 'byStage',
+  mode = year === 2024 ? 'verifiedCombined' : 'verified',
   rosterPath = getQualificationRosterPath({ mode, year }),
   stageSegment,
 } = {}) {

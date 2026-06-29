@@ -1,0 +1,3282 @@
+[
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "孙嘉庆",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "戴有容",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "江茜",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "王勤",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "石瑶琅",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A1",
+    "team": "南开大学",
+    "name": "袁青骋",
+    "sourceImage": "A1-南开大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "周子禾",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "唐之茂",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "杜育丞",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "林治昊",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "肖镇璞",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "郭姝含",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "A2",
+    "team": "大连交通大学",
+    "name": "顾芮萍",
+    "sourceImage": "A2-大连交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B1",
+    "team": "中央民族大学",
+    "name": "刘一平",
+    "sourceImage": "B1-中央民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B1",
+    "team": "中央民族大学",
+    "name": "徐伟杰",
+    "sourceImage": "B1-中央民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B1",
+    "team": "中央民族大学",
+    "name": "李晨恺",
+    "sourceImage": "B1-中央民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B1",
+    "team": "中央民族大学",
+    "name": "柴星屹",
+    "sourceImage": "B1-中央民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B1",
+    "team": "中央民族大学",
+    "name": "蒲春添",
+    "sourceImage": "B1-中央民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B2",
+    "team": "复旦大学",
+    "name": "于润泽",
+    "sourceImage": "B2-复旦大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B2",
+    "team": "复旦大学",
+    "name": "曹龙延",
+    "sourceImage": "B2-复旦大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B2",
+    "team": "复旦大学",
+    "name": "秘正中",
+    "sourceImage": "B2-复旦大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "B2",
+    "team": "复旦大学",
+    "name": "穆逸菲",
+    "sourceImage": "B2-复旦大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "万永健",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "吕颂恩",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "方添源",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "涂愉铭",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "郑瑶瑶",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "陈文强",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "黄恺文",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C1",
+    "team": "华中师范大学",
+    "name": "黄致远",
+    "sourceImage": "C1-华中师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "刘力魁",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "常芊芊",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "张嘉俊",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "王博尧",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "程逸涵",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "翁睿晗",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "苏瑞琪",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "C2",
+    "team": "对外经济贸易大学",
+    "name": "郭嘉皓",
+    "sourceImage": "C2-对外经济贸易大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "晏心灵",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "李佳宸",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "白亦端",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "袁子贤",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "言姝瑾",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "郑熙瀚",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D1",
+    "team": "上海戏剧学院",
+    "name": "陈玥琦",
+    "sourceImage": "D1-上海戏剧学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "于梓澄",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "储子琪",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "孙浩程",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "李垛含",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "祝淼仪",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "肖嘉元",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "褚昱辰",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "D2",
+    "team": "中央财经大学",
+    "name": "魏天时",
+    "sourceImage": "D2-中央财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "余心冰",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "刘楚鑫",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "周智荣",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "宗钰",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "杨晨",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "王键智",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "赵雪晴",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E1",
+    "team": "华东政法大学",
+    "name": "陈振欣",
+    "sourceImage": "E1-华东政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E2",
+    "team": "内蒙古师范大学",
+    "name": "曹雪峰",
+    "sourceImage": "E2-内蒙古师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E2",
+    "team": "内蒙古师范大学",
+    "name": "李子瑞",
+    "sourceImage": "E2-内蒙古师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E2",
+    "team": "内蒙古师范大学",
+    "name": "胡涵松",
+    "sourceImage": "E2-内蒙古师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "E2",
+    "team": "内蒙古师范大学",
+    "name": "陈晨",
+    "sourceImage": "E2-内蒙古师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "于同舟",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "张义斐",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "王靖雅",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "董翟",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "赵昱昊",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F1",
+    "team": "南京大学",
+    "name": "高昕然",
+    "sourceImage": "F1-南京大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "何天昊",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "刘天浩",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "孙可嘉",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "宋铮",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "程一",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "翦音志",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": "已按原图复核修正：邬音志 → 翦音志"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "肖禹辰",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "F2",
+    "team": "中国人民大学",
+    "name": "董欣怡",
+    "sourceImage": "F2-中国人民大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "兰紫嫣",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "孟琪琪",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "徐天若",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "朱悦文",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "杨航",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "袁紫涵",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "邓志亮",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G1",
+    "team": "湘潭大学",
+    "name": "高鑫超",
+    "sourceImage": "G1-湘潭大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "叶政国",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "范觉文",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "袁潇雅",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "钱昊宇",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "陈渝",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "G2",
+    "team": "哈尔滨工业大学深圳",
+    "name": "高宇翔",
+    "sourceImage": "G2-哈尔滨工业大学深圳/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "吴舟",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "周安宜",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "张子韵",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "林燕然",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "柴钰维",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "温馨",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "王天泽",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H1",
+    "team": "江西财经大学",
+    "name": "王籽骥",
+    "sourceImage": "H1-江西财经大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "兰昌帅",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "叶尔达纳·别克波拉提",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "张楚悦",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "张雨晨",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "徐正阳",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "潘煜",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "王晨兴",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "H2",
+    "team": "华中科技大学",
+    "name": "黄思皓",
+    "sourceImage": "H2-华中科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I1",
+    "team": "华南师范大学",
+    "name": "刘粤",
+    "sourceImage": "I1-华南师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I1",
+    "team": "华南师范大学",
+    "name": "权莉茹",
+    "sourceImage": "I1-华南师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I1",
+    "team": "华南师范大学",
+    "name": "李玉晓",
+    "sourceImage": "I1-华南师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I1",
+    "team": "华南师范大学",
+    "name": "温明璇",
+    "sourceImage": "I1-华南师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "刘秉钧",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "张哲宁",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "李嘉琪",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "杨炎泰",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "王宁",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "王者",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "钱一骏",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "I2",
+    "team": "南京航空航天大学",
+    "name": "黄天馨",
+    "sourceImage": "I2-南京航空航天大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J1",
+    "team": "同济大学",
+    "name": "刘姿彤",
+    "sourceImage": "J1-同济大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J1",
+    "team": "同济大学",
+    "name": "李高翔",
+    "sourceImage": "J1-同济大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J1",
+    "team": "同济大学",
+    "name": "武悦",
+    "sourceImage": "J1-同济大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J1",
+    "team": "同济大学",
+    "name": "江依蓉",
+    "sourceImage": "J1-同济大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J1",
+    "team": "同济大学",
+    "name": "陈厚德",
+    "sourceImage": "J1-同济大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "南思源",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "曲泓宇",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "王语瞳",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "胡润东",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "郝静娅",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "陈瑞阳",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "J2",
+    "team": "陕西师范大学",
+    "name": "黄钰淇",
+    "sourceImage": "J2-陕西师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "丰卓",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "侯煜洋",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "吕歆璐",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "张恩泽",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "张柏林",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "张洋",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "李佳阳",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K1",
+    "team": "暨南大学",
+    "name": "赵灿鑫",
+    "sourceImage": "K1-暨南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "于啸然",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "吴杰",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "李伟杰",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "李子彬",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "肖一安",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "胡晓鹤",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "钊俊涵",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "K2",
+    "team": "重庆大学",
+    "name": "陈俐言",
+    "sourceImage": "K2-重庆大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L1",
+    "team": "大连海事大学",
+    "name": "唐洪哲",
+    "sourceImage": "L1-大连海事大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L1",
+    "team": "大连海事大学",
+    "name": "张怡婧",
+    "sourceImage": "L1-大连海事大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L1",
+    "team": "大连海事大学",
+    "name": "杨博",
+    "sourceImage": "L1-大连海事大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L1",
+    "team": "大连海事大学",
+    "name": "管德明",
+    "sourceImage": "L1-大连海事大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L1",
+    "team": "大连海事大学",
+    "name": "黄侃炜",
+    "sourceImage": "L1-大连海事大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "吴牧阳",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "孔心怡",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "孙继飞",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "崔泽豪",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "康浩然",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "李宜轩",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "柳绪鑫",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "L2",
+    "team": "中国海洋大学",
+    "name": "温明彦",
+    "sourceImage": "L2-中国海洋大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M1",
+    "team": "兰州大学",
+    "name": "刘政昊",
+    "sourceImage": "M1-兰州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M1",
+    "team": "兰州大学",
+    "name": "周沛原",
+    "sourceImage": "M1-兰州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M1",
+    "team": "兰州大学",
+    "name": "王朝忠",
+    "sourceImage": "M1-兰州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M1",
+    "team": "兰州大学",
+    "name": "雷玥",
+    "sourceImage": "M1-兰州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "余濯然",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "孙浩翔",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "李锦扬",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "杨阳",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "王雅昕",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "赵悦含",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "M2",
+    "team": "天津师范大学",
+    "name": "钟奇山",
+    "sourceImage": "M2-天津师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "刘鸿帆",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "李嘉澄",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "梅泽同",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "秦嘉燚",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "范钰妍",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "路雅涵",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "郭雨杭",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N1",
+    "team": "东北林业大学",
+    "name": "黄一鸣",
+    "sourceImage": "N1-东北林业大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "万祖锐",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "傅熙惟",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "徐靖轩",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "林锦阳",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "肖瑶",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "董康",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "袁旭林",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "N2",
+    "team": "华南理工大学",
+    "name": "陈雨萌",
+    "sourceImage": "N2-华南理工大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "宗浩铭",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "尚书滕",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": "已按原图复核修正：尚书腾 → 尚书滕"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "欣芭特",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "王羽凡",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "苏文蕊",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "苗宇涵",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "董嘉兴",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O1",
+    "team": "西安交通大学",
+    "name": "谢梓涵",
+    "sourceImage": "O1-西安交通大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O2",
+    "team": "电子科技大学",
+    "name": "叶镇豪",
+    "sourceImage": "O2-电子科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O2",
+    "team": "电子科技大学",
+    "name": "温海帆",
+    "sourceImage": "O2-电子科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O2",
+    "team": "电子科技大学",
+    "name": "王雨峰",
+    "sourceImage": "O2-电子科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "O2",
+    "team": "电子科技大学",
+    "name": "龙炜秦",
+    "sourceImage": "O2-电子科技大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "李沁阳",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "李洋",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "翁凌俞",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": "按原图读为“翁凌俞”；此项建议后续再用字幕/官方文本二次交叉确认。"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "闫俊淇",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "陈哲",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P1",
+    "team": "天津大学",
+    "name": "高赫遥",
+    "sourceImage": "P1-天津大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "刘骁恩",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "崔敬一",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "常张杰",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "张翰林",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "柳稼伟",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "聂依格",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "邱心语",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "P2",
+    "team": "山东大学",
+    "name": "陶新宇",
+    "sourceImage": "P2-山东大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "刘啸天",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "周琦",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "李玥",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "杨潘俊",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "王思喻",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "蓝培姚",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "陈江悦",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q1",
+    "team": "杭州师范大学",
+    "name": "高江宁",
+    "sourceImage": "Q1-杭州师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "刘家贤",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "张子睿",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "杨子奕",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "王奕然",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "畅庭钒",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "程书烨",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "蒋思毅",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "Q2",
+    "team": "福州大学",
+    "name": "蒋浩然",
+    "sourceImage": "Q2-福州大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "岳琪奥",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "张诚湜",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "杨书琪",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "王怡婷",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "衣厚源",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R1",
+    "team": "河北地质大学",
+    "name": "赵航",
+    "sourceImage": "R1-河北地质大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R2",
+    "team": "中国政法大学",
+    "name": "孙一洲",
+    "sourceImage": "R2-中国政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R2",
+    "team": "中国政法大学",
+    "name": "白一果",
+    "sourceImage": "R2-中国政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R2",
+    "team": "中国政法大学",
+    "name": "缪正之",
+    "sourceImage": "R2-中国政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R2",
+    "team": "中国政法大学",
+    "name": "陆瑶",
+    "sourceImage": "R2-中国政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "R2",
+    "team": "中国政法大学",
+    "name": "雷拓",
+    "sourceImage": "R2-中国政法大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "刘梅宁",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "文子欣",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "林凡迪",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "栗嘉宁",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "言玮浩",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": "已按原图复核修正：言玮洁 → 言玮浩"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "黄集海",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S1",
+    "team": "广西民族大学",
+    "name": "黎欣",
+    "sourceImage": "S1-广西民族大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "于东祺",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "于航",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "孙皓恩",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "宋青杨",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "张煜哲",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "李一冉",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "赵龙一",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "S2",
+    "team": "长春建筑学院",
+    "name": "陆彦",
+    "sourceImage": "S2-长春建筑学院/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "万子豪",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "吴兆勋",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "方婷薇",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "杨耀文",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "王乐凡",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "王子仪",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "童传宇",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": "已按原图复核修正：董传宇 → 童传宇"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T1",
+    "team": "安徽大学",
+    "name": "蒋林树",
+    "sourceImage": "T1-安徽大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "杨勤愚",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "牛梓涵",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "袁天语",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "许宸睿",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "郭思源",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "韩劲康",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "项志浩",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "T2",
+    "team": "北京师范大学",
+    "name": "马澜月",
+    "sourceImage": "T2-北京师范大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U1",
+    "team": "南昌大学",
+    "name": "史天逸",
+    "sourceImage": "U1-南昌大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U1",
+    "team": "南昌大学",
+    "name": "叶钰琳",
+    "sourceImage": "U1-南昌大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U1",
+    "team": "南昌大学",
+    "name": "田佳乐",
+    "sourceImage": "U1-南昌大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U1",
+    "team": "南昌大学",
+    "name": "龙慧玲",
+    "sourceImage": "U1-南昌大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U2",
+    "team": "江苏大学",
+    "name": "方乐天",
+    "sourceImage": "U2-江苏大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U2",
+    "team": "江苏大学",
+    "name": "羊昱衡",
+    "sourceImage": "U2-江苏大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U2",
+    "team": "江苏大学",
+    "name": "耿红梅",
+    "sourceImage": "U2-江苏大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "U2",
+    "team": "江苏大学",
+    "name": "葛昊明",
+    "sourceImage": "U2-江苏大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "吕艺杭",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "吴悠",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "吴泽荣",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "张汶维",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "李庚尧",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "程标",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "范可欣",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V1",
+    "team": "厦门大学",
+    "name": "陈显龙",
+    "sourceImage": "V1-厦门大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "吴艺静",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "周定远",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "宛立东",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "崔文彩",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "张嵘森",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": "已按原图复核修正：张嵘霖 → 张嵘森"
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "李梓铭",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "王昭霖",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "V2",
+    "team": "海南大学",
+    "name": "邱昊洋",
+    "sourceImage": "V2-海南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "吴孟泽",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "张侗",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "曹天择",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "江凯旋",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "祝佳欣",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "胡了了",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "邓翰伟",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W1",
+    "team": "四川大学",
+    "name": "黄嘉乐",
+    "sourceImage": "W1-四川大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "史毓迪波",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "敦译萱",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "潘严芷怡",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "王韬奇",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "蔡博林",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "赵亿嘉",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "赵奕平",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "W2",
+    "team": "上海大学",
+    "name": "黄国锐",
+    "sourceImage": "W2-上海大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "徐依凡",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "曾俊熙",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "李奕彤",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "胡文昊",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "胡皓然",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "赵书逸",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X1",
+    "team": "宁波大学",
+    "name": "龚寅东",
+    "sourceImage": "X1-宁波大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "万芷萱",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "于茗远",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "吴志宏",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "张甲申",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "朱闰问",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "林千翊",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "栗俊楷",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  },
+  {
+    "year": 2025,
+    "competitionType": "资格赛",
+    "teamCode": "X2",
+    "team": "湖南大学",
+    "name": "陈诺凡",
+    "sourceImage": "X2-湖南大学/02.png",
+    "verified": true,
+    "warning": ""
+  }
+]

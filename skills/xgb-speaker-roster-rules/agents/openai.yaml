@@ -1,0 +1,7 @@
+interface:
+  display_name: "新国辩辩手名单规则"
+  short_description: "管理资格赛辩手识别候补与正式入库边界。"
+  default_prompt: "Use $xgb-speaker-roster-rules to check whether speaker candidates may enter formal match card data."
+
+policy:
+  allow_implicit_invocation: true

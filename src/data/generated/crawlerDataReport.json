@@ -8,11 +8,11 @@
   "withTitleCount": 379,
   "withBvIdCount": 379,
   "withTeamsCount": 367,
-  "withSpeakersCount": 175,
+  "withSpeakersCount": 272,
   "speakerStatusCounts": {
-    "missing": 204,
-    "parsed": 145,
-    "partial": 30
+    "missing": 107,
+    "parsed": 184,
+    "partial": 88
   },
   "duplicateBvCount": 0,
   "matchesSharingBvIdCount": 66,
@@ -47,5 +47,5 @@
     "teams": "medium",
     "title": "high"
   },
-  "speakerDataUpdatedAt": "2026-06-25T15:04:26.526Z"
+  "speakerDataUpdatedAt": "2026-06-28T12:13:15.027Z"
 }

@@ -1,0 +1,2473 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-06-26T14:57:15.349Z",
+  "year": 2024,
+  "competitionType": "资格赛",
+  "mode": "secondPass",
+  "source": {
+    "firstPassCandidates": "F:\\MY project\\BIAN\\v1bian\\src\\data\\generated\\rosterSpeakerCandidates.2024.qualification.json",
+    "introSnippets": "F:\\MY project\\BIAN\\v1bian\\src\\data\\generated\\speakerIntroSnippets.2024.qualification.json"
+  },
+  "targetRule": "使用 2024 校准后巡礼名单，处理全部缓存自我介绍文本，基于线上/线下赛段与组别 teamCode 进行名单约束重匹配和候选扩展。",
+  "targetMatchCount": 66,
+  "belowFourBeforeCount": 27,
+  "improvedMatchCount": 40,
+  "reachedAtLeastFourCount": 49,
+  "stillBelowFourCount": 17,
+  "reachedAtLeastSixCount": 25,
+  "completeEightSpeakerCount": 5,
+  "expandedReachedAtLeastFourCount": 62,
+  "expandedReachedAtLeastSixCount": 49,
+  "expandedCompleteEightSpeakerCount": 24,
+  "overallConfirmedAtLeastFourCount": 49,
+  "overallConfirmedAtLeastSixCount": 25,
+  "overallExpandedAtLeastFourCount": 62,
+  "overallExpandedAtLeastSixCount": 49,
+  "completionPoolMaxSize": 7,
+  "totalAddedSpeakerCount": 77,
+  "totalCompletionCandidateCount": 190,
+  "totalMatchedSpeakerCount": 314,
+  "reviewStatusCounts": {
+    "needs-review": 17,
+    "complete": 5,
+    "usable": 20,
+    "minimum-usable": 24
+  },
+  "expandedReviewStatusCounts": {
+    "needs-review": 4,
+    "minimum-usable": 13,
+    "complete": 24,
+    "usable": 25
+  },
+  "selectedMatches": [
+    {
+      "matchId": "match-BV1Br421T7sj",
+      "bvId": "BV1Br421T7sj",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛E组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 2,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "needs-review",
+      "teams": [
+        {
+          "team": "莫纳什大学",
+          "speakers": [
+            "赵晏子"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "周天"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Ey411B7Es",
+      "bvId": "BV1Ey411B7Es",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛H组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 0,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "澳门科技大学",
+          "speakers": [
+            "王凯霆"
+          ],
+          "completionCandidates": [
+            "常昊",
+            "曲彦好",
+            "曾梓翔",
+            "李天昊",
+            "王雨萱",
+            "秦昶旭"
+          ]
+        },
+        {
+          "team": "西南民族大学",
+          "speakers": [
+            "徐鑫"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Jx4y1x71S",
+      "bvId": "BV1Jx4y1x71S",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛B组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 7,
+      "matchedSpeakerCount": 8,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "complete",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "白天畅",
+            "方振宇",
+            "严哲涵",
+            "管李"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "山东大学",
+          "speakers": [
+            "赵晨",
+            "王梓竹",
+            "陶新宇",
+            "俞阳天"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1MW421R7YG",
+      "bvId": "BV1MW421R7YG",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛K组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "叶景皓",
+            "赵子钰",
+            "张砚棋"
+          ],
+          "completionCandidates": [
+            "刘凡赫",
+            "李凯茵"
+          ]
+        },
+        {
+          "team": "新加坡国立大学",
+          "speakers": [
+            "吴志宇",
+            "邱弘青",
+            "林瑞祥"
+          ],
+          "completionCandidates": [
+            "刘哲沛",
+            "张卓然"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Py411B75y",
+      "bvId": "BV1Py411B75y",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛I组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "重庆大学",
+          "speakers": [
+            "洪畅",
+            "于啸然",
+            "杜明浩"
+          ],
+          "completionCandidates": [
+            "吴星皓",
+            "李伟杰",
+            "杨粤粤"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "王语瞳",
+            "朱鑫杰"
+          ],
+          "completionCandidates": [
+            "刘房",
+            "赵心竹"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Sx4y1x7jR",
+      "bvId": "BV1Sx4y1x7jR",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛J组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 7,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "张子琪",
+            "柳小佳",
+            "张雨琪",
+            "王宇川"
+          ],
+          "completionCandidates": [
+            "张嘉美",
+            "杨弘毅",
+            "黎子毓"
+          ]
+        },
+        {
+          "team": "南京工业大学",
+          "speakers": [
+            "夏张昱骁"
+          ],
+          "completionCandidates": [
+            "喻江雪",
+            "徐梦瑶",
+            "程鸣",
+            "肖瑶"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1UM4m127c1",
+      "bvId": "BV1UM4m127c1",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛C组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "北京师范大学",
+          "speakers": [
+            "林子璇",
+            "袁天语"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "悉尼大学",
+          "speakers": [
+            "范嘉昊",
+            "周家琦",
+            "张书鸣"
+          ],
+          "completionCandidates": [
+            "牛晨宇"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1ww4m1Y7gM",
+      "bvId": "BV1ww4m1Y7gM",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛F组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "谢萱靖"
+          ],
+          "completionCandidates": [
+            "张馨瑜",
+            "徐冯君"
+          ]
+        },
+        {
+          "team": "海南大学",
+          "speakers": [
+            "王昭霖"
+          ],
+          "completionCandidates": [
+            "张嵘森",
+            "张晋涵",
+            "李子彬",
+            "邱昊洋"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1XS411A7d2",
+      "bvId": "BV1XS411A7d2",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛G组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "胡祖铭"
+          ],
+          "completionCandidates": [
+            "洪冰菁"
+          ]
+        },
+        {
+          "team": "新南威尔士大学",
+          "speakers": [
+            "徐菲",
+            "方宇",
+            "张彤"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1YS411c79f",
+      "bvId": "BV1YS411c79f",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛A组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "北京林业大学",
+          "speakers": [
+            "方梓洋",
+            "张至人",
+            "蒙睿"
+          ],
+          "completionCandidates": [
+            "孙可欣",
+            "杨昕壕"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "王勤"
+          ],
+          "completionCandidates": [
+            "吕良伟"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Zw4m1a7CQ",
+      "bvId": "BV1Zw4m1a7CQ",
+      "title": "网络社交媒体适合/不适合探讨深刻话题",
+      "stage": "初赛D组",
+      "date": "2024-07-04",
+      "baselineSpeakerCount": 1,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": [],
+          "completionCandidates": [
+            "唐洪哲",
+            "林钰凯",
+            "管德明"
+          ]
+        },
+        {
+          "team": "湖南大学",
+          "speakers": [
+            "陈双",
+            "栗俊楷"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV16H4y1w7HD",
+      "bvId": "BV16H4y1w7HD",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛V组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "中国海洋大学",
+          "speakers": [
+            "吴牧阳",
+            "商俊杰"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "杨子江",
+            "吴舒扬"
+          ],
+          "completionCandidates": [
+            "赵子源"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Cb421n7zt",
+      "bvId": "BV1Cb421n7zt",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛N组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 4,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "彰化师范大学",
+          "speakers": [
+            "周进典",
+            "李超群",
+            "杨孟沅",
+            "郑國廷"
+          ],
+          "completionCandidates": [
+            "郭恩"
+          ]
+        },
+        {
+          "team": "河北大学",
+          "speakers": [
+            "何龙川",
+            "王魏",
+            "杨睿霖"
+          ],
+          "completionCandidates": [
+            "张钧豪",
+            "盛琳",
+            "胡锦涛"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1LS421R7jk",
+      "bvId": "BV1LS421R7jk",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛X组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "宋铮",
+            "罗欣怀",
+            "孙可嘉"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "江西农业大学",
+          "speakers": [
+            "王保健",
+            "丁成仁杰"
+          ],
+          "completionCandidates": [
+            "姚馨媛",
+            "杨阳",
+            "胡瑾"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1NZ421T7B6",
+      "bvId": "BV1NZ421T7B6",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛W组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "早稻田大学",
+          "speakers": [
+            "叶芷瑶",
+            "舒喻伶",
+            "尚靖洁",
+            "威肖钰"
+          ],
+          "completionCandidates": [
+            "李厚德"
+          ]
+        },
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "邹若瑶",
+            "郭晨欣"
+          ],
+          "completionCandidates": [
+            "周可欣"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Qr421T7nq",
+      "bvId": "BV1Qr421T7nq",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛O组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 3,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "needs-review",
+      "teams": [
+        {
+          "team": "马来西亚理科大学(总院校)",
+          "speakers": [
+            "黄傲铭",
+            "曾建嘉"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "四川大学",
+          "speakers": [],
+          "completionCandidates": [
+            "朱腾飞"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1r4421U7Kg",
+      "bvId": "BV1r4421U7Kg",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛P组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "国际关系学院",
+          "speakers": [
+            "沈雨禾",
+            "曾煜婷",
+            "李荥俊",
+            "于坤平"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "同济大学",
+          "speakers": [
+            "江依蓉",
+            "陈厚德",
+            "邓宇坤"
+          ],
+          "completionCandidates": [
+            "李高翔"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Sw4m1a7cD",
+      "bvId": "BV1Sw4m1a7cD",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛S组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "丁启翔"
+          ],
+          "completionCandidates": [
+            "廖哲霈",
+            "洪悖旻",
+            "王振煦",
+            "肖博文"
+          ]
+        },
+        {
+          "team": "华南理工大学",
+          "speakers": [
+            "傅熙惟",
+            "董康",
+            "李沛雨",
+            "夏蔚然"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1t4421U7ru",
+      "bvId": "BV1t4421U7ru",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛Q组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "叶子",
+            "黄致远",
+            "万永健"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "西南大学",
+          "speakers": [
+            "冯胤禧",
+            "张盛"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Ur421T7dt",
+      "bvId": "BV1Ur421T7dt",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛U组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 8,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "台湾大学",
+          "speakers": [
+            "鄧家麟",
+            "劉岳軒"
+          ],
+          "completionCandidates": [
+            "林伯彥",
+            "紀泊均"
+          ]
+        },
+        {
+          "team": "福建师范大学",
+          "speakers": [
+            "罗圣开"
+          ],
+          "completionCandidates": [
+            "何浩然",
+            "林润发",
+            "江宏杰",
+            "王浩名",
+            "陈志杰",
+            "陈睿昕"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1yb421n7YT",
+      "bvId": "BV1yb421n7YT",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛M组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 0,
+      "matchedSpeakerCount": 0,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [],
+          "completionCandidates": [
+            "严梦馨",
+            "周佳颖",
+            "徐依凡",
+            "赖垠"
+          ]
+        },
+        {
+          "team": "武汉理工大学",
+          "speakers": [],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1yw4m1a7pz",
+      "bvId": "BV1yw4m1a7pz",
+      "title": "接受人生的荒谬是强大/懦弱的体现",
+      "stage": "初赛T组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 0,
+      "matchedSpeakerCount": 0,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "南京大学",
+          "speakers": [],
+          "completionCandidates": []
+        },
+        {
+          "team": "安徽大学",
+          "speakers": [],
+          "completionCandidates": [
+            "冯冠亚",
+            "刘诗琪",
+            "李梓涵",
+            "王子仪"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1yw4m1a7x2",
+      "bvId": "BV1yw4m1a7x2",
+      "title": "MBTI测试让年轻人更容易/更难了解自己",
+      "stage": "初赛L组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "吴晓月",
+            "韦颖利"
+          ],
+          "completionCandidates": [
+            "杨坤峰"
+          ]
+        },
+        {
+          "team": "香港浸会大学",
+          "speakers": [
+            "姜正正"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1zx4y1t767",
+      "bvId": "BV1zx4y1t767",
+      "title": "短视频盛行提升了/降低了当代人的认知能力",
+      "stage": "初赛R组",
+      "date": "2024-07-05",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "张丁心"
+          ],
+          "completionCandidates": [
+            "尉迟睿嘉"
+          ]
+        },
+        {
+          "team": "英属哥伦比亚大学",
+          "speakers": [
+            "吴祉境",
+            "梁伦"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV17p2pYJEqk",
+      "bvId": "BV17p2pYJEqk",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "stage": "复赛AB组第一场",
+      "date": "2024-10-09",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "江茜",
+            "王勤"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "陆逊",
+            "诸皓庭",
+            "白天畅",
+            "蔡沁晟"
+          ],
+          "completionCandidates": [
+            "谈嘉芸",
+            "陈泉"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1aQ2HY6ECP",
+      "bvId": "BV1aQ2HY6ECP",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "stage": "复赛AB组第二场",
+      "date": "2024-10-09",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "复旦大学",
+          "speakers": [
+            "谈嘉芸",
+            "陆逊",
+            "诸皓庭",
+            "白天畅"
+          ],
+          "completionCandidates": [
+            "蔡沁晟",
+            "陈泉"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "孙嘉庆",
+            "王勤",
+            "房玉爽"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV19m2HYVEQZ",
+      "bvId": "BV19m2HYVEQZ",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "stage": "复赛CD组第一场",
+      "date": "2024-10-11",
+      "baselineSpeakerCount": 0,
+      "matchedSpeakerCount": 0,
+      "expandedSpeakerCount": 2,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "needs-review",
+      "teams": [
+        {
+          "team": "悉尼大学",
+          "speakers": [],
+          "completionCandidates": [
+            "范嘉昊"
+          ]
+        },
+        {
+          "team": "大连海事大学",
+          "speakers": [],
+          "completionCandidates": [
+            "韩雄柏"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1xP2pYaESy",
+      "bvId": "BV1xP2pYaESy",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "stage": "复赛CD组第二场",
+      "date": "2024-10-11",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 1,
+      "expandedSpeakerCount": 3,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "needs-review",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": [],
+          "completionCandidates": [
+            "韩雄柏"
+          ]
+        },
+        {
+          "team": "悉尼大学",
+          "speakers": [
+            "周家琦"
+          ],
+          "completionCandidates": [
+            "范嘉昊"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1q824YcEkN",
+      "bvId": "BV1q824YcEkN",
+      "title": "网络舆论审判，让我们离正义更近了更远了丨复赛EF组第一场 南京审计大学 vs 浙江理工大学",
+      "stage": "合集：资格赛",
+      "date": "2024-10-12",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁"
+          ],
+          "completionCandidates": [
+            "卢意洋",
+            "周天",
+            "张俊彦",
+            "张睿婕",
+            "李炎希"
+          ]
+        },
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "谢萱靖",
+            "李嘉豪",
+            "陈子璇"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1WL24Y6EZv",
+      "bvId": "BV1WL24Y6EZv",
+      "title": "网络舆论审判，让我们离正义更近了/更远了",
+      "stage": "复赛EF组第二场",
+      "date": "2024-10-12",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "浙江理工大学",
+          "speakers": [
+            "谢萱靖",
+            "陈子璇",
+            "于沁伟"
+          ],
+          "completionCandidates": [
+            "李嘉豪"
+          ]
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁"
+          ],
+          "completionCandidates": [
+            "卢意洋",
+            "周天",
+            "张俊彦",
+            "张睿婕",
+            "李炎希"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1RX2xYxEfR",
+      "bvId": "BV1RX2xYxEfR",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛GH组第一场",
+      "date": "2024-10-13",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "张陈尔玥",
+            "雷珺妍",
+            "王浩然"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "澳门科技大学",
+          "speakers": [
+            "王凯霆",
+            "秦昶旭",
+            "曲彦好"
+          ],
+          "completionCandidates": [
+            "常昊",
+            "曾梓翔",
+            "李天昊",
+            "王雨萱"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1x324YVE94",
+      "bvId": "BV1x324YVE94",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛GH组第二场",
+      "date": "2024-10-13",
+      "baselineSpeakerCount": 1,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "澳门科技大学",
+          "speakers": [
+            "王凯霆",
+            "常昊"
+          ],
+          "completionCandidates": [
+            "曲彦好",
+            "曾梓翔",
+            "李天昊",
+            "王雨萱",
+            "秦昶旭"
+          ]
+        },
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "胡祖铭",
+            "雷珺妍"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV18A24YUEtJ",
+      "bvId": "BV18A24YUEtJ",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛IJ组第一场",
+      "date": "2024-10-16",
+      "baselineSpeakerCount": 7,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "南思源",
+            "朱鑫杰",
+            "胡润东"
+          ],
+          "completionCandidates": [
+            "严陈幸子"
+          ]
+        },
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "李哲瀚",
+            "张子琪",
+            "王宇川"
+          ],
+          "completionCandidates": [
+            "朱笛安",
+            "陈晓琳"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1UC2wY5EPX",
+      "bvId": "BV1UC2wY5EPX",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛IJ组第二场",
+      "date": "2024-10-16",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "纽约大学",
+          "speakers": [
+            "张子琪",
+            "李哲瀚",
+            "张雨琪"
+          ],
+          "completionCandidates": [
+            "朱笛安",
+            "陈晓琳"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "严陈幸子",
+            "王语瞳",
+            "朱鑫杰"
+          ],
+          "completionCandidates": [
+            "胡润东"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV12m2wYrEAs",
+      "bvId": "BV12m2wYrEAs",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛KL组第二场",
+      "date": "2024-10-18",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "张敬东",
+            "韦颖利",
+            "洗卉怡"
+          ],
+          "completionCandidates": [
+            "刘凯琳"
+          ]
+        },
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "林宸伊",
+            "赵子钰",
+            "张砚棋",
+            "蒋涛"
+          ],
+          "completionCandidates": [
+            "郭悦扬"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1yX2wYMEEq",
+      "bvId": "BV1yX2wYMEEq",
+      "title": "在恋爱关系中，应该/不应该追求等价的付出",
+      "stage": "复赛KL组第一场",
+      "date": "2024-10-18",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "李凯茵"
+          ],
+          "completionCandidates": [
+            "郭悦扬"
+          ]
+        },
+        {
+          "team": "广东外语外贸大学",
+          "speakers": [
+            "刘凯琳",
+            "吴晓月",
+            "马桢婧"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1dt2wYsEDW",
+      "bvId": "BV1dt2wYsEDW",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "stage": "复赛MN组第二场",
+      "date": "2024-10-19",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "河北大学",
+          "speakers": [
+            "刘子豪",
+            "王子轩",
+            "杨睿霖",
+            "杨芮婷"
+          ],
+          "completionCandidates": [
+            "张雯硕",
+            "王志翔",
+            "王艺澄"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "徐依凡",
+            "李奕彤"
+          ],
+          "completionCandidates": [
+            "肖湘婷"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Nu2wYBEtR",
+      "bvId": "BV1Nu2wYBEtR",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "stage": "复赛MN组第一场",
+      "date": "2024-10-19",
+      "baselineSpeakerCount": 1,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "李奕彤"
+          ],
+          "completionCandidates": [
+            "肖湘婷"
+          ]
+        },
+        {
+          "team": "河北大学",
+          "speakers": [
+            "王艺澄",
+            "杨芮婷",
+            "杨睿霖"
+          ],
+          "completionCandidates": [
+            "刘子豪",
+            "张雯硕",
+            "王子轩",
+            "王志翔"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV11N23YwEhn",
+      "bvId": "BV11N23YwEhn",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "stage": "复赛OP组第二场",
+      "date": "2024-10-20",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 4,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "同济大学",
+          "speakers": [
+            "张艺涵",
+            "毕方锐",
+            "陈厚德"
+          ],
+          "completionCandidates": [
+            "汤运佳",
+            "陈寅"
+          ]
+        },
+        {
+          "team": "四川大学",
+          "speakers": [],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1em2gYyEED",
+      "bvId": "BV1em2gYyEED",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "stage": "复赛OP组第一场",
+      "date": "2024-10-20",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "四川大学",
+          "speakers": [
+            "金康莹",
+            "陈艺培",
+            "祝佳欣",
+            "李缨"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "同济大学",
+          "speakers": [
+            "张艺涵",
+            "陈寅",
+            "陈厚德"
+          ],
+          "completionCandidates": [
+            "毕方锐",
+            "汤运佳"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1Ab2gYoE7t",
+      "bvId": "BV1Ab2gYoE7t",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
+      "stage": "复赛QR组第二场",
+      "date": "2024-10-23",
+      "baselineSpeakerCount": 8,
+      "matchedSpeakerCount": 8,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "complete",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "廖发泯",
+            "曹敬轩",
+            "张佳奇",
+            "屈熙彤"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "叶子",
+            "黄致远",
+            "郑瑶瑶",
+            "黄嘉伟"
+          ],
+          "completionCandidates": [
+            "万永健",
+            "涂喻铭",
+            "陈俊宇"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1UF23YvEup",
+      "bvId": "BV1UF23YvEup",
+      "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”“电子幻觉”丨复赛QR组第一场 华中师范大学 vs 东北师范大学",
+      "stage": "合集：资格赛",
+      "date": "2024-10-23",
+      "baselineSpeakerCount": 7,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "华中师范大学",
+          "speakers": [
+            "陈俊宇",
+            "黄嘉伟",
+            "郑瑶瑶",
+            "黄致远"
+          ],
+          "completionCandidates": [
+            "万永健",
+            "叶子",
+            "涂喻铭"
+          ]
+        },
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "张佳奇",
+            "杨昊达",
+            "曹敬轩"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1hXC2YKEm7",
+      "bvId": "BV1hXC2YKEm7",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛ST组第二场",
+      "date": "2024-10-26",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "童传宇",
+            "蒋林树",
+            "方婷薇",
+            "杨耀文"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "丁启翔",
+            "洪悖旻"
+          ],
+          "completionCandidates": [
+            "廖哲霈",
+            "王振煦",
+            "肖博文"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1tFCmYhEgi",
+      "bvId": "BV1tFCmYhEgi",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛ST组第一场",
+      "date": "2024-10-26",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "王振煦",
+            "肖博文"
+          ],
+          "completionCandidates": [
+            "丁启翔",
+            "廖哲霈",
+            "洪悖旻"
+          ]
+        },
+        {
+          "team": "安徽大学",
+          "speakers": [
+            "童传宇"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1SLC2YhEpo",
+      "bvId": "BV1SLC2YhEpo",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛UV组第二场",
+      "date": "2024-10-27",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 2,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文"
+          ],
+          "completionCandidates": [
+            "南希诺",
+            "李琪娅"
+          ]
+        },
+        {
+          "team": "福建师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            "袁星航",
+            "陈佳楠"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1WxC2Y9E6a",
+      "bvId": "BV1WxC2Y9E6a",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛UV组第一场",
+      "date": "2024-10-27",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "福建师范大学",
+          "speakers": [],
+          "completionCandidates": [
+            "袁星航",
+            "陈佳楠"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "李琪娅",
+            "吴舒扬",
+            "赵雨彤"
+          ],
+          "completionCandidates": [
+            "南希诺"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1a3ynYwEaP",
+      "bvId": "BV1a3ynYwEaP",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛WX组第一场",
+      "date": "2024-10-30",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "郭晨欣",
+            "邱柏晋",
+            "侯梦伦"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "刘天浩",
+            "罗欣怀",
+            "宋铮"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1m6yJYpEiC",
+      "bvId": "BV1m6yJYpEiC",
+      "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
+      "stage": "复赛WX组第二场",
+      "date": "2024-10-30",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 5,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 0,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "minimum-usable",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "罗欣怀",
+            "孙可嘉"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "香港中文大学",
+          "speakers": [
+            "侯梦伦",
+            "郭晨欣",
+            "钱怡凡"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1HySxYkEgo",
+      "bvId": "BV1HySxYkEgo",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "stage": "晋级赛EFGH组第一场",
+      "date": "2024-11-01",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁",
+            "卢意洋"
+          ],
+          "completionCandidates": [
+            "周天",
+            "张俊彦",
+            "张睿婕",
+            "李炎希"
+          ]
+        },
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "陈泓熹",
+            "雷珺妍",
+            "洪冰菁"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1JSSxYuEMM",
+      "bvId": "BV1JSSxYuEMM",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "stage": "晋级赛EFGH组第二场",
+      "date": "2024-11-01",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 4,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "澳门大学",
+          "speakers": [
+            "贺子淇",
+            "王浩然"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁",
+            "张睿婕",
+            "李炎希",
+            "卢意洋"
+          ],
+          "completionCandidates": [
+            "周天",
+            "张俊彦"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1NJS4YUE77",
+      "bvId": "BV1NJS4YUE77",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "stage": "晋级赛ABCD组第二场",
+      "date": "2024-11-01",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "大连海事大学",
+          "speakers": [
+            "黄倪伟",
+            "张怡婧"
+          ],
+          "completionCandidates": [
+            "韩雄柏"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "王勤",
+            "刘金杭",
+            "江茜"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1xES4YJEHQ",
+      "bvId": "BV1xES4YJEHQ",
+      "title": "反英雄形象是/不是一种现代社会必要的文化反思",
+      "stage": "晋级赛ABCD组第一场",
+      "date": "2024-11-01",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 6,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘映萱",
+            "孙嘉庆",
+            "刘金杭",
+            "江茜"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "大连海事大学",
+          "speakers": [
+            "张怡婧"
+          ],
+          "completionCandidates": [
+            "韩雄柏"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1hGSbYwE3P",
+      "bvId": "BV1hGSbYwE3P",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "stage": "晋级赛MNOP组第一场",
+      "date": "2024-11-02",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "李奕彤",
+            "赖垠",
+            "徐宁",
+            "肖湘婷"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "同济大学",
+          "speakers": [],
+          "completionCandidates": [
+            "张艺涵",
+            "毕方锐",
+            "汤运佳",
+            "陈寅"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1sBSxY2E4D",
+      "bvId": "BV1sBSxY2E4D",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "stage": "晋级赛IJKL组第一场",
+      "date": "2024-11-02",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "曲泓宇",
+            "朱鑫杰"
+          ],
+          "completionCandidates": [
+            "严陈幸子",
+            "胡润东"
+          ]
+        },
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "赵子钰",
+            "张砚棋",
+            "蒋涛"
+          ],
+          "completionCandidates": [
+            "郭悦扬"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1t7SbYZEiJ",
+      "bvId": "BV1t7SbYZEiJ",
+      "title": "“内容至上”是/不是当下国产游戏的出路",
+      "stage": "晋级赛MNOP组第二场",
+      "date": "2024-11-02",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "同济大学",
+          "speakers": [
+            "陈厚德",
+            "陈寅",
+            "李高翔"
+          ],
+          "completionCandidates": [
+            "张艺涵",
+            "毕方锐",
+            "汤运佳"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "徐宁",
+            "贺勇宁"
+          ],
+          "completionCandidates": [
+            "肖湘婷"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1taSxYDEeU",
+      "bvId": "BV1taSxYDEeU",
+      "title": "“内容至上”是不是当下国产游戏的出路丨晋级赛IJKL组第二场 中国计量大学 vs 陕西师范大学",
+      "stage": "合集：资格赛",
+      "date": "2024-11-02",
+      "baselineSpeakerCount": 6,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "中国计量大学",
+          "speakers": [
+            "叶景皓",
+            "赵子钰",
+            "张砚棋",
+            "蒋涛"
+          ],
+          "completionCandidates": [
+            "郭悦扬"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "南思源",
+            "朱鑫杰",
+            "曲泓宇"
+          ],
+          "completionCandidates": [
+            "严陈幸子",
+            "胡润东"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV15ASbYMEzv",
+      "bvId": "BV15ASbYMEzv",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "stage": "晋级赛UVWX组第一场",
+      "date": "2024-11-03",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 8,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "complete",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文",
+            "鲍羿岑",
+            "李琪娅"
+          ],
+          "completionCandidates": [
+            "南希诺"
+          ]
+        },
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "董欣怡",
+            "孙可嘉",
+            "罗欣怀",
+            "杨一卉"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1qoStYGERA",
+      "bvId": "BV1qoStYGERA",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "stage": "晋级赛UVWX组第二场",
+      "date": "2024-11-03",
+      "baselineSpeakerCount": 7,
+      "matchedSpeakerCount": 8,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 1,
+      "reviewStatus": "complete",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "中国人民大学",
+          "speakers": [
+            "孙可嘉",
+            "董欣怡",
+            "杨一卉",
+            "宋铮"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "南希诺",
+            "吴舒扬",
+            "鲍羿岑",
+            "赵雨彤"
+          ],
+          "completionCandidates": [
+            "李琪娅"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1WyStYnE64",
+      "bvId": "BV1WyStYnE64",
+      "title": "应该不应该对贫困生助学金使用情况进行公示丨晋级赛QRST组第二场 台北科技大学 vs 东北师范大学",
+      "stage": "合集：资格赛",
+      "date": "2024-11-03",
+      "baselineSpeakerCount": 3,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 3,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "王振煦",
+            "肖博文"
+          ],
+          "completionCandidates": [
+            "丁启翔",
+            "廖哲霈",
+            "洪悖旻"
+          ]
+        },
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "张佳奇",
+            "曹敬轩",
+            "廖发泯"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1xpSbYsEE6",
+      "bvId": "BV1xpSbYsEE6",
+      "title": "应该/不应该对贫困生助学金使用情况进行公示",
+      "stage": "晋级赛QRST组第一场",
+      "date": "2024-11-03",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 6,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "东北师范大学",
+          "speakers": [
+            "曹敬轩",
+            "张佳奇",
+            "屈熙彤"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "丁启翔",
+            "肖博文",
+            "洪悖旻"
+          ],
+          "completionCandidates": [
+            "廖哲霈",
+            "王振煦"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV14ASnYKEBX",
+      "bvId": "BV14ASnYKEBX",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "stage": "半决赛上半区第二场",
+      "date": "2024-11-04",
+      "baselineSpeakerCount": 2,
+      "matchedSpeakerCount": 3,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 6,
+      "reviewStatus": "needs-review",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "胡子宁"
+          ],
+          "completionCandidates": [
+            "卢意洋",
+            "周天",
+            "张俊彦",
+            "张睿婕",
+            "李炎希"
+          ]
+        },
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "严陈幸子",
+            "朱鑫杰"
+          ],
+          "completionCandidates": [
+            "胡润东"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1M7S7YFEAC",
+      "bvId": "BV1M7S7YFEAC",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "stage": "半决赛上半区第一场",
+      "date": "2024-11-04",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 5,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 5,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "江茜",
+            "王勤",
+            "刘映萱"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "南京审计大学",
+          "speakers": [
+            "张睿婕"
+          ],
+          "completionCandidates": [
+            "卢意洋",
+            "周天",
+            "张俊彦",
+            "李炎希",
+            "胡子宁"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1uZSJYzEps",
+      "bvId": "BV1uZSJYzEps",
+      "title": "当代年轻人人格独立的前提，是/不是经济独立",
+      "stage": "半决赛上半区第三场",
+      "date": "2024-11-04",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "陕西师范大学",
+          "speakers": [
+            "王语瞳",
+            "朱鑫杰",
+            "刘房"
+          ],
+          "completionCandidates": [
+            "严陈幸子",
+            "胡润东"
+          ]
+        },
+        {
+          "team": "南开大学",
+          "speakers": [
+            "刘金杭",
+            "江茜",
+            "孙嘉庆",
+            "王勤"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1BNSdYDEif",
+      "bvId": "BV1BNSdYDEif",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "stage": "半决赛下半区第二场",
+      "date": "2024-11-05",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 8,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 4,
+      "completionCandidateCount": 3,
+      "reviewStatus": "complete",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "洪悖旻",
+            "丁启翔",
+            "肖博文",
+            "王振煦"
+          ],
+          "completionCandidates": [
+            "廖哲霈"
+          ]
+        },
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "韩天夏",
+            "吴舒扬",
+            "鲍羿岑",
+            "赵雨彤"
+          ],
+          "completionCandidates": [
+            "南希诺",
+            "李琪娅"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1LbSRYjEtu",
+      "bvId": "BV1LbSRYjEtu",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "stage": "半决赛下半区第一场",
+      "date": "2024-11-05",
+      "baselineSpeakerCount": 4,
+      "matchedSpeakerCount": 4,
+      "expandedSpeakerCount": 7,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 4,
+      "reviewStatus": "minimum-usable",
+      "expandedReviewStatus": "usable",
+      "teams": [
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "肖湘婷",
+            "李奕彤",
+            "金炳燕"
+          ],
+          "completionCandidates": []
+        },
+        {
+          "team": "台北科技大学",
+          "speakers": [
+            "肖博文"
+          ],
+          "completionCandidates": [
+            "丁启翔",
+            "廖哲霈",
+            "洪悖旻",
+            "王振煦"
+          ]
+        }
+      ]
+    },
+    {
+      "matchId": "match-BV1YvSRYGEwZ",
+      "bvId": "BV1YvSRYGEwZ",
+      "title": "我们更有可能毁于我们所热爱/憎恶的事物",
+      "stage": "半决赛下半区第三场",
+      "date": "2024-11-05",
+      "baselineSpeakerCount": 5,
+      "matchedSpeakerCount": 7,
+      "expandedSpeakerCount": 8,
+      "manualVerificationCount": 0,
+      "completionCandidateCount": 2,
+      "reviewStatus": "usable",
+      "expandedReviewStatus": "complete",
+      "teams": [
+        {
+          "team": "爱丁堡大学",
+          "speakers": [
+            "刘一帆",
+            "吕博文",
+            "鲍羿岑"
+          ],
+          "completionCandidates": [
+            "南希诺",
+            "李琪娅"
+          ]
+        },
+        {
+          "team": "宁波大学",
+          "speakers": [
+            "李奕彤",
+            "金炳燕",
+            "赖垠",
+            "肖湘婷"
+          ],
+          "completionCandidates": []
+        }
+      ]
+    }
+  ],
+  "notes": [
+    "本报告不下载音频、不转写、不修改 generatedMatches.json。",
+    "secondPass 会更重视“一辩/二辩/三辩/四辩”后的姓名窗口，并使用 2024 校准后巡礼名单约束。",
+    "expandedSpeakerCount 包含 tightRosterCompletion 候选，只表示待复核候选池，不等同于音频确认识别。",
+    "低置信候选仍需人工复核；不建议直接无审计合并。"
+  ]
+}

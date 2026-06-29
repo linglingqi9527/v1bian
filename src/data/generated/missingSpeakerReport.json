@@ -34,8 +34,8 @@
       "南昌大学"
     ],
     "speakers": [
-      "龙慧玲",
       "史天逸",
+      "龙慧玲",
       "叶钰琳"
     ],
     "speakerStatus": "partial",
@@ -77,9 +77,7 @@
     ],
     "speakers": [
       "戴有容",
-      "王勤",
-      "袁青骋",
-      "王靖雅"
+      "王勤"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -121,8 +119,8 @@
       "权莉茹",
       "刘粤",
       "黄钰淇",
-      "南思源",
-      "郝静娅"
+      "郝静娅",
+      "南思源"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -187,7 +185,6 @@
       "史毓迪波",
       "龙慧玲",
       "史天逸",
-      "赵奕平",
       "叶钰琳"
     ],
     "speakerStatus": "partial",
@@ -232,9 +229,9 @@
     "speakers": [
       "龙慧玲",
       "史天逸",
-      "李佳阳",
       "栗嘉宁",
       "黎欣",
+      "言玮浩",
       "黄集海"
     ],
     "speakerStatus": "partial",
@@ -257,9 +254,9 @@
       "范可欣",
       "吴泽荣",
       "赵亿嘉",
-      "黄国锐",
       "史毓迪波",
-      "赵奕平"
+      "赵奕平",
+      "黄国锐"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -279,7 +276,8 @@
     ],
     "speakers": [
       "敦译萱",
-      "史毓迪波"
+      "史毓迪波",
+      "徐依凡"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -299,7 +297,7 @@
     ],
     "speakers": [
       "胡文昊",
-      "赵书逸",
+      "徐依凡",
       "李庚尧",
       "吕艺杭",
       "陈显龙"
@@ -322,10 +320,10 @@
     ],
     "speakers": [
       "钟奇山",
+      "王雅昕",
       "路雅涵",
       "李嘉澄",
-      "黄一鸣",
-      "王雅昕"
+      "黄一鸣"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -366,7 +364,7 @@
       "天津师范大学"
     ],
     "speakers": [
-      "尚书腾",
+      "尚书滕",
       "苗宇涵",
       "王羽凡",
       "董嘉兴"
@@ -388,9 +386,9 @@
       "杭州师范大学"
     ],
     "speakers": [
-      "李玥",
-      "陈江悦",
-      "杨潘俊"
+      "李洋",
+      "杨潘俊",
+      "陈江悦"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -412,8 +410,7 @@
       "蓝培姚",
       "白一果",
       "孙一洲",
-      "雷拓",
-      "周琦"
+      "雷拓"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -436,8 +433,7 @@
       "孙一洲",
       "雷拓",
       "陈哲",
-      "李洋",
-      "闫俊淇"
+      "李沁阳"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -457,9 +453,10 @@
     ],
     "speakers": [
       "温馨",
+      "吴舟",
       "张子韵",
       "刘粤",
-      "吴舟"
+      "温明璇"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -502,9 +499,7 @@
     ],
     "speakers": [
       "南思源",
-      "张柏林",
-      "郝静娅",
-      "张洋"
+      "张柏林"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -524,9 +519,8 @@
     ],
     "speakers": [
       "张洋",
-      "李佳阳",
-      "崔泽豪",
-      "康浩然"
+      "侯煜洋",
+      "崔泽豪"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -570,8 +564,7 @@
       "袁青骋",
       "王勤",
       "穆逸菲",
-      "曹龙延",
-      "孙嘉庆"
+      "曹龙延"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -590,8 +583,7 @@
       "对外经济贸易大学"
     ],
     "speakers": [
-      "曹龙延",
-      "郭嘉皓"
+      "曹龙延"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -610,10 +602,10 @@
       "南开大学"
     ],
     "speakers": [
+      "常芊芊",
       "袁青骋",
       "王勤",
-      "江茜",
-      "常芊芊"
+      "江茜"
     ],
     "speakerStatus": "partial",
     "parseWarnings": [
@@ -683,40 +675,6 @@
     ]
   },
   {
-    "bvId": "BV1YvSRYGEwZ",
-    "title": "我们更有可能毁于我们所热爱/憎恶的事物",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1YvSRYGEwZ",
-    "event": "2024新国辩",
-    "stage": "半决赛下半区第三场",
-    "date": "2024-11-05",
-    "teams": [
-      "爱丁堡大学",
-      "宁波大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1BNSdYDEif",
-    "title": "我们更有可能毁于我们所热爱/憎恶的事物",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1BNSdYDEif",
-    "event": "2024新国辩",
-    "stage": "半决赛下半区第二场",
-    "date": "2024-11-05",
-    "teams": [
-      "台北科技大学",
-      "爱丁堡大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
     "bvId": "BV1LbSRYjEtu",
     "title": "我们更有可能毁于我们所热爱/憎恶的事物",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1LbSRYjEtu",
@@ -727,25 +685,16 @@
       "宁波大学",
       "台北科技大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1uZSJYzEps",
-    "title": "当代年轻人人格独立的前提，是/不是经济独立",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1uZSJYzEps",
-    "event": "2024新国辩",
-    "stage": "半决赛上半区第三场",
-    "date": "2024-11-04",
-    "teams": [
-      "陕西师范大学",
-      "南开大学"
+    "speakers": [
+      "肖湘婷",
+      "李奕彤",
+      "金炳燕",
+      "肖博文",
+      "丁启翔",
+      "廖哲霈",
+      "洪悖旻"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -761,59 +710,16 @@
       "南京审计大学",
       "陕西师范大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1M7S7YFEAC",
-    "title": "当代年轻人人格独立的前提，是/不是经济独立",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1M7S7YFEAC",
-    "event": "2024新国辩",
-    "stage": "半决赛上半区第一场",
-    "date": "2024-11-04",
-    "teams": [
-      "南开大学",
-      "南京审计大学"
+    "speakers": [
+      "胡子宁",
+      "卢意洋",
+      "周天",
+      "张俊彦",
+      "严陈幸子",
+      "朱鑫杰",
+      "胡润东"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1qoStYGERA",
-    "title": "应该/不应该对贫困生助学金使用情况进行公示",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1qoStYGERA",
-    "event": "2024新国辩",
-    "stage": "晋级赛UVWX组第二场",
-    "date": "2024-11-03",
-    "teams": [
-      "中国人民大学",
-      "爱丁堡大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV15ASbYMEzv",
-    "title": "应该/不应该对贫困生助学金使用情况进行公示",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV15ASbYMEzv",
-    "event": "2024新国辩",
-    "stage": "晋级赛UVWX组第一场",
-    "date": "2024-11-03",
-    "teams": [
-      "爱丁堡大学",
-      "中国人民大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -829,8 +735,16 @@
       "台北科技大学",
       "东北师范大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "王振煦",
+      "肖博文",
+      "丁启翔",
+      "廖哲霈",
+      "张佳奇",
+      "曹敬轩",
+      "廖发泯"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
       "未能解析辩手名单。"
@@ -847,8 +761,16 @@
       "东北师范大学",
       "台北科技大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "曹敬轩",
+      "张佳奇",
+      "屈熙彤",
+      "丁启翔",
+      "肖博文",
+      "洪悖旻",
+      "廖哲霈"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -864,60 +786,16 @@
       "同济大学",
       "宁波大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1hGSbYwE3P",
-    "title": "“内容至上”是/不是当下国产游戏的出路",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1hGSbYwE3P",
-    "event": "2024新国辩",
-    "stage": "晋级赛MNOP组第一场",
-    "date": "2024-11-02",
-    "teams": [
-      "宁波大学",
-      "同济大学"
+    "speakers": [
+      "陈厚德",
+      "陈寅",
+      "李高翔",
+      "张艺涵",
+      "徐宁",
+      "贺勇宁",
+      "肖湘婷"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1taSxYDEeU",
-    "title": "“内容至上”是不是当下国产游戏的出路丨晋级赛IJKL组第二场 中国计量大学 vs 陕西师范大学",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1taSxYDEeU",
-    "event": "2024新国辩",
-    "stage": "合集：资格赛",
-    "date": "2024-11-02",
-    "teams": [
-      "中国计量大学",
-      "陕西师范大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未找到明确的辩题字段，已使用清理后的视频标题。",
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1sBSxY2E4D",
-    "title": "“内容至上”是/不是当下国产游戏的出路",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1sBSxY2E4D",
-    "event": "2024新国辩",
-    "stage": "晋级赛IJKL组第一场",
-    "date": "2024-11-02",
-    "teams": [
-      "陕西师范大学",
-      "中国计量大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -933,8 +811,15 @@
       "澳门大学",
       "南京审计大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "贺子淇",
+      "王浩然",
+      "胡子宁",
+      "张睿婕",
+      "李炎希",
+      "卢意洋"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -950,8 +835,16 @@
       "南京审计大学",
       "澳门大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "胡子宁",
+      "卢意洋",
+      "周天",
+      "张俊彦",
+      "陈泓熹",
+      "雷珺妍",
+      "洪冰菁"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -967,8 +860,15 @@
       "大连海事大学",
       "南开大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "黄倪伟",
+      "张怡婧",
+      "韩雄柏",
+      "王勤",
+      "刘金杭",
+      "江茜"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -984,8 +884,15 @@
       "南开大学",
       "大连海事大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘映萱",
+      "孙嘉庆",
+      "刘金杭",
+      "江茜",
+      "张怡婧",
+      "韩雄柏"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1001,8 +908,14 @@
       "中国人民大学",
       "香港中文大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "罗欣怀",
+      "孙可嘉",
+      "侯梦伦",
+      "郭晨欣",
+      "钱怡凡"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1018,8 +931,15 @@
       "香港中文大学",
       "中国人民大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "郭晨欣",
+      "邱柏晋",
+      "侯梦伦",
+      "刘天浩",
+      "罗欣怀",
+      "宋铮"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1035,8 +955,15 @@
       "爱丁堡大学",
       "福建师范大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘一帆",
+      "吕博文",
+      "南希诺",
+      "李琪娅",
+      "袁星航",
+      "陈佳楠"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1052,25 +979,15 @@
       "福建师范大学",
       "爱丁堡大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1hXC2YKEm7",
-    "title": "当今社会，年轻人“卷学历”是/不是明智的选择",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1hXC2YKEm7",
-    "event": "2024新国辩",
-    "stage": "复赛ST组第二场",
-    "date": "2024-10-26",
-    "teams": [
-      "安徽大学",
-      "台北科技大学"
+    "speakers": [
+      "袁星航",
+      "陈佳楠",
+      "李琪娅",
+      "吴舒扬",
+      "赵雨彤",
+      "南希诺"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1086,25 +1003,14 @@
       "台北科技大学",
       "安徽大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Ab2gYoE7t",
-    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ab2gYoE7t",
-    "event": "2024新国辩",
-    "stage": "复赛QR组第二场",
-    "date": "2024-10-23",
-    "teams": [
-      "东北师范大学",
-      "华中师范大学"
+    "speakers": [
+      "王振煦",
+      "肖博文",
+      "丁启翔",
+      "廖哲霈",
+      "童传宇"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1120,8 +1026,16 @@
       "华中师范大学",
       "东北师范大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "陈俊宇",
+      "黄嘉伟",
+      "郑瑶瑶",
+      "黄致远",
+      "张佳奇",
+      "杨昊达",
+      "曹敬轩"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
       "未能解析辩手名单。"
@@ -1138,25 +1052,13 @@
       "同济大学",
       "四川大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1em2gYyEED",
-    "title": "当AI数字人成为你的“灵魂伴侣”，是“人生挚爱”/“电子幻觉”",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1em2gYyEED",
-    "event": "2024新国辩",
-    "stage": "复赛OP组第一场",
-    "date": "2024-10-20",
-    "teams": [
-      "四川大学",
-      "同济大学"
+    "speakers": [
+      "张艺涵",
+      "毕方锐",
+      "陈厚德",
+      "汤运佳"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1172,8 +1074,16 @@
       "河北大学",
       "宁波大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘子豪",
+      "王子轩",
+      "杨睿霖",
+      "杨芮婷",
+      "徐依凡",
+      "李奕彤",
+      "肖湘婷"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1189,25 +1099,15 @@
       "宁波大学",
       "河北大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV12m2wYrEAs",
-    "title": "在恋爱关系中，应该/不应该追求等价的付出",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV12m2wYrEAs",
-    "event": "2024新国辩",
-    "stage": "复赛KL组第二场",
-    "date": "2024-10-18",
-    "teams": [
-      "广东外语外贸大学",
-      "中国计量大学"
+    "speakers": [
+      "李奕彤",
+      "肖湘婷",
+      "王艺澄",
+      "杨芮婷",
+      "杨睿霖",
+      "刘子豪"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1223,42 +1123,14 @@
       "中国计量大学",
       "广东外语外贸大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1UC2wY5EPX",
-    "title": "在恋爱关系中，应该/不应该追求等价的付出",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1UC2wY5EPX",
-    "event": "2024新国辩",
-    "stage": "复赛IJ组第二场",
-    "date": "2024-10-16",
-    "teams": [
-      "纽约大学",
-      "陕西师范大学"
+    "speakers": [
+      "李凯茵",
+      "郭悦扬",
+      "刘凯琳",
+      "吴晓月",
+      "马桢婧"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV18A24YUEtJ",
-    "title": "在恋爱关系中，应该/不应该追求等价的付出",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV18A24YUEtJ",
-    "event": "2024新国辩",
-    "stage": "复赛IJ组第一场",
-    "date": "2024-10-16",
-    "teams": [
-      "陕西师范大学",
-      "纽约大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1274,8 +1146,15 @@
       "澳门科技大学",
       "澳门大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "王凯霆",
+      "常昊",
+      "曲彦好",
+      "曾梓翔",
+      "胡祖铭",
+      "雷珺妍"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1291,25 +1170,16 @@
       "澳门大学",
       "澳门科技大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1WL24Y6EZv",
-    "title": "网络舆论审判，让我们离正义更近了/更远了",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1WL24Y6EZv",
-    "event": "2024新国辩",
-    "stage": "复赛EF组第二场",
-    "date": "2024-10-12",
-    "teams": [
-      "浙江理工大学",
-      "南京审计大学"
+    "speakers": [
+      "张陈尔玥",
+      "雷珺妍",
+      "王浩然",
+      "王凯霆",
+      "秦昶旭",
+      "曲彦好",
+      "常昊"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1325,8 +1195,16 @@
       "南京审计大学",
       "浙江理工大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "胡子宁",
+      "卢意洋",
+      "周天",
+      "张俊彦",
+      "谢萱靖",
+      "李嘉豪",
+      "陈子璇"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未找到明确的辩题字段，已使用清理后的视频标题。",
       "未能解析辩手名单。"
@@ -1343,8 +1221,12 @@
       "大连海事大学",
       "悉尼大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "韩雄柏",
+      "周家琦",
+      "范嘉昊"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1360,8 +1242,11 @@
       "悉尼大学",
       "大连海事大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "范嘉昊",
+      "韩雄柏"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1377,8 +1262,16 @@
       "复旦大学",
       "南开大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "谈嘉芸",
+      "陆逊",
+      "诸皓庭",
+      "白天畅",
+      "孙嘉庆",
+      "王勤",
+      "房玉爽"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1394,8 +1287,16 @@
       "南开大学",
       "复旦大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘金杭",
+      "江茜",
+      "王勤",
+      "陆逊",
+      "诸皓庭",
+      "白天畅",
+      "蔡沁晟"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1411,8 +1312,16 @@
       "中国人民大学",
       "江西农业大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "宋铮",
+      "罗欣怀",
+      "孙可嘉",
+      "王保健",
+      "丁成仁杰",
+      "姚馨媛",
+      "杨阳"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1428,8 +1337,16 @@
       "早稻田大学",
       "香港中文大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "叶芷瑶",
+      "舒喻伶",
+      "尚靖洁",
+      "威肖钰",
+      "邹若瑶",
+      "郭晨欣",
+      "周可欣"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1445,25 +1362,14 @@
       "中国海洋大学",
       "爱丁堡大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Ur421T7dt",
-    "title": "接受人生的荒谬是强大/懦弱的体现",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ur421T7dt",
-    "event": "2024新国辩",
-    "stage": "初赛U组",
-    "date": "2024-07-05",
-    "teams": [
-      "臺灣大學",
-      "福建师范大学"
+    "speakers": [
+      "吴牧阳",
+      "商俊杰",
+      "杨子江",
+      "吴舒扬",
+      "赵子源"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1479,25 +1385,13 @@
       "南京大学",
       "安徽大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Sw4m1a7cD",
-    "title": "接受人生的荒谬是强大/懦弱的体现",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Sw4m1a7cD",
-    "event": "2024新国辩",
-    "stage": "初赛S组",
-    "date": "2024-07-05",
-    "teams": [
-      "臺北科技大學",
-      "华南理工大学"
+    "speakers": [
+      "冯冠亚",
+      "刘诗琪",
+      "李梓涵",
+      "王子仪"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1513,8 +1407,13 @@
       "东北师范大学",
       "英属哥伦比亚大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "张丁心",
+      "尉迟睿嘉",
+      "吴祉境",
+      "梁伦"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1530,25 +1429,14 @@
       "华中师范大学",
       "西南大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1r4421U7Kg",
-    "title": "短视频盛行提升了/降低了当代人的认知能力",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1r4421U7Kg",
-    "event": "2024新国辩",
-    "stage": "初赛P组",
-    "date": "2024-07-05",
-    "teams": [
-      "国际关系学院",
-      "同济大学"
+    "speakers": [
+      "叶子",
+      "黄致远",
+      "万永健",
+      "冯胤禧",
+      "张盛"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1564,25 +1452,12 @@
       "马来西亚理科大学",
       "四川大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Cb421n7zt",
-    "title": "短视频盛行提升了/降低了当代人的认知能力",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Cb421n7zt",
-    "event": "2024新国辩",
-    "stage": "初赛N组",
-    "date": "2024-07-05",
-    "teams": [
-      "彰化師範大學",
-      "河北大学"
+    "speakers": [
+      "黄傲铭",
+      "曾建嘉",
+      "朱腾飞"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1598,8 +1473,13 @@
       "宁波大学",
       "武汉理工大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "严梦馨",
+      "周佳颖",
+      "徐依凡",
+      "赖垠"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1615,59 +1495,13 @@
       "广东外语外贸大学",
       "香港浸会大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1MW421R7YG",
-    "title": "MBTI测试让年轻人更容易/更难了解自己",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1MW421R7YG",
-    "event": "2024新国辩",
-    "stage": "初赛K组",
-    "date": "2024-07-04",
-    "teams": [
-      "中国计量大学",
-      "新加坡国立大学"
+    "speakers": [
+      "吴晓月",
+      "韦颖利",
+      "杨坤峰",
+      "姜正正"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Sx4y1x7jR",
-    "title": "MBTI测试让年轻人更容易/更难了解自己",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Sx4y1x7jR",
-    "event": "2024新国辩",
-    "stage": "初赛J组",
-    "date": "2024-07-04",
-    "teams": [
-      "纽约大学",
-      "南京工业大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Py411B75y",
-    "title": "MBTI测试让年轻人更容易/更难了解自己",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Py411B75y",
-    "event": "2024新国辩",
-    "stage": "初赛I组",
-    "date": "2024-07-04",
-    "teams": [
-      "重庆大学",
-      "陕西师范大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1683,8 +1517,14 @@
       "澳门科技大学",
       "西南民族大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "王凯霆",
+      "常昊",
+      "曲彦好",
+      "曾梓翔",
+      "徐鑫"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1700,8 +1540,14 @@
       "澳门大学",
       "新南威尔士大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "胡祖铭",
+      "洪冰菁",
+      "徐菲",
+      "方宇",
+      "张彤"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1717,8 +1563,16 @@
       "浙江理工大学",
       "海南大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "谢萱靖",
+      "张馨瑜",
+      "徐冯君",
+      "王昭霖",
+      "张嵘森",
+      "张晋涵",
+      "李子彬"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1734,8 +1588,11 @@
       "莫纳什大学",
       "南京审计大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "赵晏子",
+      "周天"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1751,8 +1608,14 @@
       "大连海事大学",
       "湖南大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "唐洪哲",
+      "林钰凯",
+      "管德明",
+      "陈双",
+      "栗俊楷"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1768,25 +1631,15 @@
       "北京师范大学",
       "悉尼大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Jx4y1x71S",
-    "title": "网络社交媒体适合/不适合探讨深刻话题",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Jx4y1x71S",
-    "event": "2024新国辩",
-    "stage": "初赛B组",
-    "date": "2024-07-04",
-    "teams": [
-      "复旦大学",
-      "山东大学"
+    "speakers": [
+      "林子璇",
+      "袁天语",
+      "范嘉昊",
+      "周家琦",
+      "张书鸣",
+      "牛晨宇"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1802,8 +1655,15 @@
       "北京林业大学",
       "南开大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "方梓洋",
+      "张至人",
+      "蒙睿",
+      "孙可欣",
+      "王勤",
+      "吕良伟"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1819,8 +1679,16 @@
       "清华大学",
       "国防科技大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘楷",
+      "郑博中",
+      "雷梦瑶",
+      "胡伶",
+      "王思鑫",
+      "刘正昕",
+      "张源"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1868,8 +1736,16 @@
       "清华大学",
       "天津大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "周士尊",
+      "郑博中",
+      "雷梦瑶",
+      "朱丹妮",
+      "孙超然",
+      "王春深",
+      "唐龙"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1909,23 +1785,6 @@
     ]
   },
   {
-    "bvId": "BV1ek4y1U7YJ",
-    "title": "快一点/慢下来更有助于找到人生的答案",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1ek4y1U7YJ",
-    "event": "2024新国辩",
-    "stage": "半决赛第二场",
-    "date": "2024-01-23",
-    "teams": [
-      "中国政法大学",
-      "天津大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
     "bvId": "BV1oV411D7mj",
     "title": "“恋爱脑”错了/没错",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1oV411D7mj",
@@ -1936,8 +1795,13 @@
       "清华大学",
       "伦敦政治经济学院"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "纪丰",
+      "谭子芮",
+      "李子姜",
+      "李思成"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -1958,74 +1822,6 @@
     ]
   },
   {
-    "bvId": "BV1FW4y1c7Pt",
-    "title": "“强调情绪价值”对亲密关系利大于弊/弊大于利",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1FW4y1c7Pt",
-    "event": "2024新国辩",
-    "stage": "复赛第四场",
-    "date": "2024-01-23",
-    "teams": [
-      "天津大学",
-      "北京大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1s5411y7ra",
-    "title": "“乐子人”是/不是真正的快乐",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1s5411y7ra",
-    "event": "2024新国辩",
-    "stage": "复赛第三场",
-    "date": "2024-01-23",
-    "teams": [
-      "中国政法大学",
-      "中国人民大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1C5411v71S",
-    "title": "“原生家庭批判”正在让年轻人更幸福/更不幸福",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1C5411v71S",
-    "event": "2024新国辩",
-    "stage": "复赛第二场",
-    "date": "2024-01-22",
-    "teams": [
-      "伦敦政治经济学院",
-      "暨南大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV19e41117TQ",
-    "title": "“逃离大城市”/“逃回大城市”更是当代年轻人的好出路",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV19e41117TQ",
-    "event": "2024新国辩",
-    "stage": "初赛G组第三场",
-    "date": "2024-01-22",
-    "teams": [
-      "天津大学",
-      "华南理工大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
     "bvId": "BV1q94y1K721",
     "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
     "bilibiliUrl": "https://www.bilibili.com/video/BV1q94y1K721",
@@ -2036,25 +1832,16 @@
       "中国人民大学",
       "马来亚大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1pb4y1N7H2",
-    "title": "在感情中，“纯爱战士”值得/不值得歌颂",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1pb4y1N7H2",
-    "event": "2024新国辩",
-    "stage": "初赛H组第三场",
-    "date": "2024-01-22",
-    "teams": [
-      "西南政法大学",
-      "北京大学"
+    "speakers": [
+      "裴若言",
+      "马骋",
+      "赵杨星宇",
+      "谢贤良",
+      "许明亮",
+      "黄子恩",
+      "陈俊杰"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2070,8 +1857,16 @@
       "中国政法大学",
       "墨尔本大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "陆瑶",
+      "赵信博",
+      "王昕璐",
+      "王思颖",
+      "沈棋昊",
+      "刘轩仪",
+      "钟汉珊"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2087,8 +1882,16 @@
       "澳门大学",
       "天津大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "胡祖铭",
+      "张钰芃",
+      "王浩然",
+      "张翔宁",
+      "唐龙",
+      "王春深",
+      "孙超然"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2104,42 +1907,15 @@
       "国际关系学院",
       "西南政法大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1FV411Q7DC",
-    "title": "刻意追求“富养自己”会/不会让人更幸福",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1FV411Q7DC",
-    "event": "2024新国辩",
-    "stage": "初赛E组第二场",
-    "date": "2024-01-21",
-    "teams": [
-      "北京邮电大学",
-      "中国政法大学"
+    "speakers": [
+      "卢瑞锋",
+      "宋济坤",
+      "赵锦成",
+      "陈文浩",
+      "张琦琦",
+      "张书闻"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Hc411x7SS",
-    "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Hc411x7SS",
-    "event": "2024新国辩",
-    "stage": "初赛F组第二场",
-    "date": "2024-01-21",
-    "teams": [
-      "上海大学",
-      "中国人民大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2155,43 +1931,16 @@
       "华南理工大学",
       "澳门大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1X5411C7U6",
-    "title": "在感情中，“纯爱战士”值得不值得歌颂丨 北京大学vs国际关系学院",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1X5411C7U6",
-    "event": "2024新国辩",
-    "stage": "初赛H组第一场",
-    "date": "2024-01-21",
-    "teams": [
-      "北京大学",
-      "国际关系学院"
+    "speakers": [
+      "董康",
+      "李沛雨",
+      "张添",
+      "赖香君",
+      "熊韵杰",
+      "张钰芃",
+      "王浩然"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未找到明确的辩题字段，已使用清理后的视频标题。",
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1ab4y1N78u",
-    "title": "GPT 式大语言模型发展应该/不该以“对人类友善”为前提",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1ab4y1N78u",
-    "event": "2024新国辩",
-    "stage": "初赛F组第一场",
-    "date": "2024-01-21",
-    "teams": [
-      "马来亚大学",
-      "上海大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2207,8 +1956,12 @@
       "墨尔本大学",
       "北京邮电大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "杨一帆",
+      "沈棋昊",
+      "刘轩仪"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2224,8 +1977,16 @@
       "浙江理工大学",
       "暨南大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "陈子璇",
+      "徐冯君",
+      "郑瑶瑶",
+      "余彤倩",
+      "冯诗然",
+      "刘曦冉",
+      "张子睿"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2241,8 +2002,11 @@
       "山东理工大学",
       "武汉大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "张捷",
+      "何叶"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2258,59 +2022,16 @@
       "西南大学",
       "清华大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV18k4y1D7DP",
-    "title": "企业“第一学历歧视”合理/不合理",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV18k4y1D7DP",
-    "event": "2024新国辩",
-    "stage": "初赛C组第三场",
-    "date": "2024-01-21",
-    "teams": [
-      "悉尼大学",
-      "伦敦政治经济学院"
+    "speakers": [
+      "冯俐禧",
+      "张盛",
+      "安子欣",
+      "林明磊",
+      "吴芋璇",
+      "周士尊",
+      "雷梦瑶"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1AK4y1i7sv",
-    "title": "“拥抱玄学”是/不是当代年轻人的精神解脱之道",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1AK4y1i7sv",
-    "event": "2024新国辩",
-    "stage": "初赛A组第二场",
-    "date": "2024-01-20",
-    "teams": [
-      "南开大学",
-      "西南大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1be411n7tD",
-    "title": "直播带货有/没有让消费者体验变好",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1be411n7tD",
-    "event": "2024新国辩",
-    "stage": "初赛B组第二场",
-    "date": "2024-01-20",
-    "teams": [
-      "国防科技大学",
-      "山东理工大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2326,8 +2047,16 @@
       "中山大学",
       "浙江理工大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "程翔",
+      "胡嘉晴",
+      "易晓雪",
+      "余宝蓝",
+      "龚梦芹",
+      "郑瑶瑶",
+      "徐冯君"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2343,8 +2072,15 @@
       "南京大学",
       "悉尼大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "高昕然",
+      "颜颖萱",
+      "牛晨宇",
+      "张心怡",
+      "范嘉昊",
+      "张书鸣"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2360,42 +2096,15 @@
       "伦敦政治经济学院",
       "南京大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV1Ca4y1y72t",
-    "title": "高考后填志愿应该/不应该以就业为第一考量",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV1Ca4y1y72t",
-    "event": "2024新国辩",
-    "stage": "初赛D组第一场",
-    "date": "2024-01-20",
-    "teams": [
-      "暨南大学",
-      "中山大学"
+    "speakers": [
+      "谭子芮",
+      "鲍羿岑",
+      "李子姜",
+      "李思成",
+      "颜颖萱",
+      "高昕然"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
-    "parseWarnings": [
-      "未能解析辩手名单。"
-    ]
-  },
-  {
-    "bvId": "BV12c411s7dA",
-    "title": "直播带货有/没有让消费者体验变好",
-    "bilibiliUrl": "https://www.bilibili.com/video/BV12c411s7dA",
-    "event": "2024新国辩",
-    "stage": "初赛B组第一场",
-    "date": "2024-01-20",
-    "teams": [
-      "武汉大学",
-      "国防科技大学"
-    ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
@@ -2411,8 +2120,15 @@
       "清华大学",
       "南开大学"
     ],
-    "speakers": [],
-    "speakerStatus": "missing",
+    "speakers": [
+      "刘楷",
+      "郑博中",
+      "吕良伟",
+      "江茜",
+      "邢嘉豪",
+      "陈卓"
+    ],
+    "speakerStatus": "partial",
     "parseWarnings": [
       "未能解析辩手名单。"
     ]
