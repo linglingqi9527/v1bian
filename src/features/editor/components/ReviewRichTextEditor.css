@@ -1,0 +1,252 @@
+.review-editor-meta-card {
+  margin-top: 18px;
+  margin-bottom: 18px;
+}
+
+.review-status-field > span {
+  color: #68707a;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.review-editor-form-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 18px;
+  align-items: end;
+}
+
+.review-title-input {
+  margin-left: 20px;
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.review-status-field {
+  display: grid;
+  gap: 8px;
+}
+
+.review-status-options {
+  display: flex;
+  gap: 10px;
+}
+
+.review-status-button--draft.sketch-button--active {
+  background: #fff7fa;
+}
+
+.review-status-button--completed.sketch-button--active {
+  background: #f3f9ff;
+}
+
+.review-save-note {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 4px;
+  color: #8a8f98;
+  font-size: 14px;
+  font-weight: 800;
+}
+
+.review-manual-save-button.sketch-button {
+  width: 52px;
+  min-width: 52px;
+  min-height: 44px;
+  border-color: transparent;
+  padding: 2px;
+  background: rgba(245, 217, 79, 0.34);
+}
+
+.review-manual-save-button.sketch-button:hover,
+.review-manual-save-button.sketch-button:focus-visible {
+  background: rgba(245, 217, 79, 0.48);
+}
+
+.review-manual-save-button .sketch-button__content {
+  justify-content: center;
+}
+
+.review-manual-save-button__icon {
+  display: block;
+  width: 38px;
+  height: 38px;
+  object-fit: contain;
+  transform: translateY(1px);
+}
+
+.review-save-note strong {
+  color: #1f5fbf;
+}
+
+.review-save-note__error {
+  color: #c4374a;
+}
+
+.review-editor-shell {
+  grid-template-columns: 220px minmax(0, 1fr) 280px;
+  align-items: stretch;
+}
+
+.review-editor-panel {
+  min-height: 0;
+}
+
+.toc-empty {
+  color: #5f6670;
+  font-size: 15px;
+  font-weight: 800;
+  line-height: 1.5;
+}
+
+.toc-tree {
+  display: grid;
+  gap: 8px;
+}
+
+.toc-tree-item {
+  display: grid;
+  grid-template-columns: 16px minmax(0, 1fr);
+  align-items: start;
+  gap: 4px;
+  border: 0;
+  border-radius: 0;
+  padding: 3px 2px;
+  color: #6d7887;
+  background: transparent;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 800;
+  line-height: 1.45;
+  cursor: pointer;
+}
+
+.toc-tree-item[data-toc-level='1'] {
+  color: #3f4f64;
+  font-size: 17px;
+  font-weight: 900;
+}
+
+.toc-tree-item[data-toc-level='2'] {
+  padding-left: 1em;
+  color: #7d8794;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.toc-tree-item[data-toc-level='3'] {
+  padding-left: 1.67em;
+  color: #7d8794;
+  font-size: 15px;
+  font-weight: 800;
+}
+
+.toc-tree-item--active {
+  color: #3f4f64;
+}
+
+.toc-tree-item--active .toc-tree-item__marker {
+  color: #8a96a3;
+}
+
+.toc-tree-item__marker {
+  color: #8a96a3;
+}
+
+.toc-tree-item__text {
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.review-editor-toolbar {
+  gap: 12px;
+  align-items: center;
+}
+
+.editor-toolbar .editor-tool {
+  border-radius: 7px;
+  color: var(--color-ink);
+  font-size: 15px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.editor-toolbar .editor-tool--active {
+  background: #f8df58;
+}
+
+.editor-toolbar .editor-tool:disabled {
+  cursor: not-allowed;
+  opacity: 0.35;
+}
+
+.review-editor-content-box {
+  max-height: clamp(520px, calc(100svh - 360px), 720px);
+  min-height: 0;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  border: 3px solid var(--color-line);
+  border-radius: 12px;
+  background: #fff;
+}
+
+.review-editor-content-box::-webkit-scrollbar {
+  display: none;
+}
+
+.review-editor-content-box > div {
+  min-height: 100%;
+}
+
+.review-rich-editor__surface {
+  min-height: 520px;
+  padding: 24px 28px;
+  outline: 0;
+  font-size: 19px;
+  line-height: 1.8;
+}
+
+.review-rich-editor__surface > * + * {
+  margin-top: 16px;
+}
+
+.review-heading-mark {
+  line-height: 1.25;
+}
+
+.review-heading-mark--1 {
+  font-size: 28px;
+  font-weight: 900;
+}
+
+.review-heading-mark--2 {
+  font-size: 24px;
+  font-weight: 900;
+}
+
+.review-heading-mark--3 {
+  font-size: 21px;
+  font-weight: 900;
+}
+
+.review-rich-editor__surface ul {
+  padding-left: 24px;
+}
+
+.review-rich-editor__surface p.is-editor-empty:first-child::before {
+  content: attr(data-placeholder);
+  float: left;
+  height: 0;
+  color: #8b867e;
+  pointer-events: none;
+}
+
+@media (max-width: 760px) {
+  .review-editor-content-box {
+    max-height: min(62svh, 560px);
+  }
+}

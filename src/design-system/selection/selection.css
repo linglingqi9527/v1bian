@@ -3,6 +3,8 @@
   Rough hand-drawn fills now live in design-system/handdrawn/HandDrawnAnimatedFill.
 */
 
+@import './handdrawnUnderline.css';
+
 .sketch-selection,
 .sketch-selection--current,
 .sketch-selection--marked {

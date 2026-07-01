@@ -1,5 +1,9 @@
+import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
+import { REVIEWS_UPDATED_EVENT, listReviews } from '../../features/reviews/reviewService.js'
+import { REVIEW_PRIORITY_OPTIONS, REVIEW_STATUS } from '../../features/reviews/reviewUtils.js'
+import { TRAININGS_UPDATED_EVENT, listTrainings, listTrainingsByReviewId } from '../../features/trainings/trainingService.js'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
 const navItems = [
@@ -10,11 +14,25 @@ const navItems = [
 
 export function SideNav() {
   const { pathname } = useLocation()
+  const [, refreshStatsPanels] = useState(0)
   const section = pathname.startsWith('/reviews')
     ? 'reviews'
     : pathname.startsWith('/trainings')
       ? 'trainings'
       : 'matches'
+
+  useEffect(() => {
+    function handleReviewsUpdated() {
+      refreshStatsPanels((value) => value + 1)
+    }
+
+    window.addEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
+    window.addEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+    return () => {
+      window.removeEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
+      window.removeEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+    }
+  }, [])
 
   return (
     <aside className="side-nav">
@@ -31,7 +49,7 @@ export function SideNav() {
             {({ isActive }) => (
               <>
                 {isActive ? (
-                  <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+                  <HandDrawnSelectionFill preset="navActiveFill" shape="pill" />
                 ) : null}
                 <span className="primary-nav__icon" data-nav-icon={item.kind}>
                   <img src={item.icon} alt="" />
@@ -50,14 +68,13 @@ export function SideNav() {
         {({ isActive }) => (
           <>
             {isActive ? (
-              <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+              <HandDrawnSelectionFill preset="navActiveFill" shape="pill" />
             ) : null}
             <span>⚙</span>
             <span>设置</span>
           </>
         )}
       </NavLink>
-      <span className="corner-scribble" aria-hidden="true" />
     </aside>
   )
 }
@@ -79,36 +96,64 @@ function MatchesPanel() {
 }
 
 function ReviewsPanel() {
+  const reviews = listReviews()
+  const completedCount = reviews.filter((review) => review.status === REVIEW_STATUS.completed).length
+  const draftCount = reviews.filter((review) => review.status === REVIEW_STATUS.draft).length
+  const trainedCount = reviews.filter((review) => listTrainingsByReviewId(review.id).length > 0).length
+
   return (
     <>
-      <section className="nav-section stat-list">
-        <h2>我的赛评</h2>
-        <StatLine label="全部赛评" value="28" />
-        <StatLine label="已完成" value="23" />
-        <StatLine label="草稿" value="3" />
-        <StatLine label="已训练" value="15" />
+      <section className="nav-section nav-section--underlined stat-list">
+        <h2 className="handdrawn-underline handdrawn-underline--nav-section">我的赛评</h2>
+        <StatLine label="全部赛评" to="/reviews" tone="blue" value={reviews.length} />
+        <StatLine label="已完成" tone="blue" value={completedCount} />
+        <StatLine label="草稿" tone="pink" value={draftCount} />
+        <StatLine label="已训练" tone="green" value={trainedCount} />
       </section>
-      <section className="nav-section stat-list">
-        <h2>自定义重点 <span>＋</span></h2>
-        <StatLine label="我的核心赛评" value="8" tone="purple" />
-        <StatLine label="教学案例库" value="6" tone="red" />
-        <StatLine label="备赛重点" value="4" tone="orange" />
-        <StatLine label="复盘对比" value="3" tone="blue" />
+      <section className="nav-section nav-section--underlined stat-list">
+        <h2 className="handdrawn-underline handdrawn-underline--nav-section">自定义重点 <span>＋</span></h2>
+        {REVIEW_PRIORITY_OPTIONS.map((option) => (
+          <StatLine
+            label={getPriorityLabel(option.value)}
+            to={`/reviews?priority=${option.value}`}
+            tone={option.value}
+            value={reviews.filter((review) => review.priority === option.value).length}
+            key={option.value}
+          />
+        ))}
       </section>
     </>
   )
 }
 
 function TrainingsPanel() {
+  const trainings = listTrainings()
+  const audioCount = trainings.filter((training) => training.mode === 'audio').length
+  const videoCount = trainings.filter((training) => training.mode === 'video').length
+  const thisWeekCount = trainings.filter(isCreatedThisWeek).length
+
   return (
-    <section className="nav-section stat-list">
-      <h2>我的训练</h2>
-      <StatLine label="累计训练" value="18次" />
-      <StatLine label="录音训练" value="12次" />
-      <StatLine label="录像训练" value="6次" />
-      <StatLine label="本周训练" value="3次" />
-      <StatLine label="最佳时长" value="02:48" />
-    </section>
+    <>
+      <section className="nav-section nav-section--underlined stat-list">
+        <h2 className="handdrawn-underline handdrawn-underline--nav-section">我的训练</h2>
+        <StatLine label="全部训练" to="/trainings" tone="blue" value={trainings.length} />
+        <StatLine label="录音训练" tone="blue" value={audioCount} />
+        <StatLine label="录像训练" tone="green" value={videoCount} />
+        <StatLine label="本周训练" tone="pink" value={thisWeekCount} />
+      </section>
+      <section className="nav-section nav-section--underlined stat-list">
+        <h2 className="handdrawn-underline handdrawn-underline--nav-section">自定义重点 <span>＋</span></h2>
+        {REVIEW_PRIORITY_OPTIONS.map((option) => (
+          <StatLine
+            label={getPriorityLabel(option.value)}
+            to={`/trainings?priority=${option.value}`}
+            tone={option.value}
+            value={trainings.filter((training) => training.priority === option.value).length}
+            key={option.value}
+          />
+        ))}
+      </section>
+    </>
   )
 }
 
@@ -122,12 +167,42 @@ function SmallCard({ meta, title }) {
   )
 }
 
-function StatLine({ label, tone = 'black', value }) {
-  return (
-    <div className="stat-line">
+function StatLine({ label, tone = 'black', to, value }) {
+  const content = (
+    <>
       <i className={`dot dot--${tone}`} />
       <span>{label}</span>
       <strong>{value}</strong>
+    </>
+  )
+
+  return to ? (
+    <NavLink className="stat-line stat-line--link" to={to}>
+      {content}
+    </NavLink>
+  ) : (
+    <div className="stat-line">
+      {content}
     </div>
   )
+}
+
+function getPriorityLabel(priority) {
+  if (priority === 'red') return '最高级重点'
+  if (priority === 'black') return '第二级重点'
+  if (priority === 'purple') return '第三级重点'
+  return '普通重点'
+}
+
+function isCreatedThisWeek(item) {
+  const createdAt = new Date(item.createdAt)
+  if (Number.isNaN(createdAt.getTime())) return false
+
+  const now = new Date()
+  const startOfWeek = new Date(now)
+  const day = now.getDay() || 7
+  startOfWeek.setHours(0, 0, 0, 0)
+  startOfWeek.setDate(now.getDate() - day + 1)
+
+  return createdAt >= startOfWeek
 }

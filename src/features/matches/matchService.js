@@ -84,6 +84,15 @@ export function addTrainingToMatch(matchId, trainingId) {
   })
 }
 
+export function removeTrainingFromMatches(trainingId) {
+  if (!trainingId) return
+
+  saveMatches(listMatches().map((match) => ({
+    ...match,
+    trainingIds: match.trainingIds.filter((id) => id !== trainingId),
+  })))
+}
+
 function mergeMatchesWithPersistedState(baseMatches, persistedMatches) {
   if (!Array.isArray(persistedMatches)) return baseMatches
 

@@ -145,7 +145,6 @@
   .review-board,
   .training-board,
   .editor-shell,
-  .history-strip,
   .match-card
 ) {
   --handdrawn-border-stroke: var(--handdrawn-panel-stroke);
@@ -156,14 +155,10 @@
 .app-shell :is(
   .sketch-card,
   .nav-mini-card,
-  .training-row,
   .match-context-card,
   .recorder-card,
   .hint-card,
-  .linked-review-card,
-  .history-row,
   .training-mini,
-  .linked-paper,
   .writing-box
 ) {
   --handdrawn-border-stroke: var(--handdrawn-card-stroke);
@@ -202,18 +197,13 @@
   .review-board,
   .training-board,
   .editor-shell,
-  .history-strip,
   .match-card,
   .sketch-card,
   .nav-mini-card,
-  .training-row,
   .match-context-card,
   .recorder-card,
   .hint-card,
-  .linked-review-card,
-  .history-row,
   .training-mini,
-  .linked-paper,
   .writing-box,
   .primary-nav a,
   .mobile-nav a,
@@ -247,18 +237,13 @@
   .review-board,
   .training-board,
   .editor-shell,
-  .history-strip,
   .match-card,
   .sketch-card,
   .nav-mini-card,
-  .training-row,
   .match-context-card,
   .recorder-card,
   .hint-card,
-  .linked-review-card,
-  .history-row,
   .training-mini,
-  .linked-paper,
   .writing-box,
   .primary-nav a,
   .mobile-nav a,
@@ -328,7 +313,6 @@
   .review-row,
   .editor-tabs,
   .editor-toolbar,
-  .section-head--flat,
   .toc-panel,
   .related-panel,
   .match-side,
@@ -348,8 +332,7 @@
   .tabs,
   .review-row,
   .editor-tabs,
-  .editor-toolbar,
-  .section-head--flat
+  .editor-toolbar
 )::after {
   content: '';
   position: absolute;

@@ -1,0 +1,99 @@
+.trainings-font-trial,
+.trainings-font-trial h1,
+.trainings-font-trial h2,
+.trainings-font-trial h3,
+.trainings-font-trial button,
+.trainings-font-trial input {
+  /* Trial only: match the scoped rounded-font experiment on the reviews overview page. */
+  font-family: var(--font-rounded);
+}
+
+.training-board {
+  overflow: hidden;
+  border: 3px solid var(--color-line);
+  border-radius: 14px;
+  background: #fff;
+}
+
+.training-list {
+  display: grid;
+}
+
+.training-row {
+  position: relative;
+  display: grid;
+  grid-template-columns: 28px minmax(0, 1fr) 120px auto;
+  gap: 18px;
+  align-items: center;
+  min-height: 136px;
+  padding: 22px 32px;
+  border-bottom: 2px solid #bbb;
+}
+
+.training-row-main {
+  display: grid;
+  gap: 8px;
+}
+
+.training-row-title {
+  width: fit-content;
+  color: var(--color-ink);
+  text-decoration: none;
+  font-size: 23px;
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.training-row-meta {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  font-size: 17px;
+}
+
+.training-row .muted {
+  font-size: 17px;
+  line-height: 1.35;
+}
+
+.training-duration {
+  border-left: 2px solid #bbb;
+  padding-left: 28px;
+  font-size: 19px;
+  font-weight: 900;
+}
+
+.training-row-actions {
+  display: flex;
+  gap: 10px;
+}
+
+.training-row .mini-action {
+  min-height: 42px;
+  padding: 7px 14px;
+  font-size: 16px;
+}
+
+.training-board-footer {
+  padding: 14px;
+  color: #4c4945;
+  text-align: center;
+}
+
+@media (width <= 700px) {
+  .training-row {
+    grid-template-columns: 1fr;
+    padding-right: 24px;
+  }
+
+  .training-duration {
+    justify-self: start;
+    border: 0;
+    padding: 0;
+  }
+
+  .training-row-actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

@@ -3,12 +3,16 @@ const navSelectionFill = {
   stroke: '#1f1f1f',
   strokeWidth: 2,
   fillStyle: 'hachure',
-  fillWeight: 5.2,
-  hachureAngle: -42,
-  hachureGap: 11,
-  roughness: 1.18,
-  bowing: 1,
+  fillWeight: 3.1,
+  hachureAngle: -45,
+  hachureGap: 13.2,
+  roughness: 1.62,
+  bowing: 1.22,
   overflow: 3,
+  texture: 'crayon',
+  textureDensity: 42,
+  textureOpacity: 0.76,
+  textureStrokeWidth: 3.2,
 }
 
 const buttonSelectionFill = {
@@ -16,12 +20,16 @@ const buttonSelectionFill = {
   stroke: '#1f1f1f',
   strokeWidth: 2,
   fillStyle: 'hachure',
-  fillWeight: 4.4,
-  hachureAngle: -28,
-  hachureGap: 10,
-  roughness: 1.18,
-  bowing: 1,
+  fillWeight: 2.8,
+  hachureAngle: -31,
+  hachureGap: 12.4,
+  roughness: 1.58,
+  bowing: 1.2,
   overflow: 3,
+  texture: 'crayon',
+  textureDensity: 34,
+  textureOpacity: 0.72,
+  textureStrokeWidth: 2.9,
 }
 
 const compactSelectionFill = {
@@ -35,6 +43,7 @@ const compactSelectionFill = {
   roughness: 1.15,
   bowing: 1,
   overflow: 2,
+  texture: 'none',
 }
 
 export const handdrawnPresets = {

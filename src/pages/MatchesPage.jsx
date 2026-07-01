@@ -1,31 +1,24 @@
 import { useMemo, useState } from 'react'
-import { Link } from 'react-router'
 import { Search } from 'lucide-react'
-import { imageAssets } from '../assets/assetPaths.js'
 import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
-import { SketchTag } from '../design-system/ui/SketchTag.jsx'
-import { FavoriteBookmark } from '../features/matches/components/FavoriteBookmark.jsx'
+import { MatchCard } from '../features/matches/components/MatchCard.jsx'
 import { listMatches, markMatchWatched, toggleMatchFavorite, toggleMatchWatched } from '../features/matches/matchService.js'
 import {
   filterMatches,
-  formatMatchSpeakers,
-  formatMatchTeams,
-  getMatchReviewRoute,
-  getMatchStatusTags,
-  getMatchTrainingRoute,
   searchMatches,
 } from '../features/matches/matchUtils.js'
 
 const FILTERS = ['全部', '已看', '收藏']
+const DEFAULT_MATCH_LIMIT = 15
 
 export default function MatchesPage() {
   const [matches, setMatches] = useState(() => listMatches())
   const [activeFilter, setActiveFilter] = useState(FILTERS[0])
   const [searchQuery, setSearchQuery] = useState('')
   const visibleMatches = useMemo(
-    () => searchMatches(filterMatches(matches, activeFilter), searchQuery),
+    () => searchMatches(filterMatches(matches, activeFilter), searchQuery).slice(0, DEFAULT_MATCH_LIMIT),
     [activeFilter, matches, searchQuery],
   )
 
@@ -44,14 +37,6 @@ export default function MatchesPage() {
     refreshMatches()
   }
 
-  function handleStatusKeyDown(event, matchId, kind) {
-    if (kind !== 'watched') return
-    if (event.key !== 'Enter' && event.key !== ' ') return
-
-    event.preventDefault()
-    handleToggleWatched(event, matchId)
-  }
-
   function handleWatchMatch(event, match) {
     event.preventDefault()
     event.stopPropagation()
@@ -64,13 +49,6 @@ export default function MatchesPage() {
     }
 
     window.alert('暂无比赛链接')
-  }
-
-  function handleTitleKeyDown(event, match) {
-    if (event.key !== 'Enter' && event.key !== ' ') return
-
-    event.preventDefault()
-    handleWatchMatch(event, match)
   }
 
   return (
@@ -108,97 +86,17 @@ export default function MatchesPage() {
       </section>
 
       <section className="match-list">
-        {visibleMatches.map((match) => (
-          <article className="match-card" key={match.id}>
-            <span className={`card-accent card-accent--${match.accent}`} />
-            <aside className="match-side">
-              <span className="match-side-event">{match.event.replace('bilibili', '')}</span>
-              <strong>{match.stage}</strong>
-            </aside>
-            <div className="match-main">
-              <p className="match-school">{formatMatchTeams(match)} · {match.date} · {match.bvId}</p>
-              <h2
-                aria-label={`观看比赛：${match.title}`}
-                onClick={(event) => handleWatchMatch(event, match)}
-                onKeyDown={(event) => handleTitleKeyDown(event, match)}
-                role="button"
-                tabIndex={0}
-                title="打开比赛链接"
-              >
-                {match.title}
-              </h2>
-              <p className="match-speakers">{formatMatchSpeakers(match)}</p>
-              <div className="status-row">
-                {getMatchStatusTags(match).map((tag) => (
-                  <SketchTag
-                    active={tag.active}
-                    aria-label={tag.kind === 'watched' ? `${tag.label}，点击切换已看状态` : undefined}
-                    onClick={tag.kind === 'watched' ? (event) => handleToggleWatched(event, match.id) : undefined}
-                    onKeyDown={(event) => handleStatusKeyDown(event, match.id, tag.kind)}
-                    role={tag.kind === 'watched' ? 'button' : undefined}
-                    tabIndex={tag.kind === 'watched' ? 0 : undefined}
-                    tone={tag.tone}
-                    key={tag.label}
-                  >
-                    {tag.label}
-                  </SketchTag>
-                ))}
-              </div>
-            </div>
-            <div className="match-actions">
-              <ActionLink
-                action="watch"
-                icon={imageAssets.matchCard.watchVideo}
-                label="观看比赛"
-                onClick={(event) => handleWatchMatch(event, match)}
-                to={`/matches/${match.id}`}
-              />
-              <ActionLink
-                action="review"
-                icon={imageAssets.matchCard.writeReview}
-                label="打开赛评"
-                to={getMatchReviewRoute(match)}
-              />
-              <ActionLink
-                action="train"
-                icon={imageAssets.matchCard.startTraining}
-                label="开始训练"
-                to={getMatchTrainingRoute(match)}
-              />
-            </div>
-            <FavoriteBookmark
-              favorite={match.favorite}
-              onClick={(event) => {
-                event.stopPropagation()
-                handleToggleFavorite(match.id)
-              }}
-            />
-          </article>
+        {visibleMatches.map((match, index) => (
+          <MatchCard
+            index={index}
+            match={match}
+            onToggleFavorite={handleToggleFavorite}
+            onToggleWatched={handleToggleWatched}
+            onWatchMatch={handleWatchMatch}
+            key={match.id}
+          />
         ))}
       </section>
     </ContentLayout>
-  )
-}
-
-function ActionLink({ action, icon, label, onClick, to }) {
-  function handleClick(event) {
-    event.stopPropagation()
-    onClick?.(event)
-  }
-
-  return (
-    <SketchButton
-      active={label === '观看比赛'}
-      as={Link}
-      className="match-action-link"
-      data-match-action={action}
-      handdrawnFill={{ color: '#F7D95C', opacity: 0.44, variant: 'marker' }}
-      icon={<img src={icon} alt="" />}
-      onClick={handleClick}
-      to={to}
-      variant="secondary"
-    >
-      <span className="match-action-link__label">{label}</span>
-    </SketchButton>
   )
 }

@@ -1,0 +1,78 @@
+.priority-dot {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  flex: 0 0 auto;
+  border: 0;
+  border-radius: 50%;
+  padding: 0;
+  background: #f4d432;
+  cursor: pointer;
+}
+
+.priority-dot--red {
+  background: #e35a5a;
+}
+
+.priority-dot--black {
+  background: #242424;
+}
+
+.priority-dot--purple {
+  background: #7a4df5;
+}
+
+.priority-dot--yellow {
+  background: #f4d432;
+}
+
+.priority-dot-picker {
+  position: relative;
+  display: grid;
+  width: 24px;
+  height: 24px;
+  place-items: center;
+}
+
+.priority-dot-popover {
+  position: absolute;
+  top: 50%;
+  left: 22px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border: 0;
+  border-radius: 999px;
+  padding: 7px 9px;
+  background: #fff;
+  box-shadow: 2px 2px 0 rgba(34, 31, 28, 0.14);
+  transform: translateY(-50%);
+}
+
+.priority-dot-popover::before,
+.priority-dot-popover::after {
+  content: '';
+  position: absolute;
+  pointer-events: none;
+  border: 2px solid var(--color-line);
+  border-radius: 999px;
+}
+
+.priority-dot-popover::before {
+  inset: 0;
+  transform: rotate(-0.8deg);
+}
+
+.priority-dot-popover::after {
+  inset: 2px -1px -1px 1px;
+  opacity: 0.58;
+  transform: rotate(0.7deg);
+}
+
+.priority-dot-popover .priority-dot {
+  position: relative;
+  z-index: 1;
+  width: 14px;
+  height: 14px;
+}

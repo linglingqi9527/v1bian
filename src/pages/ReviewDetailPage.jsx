@@ -15,7 +15,7 @@ export default function ReviewDetailPage() {
   return (
     <ContentLayout>
       <WorkbenchHeader
-        actions={<><SketchButton>编辑赛评</SketchButton><SketchButton variant="secondary"><Download size={18} />导出</SketchButton><SketchButton variant="secondary"><MoreHorizontal size={18} /></SketchButton></>}
+        actions={<><SketchButton as={Link} to={`/reviews/${review?.id ?? reviewId}/edit`}>编辑赛评</SketchButton><SketchButton variant="secondary"><Download size={18} />导出</SketchButton><SketchButton variant="secondary"><MoreHorizontal size={18} /></SketchButton></>}
         eyebrow="新国辩数据库 / 赛评 / 语言的边界是 / 不是人类的边界（已完成）"
         hero="review-editor"
         title="语言的边界是 / 不是人类的边界"
@@ -41,7 +41,7 @@ export default function ReviewDetailPage() {
         <article className="editor-panel">
           <nav className="editor-tabs">
             {['赛评内容', '评价与复盘', '相关资料', '训练记录'].map((tab, index) => (
-              <button className={index === 0 ? 'tab tab--active' : 'tab'} type="button" key={tab}>{tab}</button>
+              <button className={index === 0 ? 'tab tab--active handdrawn-underline handdrawn-underline--tab' : 'tab'} type="button" key={tab}>{tab}</button>
             ))}
           </nav>
           <div className="editor-toolbar">

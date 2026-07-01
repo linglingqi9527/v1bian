@@ -1,15 +1,18 @@
 # 数据与保存方案
 
-当前 V1 阶段先使用本地 mock 数据和前端状态，不接后端、不接登录、不保存真实用户媒体文件。
+当前 V1 阶段以本地生成数据、mock 用户数据和前端状态为主，不接后端、不接云登录、不保存真实用户媒体文件到源码目录。
 
 ## 当前数据层
 
-当前 demo 数据放在：
+当前基础数据入口放在：
 
 - `src/data/demoMatches.js`
+- `src/data/generated/generatedMatches.json`
 - `src/data/demoReviews.js`
 - `src/data/demoTrainings.js`
 - `src/data/seedData.js`
+
+`demoMatches.js` 会优先读取 `generatedMatches.json`；如果生成数据不可用，再回退到早期 demo 比赛。
 
 业务服务放在：
 
@@ -43,7 +46,11 @@
 - 用户是否已看
 - 用户是否收藏
 
-视频简介中可能包含八位辩手姓名，后续数据导入模块需要考虑从简介或结构化 JSON 中提取并标准化。
+视频简介、语音转写和人工整理名单都可能提供辩手姓名。当前比赛数据已支持：
+
+- `speakers`：平铺辩手名单。
+- `speakerGroups`：按正反方和学校分组的辩手名单。
+- `raw.speakerEnrichment`：辩手识别来源和更新时间。
 
 ### 赛评
 
@@ -89,7 +96,9 @@ V1 可以先使用 IndexedDB 保存用户赛评、训练、录音和录像的元
 - `storageTypes.js`
 - `localDb.js`
 
-比赛数据导入可继续放在 `features/crawler` 中，但当前不做真实爬虫。该模块更适合作为“结构化数据导入与规范化”的入口。
+比赛数据导入和 B 站爬虫脚本目前主要位于 `scripts/crawler/bilibili`，前端规范化入口保留在 `features/crawler`。爬虫是开发期 Node 脚本，不应写进 React 页面，也不应在用户打开网页时实时运行。
+
+当前爬虫阶段已经暂时告一段落。后续除非明确进入数据阶段，否则不要继续扩展爬虫、语音识别或修改 `generatedMatches.json`。
 
 ## assets 边界
 

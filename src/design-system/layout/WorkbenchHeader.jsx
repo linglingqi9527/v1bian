@@ -1,5 +1,5 @@
-import clsx from 'clsx'
 import { imageAssets } from '../../assets/assetPaths.js'
+import clsx from 'clsx'
 
 export function WorkbenchHeader({
   actions,
@@ -23,12 +23,11 @@ export function WorkbenchHeader({
         {eyebrow ? <p className="breadcrumb-line">{eyebrow}</p> : null}
         <h1>{title}</h1>
         {meta ? <p className="header-meta">{meta}</p> : null}
-        {decoration ? <span className="blue-scribble" aria-hidden="true" /> : null}
       </div>
       <div className="shared-hero" aria-hidden="true">
         <img src={imageAssets.heroIllustration} alt="" />
         <div className="brand-slogan">
-          <strong>便了么</strong>
+          <strong className="handdrawn-underline handdrawn-underline--brand">便了么</strong>
         </div>
       </div>
       {actions ? <div className="header-actions">{actions}</div> : null}

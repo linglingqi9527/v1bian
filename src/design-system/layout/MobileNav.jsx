@@ -17,7 +17,7 @@ export function MobileNav() {
           {({ isActive }) => (
             <>
               {isActive ? (
-                <HandDrawnSelectionFill preset="navActiveFill" shape="pill" stroke="transparent" />
+                <HandDrawnSelectionFill preset="navActiveFill" shape="pill" />
               ) : null}
               <img src={item.icon} alt="" />
               <span>{item.label}</span>

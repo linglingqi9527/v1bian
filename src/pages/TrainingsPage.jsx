@@ -1,60 +1,95 @@
-import { Eye, Plus, RotateCcw } from 'lucide-react'
-import { Link } from 'react-router'
+import { useMemo, useState } from 'react'
+import { Plus, Search } from 'lucide-react'
+import { Link, useSearchParams } from 'react-router'
 import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
-import { SketchTag } from '../design-system/ui/SketchTag.jsx'
-
-const trainingRows = [
-  ['2026-01-24', '02:07', '录音', '香港大学', '北京师范大学', '整体思路清晰，开篇立论稳健，但反驳环节论证深度不足，可加强对方核心论点的拆解。'],
-  ['2026-01-18', '15:42', '录音', '新加坡国立大学', '复旦大学', '语言表达流畅，例证丰富，有说服力，但结尾总结较弱，建议强化升华与呼吁。'],
-  ['2026-01-14', '21:33', '录像', '清华大学', '中央戏剧学院', '肢体语言自然，节奏把控较好，论点展开扎实，可在情绪起伏上再加强。'],
-  ['2026-01-10', '19:08', '录像', '香港中文大学', '浙江大学', '前半段论证强势，但中段出现重复论据，时间分配不均，建议优化结构安排。'],
-]
+import { TrainingListRow } from '../features/trainings/components/TrainingListRow.jsx'
+import { createTrainingItems, filterTrainingItems, TRAINING_TABS } from '../features/trainings/trainingListUtils.js'
+import { saveTraining } from '../features/trainings/trainingService.js'
 
 export default function TrainingsPage() {
+  const [searchParams, setSearchParams] = useSearchParams()
+  const [activeTab, setActiveTab] = useState(TRAINING_TABS[0])
+  const [searchQuery, setSearchQuery] = useState('')
+  const activePriority = searchParams.get('priority') || 'all'
+  const [trainingItems, setTrainingItems] = useState(() => createTrainingItems())
+  const filteredTrainings = useMemo(
+    () => filterTrainingItems(trainingItems, activeTab, activePriority, searchQuery),
+    [activePriority, activeTab, searchQuery, trainingItems],
+  )
+  const audioCount = trainingItems.filter((item) => item.mode === 'audio').length
+  const videoCount = trainingItems.filter((item) => item.mode === 'video').length
+
+  function handlePriorityChange(trainingId, priority) {
+    saveTraining({ id: trainingId, priority })
+    setTrainingItems(createTrainingItems())
+  }
+
+  function updatePriorityFilter(priority) {
+    const nextParams = new URLSearchParams(searchParams)
+    if (priority === 'all') {
+      nextParams.delete('priority')
+    } else {
+      nextParams.set('priority', priority)
+    }
+    setSearchParams(nextParams)
+  }
+
+  function handleTabChange(tab) {
+    setActiveTab(tab)
+    if (tab === '全部') {
+      updatePriorityFilter('all')
+    }
+  }
+
   return (
     <ContentLayout>
-      <WorkbenchHeader
-        actions={<SketchButton as={Link} to="/trainings/new"><Plus size={18} />创建训练</SketchButton>}
-        eyebrow="新国辩数据库 / 赛评 / 训练"
-        hero="trainings"
-        title="练习室"
-      />
+      <div className="trainings-font-trial">
+        <WorkbenchHeader
+          actions={<SketchButton as={Link} to="/trainings/new"><Plus size={18} />创建训练</SketchButton>}
+          eyebrow="新国辩数据库 / 赛评 / 训练"
+          hero="trainings"
+          title="练习室"
+          meta={`共 ${trainingItems.length} 次 · 录音 ${audioCount} 次 · 录像 ${videoCount} 次`}
+        />
 
-      <section className="training-board">
-        <div className="section-head">
-          <h2>过去的训练</h2>
-          <div className="pill-row">
-            {['全部', '录音', '录像', '最近关联⌄'].map((item, index) => (
-              <button className={index === 0 ? 'pill pill--active' : 'pill'} type="button" key={item}>{item}</button>
+        <section className="compact-toolbar">
+          <label className="search-box search-box--small">
+            <Search size={20} />
+            <input
+              onChange={(event) => setSearchQuery(event.target.value)}
+              placeholder="搜索训练标题、赛评、学校..."
+              value={searchQuery}
+            />
+          </label>
+        </section>
+
+        <section className="training-board">
+          <nav className="tabs" aria-label="训练筛选">
+            {TRAINING_TABS.map((tab) => (
+              <button
+                className={tab === activeTab ? 'tab tab--active handdrawn-underline handdrawn-underline--tab' : 'tab'}
+                onClick={() => handleTabChange(tab)}
+                type="button"
+                key={tab}
+              >
+                {tab}
+              </button>
+            ))}
+          </nav>
+          <div className="training-list">
+            {filteredTrainings.map((item) => (
+              <TrainingListRow
+                item={item}
+                onPriorityChange={handlePriorityChange}
+                key={item.id}
+              />
             ))}
           </div>
-        </div>
-
-        <div className="training-list">
-          {trainingRows.map((row) => (
-            <article className="training-row" key={`${row[0]}-${row[1]}`}>
-              <div className="training-time">
-                <span>{row[0]}</span>
-                <span>{row[1]}</span>
-              </div>
-              <div className="training-summary">
-                <div className="training-title-row">
-                  <SketchTag className={row[2] === '录像' ? 'tag-yellow' : 'tag-blue'}>{row[2]}</SketchTag>
-                  <h2>{row[3]} <span>vs</span> {row[4]}</h2>
-                </div>
-                <p>{row[5]}</p>
-                <p className="muted">关联赛评：AI 的迅猛发展提升了 / 降低了人类创作者存在的意义</p>
-              </div>
-              <div className="training-actions">
-                <SketchButton as={Link} to="/trainings/training-001" variant="secondary"><Eye size={18} />查看训练</SketchButton>
-                <SketchButton as={Link} to="/trainings/new?reviewId=review-001" variant="secondary"><RotateCcw size={18} />再次训练</SketchButton>
-              </div>
-            </article>
-          ))}
-        </div>
-      </section>
+          <p className="training-board-footer">{filteredTrainings.length > 0 ? '没有更多训练啦 :)' : '这里还没有对应训练'}</p>
+        </section>
+      </div>
     </ContentLayout>
   )
 }

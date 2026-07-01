@@ -34,7 +34,8 @@
 - `SketchButton`：全站按钮入口。
 - `SketchTag`：全站状态标签入口。
 - `SketchCard`：全站卡片入口。
-- `HandDrawnAnimatedFill`：全站选中态手绘填充动画入口。
+- `HandDrawnSelectionFill`：当前 hachure 选中填充入口，负责按钮、标签、导航、收藏等选中态。
+- `HandDrawnAnimatedFill`：较早的手绘填充动画入口，仍在部分组件中使用。
 - `HandDrawnAppFrame`：应用外框手绘边界入口。
 - `AppShell`、`SideNav`、`MobileNav`：应用壳和导航入口。
 
@@ -44,7 +45,7 @@
 
 原则：
 
-- 由 `HandDrawnAnimatedFill` 统一实现。
+- 由 `HandDrawnSelectionFill` / `HandDrawnAnimatedFill` 统一实现，页面不直接操作 roughjs。
 - 填充层在文字和图标下方，不能遮挡内容。
 - 填充层 `pointer-events: none`。
 - 填充区域应留出 inset，不贴满按钮边框。
@@ -69,7 +70,7 @@
 
 当前约定：
 
-- `HandDrawnAnimatedFill` 是 roughjs 选中填充的统一入口。
+- `HandDrawnSelectionFill` 和 `HandDrawnAnimatedFill` 是 roughjs 选中填充的统一入口。
 - 不要在页面、features 或 styles 中直接 import `roughjs`。
 - 不要恢复基于 DOM 扫描的 `RoughSelectionLayer` 主方案。
 

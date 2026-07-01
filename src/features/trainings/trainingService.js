@@ -1,8 +1,10 @@
 import { demoTrainings } from '../../data/demoTrainings.js'
 import { createTrainingModel } from '../../models/trainingModel.js'
 import { DEMO_USER_ID } from '../../models/userModel.js'
-import { addTrainingToMatch } from '../matches/matchService.js'
+import { addTrainingToMatch, removeTrainingFromMatches } from '../matches/matchService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
+
+export const TRAININGS_UPDATED_EVENT = 'bianleme:trainings-updated'
 
 export function listTrainings() {
   const persistedTrainings = readLocalDb()?.trainings
@@ -27,6 +29,25 @@ export function saveTrainings(trainings) {
     ...snapshot,
     trainings: trainings.map((training) => createTrainingModel(training)),
   })
+  notifyTrainingsUpdated()
+}
+
+export function saveTraining(trainingDraft = {}) {
+  const existingTraining = trainingDraft.id ? getTrainingById(trainingDraft.id) : null
+  const savedTraining = createTrainingModel({
+    ...existingTraining,
+    ...trainingDraft,
+    id: trainingDraft.id ?? existingTraining?.id,
+    createdAt: existingTraining?.createdAt ?? trainingDraft.createdAt,
+  })
+  const nextTrainings = [
+    ...listTrainings().filter((training) => training.id !== savedTraining.id),
+    savedTraining,
+  ]
+
+  saveTrainings(nextTrainings)
+
+  return savedTraining
 }
 
 export function saveTrainingForMatch(matchId, trainingDraft = {}) {
@@ -43,4 +64,17 @@ export function saveTrainingForMatch(matchId, trainingDraft = {}) {
   addTrainingToMatch(matchId, savedTraining.id)
 
   return savedTraining
+}
+
+export function deleteTraining(trainingId) {
+  if (!trainingId) return
+
+  saveTrainings(listTrainings().filter((training) => training.id !== trainingId))
+  removeTrainingFromMatches(trainingId)
+}
+
+function notifyTrainingsUpdated() {
+  if (typeof window === 'undefined') return
+
+  window.dispatchEvent(new Event(TRAININGS_UPDATED_EVENT))
 }

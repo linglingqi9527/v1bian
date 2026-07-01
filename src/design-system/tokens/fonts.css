@@ -1,0 +1,63 @@
+@font-face {
+  font-family: 'Bian ZCOOL KuaiLe';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/zcool-kuaile/ZCOOLKuaiLe-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 200;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-ExtraLight.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Light.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 350;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Normal.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Medium.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Bold.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Bian Resource Han Rounded CN';
+  font-style: normal;
+  font-weight: 900;
+  font-display: swap;
+  src: url('../../assets/fonts/resource-han-rounded-cn/ResourceHanRoundedCN-Heavy.ttf') format('truetype');
+}

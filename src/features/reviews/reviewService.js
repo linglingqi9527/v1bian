@@ -4,6 +4,8 @@ import { DEMO_USER_ID } from '../../models/userModel.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
 import { setMatchReviewId } from '../matches/matchService.js'
 
+export const REVIEWS_UPDATED_EVENT = 'bianleme:reviews-updated'
+
 export function listReviews() {
   const persistedReviews = readLocalDb()?.reviews
   const reviews = Array.isArray(persistedReviews) ? persistedReviews : demoReviews
@@ -27,6 +29,28 @@ export function saveReviews(reviews) {
     ...snapshot,
     reviews: reviews.map((review) => createReviewModel(review)),
   })
+  notifyReviewsUpdated()
+}
+
+export function saveReview(reviewDraft = {}) {
+  const existingReview = reviewDraft.id ? getReviewById(reviewDraft.id) : null
+  const now = new Date().toISOString()
+  const savedReview = createReviewModel({
+    ...existingReview,
+    ...reviewDraft,
+    id: reviewDraft.id ?? existingReview?.id,
+    matchId: reviewDraft.matchId ?? existingReview?.matchId ?? '',
+    updatedAt: now,
+    createdAt: existingReview?.createdAt ?? reviewDraft.createdAt ?? now,
+  })
+  const nextReviews = [
+    ...listReviews().filter((review) => review.id !== savedReview.id),
+    savedReview,
+  ]
+
+  saveReviews(nextReviews)
+
+  return savedReview
 }
 
 export function saveReviewForMatch(matchId, reviewDraft = {}) {
@@ -49,4 +73,10 @@ export function saveReviewForMatch(matchId, reviewDraft = {}) {
   setMatchReviewId(matchId, savedReview.id)
 
   return savedReview
+}
+
+function notifyReviewsUpdated() {
+  if (typeof window === 'undefined') return
+
+  window.dispatchEvent(new Event(REVIEWS_UPDATED_EVENT))
 }

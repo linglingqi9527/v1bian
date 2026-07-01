@@ -18,7 +18,7 @@ export function SketchButton({
     fill: fillProps.fill ?? fillProps.color,
     preset: fillProps.preset ?? 'buttonActiveFill',
     shape: fillProps.shape ?? 'pill',
-    stroke: fillProps.stroke ?? 'transparent',
+    stroke: fillProps.stroke,
   }
   const showFill = active && handdrawnFill !== false
 

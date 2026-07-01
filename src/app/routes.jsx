@@ -19,6 +19,7 @@ export function AppRoutes() {
         <Route path="/matches" element={<MatchesPage />} />
         <Route path="/matches/:matchId" element={<MatchDetailPage />} />
         <Route path="/reviews" element={<ReviewsPage />} />
+        <Route path="/reviews/new/edit" element={<ReviewEditorPage />} />
         <Route path="/reviews/:reviewId" element={<ReviewDetailPage />} />
         <Route path="/reviews/:reviewId/edit" element={<ReviewEditorPage />} />
         <Route path="/reviews/match/:matchId/edit" element={<ReviewEditorPage />} />

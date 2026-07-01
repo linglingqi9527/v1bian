@@ -1,0 +1,311 @@
+.match-list {
+  display: grid;
+  gap: 14px;
+}
+
+.match-card {
+  position: relative;
+  display: grid;
+  grid-template-columns: 190px minmax(0, 1fr) 190px;
+  gap: 30px;
+  align-items: center;
+  min-height: 176px;
+  border: 5px solid var(--color-line);
+  border-radius: 18px;
+  padding: 20px 58px 20px 34px;
+  background: #fff;
+}
+
+.match-card__accent {
+  position: absolute;
+  left: 17px;
+  top: 50%;
+  width: 32px;
+  height: 104px;
+  object-fit: contain;
+  pointer-events: none;
+  transform: translateY(-50%);
+}
+
+.match-side {
+  display: grid;
+  align-content: center;
+  gap: 10px;
+  min-height: 120px;
+  padding: 0 26px 0 36px;
+}
+
+.match-side-event {
+  color: #4c4945;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.match-side strong {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.18;
+}
+
+.match-main {
+  display: grid;
+  gap: 6px;
+  align-content: center;
+}
+
+.match-card-title {
+  width: fit-content;
+  max-width: 760px;
+  font-size: 31px;
+  line-height: 1.15;
+}
+
+.match-main h2[role='button'] {
+  cursor: pointer;
+}
+
+.match-main h2[role='button']:focus-visible {
+  outline: 3px solid #2f80ff;
+  outline-offset: 4px;
+}
+
+.match-school,
+.match-speakers {
+  color: #5f6670;
+  font-size: 15px;
+  font-weight: 700;
+}
+
+.match-school {
+  color: #68707a;
+  font-size: 16px;
+  font-weight: 800;
+  margin-bottom: 1px;
+}
+
+.match-speakers {
+  max-width: 740px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.match-status-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.match-status-row .sketch-tag {
+  min-width: 66px;
+  justify-content: center;
+  padding-inline: 12px;
+}
+
+.match-status-row .sketch-tag[role='button'] {
+  cursor: pointer;
+}
+
+.match-actions {
+  display: grid;
+  align-content: center;
+  justify-items: center;
+  gap: 11px;
+}
+
+.match-action-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 166px;
+  min-height: 44px;
+  border: 3px solid var(--color-line);
+  border-radius: 9px;
+  padding: 6px 10px;
+  background: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.match-action-link .sketch-button__content {
+  position: relative;
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
+}
+
+.match-action-link .sketch-button__icon {
+  position: absolute;
+  top: 50%;
+  left: 5px;
+  width: 38px;
+  height: 38px;
+  overflow: visible;
+  transform: translateY(-50%);
+}
+
+.match-action-link__label {
+  display: inline-block;
+  transform: translateX(12px);
+}
+
+.match-action-link:first-child {
+  background: #fff;
+}
+
+.match-action-link img {
+  display: block;
+  width: 40px;
+  max-width: none;
+  height: 40px;
+  object-fit: contain;
+}
+
+.match-action-link[data-match-action='watch'] img {
+  width: 40px;
+  height: 40px;
+  transform: translateX(-1px);
+}
+
+.match-action-link[data-match-action='review'] img {
+  width: 36px;
+  height: 36px;
+}
+
+.match-action-link[data-match-action='train'] img {
+  width: 46px;
+  height: 46px;
+}
+
+.sketch-button.match-action-link {
+  min-height: 44px;
+  border-radius: 9px;
+  padding: 6px 10px;
+  background: #fff;
+  font-size: 18px;
+}
+
+.bookmark-mark {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 18px;
+  height: 30px;
+  border: 3px solid var(--color-line);
+  border-bottom: 0;
+}
+
+.bookmark-mark::after {
+  content: '';
+  position: absolute;
+  right: -3px;
+  bottom: -10px;
+  left: -3px;
+  height: 18px;
+  border-right: 3px solid var(--color-line);
+  border-left: 3px solid var(--color-line);
+  transform: skewY(-35deg);
+}
+
+.match-card .bookmark-mark {
+  top: 12px;
+  right: 9px;
+  z-index: 5;
+  width: 34px;
+  height: 40px;
+  border: 0;
+  padding: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.match-card .bookmark-mark::before,
+.match-card .bookmark-mark::after {
+  content: none;
+}
+
+.match-card .bookmark-mark__icon {
+  position: absolute;
+  top: 6px;
+  left: 7px;
+  z-index: 2;
+  width: 20px;
+  height: 28px;
+  fill: none;
+  color: var(--color-line);
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  pointer-events: none;
+}
+
+.match-card .bookmark-mark__fill {
+  inset: 4px 5px !important;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 0;
+}
+
+.match-card .bookmark-mark[data-favorite='true'] {
+  animation: bookmark-pop 180ms ease-out both;
+}
+
+.match-card .bookmark-mark:focus-visible {
+  outline: 3px solid #2f80ff;
+  outline-offset: 3px;
+}
+
+@keyframes bookmark-pop {
+  0% {
+    transform: scale(1);
+  }
+
+  55% {
+    transform: scale(1.08);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+@media (max-width: 1180px) {
+  .match-card {
+    grid-template-columns: 1fr;
+  }
+
+  .match-actions {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .match-side {
+    min-height: auto;
+    padding: 0;
+  }
+
+  .app-shell .match-side::after {
+    display: none;
+  }
+}
+
+@media (max-width: 760px) {
+  .match-card {
+    grid-template-columns: 1fr;
+  }
+
+  .match-side {
+    justify-self: start;
+    border: 0;
+    padding: 0;
+  }
+
+  .match-actions {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
