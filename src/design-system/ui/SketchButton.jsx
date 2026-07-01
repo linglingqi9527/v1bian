@@ -1,5 +1,6 @@
 import clsx from 'clsx'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
+import './SketchButton.css'
 
 export function SketchButton({
   active = false,

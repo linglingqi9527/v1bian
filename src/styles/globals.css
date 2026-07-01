@@ -222,6 +222,7 @@ h3 {
   z-index: 2;
   display: grid;
   gap: 14px;
+  margin-left: 14px;
   margin-top: -84px;
   margin-bottom: 26px;
 }
@@ -281,70 +282,6 @@ h3 {
   transform: skewY(-35deg);
 }
 
-.sketch-card {
-  display: grid;
-  gap: 18px;
-  padding: 24px;
-  border: 3px solid var(--color-line);
-  border-radius: 12px;
-  background: #fff;
-}
-
-.sketch-button,
-.mini-action,
-.mini-square {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  min-height: 40px;
-  border: 3px solid var(--color-line);
-  border-radius: 9px;
-  padding: 6px 14px;
-  color: var(--color-ink);
-  background: var(--color-highlight);
-  cursor: pointer;
-  text-decoration: none;
-  font-size: 17px;
-  font-weight: 900;
-}
-
-.sketch-button--sm {
-  min-height: 34px;
-  padding: 4px 10px;
-  font-size: 14px;
-}
-
-.sketch-button--lg {
-  min-height: 48px;
-  padding: 8px 18px;
-  font-size: 19px;
-}
-
-.sketch-button__content,
-.sketch-button__icon {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.sketch-button__content {
-  gap: 8px;
-}
-
-.sketch-button--active,
-.sketch-tag--active,
-.sketch-card--active {
-  background: #fff;
-}
-
-.sketch-button.pill {
-  min-height: 44px;
-  border-radius: 14px;
-  padding: 6px 24px;
-  font-size: 21px;
-}
-
 /* ===== Component: MatchFilterPill experimental handdrawn border ===== */
 .match-filter-pills {
   position: relative;
@@ -379,59 +316,6 @@ h3 {
 }
 /* ===== End Component: MatchFilterPill ===== */
 
-.sketch-button:disabled {
-  cursor: not-allowed;
-  opacity: 0.56;
-}
-
-.sketch-button--secondary,
-.mini-action,
-.mini-square {
-  background: #fff;
-}
-
-.danger-button {
-  background: #ff8696;
-}
-
-.sketch-tag {
-  display: inline-flex;
-  width: fit-content;
-  align-items: center;
-  justify-content: center;
-  border: 3px solid var(--color-line);
-  border-radius: 9px;
-  padding: 3px 12px;
-  background: #fff;
-  font-size: 16px;
-  font-weight: 900;
-}
-
-.sketch-tag__content {
-  position: relative;
-  z-index: 1;
-}
-
-.tag-blue {
-  background: #9dd0ff;
-}
-
-.tag-pink {
-  background: #ffd9e3;
-}
-
-.tag-yellow {
-  background: #f8e44e;
-}
-
-.tag-green {
-  background: #d7f6c8;
-}
-
-.sketch-tag.sketch-tag--active {
-  background: #fff;
-}
-
 .compact-toolbar {
   margin-top: -84px;
   margin-bottom: 28px;
@@ -458,10 +342,6 @@ h3 {
   font-size: 18px;
   font-weight: 900;
   cursor: pointer;
-}
-
-.mini-square {
-  width: 42px;
 }
 
 .back-link {

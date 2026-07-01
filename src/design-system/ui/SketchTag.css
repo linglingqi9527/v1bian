@@ -1,0 +1,38 @@
+.sketch-tag {
+  display: inline-flex;
+  width: fit-content;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid var(--color-line);
+  border-radius: 9px;
+  padding: 3px 12px;
+  background: #fff;
+  font-size: 16px;
+  font-weight: 900;
+}
+
+.sketch-tag__content {
+  position: relative;
+  z-index: 1;
+}
+
+.tag-blue {
+  background: #9dd0ff;
+}
+
+.tag-pink {
+  background: #ffd9e3;
+}
+
+.tag-yellow {
+  background: #f8e44e;
+}
+
+.tag-green {
+  background: #d7f6c8;
+}
+
+.sketch-tag--active,
+.sketch-tag.sketch-tag--active {
+  background: #fff;
+}

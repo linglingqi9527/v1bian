@@ -1,6 +1,7 @@
 import clsx from 'clsx'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 import { handdrawnToneFills } from '../handdrawn/handdrawnPresets.js'
+import './SketchTag.css'
 
 export function SketchTag({ active, children, className, tone = 'gray', ...props }) {
   const resolvedTone = resolveTone(tone, className)

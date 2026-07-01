@@ -77,11 +77,6 @@ export function ReviewRichTextEditor({ initialContent, onContentChange, reviewId
       </aside>
 
       <article className="editor-panel review-editor-panel">
-        <nav className="editor-tabs">
-          {['赛评内容', '评价与复盘', '相关资料', '训练记录'].map((tab, index) => (
-            <button className={index === 0 ? 'tab tab--active handdrawn-underline handdrawn-underline--tab' : 'tab'} type="button" key={tab}>{tab}</button>
-          ))}
-        </nav>
         <EditorToolbar editor={editor} />
         <div className="review-editor-content-box">
           <EditorContent editor={editor} />

@@ -39,11 +39,6 @@ export default function ReviewDetailPage() {
         </aside>
 
         <article className="editor-panel">
-          <nav className="editor-tabs">
-            {['赛评内容', '评价与复盘', '相关资料', '训练记录'].map((tab, index) => (
-              <button className={index === 0 ? 'tab tab--active handdrawn-underline handdrawn-underline--tab' : 'tab'} type="button" key={tab}>{tab}</button>
-            ))}
-          </nav>
           <div className="editor-toolbar">
             {[Bold, Italic, Underline, List, List, Quote, Link2, Image, Undo2, Redo2].map((Icon, index) => (
               <button type="button" key={`${Icon.name}-${index}`}><Icon size={18} /></button>

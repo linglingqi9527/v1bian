@@ -1,11 +1,18 @@
 .trainings-font-trial,
-.trainings-font-trial h1,
 .trainings-font-trial h2,
 .trainings-font-trial h3,
 .trainings-font-trial button,
 .trainings-font-trial input {
   /* Trial only: match the scoped rounded-font experiment on the reviews overview page. */
   font-family: var(--font-rounded);
+}
+
+.trainings-font-trial .workbench-header h1 {
+  font-family: var(--font-playful);
+}
+
+.trainings-font-trial .compact-toolbar {
+  margin-left: 8px;
 }
 
 .training-board {

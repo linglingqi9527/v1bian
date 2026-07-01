@@ -168,7 +168,7 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
     <ContentLayout>
       <WorkbenchHeader
         decoration={false}
-        eyebrow="新国辩数据库 / 赛评 / 编辑"
+        eyebrow="赛评 / 编辑"
         hero="review-editor"
         title={matchSnapshot.topic || '我的赛评'}
         meta={`${matchSnapshot.teams || '队伍待补'} · ${matchSnapshot.event || '赛事待补'} · ${matchSnapshot.year || '年份待补'}`}

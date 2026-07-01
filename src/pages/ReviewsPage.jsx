@@ -52,9 +52,8 @@ export default function ReviewsPage() {
       <div className="reviews-font-trial">
         <WorkbenchHeader
           actions={<SketchButton as={Link} to="/reviews/new/edit" variant="secondary">新建赛评</SketchButton>}
-          eyebrow="新国辩数据库 / 赛评"
           hero="reviews"
-          title="我的赛评"
+          title="观赛日志"
           meta={`共 ${reviewItems.length} 篇 · 已完成 ${completedCount} 篇 · 草稿 ${draftCount} 篇 · 已训练 ${trainedCount} 篇`}
         />
 

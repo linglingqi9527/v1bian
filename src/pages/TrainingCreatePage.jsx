@@ -151,9 +151,10 @@ export default function TrainingCreatePage() {
   return (
     <ContentLayout>
       <WorkbenchHeader
-        eyebrow="新国辩数据库 / 训练 / AI 的迅猛发展提升了 / 降低了人类创作者存在的意义"
+        eyebrow={`训练 / 编辑 / ${modeLabel}`}
         hero="training-create"
-        title="训练档案"
+        title={trainingDraft.title || '训练档案'}
+        meta={`${trainingDraft.teams} · ${trainingDraft.event} · ${trainingDraft.date}`}
         variant="compact"
       />
 

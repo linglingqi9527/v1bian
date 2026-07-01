@@ -48,7 +48,6 @@ export default function TrainingsPage() {
       <div className="trainings-font-trial">
         <WorkbenchHeader
           actions={<SketchButton as={Link} to="/trainings/new"><Plus size={18} />创建训练</SketchButton>}
-          eyebrow="新国辩数据库 / 赛评 / 训练"
           hero="trainings"
           title="练习室"
           meta={`共 ${trainingItems.length} 次 · 录音 ${audioCount} 次 · 录像 ${videoCount} 次`}
