@@ -1,5 +1,6 @@
 import { imageAssets } from '../../assets/assetPaths.js'
 import clsx from 'clsx'
+import './WorkbenchHeader.css'
 
 export function WorkbenchHeader({
   actions,
