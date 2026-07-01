@@ -1,12 +1,18 @@
 import { Link } from 'react-router'
+import { DeleteCircleButton } from '../../../design-system/ui/DeleteCircleButton.jsx'
 import { PriorityDotPicker } from '../../../design-system/ui/PriorityDotPicker.jsx'
 import { SketchTag } from '../../../design-system/ui/SketchTag.jsx'
 import { REVIEW_PRIORITY_OPTIONS, REVIEW_STATUS } from '../reviewUtils.js'
 import './ReviewsList.css'
 
-export function ReviewListRow({ item, onPriorityChange }) {
+export function ReviewListRow({ item, onDelete, onPriorityChange }) {
   return (
     <article className="review-row">
+      <DeleteCircleButton
+        label={`删除赛评：${item.title}`}
+        onClick={() => onDelete(item)}
+        title="删除赛评"
+      />
       <PriorityDotPicker
         onChange={(priority) => onPriorityChange(item.id, priority)}
         options={REVIEW_PRIORITY_OPTIONS}

@@ -1,36 +1,55 @@
 import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowLeft, MessageSquareText, Pause, Play, RotateCcw, Save, Square, Upload, X } from 'lucide-react'
-import { Link, useSearchParams } from 'react-router'
+import { Link, useParams, useSearchParams } from 'react-router'
 import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { imageAssets } from '../assets/assetPaths.js'
-import { deleteTrainingMedia, saveTrainingMedia } from '../features/trainings/trainingMediaStore.js'
-import { deleteTraining, saveTraining, saveTrainingForMatch } from '../features/trainings/trainingService.js'
+import { getUserDataAccessState } from '../features/storage/userDataAccess.js'
+import {
+  deleteTraining,
+  deleteTrainingMediaForActiveStorage,
+  getTrainingById,
+  loadTrainingMediaForActiveStorage,
+  saveTraining,
+  saveTrainingForMatch,
+  saveTrainingMediaForActiveStorage,
+  syncTrainingToLocalLibrary,
+} from '../features/trainings/trainingService.js'
 import { useTrainingRecorder } from '../features/trainings/useTrainingRecorder.js'
 import { createId } from '../utils/ids.js'
 import '../features/trainings/components/TrainingCreateLayout.css'
 
+const TRAINING_AUTO_SAVE_DELAY_MS = 900
+const TRAINING_SAVE_FEEDBACK_MS = 2200
+
 export default function TrainingCreatePage() {
+  const { trainingId: routeTrainingId = '' } = useParams()
   const [searchParams] = useSearchParams()
-  const [mode, setMode] = useState('audio')
+  const existingTraining = routeTrainingId ? getTrainingById(routeTrainingId) : null
+  const matchId = searchParams.get('matchId') || existingTraining?.matchId || ''
+  const reviewId = searchParams.get('reviewId') || existingTraining?.reviewId || ''
+  const [mode, setMode] = useState(() => existingTraining?.mode || 'audio')
   const [isSaving, setIsSaving] = useState(false)
+  const [saveNotice, setSaveNotice] = useState('')
   const [materialItems, setMaterialItems] = useState([])
+  const [trainingSessionId] = useState(() => routeTrainingId || createId('training'))
   const [activeAudioId, setActiveAudioId] = useState('')
   const fileInputRef = useRef(null)
   const liveVideoRef = useRef(null)
   const materialUrlsRef = useRef([])
+  const hydratedTrainingIdRef = useRef('')
   const recorder = useTrainingRecorder(mode)
   const modeLabel = mode === 'video' ? '录像' : '录音'
   const isRecordingLocked = recorder.status === 'recording' || recorder.status === 'paused' || recorder.status === 'processing'
-  const [trainingDraft, setTrainingDraft] = useState({
+  const [trainingDraft, setTrainingDraft] = useState(() => ({
     date: '2026-01-24',
     duration: '02:07:09',
     event: '新国辩半决赛',
-    note: '控制语速，首段立场要明确，结尾注意收束。',
+    note: existingTraining?.note || '控制语速，首段立场要明确，结尾注意收束。',
     teams: '香港大学 vs 北京师范大学',
-    title: 'AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
-  })
+    title: existingTraining?.title || 'AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
+  }))
 
   useEffect(() => {
     if (liveVideoRef.current) {
@@ -38,25 +57,99 @@ export default function TrainingCreatePage() {
     }
   }, [recorder.liveStream])
 
-  const appendMaterialItem = useCallback((blob, itemMode, durationMs = 0, trainingId = '') => {
-    const previewUrl = URL.createObjectURL(blob)
+  useEffect(() => {
+    if (!existingTraining || hydratedTrainingIdRef.current === existingTraining.id) return
+
+    hydratedTrainingIdRef.current = existingTraining.id
+    setTrainingDraft((current) => ({
+      ...current,
+      note: existingTraining.note || current.note,
+      title: existingTraining.title || current.title,
+    }))
+    setMode(existingTraining.mode || 'audio')
+
+    const savedMediaItems = getSavedTrainingMediaItems(existingTraining)
+    if (savedMediaItems.length === 0) return
+
+    Promise.all(savedMediaItems.map(async (mediaItem) => {
+      try {
+        const blob = await loadTrainingMediaForActiveStorage(mediaItem)
+        if (!blob) return null
+        return createMaterialItem(blob, mediaItem.type || existingTraining.mode, mediaItem.durationMs || 0, existingTraining.id, {
+          folderPath: existingTraining.folderPath,
+          mediaId: mediaItem.id,
+          mediaPath: mediaItem.path || existingTraining.mediaPath,
+          mediaType: mediaItem.mimeType,
+          metaPath: existingTraining.metaPath,
+          notePath: existingTraining.notePath,
+        })
+      } catch {
+        return null
+      }
+    })).then((items) => {
+      const hydratedItems = items.filter(Boolean)
+      if (hydratedItems.length === 0) return
+
+      materialUrlsRef.current.push(...hydratedItems.map((item) => item.previewUrl))
+      setMaterialItems(hydratedItems)
+    })
+  }, [existingTraining])
+
+  const appendMaterialItem = useCallback((materialItem) => {
+    const previewUrl = materialItem.previewUrl
     materialUrlsRef.current.push(previewUrl)
     setMaterialItems((current) => [
       ...current,
-      {
-        id: createId('material'),
-        blob,
-        durationMs,
-        mode: itemMode,
-        previewUrl,
-        trainingId,
-      },
+      materialItem,
     ])
   }, [])
 
   useEffect(() => () => {
     materialUrlsRef.current.forEach((url) => URL.revokeObjectURL(url))
   }, [])
+
+  const showSaveNotice = useCallback((message) => {
+    setSaveNotice(message)
+    window.setTimeout(() => setSaveNotice(''), TRAINING_SAVE_FEEDBACK_MS)
+  }, [])
+
+  const persistSavedTrainingItems = useCallback((items, { notice = '' } = {}) => {
+    const accessState = getUserDataAccessState()
+    if (!accessState.allowed) {
+      window.alert(accessState.message)
+      return
+    }
+
+    const savedDraft = createTrainingDraftFromMaterials(items, {
+      matchId,
+      note: trainingDraft.note,
+      reviewId,
+      title: trainingDraft.title,
+      trainingId: trainingSessionId,
+    })
+    if (!savedDraft) return
+
+    if (matchId) {
+      const savedTraining = saveTrainingForMatch(matchId, savedDraft)
+      void syncTrainingToLocalLibrary(savedTraining)
+    } else {
+      const savedTraining = saveTraining(savedDraft)
+      void syncTrainingToLocalLibrary(savedTraining)
+    }
+
+    if (notice) showSaveNotice(notice)
+  }, [matchId, reviewId, showSaveNotice, trainingDraft.note, trainingDraft.title, trainingSessionId])
+
+  useEffect(() => {
+    const savedItems = materialItems.filter((item) => item.trainingId)
+    if (savedItems.length === 0) return undefined
+
+    const timer = window.setTimeout(() => {
+      persistSavedTrainingItems(savedItems, { notice: '已自动保存' })
+    }, TRAINING_AUTO_SAVE_DELAY_MS)
+
+    return () => window.clearTimeout(timer)
+  }, [materialItems, persistSavedTrainingItems])
 
   function updateTrainingDraft(field, value) {
     setTrainingDraft((current) => ({
@@ -95,35 +188,49 @@ export default function TrainingCreatePage() {
 
   async function handleConfirmTraining(blob = recorder.recordingBlob, itemMode = mode, durationMs = recorder.elapsedMs) {
     if (!blob || isSaving) return
-
-    const trainingId = createId('training')
-    const matchId = searchParams.get('matchId') || ''
-    const reviewId = searchParams.get('reviewId') || ''
-    const savedDraft = {
-      id: trainingId,
-      durationMs,
-      matchId,
-      mediaId: trainingId,
-      mediaType: blob.type,
-      mode: itemMode,
-      note: trainingDraft.note,
-      reviewId,
-      title: trainingDraft.title || `${itemMode === 'video' ? '录像' : '录音'}训练`,
+    const accessState = getUserDataAccessState()
+    if (!accessState.allowed) {
+      window.alert(accessState.message)
+      return
     }
 
     setIsSaving(true)
 
     try {
-      await saveTrainingMedia(trainingId, blob)
+      const mediaSequence = materialItems.length + 1
+      const mediaState = await saveTrainingMediaForActiveStorage(
+        trainingSessionId,
+        blob,
+        itemMode,
+        trainingDraft.title || `${itemMode === 'video' ? '录像' : '录音'}训练`,
+        mediaSequence,
+      )
+      if (!mediaState) return
+
+      const nextMaterialItem = createMaterialItem(blob, itemMode, durationMs, trainingSessionId, mediaState)
+      const nextMaterialItems = [
+        ...materialItems,
+        nextMaterialItem,
+      ]
+      const savedDraft = createTrainingDraftFromMaterials(nextMaterialItems, {
+        matchId,
+        note: trainingDraft.note,
+        reviewId,
+        title: trainingDraft.title,
+        trainingId: trainingSessionId,
+      })
+      let savedTraining = null
       if (matchId) {
-        saveTrainingForMatch(matchId, savedDraft)
+        savedTraining = saveTrainingForMatch(matchId, savedDraft)
       } else {
-        saveTraining(savedDraft)
+        savedTraining = saveTraining(savedDraft)
       }
-      appendMaterialItem(blob, itemMode, durationMs, trainingId)
+      await syncTrainingToLocalLibrary(savedTraining)
+      appendMaterialItem(nextMaterialItem)
       if (blob === recorder.recordingBlob) {
         handleDiscardRecording()
       }
+      showSaveNotice('已自动保存')
     } catch {
       window.alert('保存失败，请检查浏览器本地存储权限')
     } finally {
@@ -133,19 +240,41 @@ export default function TrainingCreatePage() {
 
   async function handleRemoveMaterial(materialId) {
     const removingItem = materialItems.find((item) => item.id === materialId)
+    if (!removingItem) return
+
+    const nextItems = materialItems.filter((item) => item.id !== materialId)
     if (removingItem?.trainingId) {
-      deleteTraining(removingItem.trainingId)
-      await deleteTrainingMedia(removingItem.trainingId)
+      await deleteTrainingMediaForActiveStorage(removingItem)
     }
 
-    setMaterialItems((current) => {
-      const removingItem = current.find((item) => item.id === materialId)
-      if (removingItem) {
-        URL.revokeObjectURL(removingItem.previewUrl)
-        materialUrlsRef.current = materialUrlsRef.current.filter((url) => url !== removingItem.previewUrl)
+    URL.revokeObjectURL(removingItem.previewUrl)
+    materialUrlsRef.current = materialUrlsRef.current.filter((url) => url !== removingItem.previewUrl)
+    setMaterialItems(nextItems)
+
+    if (removingItem.trainingId) {
+      if (nextItems.length === 0) {
+        const removingTraining = createTrainingDraftFromMaterials([removingItem], {
+          matchId,
+          note: trainingDraft.note,
+          reviewId,
+          title: trainingDraft.title,
+          trainingId: removingItem.trainingId,
+        })
+        deleteTraining(removingItem.trainingId, removingTraining)
+      } else {
+        persistSavedTrainingItems(nextItems, { notice: '已自动保存' })
       }
-      return current.filter((item) => item.id !== materialId)
-    })
+    }
+  }
+
+  function handleManualSaveTrainingItems() {
+    const savedItems = materialItems.filter((item) => item.trainingId)
+    if (savedItems.length === 0) {
+      showSaveNotice('右侧暂无训练记录')
+      return
+    }
+
+    persistSavedTrainingItems(savedItems, { notice: '已手动保存' })
   }
 
   return (
@@ -278,7 +407,19 @@ export default function TrainingCreatePage() {
 
             <aside className="training-save-panel">
               <div className="training-save-panel__head">
-                <h2><img alt="" className="training-save-panel__icon" src={imageAssets.training.save} />训练保存</h2>
+                <h2>
+                  <button
+                    aria-label="手动保存训练"
+                    className="training-save-manual-button"
+                    onClick={handleManualSaveTrainingItems}
+                    title="手动保存训练"
+                    type="button"
+                  >
+                    <img alt="" className="training-save-panel__icon" src={imageAssets.training.save} />
+                  </button>
+                  <span className="training-save-panel__arrow">↙</span>
+                  <span>训练保存</span>
+                </h2>
                 <SketchButton
                   aria-label="导入素材"
                   className="training-icon-button"
@@ -289,7 +430,8 @@ export default function TrainingCreatePage() {
                   <Upload size={18} />
                 </SketchButton>
               </div>
-              <p>可以连续录制，也可以导入已有音频或视频。</p>
+              <p>右侧出现的素材会自动保存；也可以点击左上角图标手动保存。</p>
+              {saveNotice ? <p className="training-save-panel__notice">{saveNotice}</p> : null}
               <input
                 accept="audio/*,video/*"
                 className="training-media-input"
@@ -447,6 +589,86 @@ function formatAudioTime(value) {
   const minutes = Math.floor(totalSeconds / 60)
   const seconds = String(totalSeconds % 60).padStart(2, '0')
   return `${minutes}:${seconds}`
+}
+
+function createMaterialItem(blob, itemMode, durationMs = 0, trainingId = '', fileState = {}) {
+  return {
+    id: createId('material'),
+    blob,
+    durationMs,
+    folderPath: fileState.folderPath ?? '',
+    mediaId: fileState.mediaId ?? '',
+    mediaPath: fileState.mediaPath ?? '',
+    metaPath: fileState.metaPath ?? '',
+    mode: itemMode,
+    notePath: fileState.notePath ?? '',
+    previewUrl: URL.createObjectURL(blob),
+    trainingId,
+  }
+}
+
+function createTrainingDraftFromMaterials(items, { matchId, note, reviewId, title, trainingId }) {
+  const firstItem = items[0]
+  if (!firstItem) return null
+
+  const mediaItems = items.flatMap(createTrainingMediaItems)
+  const hasVideo = items.some((item) => item.mode === 'video')
+  const totalDurationMs = items.reduce((sum, item) => sum + (item.durationMs || 0), 0)
+
+  return {
+    id: trainingId,
+    durationMs: totalDurationMs,
+    folderPath: firstItem.folderPath,
+    matchId,
+    mediaId: firstItem.mediaId || firstItem.trainingId,
+    mediaItems,
+    mediaPath: firstItem.mediaPath,
+    mediaType: firstItem.blob.type,
+    metaPath: firstItem.metaPath,
+    mode: hasVideo ? 'video' : 'audio',
+    note,
+    notePath: firstItem.notePath,
+    reviewId,
+    title: title || `${hasVideo ? '录像' : '录音'}训练`,
+  }
+}
+
+function createTrainingMediaItems(item) {
+  if (!item.mediaPath && !item.mediaId) return []
+
+  return [
+    {
+      id: item.mediaId || item.trainingId,
+      path: item.mediaPath || '',
+      type: item.mode === 'video' ? 'video' : 'audio',
+      mimeType: item.blob.type,
+      durationMs: item.durationMs,
+    },
+  ]
+}
+
+function getSavedTrainingMediaItems(training) {
+  if (Array.isArray(training.mediaItems) && training.mediaItems.length > 0) {
+    return training.mediaItems.map((item) => ({
+      durationMs: item.durationMs ?? 0,
+      id: item.id || training.mediaId || training.id,
+      mimeType: item.mimeType || training.mediaType || '',
+      path: item.path || training.mediaPath || '',
+      type: item.type || training.mode || 'audio',
+    }))
+  }
+
+  if (!training.mediaId && !training.mediaPath) return []
+
+  return [
+    {
+      durationMs: training.durationMs ?? 0,
+      id: training.mediaId || training.id,
+      mimeType: training.mediaType || '',
+      path: training.mediaPath || '',
+      type: training.mode || 'audio',
+    },
+  ]
 }
 
 function getRecorderTitle(status, modeLabel) {

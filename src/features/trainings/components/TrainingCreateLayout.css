@@ -359,21 +359,72 @@
 .training-save-panel h2 {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 8px;
+}
+
+.training-save-manual-button {
+  position: relative;
+  display: grid;
+  width: 42px;
+  height: 38px;
+  border: 0;
+  border-radius: 12px 10px 13px 10px / 10px 13px 10px 12px;
+  background:
+    repeating-linear-gradient(156deg, rgba(247, 217, 92, 0.92) 0 6px, rgba(255, 255, 255, 0.18) 7px 11px),
+    #f7d95c;
+  cursor: pointer;
+  place-items: center;
+  transform: rotate(-1.5deg);
+}
+
+.training-save-manual-button::after {
+  content: '';
+  position: absolute;
+  inset: 4px;
+  border-radius: 10px 9px 11px 9px / 9px 11px 9px 10px;
+  background: rgba(255, 255, 255, 0.18);
+  pointer-events: none;
+}
+
+.training-save-manual-button:focus-visible {
+  outline: 3px solid rgba(70, 112, 255, 0.5);
+  outline-offset: 3px;
+}
+
+.training-save-panel__arrow {
+  color: #4670ff;
+  font-size: 19px;
+  font-weight: 900;
+  line-height: 1;
+  transform: translate(-2px, -4px) rotate(-8deg);
 }
 
 .training-save-panel__icon {
   display: block;
-  width: 34px;
-  height: 34px;
+  position: relative;
+  z-index: 1;
+  width: 32px;
+  height: 32px;
   object-fit: contain;
-  transform: translateY(-1px) rotate(-1deg);
+  transform: translateY(-1px) rotate(1deg);
 }
 
 .training-save-panel p {
   color: #4c4945;
   font-weight: 800;
   line-height: 1.55;
+}
+
+.training-save-panel__notice {
+  width: fit-content;
+  border-radius: 999px;
+  padding: 5px 12px;
+  color: #46601e;
+  background:
+    repeating-linear-gradient(160deg, rgba(208, 243, 174, 0.72) 0 7px, rgba(255, 255, 255, 0.4) 8px 12px),
+    #dcf7c8;
+  font-size: 14px;
+  transform: rotate(-0.4deg);
 }
 
 .training-save-panel .sketch-button {

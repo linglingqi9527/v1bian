@@ -1,18 +1,23 @@
 import { demoReviews } from '../../data/demoReviews.js'
 import { createReviewModel } from '../../models/reviewModel.js'
-import { DEMO_USER_ID } from '../../models/userModel.js'
+import { getActiveUserId } from '../auth/authService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
-import { setMatchReviewId } from '../matches/matchService.js'
+import { clearMatchReviewId, setMatchReviewId } from '../matches/matchService.js'
+import { canWriteUserData, getUserDataAccessState, notifyUserDataBlocked } from '../storage/userDataAccess.js'
 
 export const REVIEWS_UPDATED_EVENT = 'bianleme:reviews-updated'
 
 export function listReviews() {
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  if (!activeUserId || accessState.mode !== 'developer') return []
+
   const persistedReviews = readLocalDb()?.reviews
   const reviews = Array.isArray(persistedReviews) ? persistedReviews : demoReviews
 
   return reviews
     .map((review) => createReviewModel(review))
-    .filter((review) => review.userId === DEMO_USER_ID)
+    .filter((review) => review.userId === activeUserId)
 }
 
 export function getReviewById(reviewId) {
@@ -24,6 +29,13 @@ export function getReviewByMatchId(matchId) {
 }
 
 export function saveReviews(reviews) {
+  const accessState = getUserDataAccessState()
+  if (!canWriteUserData()) {
+    notifyUserDataBlocked()
+    return
+  }
+  if (accessState.mode !== 'developer') return
+
   const snapshot = readLocalDb() ?? {}
   writeLocalDb({
     ...snapshot,
@@ -33,6 +45,14 @@ export function saveReviews(reviews) {
 }
 
 export function saveReview(reviewDraft = {}) {
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return null
+  }
+  if (accessState.mode !== 'developer') return null
+
   const existingReview = reviewDraft.id ? getReviewById(reviewDraft.id) : null
   const now = new Date().toISOString()
   const savedReview = createReviewModel({
@@ -40,6 +60,7 @@ export function saveReview(reviewDraft = {}) {
     ...reviewDraft,
     id: reviewDraft.id ?? existingReview?.id,
     matchId: reviewDraft.matchId ?? existingReview?.matchId ?? '',
+    userId: activeUserId,
     updatedAt: now,
     createdAt: existingReview?.createdAt ?? reviewDraft.createdAt ?? now,
   })
@@ -54,6 +75,14 @@ export function saveReview(reviewDraft = {}) {
 }
 
 export function saveReviewForMatch(matchId, reviewDraft = {}) {
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return null
+  }
+  if (accessState.mode !== 'developer') return null
+
   const existingReview = getReviewByMatchId(matchId)
   const now = new Date().toISOString()
   const savedReview = createReviewModel({
@@ -61,6 +90,7 @@ export function saveReviewForMatch(matchId, reviewDraft = {}) {
     ...reviewDraft,
     id: reviewDraft.id ?? existingReview?.id,
     matchId,
+    userId: activeUserId,
     updatedAt: now,
     createdAt: existingReview?.createdAt ?? reviewDraft.createdAt ?? now,
   })
@@ -73,6 +103,28 @@ export function saveReviewForMatch(matchId, reviewDraft = {}) {
   setMatchReviewId(matchId, savedReview.id)
 
   return savedReview
+}
+
+export function deleteReview(reviewId) {
+  if (!reviewId) return
+
+  const accessState = getUserDataAccessState()
+  if (!canWriteUserData()) {
+    notifyUserDataBlocked()
+    return
+  }
+
+  if (accessState.mode !== 'developer') {
+    notifyReviewsUpdated()
+    return
+  }
+
+  const removingReview = getReviewById(reviewId)
+  saveReviews(listReviews().filter((review) => review.id !== reviewId))
+
+  if (removingReview?.matchId) {
+    clearMatchReviewId(removingReview.matchId, reviewId)
+  }
 }
 
 function notifyReviewsUpdated() {

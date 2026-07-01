@@ -7,19 +7,20 @@ import { listTrainings } from './trainingService.js'
 export const TRAINING_TABS = ['全部', '录音', '录像']
 
 export function createTrainingItems() {
-  return listTrainings()
+  return mergeTrainingSessions(listTrainings())
     .map((training) => {
       const review = getReviewById(training.reviewId)
       const match = getMatchById(training.matchId || review?.matchId)
       const matchInfo = formatReviewMatchInfo(match, formatMatchTeams)
       const snapshot = review?.matchSnapshot ?? {}
-      const modeLabel = getTrainingModeLabel(training.mode)
+      const mode = getTrainingMode(training)
+      const modeLabel = getTrainingModeLabel(mode)
 
       return {
         id: training.id,
         createdAt: training.createdAt,
         dateLabel: formatTrainingDate(training.createdAt),
-        mode: training.mode,
+        mode,
         modeLabel,
         note: training.note || '还没有训练备注',
         priority: training.priority,
@@ -47,6 +48,31 @@ export function createTrainingItems() {
     .sort((first, second) => new Date(second.createdAt).getTime() - new Date(first.createdAt).getTime())
 }
 
+function mergeTrainingSessions(trainings) {
+  const trainingMap = new Map()
+
+  trainings.forEach((training) => {
+    const existingTraining = trainingMap.get(training.id)
+    if (!existingTraining) {
+      trainingMap.set(training.id, training)
+      return
+    }
+
+    trainingMap.set(training.id, {
+      ...existingTraining,
+      ...training,
+      durationMs: Math.max(existingTraining.durationMs ?? 0, training.durationMs ?? 0),
+      mediaItems: [
+        ...(Array.isArray(existingTraining.mediaItems) ? existingTraining.mediaItems : []),
+        ...(Array.isArray(training.mediaItems) ? training.mediaItems : []),
+      ],
+      updatedAt: training.updatedAt ?? existingTraining.updatedAt,
+    })
+  })
+
+  return Array.from(trainingMap.values())
+}
+
 export function filterTrainingItems(items, activeTab, activePriority, searchQuery) {
   const keyword = normalizeSearchText(searchQuery)
 
@@ -61,6 +87,12 @@ export function filterTrainingItems(items, activeTab, activePriority, searchQuer
 
 function getTrainingModeLabel(mode) {
   return mode === 'video' ? '录像' : '录音'
+}
+
+function getTrainingMode(training) {
+  const mediaItems = Array.isArray(training.mediaItems) ? training.mediaItems : []
+  if (mediaItems.some((item) => item.type === 'video')) return 'video'
+  return training.mode === 'video' ? 'video' : 'audio'
 }
 
 function formatTrainingDate(value) {

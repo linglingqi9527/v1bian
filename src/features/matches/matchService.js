@@ -1,15 +1,20 @@
 import { demoMatches } from '../../data/demoMatches.js'
 import { createMatchModel } from '../../models/matchModel.js'
-import { DEMO_USER_ID } from '../../models/userModel.js'
+import { getActiveUserId } from '../auth/authService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
+import { canWriteUserData, getUserDataAccessState, notifyUserDataBlocked } from '../storage/userDataAccess.js'
 
 export function listMatches() {
-  const persistedMatches = readLocalDb()?.matches
-  const matches = mergeMatchesWithPersistedState(demoMatches, persistedMatches)
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  const canReadBrowserDebugData = activeUserId && accessState.mode === 'developer'
+  const persistedMatches = canReadBrowserDebugData ? readLocalDb()?.matches : null
+  const matches = canReadBrowserDebugData
+    ? mergeMatchesWithPersistedState(demoMatches, persistedMatches)
+    : demoMatches.map(stripUserMatchState)
 
   return matches
     .map((match) => createMatchModel(match))
-    .filter((match) => match.userId === DEMO_USER_ID)
 }
 
 export function getMatchById(matchId) {
@@ -17,6 +22,13 @@ export function getMatchById(matchId) {
 }
 
 export function saveMatches(matches) {
+  const accessState = getUserDataAccessState()
+  if (!canWriteUserData()) {
+    notifyUserDataBlocked()
+    return
+  }
+  if (accessState.mode !== 'developer') return
+
   const snapshot = readLocalDb() ?? {}
   writeLocalDb({
     ...snapshot,
@@ -25,6 +37,13 @@ export function saveMatches(matches) {
 }
 
 export function updateMatch(matchId, patch) {
+  const accessState = getUserDataAccessState()
+  if (!canWriteUserData()) {
+    notifyUserDataBlocked()
+    return getMatchById(matchId)
+  }
+  if (accessState.mode !== 'developer') return getMatchById(matchId)
+
   let updatedMatch = null
   const matches = listMatches().map((match) => {
     if (match.id !== matchId) return match
@@ -72,6 +91,16 @@ export function setMatchReviewId(matchId, reviewId) {
 
   return updateMatch(matchId, {
     reviewId,
+  })
+}
+
+export function clearMatchReviewId(matchId, reviewId = '') {
+  const match = getMatchById(matchId)
+  if (!match) return null
+  if (reviewId && match.reviewId !== reviewId) return match
+
+  return updateMatch(matchId, {
+    reviewId: null,
   })
 }
 
@@ -127,4 +156,15 @@ function pickPersistedMatchState(match) {
   }
 
   return state
+}
+
+function stripUserMatchState(match) {
+  return {
+    ...match,
+    favorite: false,
+    reviewId: null,
+    status: '未看',
+    trainingIds: [],
+    watched: false,
+  }
 }

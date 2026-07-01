@@ -1,0 +1,30 @@
+.delete-circle-button {
+  position: absolute;
+  top: 10px;
+  right: 22px;
+  z-index: 2;
+  display: inline-grid;
+  place-items: center;
+  width: 20px;
+  height: 20px;
+  border: 0;
+  background: transparent;
+  color: var(--color-ink);
+  cursor: pointer;
+  font: inherit;
+  font-size: 18px;
+  font-weight: 900;
+  line-height: 1;
+  transform: rotate(-2deg);
+}
+
+.delete-circle-button:hover,
+.delete-circle-button:focus-visible {
+  color: #d95c75;
+  outline: none;
+  transform: rotate(1deg) translateY(-1px);
+}
+
+.delete-circle-button span {
+  transform: translateY(-1px);
+}

@@ -6,7 +6,7 @@ import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { ReviewListRow } from '../features/reviews/components/ReviewListRow.jsx'
 import { createReviewItems, filterReviewItems } from '../features/reviews/reviewListUtils.js'
-import { saveReview } from '../features/reviews/reviewService.js'
+import { deleteReview, saveReview } from '../features/reviews/reviewService.js'
 import { REVIEW_STATUS } from '../features/reviews/reviewUtils.js'
 
 const REVIEW_TABS = ['全部', '已完成', '草稿箱', '已训练']
@@ -47,6 +47,14 @@ export default function ReviewsPage() {
     setReviewItems(createReviewItems())
   }
 
+  function handleDeleteReview(item) {
+    const confirmed = window.confirm(`确定删除「${item.title}」吗？\n删除赛评不会删除关联训练。`)
+    if (!confirmed) return
+
+    deleteReview(item.id)
+    setReviewItems((current) => current.filter((review) => review.id !== item.id))
+  }
+
   return (
     <ContentLayout>
       <div className="reviews-font-trial">
@@ -85,6 +93,7 @@ export default function ReviewsPage() {
             {filteredReviews.map((item) => (
               <ReviewListRow
                 item={item}
+                onDelete={handleDeleteReview}
                 onPriorityChange={handlePriorityChange}
                 key={item.id}
               />

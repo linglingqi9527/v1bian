@@ -6,7 +6,7 @@ import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { TrainingListRow } from '../features/trainings/components/TrainingListRow.jsx'
 import { createTrainingItems, filterTrainingItems, TRAINING_TABS } from '../features/trainings/trainingListUtils.js'
-import { saveTraining } from '../features/trainings/trainingService.js'
+import { deleteTraining, saveTraining } from '../features/trainings/trainingService.js'
 
 export default function TrainingsPage() {
   const [searchParams, setSearchParams] = useSearchParams()
@@ -24,6 +24,14 @@ export default function TrainingsPage() {
   function handlePriorityChange(trainingId, priority) {
     saveTraining({ id: trainingId, priority })
     setTrainingItems(createTrainingItems())
+  }
+
+  function handleDeleteTraining(item) {
+    const confirmed = window.confirm(`确定删除「${item.title}」吗？\n这会删除这条训练记录。`)
+    if (!confirmed) return
+
+    deleteTraining(item.id)
+    setTrainingItems((current) => current.filter((training) => training.id !== item.id))
   }
 
   function updatePriorityFilter(priority) {
@@ -81,6 +89,7 @@ export default function TrainingsPage() {
             {filteredTrainings.map((item) => (
               <TrainingListRow
                 item={item}
+                onDelete={handleDeleteTraining}
                 onPriorityChange={handlePriorityChange}
                 key={item.id}
               />

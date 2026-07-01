@@ -1,8 +1,10 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
+import { AUTH_UPDATED_EVENT, isDemoUserLoggedIn } from '../../features/auth/authService.js'
 import { REVIEWS_UPDATED_EVENT, listReviews } from '../../features/reviews/reviewService.js'
 import { REVIEW_PRIORITY_OPTIONS, REVIEW_STATUS } from '../../features/reviews/reviewUtils.js'
+import { LOCAL_LIBRARY_UPDATED_EVENT } from '../../features/storage/localLibraryService.js'
 import { TRAININGS_UPDATED_EVENT, listTrainings, listTrainingsByReviewId } from '../../features/trainings/trainingService.js'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
@@ -15,11 +17,16 @@ const navItems = [
 export function SideNav() {
   const { pathname } = useLocation()
   const [, refreshStatsPanels] = useState(0)
+  const [loggedIn, setLoggedIn] = useState(() => isDemoUserLoggedIn())
   const section = pathname.startsWith('/reviews')
     ? 'reviews'
     : pathname.startsWith('/trainings')
       ? 'trainings'
       : 'matches'
+
+  function handleAuthUpdated() {
+    setLoggedIn(isDemoUserLoggedIn())
+  }
 
   useEffect(() => {
     function handleReviewsUpdated() {
@@ -28,9 +35,15 @@ export function SideNav() {
 
     window.addEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+    window.addEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
+    window.addEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
+    window.addEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
     return () => {
       window.removeEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+      window.removeEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
+      window.removeEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
+      window.removeEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
     }
   }, [])
 
@@ -39,8 +52,8 @@ export function SideNav() {
       <div className="brand-lockup">
         <img src={imageAssets.logoMark} alt="辩了么" />
         <div>
-          <strong>辩论工作台</strong>
-          <span>比赛圈圈 OS</span>
+          <strong>辩了么</strong>
+          <span>bian le me</span>
         </div>
       </div>
       <nav className="primary-nav" aria-label="主导航">
@@ -71,7 +84,7 @@ export function SideNav() {
               <HandDrawnSelectionFill preset="navActiveFill" shape="pill" />
             ) : null}
             <span>⚙</span>
-            <span>设置</span>
+            <span>{loggedIn ? '已登录' : '登录'}</span>
           </>
         )}
       </NavLink>

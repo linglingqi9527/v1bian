@@ -3,6 +3,7 @@
 :root {
   --font-rounded: 'Bian Resource Han Rounded CN', 'Microsoft YaHei UI', 'Microsoft YaHei', 'PingFang SC', ui-sans-serif, system-ui, sans-serif;
   --font-playful: 'Bian ZCOOL KuaiLe', var(--font-rounded);
+  --font-handwritten-latin: 'Bian Gloria Hallelujah', var(--font-rounded);
   --font-sans: var(--font-rounded);
   --font-display: var(--font-playful);
   --font-mono: ui-monospace, SFMono-Regular, Consolas, monospace;

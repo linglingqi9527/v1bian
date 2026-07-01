@@ -1,0 +1,80 @@
+.profile-login-panel {
+  display: grid;
+  gap: 14px;
+  max-width: 720px;
+}
+
+.profile-login-stack {
+  display: grid;
+  gap: 18px;
+}
+
+.profile-login-panel p {
+  color: #4d5560;
+  font-size: 17px;
+  font-weight: 800;
+  line-height: 1.6;
+}
+
+.profile-login-fields {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 760px;
+}
+
+.profile-login-field {
+  display: grid;
+  gap: 8px;
+}
+
+.profile-login-field span {
+  color: #68707a;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.profile-login-field input {
+  width: 100%;
+  border: 3px solid var(--color-line);
+  border-radius: 9px;
+  padding: 10px 14px;
+  background: #fff;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.profile-login-error {
+  color: #c4374a;
+}
+
+.developer-entry {
+  display: grid;
+  justify-items: start;
+  gap: 12px;
+  padding-top: 8px;
+}
+
+.developer-entry__toggle {
+  border: 0;
+  border-bottom: 3px solid #7fa1ff;
+  padding: 0 2px 3px;
+  background: transparent;
+  color: #3f4b5a;
+  cursor: pointer;
+  font: inherit;
+  font-size: 15px;
+  font-weight: 900;
+}
+
+.developer-entry__form {
+  display: grid;
+  gap: 12px;
+  width: min(360px, 100%);
+}
+
+@media (max-width: 760px) {
+  .profile-login-fields {
+    grid-template-columns: 1fr;
+  }
+}

@@ -12,10 +12,16 @@ export function createTrainingModel(training = {}) {
     note: training.note ?? '',
     priority: normalizeTrainingPriority(training.priority),
     durationMs: training.durationMs ?? 0,
+    folderPath: training.folderPath ?? '',
     mediaId: training.mediaId ?? '',
+    mediaItems: Array.isArray(training.mediaItems) ? training.mediaItems : [],
+    metaPath: training.metaPath ?? '',
+    notePath: training.notePath ?? '',
+    mediaPath: training.mediaPath ?? '',
     mediaType: training.mediaType ?? '',
     mediaUrl: training.mediaUrl ?? '',
     createdAt: training.createdAt ?? new Date().toISOString(),
+    updatedAt: training.updatedAt ?? new Date().toISOString(),
   }
 }
 

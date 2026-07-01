@@ -11,6 +11,7 @@ import { ReviewRichTextEditor } from '../features/editor/components/ReviewRichTe
 import { getMatchById } from '../features/matches/matchService.js'
 import { formatMatchTeams } from '../features/matches/matchUtils.js'
 import { getReviewById, getReviewByMatchId, saveReview, saveReviewForMatch } from '../features/reviews/reviewService.js'
+import { getUserDataAccessState } from '../features/storage/userDataAccess.js'
 import {
   REVIEW_STATUS,
   formatReviewMatchInfo,
@@ -69,6 +70,16 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
   }, [])
 
   const persistReview = useCallback(({ manual = false, nextStatus = status } = {}) => {
+    const accessState = getUserDataAccessState()
+    if (!accessState.allowed) {
+      setEditorError(accessState.message)
+      return null
+    }
+    if (accessState.mode === 'local') {
+      setEditorError('赛评写入资料包还在接入中，当前不会写入浏览器缓存。')
+      return null
+    }
+
     const targetMatchId = routeMatchId
     const finalTitle = title.trim() || getDefaultReviewTitle(match)
     const manualSavedAt = manual ? new Date().toISOString() : lastManualSavedAt
@@ -83,6 +94,7 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
     const savedReview = targetMatchId
       ? saveReviewForMatch(targetMatchId, reviewDraft)
       : saveReview(reviewDraft)
+    if (!savedReview) return null
 
     setEditorError('')
     setHasUnsavedChanges(false)
