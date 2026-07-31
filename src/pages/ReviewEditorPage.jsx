@@ -1,7 +1,8 @@
-import { useCallback, useEffect, useState } from 'react'
+import { useCallback, useEffect, useRef, useState } from 'react'
 import { ArrowLeft } from 'lucide-react'
 import { Link, useNavigate, useParams } from 'react-router'
 import { imageAssets } from '../assets/assetPaths.js'
+import { ANALYTICS_EVENTS, track } from '../features/analytics/index.js'
 import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
@@ -62,6 +63,18 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
   const [savedReviewId, setSavedReviewId] = useState(review?.id ?? null)
   const [status, setStatus] = useState(initialState.status)
   const [title, setTitle] = useState(initialState.title)
+  const hasTrackedEditorOpenRef = useRef(false)
+
+  useEffect(() => {
+    if (hasTrackedEditorOpenRef.current) return
+
+    hasTrackedEditorOpenRef.current = true
+    track(ANALYTICS_EVENTS.REVIEW_EDITOR_OPENED, {
+      matchId: routeMatchId || '',
+      reviewId: review?.id || '',
+      source: routeMatchId ? 'match' : 'review_list',
+    })
+  }, [review?.id, routeMatchId])
 
   const handleContentChange = useCallback((snapshot, meta) => {
     setContentHtml(snapshot.html)
@@ -69,17 +82,12 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
     if (!meta?.initial) setHasUnsavedChanges(true)
   }, [])
 
-  const persistReview = useCallback(({ manual = false, nextStatus = status } = {}) => {
+  const persistReview = useCallback(({ manual = false, nextStatus = status, source = 'auto' } = {}) => {
     const accessState = getUserDataAccessState()
     if (!accessState.allowed) {
       setEditorError(accessState.message)
       return null
     }
-    if (accessState.mode === 'local') {
-      setEditorError('赛评写入资料包还在接入中，当前不会写入浏览器缓存。')
-      return null
-    }
-
     const targetMatchId = routeMatchId
     const finalTitle = title.trim() || getDefaultReviewTitle(match)
     const manualSavedAt = manual ? new Date().toISOString() : lastManualSavedAt
@@ -107,11 +115,21 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
       onCreatePrivateReview(savedReview.id)
     }
 
+    track(ANALYTICS_EVENTS.REVIEW_SAVED, {
+      contentLength: contentText.length,
+      contentLengthRange: getContentLengthRange(contentText.length),
+      matchId: targetMatchId || '',
+      reviewId: savedReview.id,
+      source,
+      status: savedReview.status,
+      success: true,
+    })
+
     return savedReview
-  }, [contentHtml, lastManualSavedAt, match, matchSnapshot, onCreatePrivateReview, review, routeMatchId, savedReviewId, status, title])
+  }, [contentHtml, contentText.length, lastManualSavedAt, match, matchSnapshot, onCreatePrivateReview, review, routeMatchId, savedReviewId, status, title])
 
   const handleManualSave = useCallback(() => {
-    const savedReview = persistReview({ manual: true })
+    const savedReview = persistReview({ manual: true, source: 'manual' })
     if (!savedReview) return
 
     setEditorNotice('已手动保存')
@@ -140,7 +158,7 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
     }
 
     setAutoSaveState('saving')
-    const savedReview = persistReview({ nextStatus })
+    const savedReview = persistReview({ nextStatus, source: 'status_change' })
     if (savedReview) {
       setAutoSaveState('saved')
       window.setTimeout(() => setAutoSaveState('idle'), SAVE_FEEDBACK_MS)
@@ -166,7 +184,7 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
 
     const timeoutId = window.setTimeout(() => {
       setAutoSaveState('saving')
-      const savedReview = persistReview()
+      const savedReview = persistReview({ source: 'auto' })
       setAutoSaveState(savedReview ? 'saved' : 'idle')
       if (savedReview) {
         window.setTimeout(() => setAutoSaveState('idle'), SAVE_FEEDBACK_MS)
@@ -275,4 +293,12 @@ function formatSavedTime(value) {
     minute: '2-digit',
     month: '2-digit',
   })
+}
+
+function getContentLengthRange(length) {
+  if (length === 0) return '0'
+  if (length <= 200) return '1-200'
+  if (length <= 800) return '201-800'
+  if (length <= 2000) return '801-2000'
+  return '2000+'
 }

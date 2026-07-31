@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react'
 import { FolderOpen, RefreshCcw } from 'lucide-react'
 import { SketchButton } from '../../../design-system/ui/SketchButton.jsx'
+import { ANALYTICS_EVENTS, track } from '../../analytics/index.js'
 import {
   chooseLocalLibrary,
   getLocalLibraryUnsupportedMessage,
@@ -41,21 +42,34 @@ export function LocalLibraryPanel() {
   }, [])
 
   async function handleChooseLibrary() {
-    await runLibraryAction(() => chooseLocalLibrary())
+    await runLibraryAction(() => chooseLocalLibrary(), 'choose')
   }
 
   async function handleReconnectLibrary() {
-    await runLibraryAction(() => reconnectSavedLocalLibrary())
+    await runLibraryAction(() => reconnectSavedLocalLibrary(), 'reconnect')
   }
 
-  async function runLibraryAction(action) {
+  async function runLibraryAction(action, source) {
     setError('')
     setIsBusy(true)
 
     try {
-      setStatus(await action())
+      const nextStatus = await action()
+      setStatus(nextStatus)
+      if (nextStatus.connected) {
+        track(ANALYTICS_EVENTS.LOCAL_LIBRARY_CONNECTED, {
+          connected: true,
+          success: true,
+        })
+      }
     } catch (nextError) {
       setError(nextError.message)
+      track(ANALYTICS_EVENTS.LOCAL_LIBRARY_CONNECTION_FAILED, {
+        connected: false,
+        errorCode: nextError?.name || 'library_connection_failed',
+        errorType: source,
+        success: false,
+      })
     } finally {
       setIsBusy(false)
     }

@@ -13,6 +13,9 @@ export function SketchButton({
   variant = 'primary',
   ...props
 }) {
+  const isDisabled = Boolean(props.disabled || props['aria-disabled'] === true || props['aria-disabled'] === 'true')
+  const shouldFillPrimary = variant === 'primary' && handdrawnFill !== false && !isDisabled
+  const fillActive = active || shouldFillPrimary
   const fillProps = typeof handdrawnFill === 'object' ? handdrawnFill : {}
   const selectionFillProps = {
     ...fillProps,
@@ -21,7 +24,7 @@ export function SketchButton({
     shape: fillProps.shape ?? 'pill',
     stroke: fillProps.stroke,
   }
-  const showFill = active && handdrawnFill !== false
+  const showFill = fillActive && handdrawnFill !== false
 
   return (
     <Component
@@ -30,11 +33,12 @@ export function SketchButton({
         `sketch-button--${variant}`,
         `sketch-button--${size}`,
         active && 'sketch-button--active',
+        showFill && 'sketch-button--filled',
         className,
       )}
       {...props}
     >
-      {showFill ? <HandDrawnSelectionFill active={active} {...selectionFillProps} /> : null}
+      {showFill ? <HandDrawnSelectionFill active={fillActive} {...selectionFillProps} /> : null}
       <span className="sketch-button__content">
         {icon ? <span className="sketch-button__icon">{icon}</span> : null}
         {children}

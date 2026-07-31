@@ -18,6 +18,7 @@ const LIBRARY_DIRECTORIES = {
 }
 
 let activeLibraryDbSnapshot = null
+let pendingLibraryWrite = Promise.resolve()
 
 export function isLocalLibrarySupported() {
   return typeof window !== 'undefined' && typeof window.showDirectoryPicker === 'function'
@@ -106,10 +107,23 @@ export async function reconnectSavedLocalLibrary() {
   return status
 }
 
-export async function updateActiveLocalLibraryDb(updater) {
+export function updateActiveLocalLibraryDb(updater) {
+  if (activeLibraryDbSnapshot) {
+    return queueActiveLibraryDbUpdate(updater)
+  }
+
+  return updateLibraryDbFromDisk(updater)
+}
+
+async function updateLibraryDbFromDisk(updater) {
   const directoryHandle = await getConnectedDirectoryHandle()
   const libraryDb = await initializeLocalLibrary(directoryHandle)
-  const nextLibraryDb = updater(libraryDb)
+  activeLibraryDbSnapshot = libraryDb
+  return queueActiveLibraryDbUpdate(updater)
+}
+
+function queueActiveLibraryDbUpdate(updater) {
+  const nextLibraryDb = updater(activeLibraryDbSnapshot)
   const now = new Date().toISOString()
   const normalizedDb = {
     ...nextLibraryDb,
@@ -119,11 +133,20 @@ export async function updateActiveLocalLibraryDb(updater) {
     },
   }
 
-  await writeLibraryDb(directoryHandle, normalizedDb)
-  const status = createConnectedStatus(directoryHandle, normalizedDb)
-  rememberLocalLibraryStatus(status)
+  activeLibraryDbSnapshot = normalizedDb
   emitLocalLibraryUpdated()
-  return normalizedDb
+
+  pendingLibraryWrite = pendingLibraryWrite
+    .catch(() => undefined)
+    .then(async () => {
+      const directoryHandle = await getConnectedDirectoryHandle()
+      await writeLibraryDb(directoryHandle, normalizedDb)
+      const status = createConnectedStatus(directoryHandle, normalizedDb)
+      rememberLocalLibraryStatus(status)
+      return normalizedDb
+    })
+
+  return pendingLibraryWrite
 }
 
 export async function writeLocalLibraryTrainingMediaFile({ blob, mediaId, mediaKind, sequence = 1, title, trainingId }) {

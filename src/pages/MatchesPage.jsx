@@ -1,5 +1,6 @@
 import { useMemo, useState } from 'react'
 import { Search } from 'lucide-react'
+import { ANALYTICS_EVENTS, track } from '../features/analytics/index.js'
 import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
@@ -27,21 +28,45 @@ export default function MatchesPage() {
   }
 
   function handleToggleFavorite(matchId) {
-    toggleMatchFavorite(matchId)
+    const previousMatch = matches.find((match) => match.id === matchId)
+    const savedMatch = toggleMatchFavorite(matchId)
     refreshMatches()
+    if (!previousMatch || !savedMatch || savedMatch.favorite === previousMatch.favorite) return
+
+    track(ANALYTICS_EVENTS.MATCH_FAVORITE_CHANGED, {
+      favorite: savedMatch.favorite,
+      matchId,
+      success: true,
+    })
   }
 
   function handleToggleWatched(event, matchId) {
     event.stopPropagation()
-    toggleMatchWatched(matchId)
+    const previousMatch = matches.find((match) => match.id === matchId)
+    const savedMatch = toggleMatchWatched(matchId)
     refreshMatches()
+    if (!previousMatch || !savedMatch || savedMatch.watched === previousMatch.watched) return
+
+    track(ANALYTICS_EVENTS.MATCH_WATCHED_CHANGED, {
+      matchId,
+      success: true,
+      watched: savedMatch.watched,
+    })
   }
 
   function handleWatchMatch(event, match) {
     event.preventDefault()
     event.stopPropagation()
-    markMatchWatched(match.id)
+    const savedMatch = markMatchWatched(match.id)
     refreshMatches()
+
+    if (savedMatch?.watched && !match.watched) {
+      track(ANALYTICS_EVENTS.MATCH_WATCHED_CHANGED, {
+        matchId: match.id,
+        success: true,
+        watched: true,
+      })
+    }
 
     if (match.bilibiliUrl) {
       window.open(match.bilibiliUrl, '_blank')

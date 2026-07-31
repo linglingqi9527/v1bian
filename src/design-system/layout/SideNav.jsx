@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react'
 import { NavLink, useLocation } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
-import { AUTH_UPDATED_EVENT, isDemoUserLoggedIn } from '../../features/auth/authService.js'
+import { getSideNavActivity } from '../../features/activity/sideNavActivityService.js'
+import { AUTH_UPDATED_EVENT, isUserLoggedIn } from '../../features/auth/authService.js'
+import { MATCHES_UPDATED_EVENT } from '../../features/matches/matchService.js'
 import { REVIEWS_UPDATED_EVENT, listReviews } from '../../features/reviews/reviewService.js'
 import { REVIEW_PRIORITY_OPTIONS, REVIEW_STATUS } from '../../features/reviews/reviewUtils.js'
 import { LOCAL_LIBRARY_UPDATED_EVENT } from '../../features/storage/localLibraryService.js'
+import { getUserDataAccessState } from '../../features/storage/userDataAccess.js'
 import { TRAININGS_UPDATED_EVENT, listTrainings, listTrainingsByReviewId } from '../../features/trainings/trainingService.js'
 import { HandDrawnSelectionFill } from '../handdrawn/HandDrawnSelectionFill.jsx'
 
@@ -17,7 +20,7 @@ const navItems = [
 export function SideNav() {
   const { pathname } = useLocation()
   const [, refreshStatsPanels] = useState(0)
-  const [loggedIn, setLoggedIn] = useState(() => isDemoUserLoggedIn())
+  const [loggedIn, setLoggedIn] = useState(() => isUserLoggedIn())
   const section = pathname.startsWith('/reviews')
     ? 'reviews'
     : pathname.startsWith('/trainings')
@@ -25,7 +28,7 @@ export function SideNav() {
       : 'matches'
 
   function handleAuthUpdated() {
-    setLoggedIn(isDemoUserLoggedIn())
+    setLoggedIn(isUserLoggedIn())
   }
 
   useEffect(() => {
@@ -35,12 +38,14 @@ export function SideNav() {
 
     window.addEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+    window.addEventListener(MATCHES_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
     window.addEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
     return () => {
       window.removeEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
+      window.removeEventListener(MATCHES_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
       window.removeEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
@@ -93,19 +98,47 @@ export function SideNav() {
 }
 
 function MatchesPanel() {
+  const { currentItems, myMatches } = getSideNavActivity()
+  const accessState = getUserDataAccessState()
+  const emptyHint = getMatchesPanelEmptyHint(accessState.mode)
+
   return (
     <>
       <section className="nav-section">
         <h2>我的赛事</h2>
-        <SmallCard title="2026bilibili新国辩 高校组 初赛H组第三场" meta="2026-06-04  13:01" />
-        <SmallCard title="2025bilibili新国辩 高校组 半决赛上半赛区" meta="草稿" />
+        {myMatches.length > 0
+          ? myMatches.map((item) => <SmallCard {...item} key={item.id} />)
+          : <p className="nav-empty-hint">{emptyHint.myMatches}</p>}
       </section>
       <section className="nav-section">
         <h2>当前关联</h2>
-        <SmallCard title="2026bilibili新国辩 高校组 初赛H组第三场" meta="3 次训练" />
+        {currentItems.length > 0
+          ? currentItems.map((item) => <SmallCard {...item} key={item.id} />)
+          : <p className="nav-empty-hint">{emptyHint.currentItems}</p>}
       </section>
     </>
   )
+}
+
+function getMatchesPanelEmptyHint(accessMode) {
+  if (accessMode === 'guest') {
+    return {
+      currentItems: '登录后会显示正在编辑的赛评和训练',
+      myMatches: '登录后会显示最近观看或写过赛评的比赛',
+    }
+  }
+
+  if (accessMode === 'local-without-library') {
+    return {
+      currentItems: '连接资料包后会显示正在编辑的赛评和训练',
+      myMatches: '连接资料包后会显示最近观看或写过赛评的比赛',
+    }
+  }
+
+  return {
+    currentItems: '暂时没有正在进行的赛评或训练',
+    myMatches: '还没有最近观看或写过赛评的比赛',
+  }
 }
 
 function ReviewsPanel() {
@@ -170,13 +203,13 @@ function TrainingsPanel() {
   )
 }
 
-function SmallCard({ meta, title }) {
+function SmallCard({ meta, title, to }) {
   return (
-    <div className="nav-mini-card">
+    <NavLink className="nav-mini-card" to={to}>
       <strong>{title}</strong>
       <span>{meta}</span>
       <b>›</b>
-    </div>
+    </NavLink>
   )
 }
 

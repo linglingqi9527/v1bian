@@ -1,6 +1,7 @@
 import { demoReviews } from '../../data/demoReviews.js'
 import { createReviewModel } from '../../models/reviewModel.js'
 import { getActiveUserId } from '../auth/authService.js'
+import { getCachedLocalLibraryDb, updateActiveLocalLibraryDb } from '../storage/localLibraryService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
 import { clearMatchReviewId, setMatchReviewId } from '../matches/matchService.js'
 import { canWriteUserData, getUserDataAccessState, notifyUserDataBlocked } from '../storage/userDataAccess.js'
@@ -10,14 +11,18 @@ export const REVIEWS_UPDATED_EVENT = 'bianleme:reviews-updated'
 export function listReviews() {
   const activeUserId = getActiveUserId()
   const accessState = getUserDataAccessState()
-  if (!activeUserId || accessState.mode !== 'developer') return []
+  if (!activeUserId) return []
+
+  if (accessState.mode === 'local') {
+    return normalizeReviewCollection(getCachedLocalLibraryDb()?.reviews, activeUserId)
+  }
+
+  if (accessState.mode !== 'developer') return []
 
   const persistedReviews = readLocalDb()?.reviews
   const reviews = Array.isArray(persistedReviews) ? persistedReviews : demoReviews
 
-  return reviews
-    .map((review) => createReviewModel(review))
-    .filter((review) => review.userId === activeUserId)
+  return normalizeReviewCollection(reviews, activeUserId)
 }
 
 export function getReviewById(reviewId) {
@@ -32,6 +37,15 @@ export function saveReviews(reviews) {
   const accessState = getUserDataAccessState()
   if (!canWriteUserData()) {
     notifyUserDataBlocked()
+    return
+  }
+  if (accessState.mode === 'local') {
+    const normalizedReviews = reviews.map((review) => createReviewModel(review))
+    void updateActiveLocalLibraryDb((libraryDb) => ({
+      ...libraryDb,
+      reviews: normalizedReviews,
+    })).catch(reportLocalLibraryWriteError)
+    notifyReviewsUpdated()
     return
   }
   if (accessState.mode !== 'developer') return
@@ -51,7 +65,7 @@ export function saveReview(reviewDraft = {}) {
     notifyUserDataBlocked()
     return null
   }
-  if (accessState.mode !== 'developer') return null
+  if (accessState.mode !== 'developer' && accessState.mode !== 'local') return null
 
   const existingReview = reviewDraft.id ? getReviewById(reviewDraft.id) : null
   const now = new Date().toISOString()
@@ -81,7 +95,7 @@ export function saveReviewForMatch(matchId, reviewDraft = {}) {
     notifyUserDataBlocked()
     return null
   }
-  if (accessState.mode !== 'developer') return null
+  if (accessState.mode !== 'developer' && accessState.mode !== 'local') return null
 
   const existingReview = getReviewByMatchId(matchId)
   const now = new Date().toISOString()
@@ -108,14 +122,8 @@ export function saveReviewForMatch(matchId, reviewDraft = {}) {
 export function deleteReview(reviewId) {
   if (!reviewId) return
 
-  const accessState = getUserDataAccessState()
   if (!canWriteUserData()) {
     notifyUserDataBlocked()
-    return
-  }
-
-  if (accessState.mode !== 'developer') {
-    notifyReviewsUpdated()
     return
   }
 
@@ -125,6 +133,16 @@ export function deleteReview(reviewId) {
   if (removingReview?.matchId) {
     clearMatchReviewId(removingReview.matchId, reviewId)
   }
+}
+
+function normalizeReviewCollection(reviews, activeUserId) {
+  return (Array.isArray(reviews) ? reviews : [])
+    .map((review) => createReviewModel(review))
+    .filter((review) => review.userId === activeUserId)
+}
+
+function reportLocalLibraryWriteError(error) {
+  console.warn('无法写入本地资料包赛评', error)
 }
 
 function notifyReviewsUpdated() {

@@ -44,6 +44,10 @@
   background: #fff;
 }
 
+.sketch-button--filled {
+  background: #fff;
+}
+
 .sketch-button.pill {
   min-height: 44px;
   border-radius: 14px;

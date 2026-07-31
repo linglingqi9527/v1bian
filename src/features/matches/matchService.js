@@ -1,17 +1,20 @@
 import { demoMatches } from '../../data/demoMatches.js'
 import { createMatchModel } from '../../models/matchModel.js'
-import { getActiveUserId } from '../auth/authService.js'
+import { getCachedLocalLibraryDb, updateActiveLocalLibraryDb } from '../storage/localLibraryService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
 import { canWriteUserData, getUserDataAccessState, notifyUserDataBlocked } from '../storage/userDataAccess.js'
 
+export const MATCHES_UPDATED_EVENT = 'bianleme:matches-updated'
+
 export function listMatches() {
-  const activeUserId = getActiveUserId()
   const accessState = getUserDataAccessState()
-  const canReadBrowserDebugData = activeUserId && accessState.mode === 'developer'
-  const persistedMatches = canReadBrowserDebugData ? readLocalDb()?.matches : null
-  const matches = canReadBrowserDebugData
+  const persistedMatches = accessState.mode === 'developer' ? readLocalDb()?.matches : null
+  const localMatchStates = accessState.mode === 'local' ? getCachedLocalLibraryDb()?.matchStates : null
+  const matches = accessState.mode === 'developer'
     ? mergeMatchesWithPersistedState(demoMatches, persistedMatches)
-    : demoMatches.map(stripUserMatchState)
+    : accessState.mode === 'local'
+      ? mergeMatchesWithPersistedState(demoMatches, mapMatchStatesToCollection(localMatchStates))
+      : demoMatches.map(stripUserMatchState)
 
   return matches
     .map((match) => createMatchModel(match))
@@ -27,6 +30,14 @@ export function saveMatches(matches) {
     notifyUserDataBlocked()
     return
   }
+  if (accessState.mode === 'local') {
+    void updateActiveLocalLibraryDb((libraryDb) => ({
+      ...libraryDb,
+      matchStates: createPersonalMatchStates(matches),
+    })).catch(reportLocalLibraryWriteError)
+    notifyMatchesUpdated()
+    return
+  }
   if (accessState.mode !== 'developer') return
 
   const snapshot = readLocalDb() ?? {}
@@ -34,6 +45,7 @@ export function saveMatches(matches) {
     ...snapshot,
     matches: matches.map(serializeMatchState),
   })
+  notifyMatchesUpdated()
 }
 
 export function updateMatch(matchId, patch) {
@@ -42,7 +54,7 @@ export function updateMatch(matchId, patch) {
     notifyUserDataBlocked()
     return getMatchById(matchId)
   }
-  if (accessState.mode !== 'developer') return getMatchById(matchId)
+  if (accessState.mode !== 'developer' && accessState.mode !== 'local') return getMatchById(matchId)
 
   let updatedMatch = null
   const matches = listMatches().map((match) => {
@@ -73,6 +85,7 @@ export function markMatchWatched(matchId) {
   return updateMatch(matchId, {
     watched: true,
     status: '已看',
+    watchedAt: new Date().toISOString(),
   })
 }
 
@@ -83,6 +96,7 @@ export function toggleMatchWatched(matchId) {
   return updateMatch(matchId, {
     watched: !match.watched,
     status: match.watched ? '未看' : '已看',
+    watchedAt: match.watched ? null : new Date().toISOString(),
   })
 }
 
@@ -140,7 +154,38 @@ function serializeMatchState(match) {
     reviewId: match.reviewId ?? null,
     status: match.watched ? '已看' : '未看',
     trainingIds: Array.isArray(match.trainingIds) ? match.trainingIds : [],
+    watchedAt: match.watchedAt ?? null,
+    updatedAt: new Date().toISOString(),
   }
+}
+
+function mapMatchStatesToCollection(matchStates) {
+  if (!matchStates || typeof matchStates !== 'object') return []
+
+  return Object.entries(matchStates).map(([id, state]) => ({ id, ...state }))
+}
+
+function createPersonalMatchStates(matches) {
+  return matches.reduce((states, match) => {
+    const state = serializeMatchState(match)
+    if (!hasPersonalMatchState(state)) return states
+
+    return {
+      ...states,
+      [match.id]: state,
+    }
+  }, {})
+}
+
+function hasPersonalMatchState(state) {
+  return state.favorite
+    || state.watched
+    || Boolean(state.reviewId)
+    || state.trainingIds.length > 0
+}
+
+function reportLocalLibraryWriteError(error) {
+  console.warn('无法写入本地资料包比赛状态', error)
 }
 
 function pickPersistedMatchState(match) {
@@ -154,6 +199,7 @@ function pickPersistedMatchState(match) {
   if (Object.hasOwn(match, 'trainingIds')) {
     state.trainingIds = Array.isArray(match.trainingIds) ? match.trainingIds : []
   }
+  if (Object.hasOwn(match, 'watchedAt')) state.watchedAt = match.watchedAt ?? null
 
   return state
 }
@@ -166,5 +212,12 @@ function stripUserMatchState(match) {
     status: '未看',
     trainingIds: [],
     watched: false,
+    watchedAt: null,
   }
+}
+
+function notifyMatchesUpdated() {
+  if (typeof window === 'undefined') return
+
+  window.dispatchEvent(new Event(MATCHES_UPDATED_EVENT))
 }

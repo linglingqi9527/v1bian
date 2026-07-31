@@ -729,15 +729,21 @@ MatchesPage / ReviewsPage / TrainingsPage
   -> 继续允许读写浏览器里的 demo 调试数据
 ```
 
-当前还没有完成：
+当前已完成：
 
 ```txt
 普通本地身份 + 已连接资料包
-  -> matchStates 的收藏 / 已看还未写入资料包
-  -> reviews 赛评还未写入资料包
-  -> 页面刷新后的资料包反向读取还未完整接入
-  -> storageAdapter 还未统一接管所有 service
+  -> matchStates 的收藏 / 已看 / reviewId / trainingIds 写入资料包
+  -> reviews 赛评写入资料包
+  -> 当前页面会话内立即从资料包快照反向读取并更新页面
 ```
+
+实现边界：
+
+1. `matchService` 和 `reviewService` 仍是页面唯一的业务入口；页面不直接操作 File System Access API。
+2. 普通用户每次保存先更新内存资料包快照，再按顺序写入 `bianleme-db.json`，避免连续收藏、已看、赛评保存互相覆盖。
+3. 开发者入口继续只使用浏览器调试数据，不会写入普通用户资料包。
+4. 完整的 storageAdapter 统一收口、资料包断开后的重连恢复提示和赛评 Markdown 镜像文件仍属于后续阶段；当前 `bianleme-db.json` 是赛评和比赛状态的唯一正式数据源。
 
 ## 十四、训练资料包写入最小闭环
 

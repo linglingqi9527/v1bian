@@ -22,6 +22,7 @@ export function createMatchModel(match = {}) {
     speakerGroups,
     favorite: Boolean(match.favorite),
     watched: Boolean(match.watched ?? match.status === '已看'),
+    watchedAt: match.watchedAt ?? null,
     reviewId: match.reviewId ?? null,
     trainingIds,
     accent: match.accent ?? 'yellow',

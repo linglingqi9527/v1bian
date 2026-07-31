@@ -5,6 +5,7 @@ import { ContentLayout } from '../design-system/layout/ContentLayout.jsx'
 import { WorkbenchHeader } from '../design-system/layout/WorkbenchHeader.jsx'
 import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { imageAssets } from '../assets/assetPaths.js'
+import { ANALYTICS_EVENTS, track } from '../features/analytics/index.js'
 import { getUserDataAccessState } from '../features/storage/userDataAccess.js'
 import {
   deleteTraining,
@@ -39,6 +40,7 @@ export default function TrainingCreatePage() {
   const liveVideoRef = useRef(null)
   const materialUrlsRef = useRef([])
   const hydratedTrainingIdRef = useRef('')
+  const hasTrackedEditorOpenRef = useRef(false)
   const recorder = useTrainingRecorder(mode)
   const modeLabel = mode === 'video' ? '录像' : '录音'
   const isRecordingLocked = recorder.status === 'recording' || recorder.status === 'paused' || recorder.status === 'processing'
@@ -50,6 +52,19 @@ export default function TrainingCreatePage() {
     teams: '香港大学 vs 北京师范大学',
     title: existingTraining?.title || 'AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
   }))
+
+  useEffect(() => {
+    if (hasTrackedEditorOpenRef.current) return
+
+    hasTrackedEditorOpenRef.current = true
+    track(ANALYTICS_EVENTS.TRAINING_EDITOR_OPENED, {
+      matchId,
+      mediaType: mode,
+      reviewId,
+      source: routeTrainingId ? 'training_list' : 'new_training',
+      trainingId: trainingSessionId,
+    })
+  }, [matchId, mode, reviewId, routeTrainingId, trainingSessionId])
 
   useEffect(() => {
     if (liveVideoRef.current) {
@@ -113,11 +128,11 @@ export default function TrainingCreatePage() {
     window.setTimeout(() => setSaveNotice(''), TRAINING_SAVE_FEEDBACK_MS)
   }, [])
 
-  const persistSavedTrainingItems = useCallback((items, { notice = '' } = {}) => {
+  const persistSavedTrainingItems = useCallback(async (items, { notice = '', trackSave = false } = {}) => {
     const accessState = getUserDataAccessState()
     if (!accessState.allowed) {
       window.alert(accessState.message)
-      return
+      return null
     }
 
     const savedDraft = createTrainingDraftFromMaterials(items, {
@@ -127,17 +142,29 @@ export default function TrainingCreatePage() {
       title: trainingDraft.title,
       trainingId: trainingSessionId,
     })
-    if (!savedDraft) return
+    if (!savedDraft) return null
 
-    if (matchId) {
-      const savedTraining = saveTrainingForMatch(matchId, savedDraft)
-      void syncTrainingToLocalLibrary(savedTraining)
-    } else {
-      const savedTraining = saveTraining(savedDraft)
-      void syncTrainingToLocalLibrary(savedTraining)
+    const savedTraining = matchId
+      ? saveTrainingForMatch(matchId, savedDraft)
+      : saveTraining(savedDraft)
+    if (!savedTraining) return null
+
+    await syncTrainingToLocalLibrary(savedTraining)
+
+    if (trackSave) {
+      track(ANALYTICS_EVENTS.TRAINING_SAVED, {
+        durationMs: savedTraining.durationMs,
+        matchId: savedTraining.matchId,
+        mediaType: savedTraining.mode,
+        reviewId: savedTraining.reviewId,
+        source: 'manual',
+        success: true,
+        trainingId: savedTraining.id,
+      })
     }
 
     if (notice) showSaveNotice(notice)
+    return savedTraining
   }, [matchId, reviewId, showSaveNotice, trainingDraft.note, trainingDraft.title, trainingSessionId])
 
   useEffect(() => {
@@ -145,7 +172,7 @@ export default function TrainingCreatePage() {
     if (savedItems.length === 0) return undefined
 
     const timer = window.setTimeout(() => {
-      persistSavedTrainingItems(savedItems, { notice: '已自动保存' })
+      void persistSavedTrainingItems(savedItems, { notice: '已自动保存' })
     }, TRAINING_AUTO_SAVE_DELAY_MS)
 
     return () => window.clearTimeout(timer)
@@ -164,8 +191,30 @@ export default function TrainingCreatePage() {
     setMode(nextMode)
   }
 
-  function handleStartRecording() {
-    recorder.start()
+  async function handleStartRecording() {
+    const started = await recorder.start()
+    if (!started) return
+
+    track(ANALYTICS_EVENTS.RECORDING_STARTED, {
+      matchId,
+      mediaType: mode,
+      success: true,
+      trainingId: trainingSessionId,
+    })
+  }
+
+  function handleStopRecording() {
+    if (recorder.status !== 'recording' && recorder.status !== 'paused') return
+
+    const durationMs = recorder.elapsedMs
+    recorder.stop()
+    track(ANALYTICS_EVENTS.RECORDING_STOPPED, {
+      durationMs,
+      matchId,
+      mediaType: mode,
+      success: true,
+      trainingId: trainingSessionId,
+    })
   }
 
   function handleDiscardRecording() {
@@ -226,6 +275,17 @@ export default function TrainingCreatePage() {
         savedTraining = saveTraining(savedDraft)
       }
       await syncTrainingToLocalLibrary(savedTraining)
+      if (!savedTraining) return
+
+      track(ANALYTICS_EVENTS.TRAINING_SAVED, {
+        durationMs: savedTraining.durationMs,
+        matchId: savedTraining.matchId,
+        mediaType: savedTraining.mode,
+        reviewId: savedTraining.reviewId,
+        source: 'media_added',
+        success: true,
+        trainingId: savedTraining.id,
+      })
       appendMaterialItem(nextMaterialItem)
       if (blob === recorder.recordingBlob) {
         handleDiscardRecording()
@@ -262,7 +322,7 @@ export default function TrainingCreatePage() {
         })
         deleteTraining(removingItem.trainingId, removingTraining)
       } else {
-        persistSavedTrainingItems(nextItems, { notice: '已自动保存' })
+        void persistSavedTrainingItems(nextItems, { notice: '已自动保存' })
       }
     }
   }
@@ -274,7 +334,7 @@ export default function TrainingCreatePage() {
       return
     }
 
-    persistSavedTrainingItems(savedItems, { notice: '已手动保存' })
+    void persistSavedTrainingItems(savedItems, { notice: '已手动保存', trackSave: true })
   }
 
   return (
@@ -368,7 +428,7 @@ export default function TrainingCreatePage() {
                     active
                     className="training-control-button"
                     handdrawnFill={{ fill: '#f06aa8' }}
-                    onClick={recorder.stop}
+                    onClick={handleStopRecording}
                     variant="secondary"
                   >
                     <Square size={16} />停止录制

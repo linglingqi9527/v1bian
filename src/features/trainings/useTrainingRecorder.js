@@ -107,7 +107,7 @@ export function useTrainingRecorder(mode) {
     if (!navigator.mediaDevices?.getUserMedia || typeof MediaRecorder === 'undefined') {
       setError('当前浏览器不支持录音录像。请用最新版 Chrome / Edge 试一下。')
       setStatus('error')
-      return
+      return false
     }
 
     try {
@@ -159,10 +159,12 @@ export function useTrainingRecorder(mode) {
       setError('')
       setStatus('recording')
       startTimer()
+      return true
     } catch (recordingError) {
       stopStream()
       setError(getRecordingErrorMessage(recordingError))
       setStatus('error')
+      return false
     }
   }
 
