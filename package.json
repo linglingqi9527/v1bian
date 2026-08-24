@@ -21,6 +21,7 @@
     "speakers:roster:2024:jan-main": "node scripts/crawler/bilibili/speakerEnrichment/buildRoster2024JanMainReport.js",
     "speakers:roster:2024:jan-main:merge": "node scripts/crawler/bilibili/speakerEnrichment/mergeRoster2024JanMainResults.js",
     "speakers:roster:2025:merge-second-pass": "node scripts/crawler/bilibili/speakerEnrichment/mergeRosterSecondPassResults.js --year 2025",
+    "judge:api": "node server/judgeAgentServer.js",
     "lint": "eslint .",
     "preview": "vite preview"
   },

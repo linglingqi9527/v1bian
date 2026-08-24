@@ -84,6 +84,7 @@ src/data/generated
 ```bash
 npm install
 npm run dev
+npm run judge:api
 npm.cmd run build
 npm.cmd run lint
 ```
@@ -101,6 +102,7 @@ Windows PowerShell 可能拦截 `npm.ps1`，此时使用 `npm.cmd`。
 - [应用结构](docs/APP_STRUCTURE.md)
 - [视觉系统](docs/DESIGN_SYSTEM.md)
 - [数据与保存方案](docs/DATA_AND_STORAGE.md)
+- [JudgeAgent 工作流](docs/JUDGE_AGENT_WORKFLOW.md)
 - [开发记录](docs/DEVELOPMENT_LOG.md)
 
 其中 `CURRENT_STATUS.md` 和 `NEXT_HANDOFF.md` 最接近当前真实状态；其他文档主要记录长期原则。

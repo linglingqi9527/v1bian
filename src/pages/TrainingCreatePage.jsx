@@ -7,6 +7,7 @@ import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { imageAssets } from '../assets/assetPaths.js'
 import { ANALYTICS_EVENTS, track } from '../features/analytics/index.js'
 import { getUserDataAccessState } from '../features/storage/userDataAccess.js'
+import { JudgeLauncher } from '../features/judge/components/JudgeLauncher.jsx'
 import {
   deleteTraining,
   deleteTrainingMediaForActiveStorage,
@@ -340,6 +341,12 @@ export default function TrainingCreatePage() {
   return (
     <ContentLayout>
       <WorkbenchHeader
+        actions={(
+          <JudgeLauncher
+            context={{ type: 'training', matchId, reviewId, trainingId: trainingSessionId }}
+            label="Judge"
+          />
+        )}
         eyebrow={`训练 / 编辑 / ${modeLabel}`}
         hero="training-create"
         title={trainingDraft.title || '训练档案'}
@@ -359,6 +366,7 @@ export default function TrainingCreatePage() {
                 id="training-title"
                 onChange={(event) => updateTrainingDraft('title', event.target.value)}
                 placeholder="输入训练标题"
+                style={{ width: getTitleInputWidth(trainingDraft.title) }}
                 value={trainingDraft.title}
               />
             </label>
@@ -751,6 +759,15 @@ function getRecordDotClassName(status) {
   if (status === 'recording') return 'record-dot'
   if (status === 'ready') return 'record-dot record-dot--ready'
   return 'record-dot record-dot--idle'
+}
+
+function getTitleInputWidth(value) {
+  const text = String(value ?? '')
+  const weightedLength = Array.from(text).reduce((total, character) => {
+    return total + (/[\u3400-\u9fff\uff00-\uffef]/.test(character) ? 1.05 : 0.58)
+  }, 0)
+
+  return `min(100%, max(12em, ${Math.ceil(weightedLength + 3)}em))`
 }
 
 function formatElapsedTime(elapsedMs) {

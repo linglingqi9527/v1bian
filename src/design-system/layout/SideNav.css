@@ -108,6 +108,11 @@
   height: 60px;
 }
 
+.primary-nav__icon[data-nav-icon='judge'] img {
+  width: 60px;
+  height: 60px;
+}
+
 .primary-nav__label {
   flex: 0 0 auto;
   font-family: var(--font-playful);

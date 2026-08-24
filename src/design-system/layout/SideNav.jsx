@@ -3,6 +3,7 @@ import { NavLink, useLocation } from 'react-router'
 import { imageAssets } from '../../assets/assetPaths.js'
 import { getSideNavActivity } from '../../features/activity/sideNavActivityService.js'
 import { AUTH_UPDATED_EVENT, isUserLoggedIn } from '../../features/auth/authService.js'
+import { JUDGE_UPDATED_EVENT, listJudgeConversations } from '../../features/judge/judgeService.js'
 import { MATCHES_UPDATED_EVENT } from '../../features/matches/matchService.js'
 import { REVIEWS_UPDATED_EVENT, listReviews } from '../../features/reviews/reviewService.js'
 import { REVIEW_PRIORITY_OPTIONS, REVIEW_STATUS } from '../../features/reviews/reviewUtils.js'
@@ -15,13 +16,16 @@ const navItems = [
   { to: '/matches', label: '看比赛', icon: imageAssets.nav.watchMatch, kind: 'watch' },
   { to: '/reviews', label: '写赛评', icon: imageAssets.nav.writeReview, kind: 'review' },
   { to: '/trainings', label: '做训练', icon: imageAssets.nav.startTraining, kind: 'train' },
+  { to: '/judge', label: 'Judge', icon: imageAssets.nav.judge, kind: 'judge' },
 ]
 
 export function SideNav() {
   const { pathname } = useLocation()
   const [, refreshStatsPanels] = useState(0)
   const [loggedIn, setLoggedIn] = useState(() => isUserLoggedIn())
-  const section = pathname.startsWith('/reviews')
+  const section = pathname.startsWith('/judge')
+    ? 'judge'
+    : pathname.startsWith('/reviews')
     ? 'reviews'
     : pathname.startsWith('/trainings')
       ? 'trainings'
@@ -39,6 +43,7 @@ export function SideNav() {
     window.addEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(MATCHES_UPDATED_EVENT, handleReviewsUpdated)
+    window.addEventListener(JUDGE_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
     window.addEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
     window.addEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
@@ -46,6 +51,7 @@ export function SideNav() {
       window.removeEventListener(REVIEWS_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(TRAININGS_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(MATCHES_UPDATED_EVENT, handleReviewsUpdated)
+      window.removeEventListener(JUDGE_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(AUTH_UPDATED_EVENT, handleReviewsUpdated)
       window.removeEventListener(AUTH_UPDATED_EVENT, handleAuthUpdated)
       window.removeEventListener(LOCAL_LIBRARY_UPDATED_EVENT, handleReviewsUpdated)
@@ -82,6 +88,7 @@ export function SideNav() {
       {section === 'matches' ? <MatchesPanel /> : null}
       {section === 'reviews' ? <ReviewsPanel /> : null}
       {section === 'trainings' ? <TrainingsPanel /> : null}
+      {section === 'judge' ? <JudgePanel /> : null}
       <NavLink className="settings-link" to="/profile">
         {({ isActive }) => (
           <>
@@ -94,6 +101,23 @@ export function SideNav() {
         )}
       </NavLink>
     </aside>
+  )
+}
+
+function JudgePanel() {
+  const conversations = listJudgeConversations()
+  const matchCount = conversations.filter((conversation) => conversation.contextType === 'match').length
+  const reviewCount = conversations.filter((conversation) => conversation.contextType === 'review').length
+  const trainingCount = conversations.filter((conversation) => conversation.contextType === 'training').length
+
+  return (
+    <section className="nav-section nav-section--underlined stat-list">
+      <h2 className="handdrawn-underline handdrawn-underline--nav-section">Judge 记录</h2>
+      <StatLine label="全部会话" to="/judge" tone="blue" value={conversations.length} />
+      <StatLine label="比赛判读" tone="yellow" value={matchCount} />
+      <StatLine label="赛评辅助" tone="pink" value={reviewCount} />
+      <StatLine label="训练建议" tone="green" value={trainingCount} />
+    </section>
   )
 }
 

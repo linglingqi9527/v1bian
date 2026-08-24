@@ -8,8 +8,10 @@ import matchStartTrainingIcon from './icons/match-card/match-card-start-training
 import matchWatchVideoIcon from './icons/match-card/match-card-watch-video.png'
 import matchWriteReviewIcon from './icons/match-card/match-card-write-review.png'
 import navStartTrainingIcon from './icons/nav/nav-start-training.png'
+import navJudgeIcon from './icons/nav/nav-judge.png'
 import navWatchMatchIcon from './icons/nav/nav-watch-match-house-v2.png'
 import navWriteReviewIcon from './icons/nav/nav-write-review.png'
+import judgeSwordIcon from './icons/judge/judge-sword.png'
 import trainingSaveIcon from './icons/training/training-save-floppy-cutout.png'
 
 export const imageAssets = {
@@ -35,6 +37,10 @@ export const imageAssets = {
     watchMatch: navWatchMatchIcon,
     writeReview: navWriteReviewIcon,
     startTraining: navStartTrainingIcon,
+    judge: navJudgeIcon,
+  },
+  judge: {
+    sword: judgeSwordIcon,
   },
   // Icons used inside training creation and training detail flows.
   training: {

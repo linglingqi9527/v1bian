@@ -9,6 +9,7 @@ import { SketchButton } from '../design-system/ui/SketchButton.jsx'
 import { SketchCard } from '../design-system/ui/SketchCard.jsx'
 import { SketchInput } from '../design-system/ui/SketchInput.jsx'
 import { ReviewRichTextEditor } from '../features/editor/components/ReviewRichTextEditor.jsx'
+import { JudgeLauncher } from '../features/judge/components/JudgeLauncher.jsx'
 import { getMatchById } from '../features/matches/matchService.js'
 import { formatMatchTeams } from '../features/matches/matchUtils.js'
 import { getReviewById, getReviewByMatchId, saveReview, saveReviewForMatch } from '../features/reviews/reviewService.js'
@@ -197,6 +198,12 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
   return (
     <ContentLayout>
       <WorkbenchHeader
+        actions={(
+          <JudgeLauncher
+            context={{ type: 'review', matchId: routeMatchId, reviewId: savedReviewId ?? review?.id }}
+            label="Judge"
+          />
+        )}
         decoration={false}
         eyebrow="赛评 / 编辑"
         hero="review-editor"
@@ -272,7 +279,7 @@ function getTitleInputWidth(value) {
     return total + (/[\u3400-\u9fff\uff00-\uffef]/.test(character) ? 1.05 : 0.58)
   }, 0)
 
-  return `min(100%, max(75%, ${Math.ceil(weightedLength + 3)}em))`
+  return `min(100%, max(12em, ${Math.ceil(weightedLength + 3)}em))`
 }
 
 function getReviewStatusFill(status) {
