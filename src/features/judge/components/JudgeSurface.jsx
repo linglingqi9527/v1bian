@@ -9,6 +9,8 @@ import {
   SendHorizontal,
   Trash2,
 } from 'lucide-react'
+import { AUTH_UPDATED_EVENT } from '../../auth/authService.js'
+import { LOCAL_LIBRARY_UPDATED_EVENT } from '../../storage/localLibraryService.js'
 import {
   appendJudgeQuestion,
   appendJudgeRun,
@@ -58,13 +60,19 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
 
   useEffect(() => {
     function refreshConversation() {
-      setConversation(getConversation(conversationId))
+      setConversation((current) => getConversation(conversationId || current?.id || ''))
       setDirectoryItems(listJudgeConversations())
     }
 
     refreshConversation()
     window.addEventListener(JUDGE_UPDATED_EVENT, refreshConversation)
-    return () => window.removeEventListener(JUDGE_UPDATED_EVENT, refreshConversation)
+    window.addEventListener(AUTH_UPDATED_EVENT, refreshConversation)
+    window.addEventListener(LOCAL_LIBRARY_UPDATED_EVENT, refreshConversation)
+    return () => {
+      window.removeEventListener(JUDGE_UPDATED_EVENT, refreshConversation)
+      window.removeEventListener(AUTH_UPDATED_EVENT, refreshConversation)
+      window.removeEventListener(LOCAL_LIBRARY_UPDATED_EVENT, refreshConversation)
+    }
   }, [conversationId])
 
   useEffect(() => {
@@ -157,6 +165,10 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     let completed = false
     try {
       const activeConversation = conversation ?? createJudgeConversationFromFile(fileContext)
+      if (!activeConversation?.id) {
+        throw new Error('请先登录并连接本地资料包后再保存 Judge 记录。')
+      }
+
       const result = await appendJudgeRun(activeConversation.id, normalizedPrompt, {
         modelProfile,
         provider: getProviderByModelProfile(modelProfile),
@@ -643,7 +655,6 @@ function JudgeVerdictVisual({ report }) {
       </div>
       <div className="judge-verdict-center">
         <img alt="" src={imageAssets.judge.sword} />
-        <strong>{verdict.marginLabel}</strong>
         <span>{bestDebaterLabel}</span>
       </div>
       <div className="judge-verdict-side judge-verdict-side--loser">

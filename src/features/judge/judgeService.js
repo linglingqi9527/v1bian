@@ -1,7 +1,9 @@
 import { DEMO_USER_ID } from '../../models/userModel.js'
 import { createId } from '../../utils/ids.js'
 import { getActiveUserId } from '../auth/authService.js'
+import { getCachedLocalLibraryDb, updateActiveLocalLibraryDb } from '../storage/localLibraryService.js'
 import { readLocalDb, writeLocalDb } from '../storage/localDb.js'
+import { canWriteUserData, getUserDataAccessState, notifyUserDataBlocked } from '../storage/userDataAccess.js'
 import { runJudgeAgent, runJudgeChatAnswer } from './agent/judgeAgentService.js'
 import { createConversationDraftFromContext, JUDGE_CONTEXT_TYPES, resolveJudgeContext } from './judgeContextResolver.js'
 
@@ -13,14 +15,17 @@ const JUDGE_CONVERSATION_STATUS = {
 }
 
 export function listJudgeConversations() {
-  const activeUserId = getJudgeUserId()
-  const persisted = readLocalDb()?.judgeConversations
-  const conversations = Array.isArray(persisted) ? persisted : []
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  if (!activeUserId) return []
 
-  return conversations
-    .map((conversation) => createJudgeConversationModel(conversation))
-    .filter((conversation) => conversation.userId === activeUserId)
-    .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
+  if (accessState.mode === 'local') {
+    return normalizeJudgeConversationCollection(getCachedLocalLibraryDb()?.judgeConversations, activeUserId)
+  }
+
+  if (accessState.mode !== 'developer') return []
+
+  return normalizeJudgeConversationCollection(readLocalDb()?.judgeConversations, activeUserId)
 }
 
 export function getJudgeConversationById(conversationId) {
@@ -28,6 +33,15 @@ export function getJudgeConversationById(conversationId) {
 }
 
 export function findOrCreateJudgeConversation(contextDraft = {}) {
+  const activeUserId = getActiveUserId()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return {
+      conversation: null,
+      context: resolveJudgeContext(contextDraft),
+    }
+  }
+
   const context = resolveJudgeContext(contextDraft)
   const draft = createConversationDraftFromContext(context)
   const key = getJudgeContextKey(draft)
@@ -42,7 +56,7 @@ export function findOrCreateJudgeConversation(contextDraft = {}) {
 
   const conversation = createJudgeConversationModel({
     ...draft,
-    userId: getJudgeUserId(),
+    userId: activeUserId,
   })
 
   saveJudgeConversation(conversation)
@@ -54,21 +68,33 @@ export function findOrCreateJudgeConversation(contextDraft = {}) {
 }
 
 export function createJudgeConversationFromFile(fileDraft = {}) {
+  const activeUserId = getActiveUserId()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return null
+  }
+
   const title = fileDraft.name ? `Judge · ${fileDraft.name}` : 'Judge · 导入材料'
   const conversation = createJudgeConversationModel({
     title,
     contextType: JUDGE_CONTEXT_TYPES.match,
     sourceLabel: fileDraft.name || '导入材料',
-    userId: getJudgeUserId(),
+    userId: activeUserId,
   })
 
   return saveJudgeConversation(conversation)
 }
 
 export function saveJudgeConversation(conversationDraft) {
+  const activeUserId = getActiveUserId()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return null
+  }
+
   const conversation = createJudgeConversationModel({
     ...conversationDraft,
-    userId: conversationDraft.userId ?? getJudgeUserId(),
+    userId: activeUserId,
     updatedAt: new Date().toISOString(),
   })
   const conversations = [
@@ -77,26 +103,18 @@ export function saveJudgeConversation(conversationDraft) {
   ]
 
   writeJudgeConversations(conversations)
-  notifyJudgeUpdated()
   return conversation
 }
 
 export function deleteJudgeConversation(conversationId) {
   if (!conversationId) return listJudgeConversations()
 
-  const activeUserId = getJudgeUserId()
-  const snapshot = readLocalDb() ?? {}
-  const conversations = Array.isArray(snapshot.judgeConversations) ? snapshot.judgeConversations : []
-  const nextConversations = conversations.filter((conversation) => {
-    const item = createJudgeConversationModel(conversation)
-    return !(item.id === conversationId && item.userId === activeUserId)
-  })
+  if (!canWriteUserData()) {
+    notifyUserDataBlocked()
+    return listJudgeConversations()
+  }
 
-  writeLocalDb({
-    ...snapshot,
-    judgeConversations: nextConversations.map((conversation) => createJudgeConversationModel(conversation)),
-  })
-  notifyJudgeUpdated()
+  writeJudgeConversations(listJudgeConversations().filter((conversation) => conversation.id !== conversationId))
   return listJudgeConversations()
 }
 
@@ -246,15 +264,54 @@ function normalizeContextType(type) {
 }
 
 function writeJudgeConversations(conversations) {
+  const activeUserId = getActiveUserId()
+  const accessState = getUserDataAccessState()
+  if (!activeUserId || !canWriteUserData()) {
+    notifyUserDataBlocked()
+    return
+  }
+
+  const normalizedConversations = conversations.map((conversation) => createJudgeConversationModel({
+    ...conversation,
+    userId: activeUserId,
+  }))
+
+  if (accessState.mode === 'local') {
+    void updateActiveLocalLibraryDb((libraryDb) => ({
+      ...libraryDb,
+      judgeConversations: [
+        ...(Array.isArray(libraryDb.judgeConversations) ? libraryDb.judgeConversations : [])
+          .filter((conversation) => createJudgeConversationModel(conversation).userId !== activeUserId),
+        ...normalizedConversations,
+      ],
+    })).catch(reportLocalLibraryWriteError)
+    notifyJudgeUpdated()
+    return
+  }
+
+  if (accessState.mode !== 'developer') return
+
   const snapshot = readLocalDb() ?? {}
+  const persistedConversations = Array.isArray(snapshot.judgeConversations) ? snapshot.judgeConversations : []
   writeLocalDb({
     ...snapshot,
-    judgeConversations: conversations.map((conversation) => createJudgeConversationModel(conversation)),
+    judgeConversations: [
+      ...persistedConversations.filter((conversation) => createJudgeConversationModel(conversation).userId !== activeUserId),
+      ...normalizedConversations,
+    ],
   })
+  notifyJudgeUpdated()
 }
 
-function getJudgeUserId() {
-  return getActiveUserId() ?? DEMO_USER_ID
+function normalizeJudgeConversationCollection(conversations, activeUserId) {
+  return (Array.isArray(conversations) ? conversations : [])
+    .map((conversation) => createJudgeConversationModel(conversation))
+    .filter((conversation) => conversation.userId === activeUserId)
+    .sort((a, b) => new Date(b.updatedAt).getTime() - new Date(a.updatedAt).getTime())
+}
+
+function reportLocalLibraryWriteError(error) {
+  console.warn('无法写入本地资料包 Judge 记录', error)
 }
 
 function notifyJudgeUpdated() {

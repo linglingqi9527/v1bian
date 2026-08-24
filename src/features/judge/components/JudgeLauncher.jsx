@@ -10,6 +10,8 @@ export function JudgeLauncher({ context, label = '呼出 Judge' }) {
 
   function handleOpen() {
     const result = findOrCreateJudgeConversation(context)
+    if (!result.conversation?.id) return
+
     setConversationId(result.conversation.id)
     setOpen(true)
   }
