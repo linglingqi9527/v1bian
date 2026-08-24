@@ -392,6 +392,19 @@
   text-align: center;
 }
 
+.judge-video-prelude {
+  max-width: 640px;
+}
+
+.judge-video-prelude p {
+  border: 2px solid var(--judge-divider);
+  border-radius: var(--judge-radius-card);
+  padding: 10px 14px;
+  background:
+    var(--judge-hover-hachure),
+    var(--judge-surface-bg);
+}
+
 .judge-chat-welcome h2 {
   font-family: var(--font-playful);
   font-size: 38px;

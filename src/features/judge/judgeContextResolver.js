@@ -50,6 +50,20 @@ export function createConversationDraftFromContext(context) {
   }
 }
 
+export function getJudgeContextVideoSource(context = {}) {
+  const safeContext = context ?? {}
+  const match = safeContext.match ?? {}
+  const url = match.videoUrl || match.bilibiliUrl || match.sourceUrl || ''
+
+  return {
+    url,
+    bvId: match.bvId ?? '',
+    title: match.topic ?? safeContext.title ?? '',
+    sourceLabel: safeContext.sourceLabel ?? '',
+    speakerGroups: match.speakerGroups ?? [],
+  }
+}
+
 function normalizeContextType(type, resolved) {
   if (type === JUDGE_CONTEXT_TYPES.training && resolved.training) return JUDGE_CONTEXT_TYPES.training
   if (type === JUDGE_CONTEXT_TYPES.review && resolved.review) return JUDGE_CONTEXT_TYPES.review
@@ -71,9 +85,11 @@ function createContextTitle(type, match, review, training) {
 }
 
 function createAvailableMaterials(match, review, training) {
+  const videoUrl = getJudgeContextVideoSource({ match }).url
+
   return [
     match ? { id: 'match', label: '比赛资料', state: '已接入' } : null,
-    match?.videoUrl ? { id: 'video', label: '比赛 URL', state: '可读取' } : null,
+    videoUrl ? { id: 'video', label: '比赛 URL', state: '可转写' } : null,
     review ? { id: 'review', label: '赛评草稿', state: '已接入' } : null,
     training ? { id: 'training', label: '训练记录', state: '已接入' } : null,
     training?.mediaId || training?.mediaPath ? { id: 'media', label: '训练素材', state: '待转写' } : null,

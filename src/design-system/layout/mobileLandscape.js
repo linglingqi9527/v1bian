@@ -80,6 +80,21 @@ export function isTouchPhone(viewport, environment) {
   return shortSides.length > 0 && Math.min(...shortSides) <= PHONE_SHORT_SIDE_MAX
 }
 
+function isDesktopViewport(viewport, environment) {
+  const runtime = getEnvironment(environment)
+  const touchPoints = Number(runtime?.navigator?.maxTouchPoints) || 0
+  if (touchPoints <= 0) return true
+
+  const screenWidth = Number(runtime?.screen?.width) || 0
+  const screenHeight = Number(runtime?.screen?.height) || 0
+  const screenShort = screenWidth > 0 && screenHeight > 0
+    ? Math.min(screenWidth, screenHeight)
+    : 0
+  const viewportShort = Math.min(viewport.width, viewport.height)
+
+  return screenShort > PHONE_SHORT_SIDE_MAX && viewportShort > PHONE_SHORT_SIDE_MAX
+}
+
 export function readMobileLayout(environment, isAdminRoute = false) {
   const viewport = getViewport(environment)
   const physicalOrientation = getPhysicalOrientation(environment)
@@ -94,6 +109,7 @@ export function readMobileLayout(environment, isAdminRoute = false) {
     physicalOrientation,
     isPhone,
     isNaturalLandscape,
+    isDesktopViewport: isDesktopViewport(viewport, environment),
   }
 }
 
@@ -105,7 +121,10 @@ export function reconcileMobileLayout(current, nextLayout, allowPhysicalRelease 
       && nextLayout.viewport.width > nextLayout.viewport.height
     )
   )
-  const keepsForcedLayout = Boolean(current.forcedSize) && !shouldReleaseForced
+  const canKeepForcedLayout = Boolean(current.forcedSize)
+    && current.isPhone
+    && !nextLayout.isDesktopViewport
+  const keepsForcedLayout = canKeepForcedLayout && !shouldReleaseForced
 
   return {
     ...nextLayout,

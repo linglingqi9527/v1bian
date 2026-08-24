@@ -9,8 +9,11 @@ import {
   SendHorizontal,
   Trash2,
 } from 'lucide-react'
+import { imageAssets } from '../../../assets/assetPaths.js'
 import { AUTH_UPDATED_EVENT } from '../../auth/authService.js'
 import { LOCAL_LIBRARY_UPDATED_EVENT } from '../../storage/localLibraryService.js'
+import { transcribeJudgeVideo } from '../agent/judgeTranscriptService.js'
+import { getJudgeContextVideoSource, resolveJudgeContext } from '../judgeContextResolver.js'
 import {
   appendJudgeQuestion,
   appendJudgeRun,
@@ -20,7 +23,6 @@ import {
   JUDGE_UPDATED_EVENT,
   listJudgeConversations,
 } from '../judgeService.js'
-import { imageAssets } from '../../../assets/assetPaths.js'
 import '../Judge.css'
 
 const ACCEPTED_FILE_TYPES = [
@@ -90,6 +92,9 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
   const latestOutput = conversation?.outputs?.at(-1)
   const messages = conversation?.messages ?? []
   const followUpMessages = messages.filter((message) => message.kind === 'question' || message.kind === 'answer')
+  const resolvedConversationContext = conversation ? resolveConversationContext(conversation) : null
+  const conversationVideoSource = getJudgeContextVideoSource(resolvedConversationContext)
+  const canStartFromContextVideo = Boolean(conversation && !latestOutput && conversationVideoSource.url)
 
   function handleSelectFile() {
     fileInputRef.current?.click()
@@ -142,7 +147,9 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
       return
     }
 
-    const normalizedPrompt = prompt.trim() || (fileState ? `请分析我导入的${getFileKindLabel(fileState.kind)}：${fileState.name}` : '')
+    const normalizedPrompt = prompt.trim()
+      || (fileState ? `请分析我导入的${getFileKindLabel(fileState.kind)}：${fileState.name}` : '')
+      || (canStartFromContextVideo ? createContextVideoPrompt(resolvedConversationContext, conversationVideoSource) : '')
     if (!normalizedPrompt) return
     if (fileState?.status === 'reading') {
       setRunError('文件还在读取，稍等一下再发送。')
@@ -153,7 +160,68 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
       return
     }
 
+    if (!fileState && canStartFromContextVideo) {
+      await runJudgeWithContextVideo(normalizedPrompt)
+      return
+    }
+
     await runJudgeWithFile(fileState, normalizedPrompt)
+  }
+
+  async function runJudgeWithContextVideo(promptText = '') {
+    if (!conversation || running) return
+
+    const context = resolveConversationContext(conversation)
+    const videoSource = getJudgeContextVideoSource(context)
+    if (!videoSource.url) {
+      setRunError('当前比赛没有可转写的视频链接。')
+      return
+    }
+
+    startJudgeProgress('transcript')
+    setRunError('')
+    let completed = false
+    try {
+      const transcript = await transcribeJudgeVideo({
+        bvId: videoSource.bvId,
+        matchId: context.matchId,
+        speakerGroups: videoSource.speakerGroups,
+        title: videoSource.title,
+        videoUrl: videoSource.url,
+      })
+      const transcriptFileState = {
+        kind: 'text',
+        name: `${videoSource.title || context.sourceLabel || '当前比赛'}转写稿`,
+        size: transcript.text.length,
+        sourceText: transcript.text,
+        status: 'ready',
+      }
+
+      setFileState(transcriptFileState)
+      startJudgeProgress('report')
+      setRunProgress((current) => Math.max(current, 42))
+
+      const result = await appendJudgeRun(conversation.id, promptText, {
+        modelProfile,
+        provider: getProviderByModelProfile(modelProfile),
+        sourceText: transcriptFileState.sourceText,
+      })
+      if (result?.conversation) {
+        setConversation(result.conversation)
+        onConversationUpdated?.(result.conversation)
+        setPrompt('')
+      } else {
+        throw new Error('JudgeAgent 没有返回有效结果。')
+      }
+      completed = true
+    } catch (agentError) {
+      setRunError(agentError instanceof Error ? agentError.message : '视频转文字或 JudgeAgent 运行失败。')
+      stopJudgeProgress()
+    } finally {
+      if (completed) {
+        await completeJudgeProgress()
+      }
+    }
   }
 
   async function runJudgeWithFile(fileContext, promptText = '') {
@@ -430,6 +498,8 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
               <p>{message.content}</p>
             </article>
           ))
+        ) : canStartFromContextVideo ? (
+          <JudgeVideoPrelude videoSource={conversationVideoSource} />
         ) : (
           <div className="judge-chat-welcome">
             <h2>有什么想让 Judge 帮你看的？</h2>
@@ -462,7 +532,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
         <textarea
           onChange={(event) => setPrompt(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="问问 Judge"
+          placeholder={canStartFromContextVideo && !fileState ? '转写当前比赛并生成' : '问问 Judge'}
           rows={1}
           value={prompt}
         />
@@ -476,7 +546,13 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
           </select>
           <ChevronDown size={16} />
         </label>
-        <button className="judge-composer-send" disabled={running || (latestOutput ? !prompt.trim() : (!prompt.trim() && !fileState))} onClick={handleRun} type="button" aria-label="发送给 Judge">
+        <button
+          className="judge-composer-send"
+          disabled={running || (latestOutput ? !prompt.trim() : (!prompt.trim() && !fileState && !canStartFromContextVideo))}
+          onClick={handleRun}
+          type="button"
+          aria-label="发送给 Judge"
+        >
           <SendHorizontal size={20} />
         </button>
       </div>
@@ -527,6 +603,15 @@ function JudgeRunProgress({ progress }) {
   return (
     <div className="judge-run-progress" role="progressbar" aria-label="Judge 正在生成报告" aria-live="polite" aria-valuemax={100} aria-valuemin={0} aria-valuenow={Math.round(normalizedProgress)}>
       <span style={{ width: `${normalizedProgress}%` }} />
+    </div>
+  )
+}
+
+function JudgeVideoPrelude({ videoSource }) {
+  return (
+    <div className="judge-chat-welcome judge-video-prelude">
+      <h2>先把这场比赛转成文字稿</h2>
+      <p>{videoSource.title || videoSource.sourceLabel || '当前比赛'} 已接入视频；点击发送后，Judge 会先转写，再生成第一份判断文档。</p>
     </div>
   )
 }
@@ -889,6 +974,19 @@ function getConversation(conversationId) {
   return null
 }
 
+function resolveConversationContext(conversation) {
+  return resolveJudgeContext({
+    type: conversation?.contextType,
+    matchId: conversation?.matchId,
+    reviewId: conversation?.reviewId,
+    trainingId: conversation?.trainingId,
+  })
+}
+
+function createContextVideoPrompt(context, videoSource) {
+  return `请先使用当前比赛视频转写稿，再基于转写文字生成 Judge 评判报告：${videoSource.title || context?.sourceLabel || '当前比赛'}`
+}
+
 function getJudgeFileKind(file) {
   if (file.type.startsWith('text/')) return 'text'
   if (file.type.startsWith('audio/')) return 'audio'
@@ -920,7 +1018,7 @@ function getProviderByModelProfile(modelProfile) {
 }
 
 function estimateJudgeProgress(elapsedMs, modeName) {
-  const expectedMs = modeName === 'chat' ? 14000 : 52000
+  const expectedMs = modeName === 'chat' ? 14000 : modeName === 'transcript' ? 76000 : 52000
   const ratio = Math.max(0, elapsedMs / expectedMs)
 
   if (ratio < 0.08) return 8 + (ratio / 0.08) * 14

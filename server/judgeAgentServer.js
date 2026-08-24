@@ -3,6 +3,9 @@ import { readFileSync } from 'node:fs'
 import path from 'node:path'
 import { fileURLToPath } from 'node:url'
 import { inflateRawSync } from 'node:zlib'
+import { extractOpeningAudio } from '../scripts/crawler/bilibili/speakerEnrichment/extractOpeningAudio.js'
+import { resolveTargetMedia } from '../scripts/crawler/bilibili/speakerEnrichment/resolveTargetMedia.js'
+import { transcribeOpeningAudio } from '../scripts/crawler/bilibili/speakerEnrichment/transcribeOpeningAudio.js'
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const PROJECT_ROOT = path.resolve(__dirname, '..')
@@ -28,6 +31,12 @@ const server = http.createServer(async (request, response) => {
       ok: true,
       configured: Boolean(process.env.JUDGE_LLM_API_KEY),
       model: resolveModel('default'),
+      transcriptConfigured: Boolean(
+        process.env.JUDGE_TRANSCRIPT_ENDPOINT
+          || process.env.JUDGE_TRANSCRIPT_MOCK_TEXT
+          || getTranscriptProvider() === 'local',
+      ),
+      transcriptProvider: getTranscriptProvider(),
     })
     return
   }
@@ -45,6 +54,25 @@ const server = http.createServer(async (request, response) => {
     } catch (error) {
       sendJson(response, 400, {
         error: error instanceof Error ? error.message : 'Document text extraction failed',
+      })
+    }
+    return
+  }
+
+  if (request.method === 'POST' && url.pathname === '/api/judge-agent/transcribe-video') {
+    try {
+      const payload = await readJsonBody(request)
+      const videoUrl = typeof payload.videoUrl === 'string' ? payload.videoUrl.trim() : ''
+      if (!videoUrl) {
+        sendJson(response, 400, { error: '当前比赛没有可转写的视频链接。' })
+        return
+      }
+
+      const transcript = await transcribeVideoSource(payload)
+      sendJson(response, 200, transcript)
+    } catch (error) {
+      sendJson(response, getErrorStatusCode(error), {
+        error: error instanceof Error ? error.message : '视频转文字失败。',
       })
     }
     return
@@ -205,6 +233,201 @@ function extractTextFromUploadedDocument(fileName, fileBuffer) {
   throw new Error('当前只支持从 .docx 自动提取正文。')
 }
 
+async function transcribeVideoSource(payload) {
+  const mockText = String(process.env.JUDGE_TRANSCRIPT_MOCK_TEXT ?? '').trim()
+  if (mockText) {
+    return {
+      provider: 'mock-env',
+      text: mockText,
+      warnings: ['当前使用 JUDGE_TRANSCRIPT_MOCK_TEXT 作为视频转写结果。'],
+    }
+  }
+
+  const endpoint = String(process.env.JUDGE_TRANSCRIPT_ENDPOINT ?? '').trim()
+  if (!endpoint || getTranscriptProvider() === 'local') {
+    return await transcribeVideoSourceLocally(payload)
+  }
+
+  const headers = {
+    'Content-Type': 'application/json',
+  }
+  const apiKey = String(process.env.JUDGE_TRANSCRIPT_API_KEY ?? '').trim()
+  if (apiKey) {
+    headers.Authorization = `Bearer ${apiKey}`
+  }
+
+  const transcriptResponse = await fetch(endpoint, {
+    method: 'POST',
+    headers,
+    body: JSON.stringify({
+      bvId: payload.bvId ?? '',
+      matchId: payload.matchId ?? '',
+      speakerGroups: Array.isArray(payload.speakerGroups) ? payload.speakerGroups : [],
+      title: payload.title ?? '',
+      videoUrl: payload.videoUrl,
+    }),
+  })
+
+  const responseText = await transcriptResponse.text()
+  if (!transcriptResponse.ok) {
+    throw new Error(`视频转文字服务调用失败：${transcriptResponse.status} ${responseText.slice(0, 160)}`)
+  }
+
+  let data
+  try {
+    data = JSON.parse(responseText)
+  } catch {
+    return {
+      provider: 'external-transcript',
+      text: normalizeTranscriptText(responseText),
+      warnings: [],
+    }
+  }
+
+  const text = normalizeTranscriptText(readTranscriptText(data))
+  if (!text) {
+    throw new Error('视频转文字服务没有返回可用正文。')
+  }
+
+  return {
+    provider: data.provider ?? 'external-transcript',
+    text,
+    warnings: Array.isArray(data.warnings) ? data.warnings : [],
+  }
+}
+
+async function transcribeVideoSourceLocally(payload) {
+  const target = await resolveTargetMedia(createLocalTranscriptTarget(payload))
+  const duration = normalizePositiveNumber(process.env.JUDGE_TRANSCRIPT_AUDIO_DURATION, 4200)
+  const start = normalizeNonNegativeNumber(process.env.JUDGE_TRANSCRIPT_AUDIO_START, 0)
+  const force = process.env.JUDGE_TRANSCRIPT_FORCE === 'true'
+  const model = String(process.env.JUDGE_TRANSCRIPT_MODEL ?? 'small').trim() || 'small'
+  const initialPrompt = createTranscriptInitialPrompt(payload)
+  const audioResult = await extractOpeningAudio(target, {
+    duration,
+    force,
+    start,
+  })
+  const transcript = await transcribeOpeningAudio(target, audioResult, {
+    audioDuration: duration,
+    audioStart: start,
+    cacheNamespace: 'judge-agent',
+    force,
+    initialPrompt,
+    model,
+  })
+  const text = normalizeTranscriptText(transcript.transcriptText ?? '')
+  if (!text) {
+    const warnings = [
+      ...(audioResult.warnings ?? []),
+      ...(transcript.warnings ?? []),
+    ]
+    const reason = warnings.length ? summarizeTranscriptWarnings(warnings) : '本地转写没有返回有效正文。'
+    throw new Error(`视频转文字未完成：${reason}`)
+  }
+
+  return {
+    provider: 'local-whisper',
+    text,
+    warnings: [
+      ...(audioResult.warnings ?? []),
+      ...(transcript.warnings ?? []),
+    ],
+  }
+}
+
+function createLocalTranscriptTarget(payload) {
+  const videoUrl = String(payload.videoUrl ?? '').trim()
+  const bvId = String(payload.bvId ?? '').trim() || parseBvId(videoUrl)
+  if (!bvId) {
+    throw new Error('视频链接里没有识别到 BV 号，无法自动转写。')
+  }
+
+  return {
+    matchId: String(payload.matchId ?? '').trim() || bvId,
+    bvId,
+    cid: payload.cid ?? null,
+    partIndex: normalizePositiveNumber(payload.partIndex, parsePartIndex(videoUrl)),
+    bilibiliUrl: videoUrl,
+    title: String(payload.title ?? '').trim() || bvId,
+    warnings: [],
+    processable: true,
+  }
+}
+
+function createTranscriptInitialPrompt(payload) {
+  const speakerGroups = Array.isArray(payload.speakerGroups) ? payload.speakerGroups : []
+  const speakers = speakerGroups
+    .flatMap((group) => Array.isArray(group?.speakers) ? group.speakers : [])
+    .map((speaker) => speaker?.name || speaker?.role || speaker)
+    .filter(Boolean)
+
+  return [
+    '这是一场中文辩论赛音频，请尽量保留辩手发言顺序、正反方角色和关键术语。',
+    speakers.length ? `可能出现的辩手或角色包括：${speakers.join('、')}。` : '',
+  ].filter(Boolean).join('\n')
+}
+
+function parseBvId(value) {
+  return String(value).match(/BV[A-Za-z0-9]+/)?.[0] ?? ''
+}
+
+function parsePartIndex(value) {
+  try {
+    return normalizePositiveNumber(new URL(value).searchParams.get('p'), 1)
+  } catch {
+    return 1
+  }
+}
+
+function getTranscriptProvider() {
+  return String(process.env.JUDGE_TRANSCRIPT_PROVIDER ?? 'local').trim() || 'local'
+}
+
+function normalizePositiveNumber(value, fallback) {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) && parsed > 0 ? parsed : fallback
+}
+
+function normalizeNonNegativeNumber(value, fallback) {
+  const parsed = Number(value)
+  return Number.isFinite(parsed) && parsed >= 0 ? parsed : fallback
+}
+
+function readTranscriptText(data) {
+  if (typeof data === 'string') return data
+
+  return [
+    data?.text,
+    data?.transcript,
+    data?.sourceText,
+    data?.data?.text,
+    data?.data?.transcript,
+    data?.result?.text,
+    data?.result?.transcript,
+  ].find((value) => typeof value === 'string') ?? ''
+}
+
+function normalizeTranscriptText(text) {
+  return String(text)
+    .replace(/\r\n/g, '\n')
+    .replace(/[ \t]+\n/g, '\n')
+    .replace(/\n{3,}/g, '\n\n')
+    .trim()
+}
+
+function summarizeTranscriptWarnings(warnings) {
+  const warningText = warnings.join('；')
+  if (/HTTP Error 412|Precondition Failed|Unable to download JSON metadata/i.test(warningText)) {
+    return 'B站拒绝了本次视频元数据请求。已优先尝试公开 playurl；如果仍失败，通常需要稍后重试，或为 yt-dlp 配置浏览器 Cookie。'
+  }
+  if (/ffmpeg|yt-dlp|Whisper|faster-whisper|dependency/i.test(warningText)) {
+    return warningText
+  }
+
+  return warningText.slice(0, 220)
+}
+
 function extractZipEntry(zipBuffer, entryName) {
   const endOffset = findEndOfCentralDirectory(zipBuffer)
   const entryCount = zipBuffer.readUInt16LE(endOffset + 10)
@@ -314,6 +537,12 @@ function parseModelContent(content, responseMode = 'json') {
       uncertainties: ['**模型输出格式异常**：需要重试、调低温度，或强化 JSON 输出约束。'],
     }
   }
+}
+
+function getErrorStatusCode(error) {
+  const statusCode = Number(error?.statusCode)
+  if (Number.isInteger(statusCode) && statusCode >= 400 && statusCode < 600) return statusCode
+  return 500
 }
 
 function readJsonBody(request) {

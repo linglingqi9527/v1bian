@@ -1,20 +1,17 @@
+import { existsSync, readdirSync } from 'node:fs'
 import { access, mkdir, readdir } from 'node:fs/promises'
 import { spawn, spawnSync } from 'node:child_process'
 import path from 'node:path'
 import process from 'node:process'
-import { AUDIO_CACHE_DIR } from './selectSpeakerTargets.js'
+import { AUDIO_CACHE_DIR, ROOT_DIR } from './selectSpeakerTargets.js'
 
-const INSTALL_HINTS = {
-  'yt-dlp': '请安装 yt-dlp：winget install yt-dlp.yt-dlp',
-  ffmpeg: '请安装 ffmpeg：winget install Gyan.FFmpeg',
-}
 const USER_AGENT = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 Chrome/126 Safari/537.36'
 
 export function checkAudioDependencies() {
   const ffmpegCommand = audioCommand('ffmpeg')
   const ytdlpCommand = audioCommand('yt-dlp')
   return {
-    curl: commandExists('curl.exe', ['--version']),
+    curl: commandExists(audioCommand('curl'), ['--version']),
     'yt-dlp': commandExists(ytdlpCommand, ['--version']),
     ffmpeg: commandExists(ffmpegCommand, ['-version']),
   }
@@ -46,7 +43,7 @@ export async function extractOpeningAudio(target, {
       'dependency_missing',
       audioPath,
       startedAt,
-      missingDependencies.map((name) => INSTALL_HINTS[name]),
+      missingDependencies.map(createInstallHint),
     )
   }
 
@@ -67,6 +64,10 @@ export async function extractOpeningAudio(target, {
     '--download-sections',
     `*${start}-${start + duration}`,
     '--force-keyframes-at-cuts',
+    '--user-agent',
+    USER_AGENT,
+    '--referer',
+    target.bilibiliUrl,
     '-f',
     'bestaudio/best',
     '-x',
@@ -100,7 +101,7 @@ async function extractWithPublicPlayUrl(target, audioPath, { duration, start }) 
   apiUrl.searchParams.set('qn', '64')
   apiUrl.searchParams.set('fnval', '0')
   apiUrl.searchParams.set('fourk', '0')
-  const responseText = await runCommand('curl.exe', [
+  const responseText = await runCommand(audioCommand('curl'), [
     '--connect-timeout', '5',
     '--max-time', '30',
     '--fail',
@@ -131,9 +132,73 @@ async function extractWithPublicPlayUrl(target, audioPath, { duration, start }) 
 }
 
 function audioCommand(command) {
-  if (command === 'ffmpeg') return process.env.FFMPEG_BIN || 'ffmpeg'
-  if (command === 'yt-dlp') return process.env.YTDLP_BIN || 'yt-dlp'
+  if (command === 'ffmpeg') return process.env.FFMPEG_BIN || resolveBundledFfmpeg() || 'ffmpeg'
+  if (command === 'yt-dlp') return process.env.YTDLP_BIN || resolveVenvBinary('yt-dlp') || 'yt-dlp'
+  if (command === 'curl') return process.env.CURL_BIN || (process.platform === 'win32' ? 'curl.exe' : 'curl')
   return command
+}
+
+function resolveVenvBinary(command) {
+  const candidates = [
+    path.join(ROOT_DIR, '.venv-asr', 'bin', command),
+    path.join(ROOT_DIR, '.venv-asr', 'Scripts', `${command}.exe`),
+    path.join(ROOT_DIR, '.venv-asr', 'Scripts', command),
+  ]
+
+  return candidates.find((candidate) => existsSync(candidate)) ?? ''
+}
+
+function resolveBundledFfmpeg() {
+  const sitePackageRoots = [
+    path.join(ROOT_DIR, '.venv-asr', 'lib'),
+    path.join(ROOT_DIR, '.venv-asr', 'Lib', 'site-packages'),
+  ]
+
+  for (const root of sitePackageRoots) {
+    const binary = findImageioFfmpegBinary(root)
+    if (binary) return binary
+  }
+
+  return ''
+}
+
+function findImageioFfmpegBinary(root) {
+  if (!existsSync(root)) return ''
+
+  const entries = readDirectorySafe(root)
+  for (const entry of entries) {
+    const entryPath = path.join(root, entry)
+    const candidateRoot = entry.startsWith('python')
+      ? path.join(entryPath, 'site-packages', 'imageio_ffmpeg', 'binaries')
+      : path.join(entryPath, 'imageio_ffmpeg', 'binaries')
+    const binary = findFfmpegInDirectory(candidateRoot)
+    if (binary) return binary
+  }
+
+  return findFfmpegInDirectory(path.join(root, 'imageio_ffmpeg', 'binaries'))
+}
+
+function findFfmpegInDirectory(directory) {
+  return readDirectorySafe(directory)
+    .map((entry) => path.join(directory, entry))
+    .find((entryPath) => /ffmpeg/i.test(path.basename(entryPath)) && !entryPath.endsWith('.sha256')) ?? ''
+}
+
+function readDirectorySafe(directory) {
+  try {
+    return readdirSync(directory)
+  } catch {
+    return []
+  }
+}
+
+function createInstallHint(name) {
+  if (process.platform === 'darwin') return `请安装 ${name}：brew install ${name}`
+  if (process.platform === 'win32') {
+    if (name === 'ffmpeg') return '请安装 ffmpeg：winget install Gyan.FFmpeg'
+    if (name === 'yt-dlp') return '请安装 yt-dlp：winget install yt-dlp.yt-dlp'
+  }
+  return `请安装 ${name}，并确保命令可以在终端直接运行。`
 }
 
 function result(status, audioPath, startedAt, warnings = []) {

@@ -162,7 +162,7 @@ function createPromptContext(context, conversation) {
       topic: context.match.topic,
       affirmative: context.match.affirmative,
       negative: context.match.negative,
-      videoUrl: context.match.videoUrl,
+      videoUrl: context.match.videoUrl || context.match.bilibiliUrl || context.match.sourceUrl || '',
       speakerGroups: context.match.speakerGroups,
     } : null,
     review: context?.review ? {

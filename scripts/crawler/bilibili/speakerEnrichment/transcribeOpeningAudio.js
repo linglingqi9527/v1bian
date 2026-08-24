@@ -2,7 +2,7 @@ import { mkdir, readFile, writeFile } from 'node:fs/promises'
 import { spawn, spawnSync } from 'node:child_process'
 import path from 'node:path'
 import process from 'node:process'
-import { TRANSCRIPT_CACHE_DIR } from './selectSpeakerTargets.js'
+import { ROOT_DIR, TRANSCRIPT_CACHE_DIR } from './selectSpeakerTargets.js'
 
 export async function transcribeOpeningAudio(target, audioResult, {
   audioDuration = 480,
@@ -130,6 +130,8 @@ function detectWhisperCli() {
 function pythonCommands() {
   return [
     process.env.PYTHON_BIN,
+    path.join(ROOT_DIR, '.venv-asr', 'bin', 'python'),
+    path.join(ROOT_DIR, '.venv-asr', 'Scripts', 'python.exe'),
     'python',
     'python3',
     'py',

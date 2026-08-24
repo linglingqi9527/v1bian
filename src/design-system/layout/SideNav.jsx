@@ -16,7 +16,7 @@ const navItems = [
   { to: '/matches', label: '看比赛', icon: imageAssets.nav.watchMatch, kind: 'watch' },
   { to: '/reviews', label: '写赛评', icon: imageAssets.nav.writeReview, kind: 'review' },
   { to: '/trainings', label: '做训练', icon: imageAssets.nav.startTraining, kind: 'train' },
-  { to: '/judge', label: 'Judge', icon: imageAssets.nav.judge, kind: 'judge' },
+  { to: '/judge', label: 'Judge', icon: imageAssets.nav.judge, kind: 'judge', edgeLabel: 'AI评审复盘' },
 ]
 
 export function SideNav() {
@@ -79,6 +79,9 @@ export function SideNav() {
                   <img src={item.icon} alt="" />
                 </span>
                 <span className="primary-nav__label">{item.label}</span>
+                {item.edgeLabel ? (
+                  <span className="primary-nav__edge-label">{item.edgeLabel}</span>
+                ) : null}
               </>
             )}
           </NavLink>
