@@ -24,7 +24,7 @@ export function ReviewListRow({ item, onDelete, onPriorityChange }) {
         </Link>
         <p className="muted">{item.meta}</p>
         <div className="review-row-meta">
-          <SketchTag className={item.status === REVIEW_STATUS.draft ? 'tag-pink' : 'tag-blue'}>
+          <SketchTag className="tag-blue">
             {item.status}
           </SketchTag>
           <span>{item.updatedLabel}</span>

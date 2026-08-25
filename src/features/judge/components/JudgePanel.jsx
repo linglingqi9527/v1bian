@@ -1,8 +1,9 @@
 import { X } from 'lucide-react'
+import { createPortal } from 'react-dom'
 import { JudgeSurface } from './JudgeSurface.jsx'
 
 export function JudgePanel({ conversationId, onClose }) {
-  return (
+  const panel = (
     <div className="judge-panel-backdrop">
       <section className="judge-panel" aria-label="JudgeAgent 弹窗">
         <div className="judge-panel-head">
@@ -18,4 +19,8 @@ export function JudgePanel({ conversationId, onClose }) {
       </section>
     </div>
   )
+
+  if (typeof document === 'undefined') return panel
+
+  return createPortal(panel, document.body)
 }

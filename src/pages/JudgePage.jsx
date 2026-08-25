@@ -9,8 +9,8 @@ export default function JudgePage() {
         decoration={false}
         eyebrow="Judge / 判断 / 汇总 / 会话"
         hero="trainings"
-        title="法官"
-        meta="导入材料后再开始判断；从赛评和训练呼出时会自动带入上下文。"
+        title="Judge"
+        meta="导入比赛/训练材料 即可开始自动评审"
         variant="compact"
       />
       <JudgeSurface mode="page" />

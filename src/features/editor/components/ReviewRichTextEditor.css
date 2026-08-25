@@ -32,8 +32,21 @@
   gap: 10px;
 }
 
+.review-status-judge-button.sketch-button {
+  width: 100%;
+  min-height: 38px;
+  margin-top: 2px;
+  padding-inline: 12px;
+  border-radius: 9px;
+  font-size: 16px;
+}
+
+.review-status-judge-button .sketch-button__content {
+  justify-content: center;
+}
+
 .review-status-button--draft.sketch-button--active {
-  background: #fff7fa;
+  background: #f3f9ff;
 }
 
 .review-status-button--completed.sketch-button--active {

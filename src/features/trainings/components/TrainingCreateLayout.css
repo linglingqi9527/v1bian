@@ -431,6 +431,17 @@
   width: 100%;
 }
 
+.training-save-panel__judge.sketch-button {
+  min-height: 38px;
+  margin-top: -2px;
+  border-radius: 9px;
+  font-size: 16px;
+}
+
+.training-save-panel__judge .sketch-button__content {
+  justify-content: center;
+}
+
 .training-save-panel .training-icon-button {
   width: 38px;
   min-width: 38px;

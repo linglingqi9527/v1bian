@@ -341,12 +341,6 @@ export default function TrainingCreatePage() {
   return (
     <ContentLayout>
       <WorkbenchHeader
-        actions={(
-          <JudgeLauncher
-            context={{ type: 'training', matchId, reviewId, trainingId: trainingSessionId }}
-            label="Judge"
-          />
-        )}
         eyebrow={`训练 / 编辑 / ${modeLabel}`}
         hero="training-create"
         title={trainingDraft.title || '训练档案'}
@@ -499,6 +493,11 @@ export default function TrainingCreatePage() {
                 </SketchButton>
               </div>
               <p>右侧出现的素材会自动保存；也可以点击左上角图标手动保存。</p>
+              <JudgeLauncher
+                className="training-save-panel__judge"
+                context={{ type: 'training', matchId, reviewId, trainingId: trainingSessionId }}
+                label="Judge"
+              />
               {saveNotice ? <p className="training-save-panel__notice">{saveNotice}</p> : null}
               <input
                 accept="audio/*,video/*"

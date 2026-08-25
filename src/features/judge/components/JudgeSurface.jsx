@@ -23,6 +23,7 @@ import {
   JUDGE_UPDATED_EVENT,
   listJudgeConversations,
 } from '../judgeService.js'
+import { SketchButton } from '../../../design-system/ui/SketchButton.jsx'
 import '../Judge.css'
 
 const ACCEPTED_FILE_TYPES = [
@@ -44,8 +45,73 @@ const JUDGE_MODEL_OPTIONS = [
   { value: 'local', label: '本地', provider: 'api-proxy' },
 ]
 
+const JUDGE_DEMO_PREVIEW_OUTPUT = {
+  id: 'judge-demo-preview-output',
+  title: '比赛 · AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
+  summary: '案例预览：正方胜，胜负幅度为中胜。',
+  actions: [],
+  sourceRefs: ['比赛案例.docx'],
+  sourceTextExcerpt: '',
+  createdAt: '2026-08-23T20:30:00.000Z',
+  modelProfile: 'demo',
+  provider: 'demo-preview',
+  reportJson: {
+    source_boundary: '本评判报告基于示例转写材料生成，仅用于展示 Judge 的输出形态。材料中的角色标签按发言顺序处理；若真实材料存在缺漏或转写误差，胜负强度应相应下调。',
+    fact_sheet: {
+      topic: '比赛 · AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
+      match: '比赛 · AI的迅猛发展提升了 / 降低了人类创作者存在的意义',
+      affirmative: '正方',
+      negative: '反方',
+    },
+    core_standard: '本场核心不比“AI产业好不好”，而比正方能否把 AI 训练行为纳入合理使用框架，并回应复制权与创作者利益损害。裁判主要看三件事：第一，训练行为是否能被解释为非表达性、转换性的技术分析；第二，反方提出的复制与市场损害是否完成了从“可能存在”到“足以否定合理使用”的证明；第三，社会公共利益是否强到足以支撑合理使用条款的弹性解释。',
+    final_judgment: '正方胜，胜负幅度为中胜。正方优势在于没有停留在“AI发展重要”的价值口号，而是把技术过程、法律要件和公共利益串成了一条裁判可以采信的判断链：训练不是直接替代作品消费，输出端也存在过滤和低重合率等限制，因此反方必须进一步证明具体损害。反方能够打出“记忆化”“许可权被剥夺”等有杀伤力的点，但始终缺少中国市场中作者收入、销量或授权利益受损的具体链条，导致攻势更像风险提示，而不是能直接推翻合理使用的终局论证。',
+    winner: 'affirmative',
+    win_margin: 'medium',
+    main_clashes: [
+      {
+        title: 'AI训练的法律定性：技术分析还是复制侵权',
+        analysis: '正方把 AI 训练定义为对语料规律的提取，强调模型学习的是统计关系、表达结构和风格规律，而不是把原文稳定保存成可供阅读的复制件。这套说法的价值在于，它把辩题从“用了作品所以侵权”拉回到著作权法保护范围：法律保护具体表达，不保护思想、方法和风格。\n\n反方的攻击抓住“记忆化”现象，试图说明模型可以再现作品片段，所以训练端已经形成实质复制。这个攻击方向有效，因为它逼迫正方解释技术过程和法律效果之间的关系。但反方的问题是，没有证明这种再现具有普遍性、稳定性和市场替代性。裁判因此会认为：反方成功制造复制权风险，正方则更好地完成了“为什么训练行为仍可被纳入合理使用讨论”的法理转化。',
+        evidence_refs: [
+          { speaker: '正方一辩', quote: '训练是学习规律和风格，不是直接复制原文。' },
+          { speaker: '反方一辩', quote: '模型可能记忆并输出原作品内容。' },
+        ],
+      },
+      {
+        title: '市场损害：抽象权利受损还是具体利益受损',
+        analysis: '这一交锋是正方扩大优势的关键。正方持续追问反方：到底哪一类作者、哪一个市场、哪一种收益因为 AI 训练发生了可验证下降。这个追问很重要，因为合理使用的第三步不是问“权利人是否不舒服”，而是问是否不合理地损害了合法利益。\n\n反方用“许可权被剥夺”回应，逻辑上并不弱：作品被企业用于训练却没有付费，确实可能改变版权交易秩序。但反方没有把许可权损失具体化，也没有说明如果所有训练都必须逐一授权，产业、科研和中文语料供给会面临怎样的制度成本。于是这一轮裁判会给正方优势：正方不仅削弱了反方的损害证明，还把举证责任重新压回反方。',
+        evidence_refs: [
+          { speaker: '正方三辩', quote: '请说明哪位作者的销量或阅读量因此下降。' },
+          { speaker: '反方四辩', quote: '未经许可使用作品本身就损害作者利益。' },
+        ],
+      },
+      {
+        title: '社会公共利益：国家战略是否能进入合理使用判断',
+        analysis: '正方最强的一步，是把合理使用从单纯的版权抗辩推进到制度选择：中文高质量语料不足、授权链条复杂、AI 产业竞争紧迫，都意味着裁判不能只看单个作品被使用的不适感，还要看社会整体创新和知识生产的成本。\n\n反方尝试以公版数据、合规授权和国外案例回应，说明 AI 发展并不必然依赖未经许可作品。这一路径本来可以很强，但反方没有充分说明公版数据的质量、覆盖率和中文语境适配能力，也没有证明替代方案足以支撑同等规模模型训练。最终，正方在“为什么需要扩张解释合理使用”上讲出了更完整的现实理由。',
+        evidence_refs: [
+          { speaker: '正方三辩', quote: '中文语料供给不足会影响模型能力。' },
+          { speaker: '反方三辩', quote: '公版和合规授权数据也可以训练模型。' },
+        ],
+      },
+    ],
+    final_reasons: [
+      '**第一，正方完成了法律闭环。**它没有只讲 AI 有用，而是把训练行为定性、合理使用三步检验、输出端风险控制放在同一条链条里，使裁判能够理解为什么“使用作品”不必然等于“侵权成立”。',
+      '**第二，反方的风险提示强，但终局证明不足。**记忆化、许可权和创作者利益都是有效攻击点，可反方没有把这些点落实到具体市场损害或可衡量利益下降，导致其论证停留在“可能侵害”而非“足以否定合理使用”。',
+      '**第三，正方的公共利益论证更能解释制度取舍。**当正方把中文语料、国家 AI 战略和授权成本纳入判断，裁判会认为合理使用条款有必要保留技术时代的弹性空间。',
+    ],
+    best_debater: {
+      speaker: '正方一辩',
+      side: '正方',
+      key_contribution: '正方一辩承担了本场胜负的地基工作：开篇先把比赛压到合理使用三步检验上，再把 AI 训练解释为非表达性技术分析，使后续队友的质询和小结都有明确裁判坐标。',
+      reason: '她决定胜局的地方不在于某一句话压倒对手，而在于提前搭好了“法律要件、市场损害、公共利益”的三层框架。反方之后虽然不断攻击复制风险，但每一次都必须回到正方设置的判准里回答，比赛节奏因此长期由正方掌握。',
+      confidence: '高置信',
+    },
+  },
+  markdown: '',
+}
+
 export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList, onConversationUpdated }) {
   const [conversation, setConversation] = useState(() => getConversation(conversationId))
+  const [demoPreviewOutput, setDemoPreviewOutput] = useState(null)
   const [directoryItems, setDirectoryItems] = useState(() => listJudgeConversations())
   const [prompt, setPrompt] = useState('')
   const [fileState, setFileState] = useState(null)
@@ -89,7 +155,8 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     return () => window.clearInterval(timer)
   }, [runProgressMode, runStartedAt, running])
 
-  const latestOutput = conversation?.outputs?.at(-1)
+  const latestOutput = demoPreviewOutput ?? conversation?.outputs?.at(-1)
+  const isDemoPreview = Boolean(demoPreviewOutput)
   const messages = conversation?.messages ?? []
   const followUpMessages = messages.filter((message) => message.kind === 'question' || message.kind === 'answer')
   const resolvedConversationContext = conversation ? resolveConversationContext(conversation) : null
@@ -113,6 +180,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     }
 
     setError('')
+    setDemoPreviewOutput(null)
     setFileState({
       kind: fileKind,
       name: file.name,
@@ -326,6 +394,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     }
 
     setConversation(null)
+    setDemoPreviewOutput(null)
     setFileState(null)
     setPrompt('')
     setRunError('')
@@ -333,6 +402,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
 
   function handleSelectDirectoryItem(item) {
     setFilesOpen(false)
+    setDemoPreviewOutput(null)
     if (item?.id) {
       setConversation(getJudgeConversationById(item.id))
       setPrompt('')
@@ -351,6 +421,17 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
       setPrompt('')
       setRunError('')
     }
+  }
+
+  function handleDemoPreview() {
+    setFilesOpen(false)
+    setDownloadsOpen(false)
+    setConversation(null)
+    setDemoPreviewOutput(JUDGE_DEMO_PREVIEW_OUTPUT)
+    setFileState(null)
+    setPrompt('')
+    setError('')
+    setRunError('')
   }
 
   function renderContextBar() {
@@ -414,7 +495,24 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     )
   }
 
-  if (!conversation) {
+  function renderDemoPreviewButton() {
+    return (
+      <div className="judge-demo-preview-row">
+        <SketchButton
+          className="judge-demo-preview-button"
+          handdrawnFill={false}
+          onClick={handleDemoPreview}
+          size="sm"
+          type="button"
+          variant="secondary"
+        >
+          案例预览
+        </SketchButton>
+      </div>
+    )
+  }
+
+  if (!conversation && !demoPreviewOutput) {
     const importStageClassName = running
       ? 'judge-import-stage judge-import-stage--docked'
       : 'judge-import-stage judge-import-stage--center'
@@ -422,6 +520,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     return (
       <section className={`judge-surface judge-surface--${mode} judge-file-stage`} aria-label="Judge 文件导入">
         {renderContextBar()}
+        {renderDemoPreviewButton()}
         <div className={importStageClassName}>
           <div className={fileState ? 'judge-composer judge-composer--with-file judge-import-composer' : 'judge-composer judge-import-composer'}>
             <button
@@ -482,9 +581,19 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
     )
   }
 
+  const composerClassName = [
+    'judge-composer',
+    fileState && 'judge-composer--with-file',
+    latestOutput && 'judge-composer--floating',
+  ].filter(Boolean).join(' ')
+
   return (
-    <section className={`judge-surface judge-surface--${mode} judge-chat`} aria-label="Judge 会话">
+    <section
+      className={`judge-surface judge-surface--${mode} judge-chat ${latestOutput ? 'judge-chat--has-output' : ''}`}
+      aria-label="Judge 会话"
+    >
       {renderContextBar()}
+      {renderDemoPreviewButton()}
 
       <div className={latestOutput || messages.length > 1 ? 'judge-message-area' : 'judge-message-area judge-message-area--blank'}>
         {latestOutput ? (
@@ -513,7 +622,7 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
         ) : null}
       </div>
 
-      <div className={fileState ? 'judge-composer judge-composer--with-file' : 'judge-composer'}>
+      <div className={composerClassName}>
         <button
           className="judge-composer-plus"
           onClick={handleSelectFile}
@@ -530,9 +639,10 @@ export function JudgeSurface({ conversationId = '', mode = 'page', onBackToList,
           </span>
         ) : null}
         <textarea
+          disabled={isDemoPreview}
           onChange={(event) => setPrompt(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder={canStartFromContextVideo && !fileState ? '转写当前比赛并生成' : '问问 Judge'}
+          placeholder={isDemoPreview ? '案例预览不写入账号，导入材料后可继续追问' : (canStartFromContextVideo && !fileState ? '转写当前比赛并生成' : '问问 Judge')}
           rows={1}
           value={prompt}
         />

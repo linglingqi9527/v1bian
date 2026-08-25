@@ -180,7 +180,7 @@ function ReviewsPanel() {
         <h2 className="handdrawn-underline handdrawn-underline--nav-section">我的赛评</h2>
         <StatLine label="全部赛评" to="/reviews" tone="blue" value={reviews.length} />
         <StatLine label="已完成" tone="blue" value={completedCount} />
-        <StatLine label="草稿" tone="pink" value={draftCount} />
+        <StatLine label="草稿" tone="blue" value={draftCount} />
         <StatLine label="已训练" tone="green" value={trainedCount} />
       </section>
       <section className="nav-section nav-section--underlined stat-list">

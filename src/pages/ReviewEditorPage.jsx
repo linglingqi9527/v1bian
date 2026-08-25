@@ -198,12 +198,6 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
   return (
     <ContentLayout>
       <WorkbenchHeader
-        actions={(
-          <JudgeLauncher
-            context={{ type: 'review', matchId: routeMatchId, reviewId: savedReviewId ?? review?.id }}
-            label="Judge"
-          />
-        )}
         decoration={false}
         eyebrow="赛评 / 编辑"
         hero="review-editor"
@@ -242,6 +236,11 @@ function ReviewEditorWorkspace({ initialMatchSnapshot, initialState, match, onCr
                 </SketchButton>
               ))}
             </div>
+            <JudgeLauncher
+              className="review-status-judge-button"
+              context={{ type: 'review', matchId: routeMatchId, reviewId: savedReviewId ?? review?.id }}
+              label="Judge"
+            />
           </div>
         </div>
         <div className="review-save-note" aria-live="polite">
@@ -287,7 +286,7 @@ function getReviewStatusFill(status) {
     return { color: '#9dd0ff', opacity: 0.72, variant: 'marker' }
   }
 
-  return { color: '#ffd9e3', opacity: 0.82, variant: 'marker' }
+  return { color: '#9dd0ff', opacity: 0.72, variant: 'marker' }
 }
 
 function formatSavedTime(value) {

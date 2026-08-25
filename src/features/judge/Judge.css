@@ -30,6 +30,10 @@
   --judge-active-hachure: repeating-linear-gradient(156deg, rgba(247, 217, 92, 0.5) 0 7px, rgba(255, 255, 255, 0.55) 8px 12px);
 }
 
+.judge-surface {
+  position: relative;
+}
+
 .judge-import-stage {
   display: grid;
   justify-items: center;
@@ -89,7 +93,7 @@
 
 .judge-file-stage {
   display: grid;
-  grid-template-rows: auto minmax(360px, 1fr);
+  grid-template-rows: auto auto minmax(360px, 1fr);
   gap: 14px;
   min-height: var(--judge-chat-min-height);
 }
@@ -156,24 +160,46 @@
 .judge-panel-backdrop {
   position: fixed;
   inset: 0;
-  z-index: 40;
+  z-index: 1000;
   display: grid;
   place-items: center;
   padding: var(--judge-mobile-gutter);
   background: var(--judge-overlay);
+  backdrop-filter: blur(2px);
 }
 
 .judge-panel {
+  position: relative;
   display: grid;
   gap: 18px;
   width: min(var(--judge-panel-width), calc(100vw - var(--judge-mobile-gutter) * 2));
   max-height: min(var(--judge-panel-max-height), calc(100svh - var(--judge-mobile-gutter) * 2));
   border: var(--judge-border-width) solid var(--color-line);
-  border-radius: var(--judge-radius-panel);
+  border-radius: 18px;
   padding: var(--judge-panel-padding);
   overflow: auto;
-  background: var(--color-paper);
-  box-shadow: var(--shadow-sketch);
+  background: color-mix(in srgb, var(--color-paper) 93%, transparent);
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  box-shadow:
+    0 26px 60px rgba(32, 26, 22, 0.22),
+    0 10px 22px rgba(32, 26, 22, 0.12),
+    0 0 0 8px rgba(255, 254, 251, 0.38);
+}
+
+.judge-panel::before {
+  position: absolute;
+  inset: -18px;
+  z-index: -1;
+  border-radius: 26px;
+  background:
+    radial-gradient(circle at 20% 8%, rgba(255, 254, 251, 0.68), transparent 34%),
+    radial-gradient(circle at 85% 92%, rgba(255, 254, 251, 0.52), transparent 38%),
+    rgba(255, 254, 251, 0.22);
+  filter: blur(16px);
+  opacity: 0.9;
+  content: "";
+  pointer-events: none;
 }
 
 .judge-panel-head,
@@ -200,7 +226,7 @@
 .judge-chat {
   position: relative;
   display: grid;
-  grid-template-rows: auto minmax(280px, 1fr) auto;
+  grid-template-rows: auto auto minmax(280px, 1fr) auto;
   gap: 14px;
   min-height: var(--judge-chat-min-height);
 }
@@ -228,6 +254,40 @@
 .judge-back-button:focus-visible {
   color: var(--judge-send-bg);
   outline: 0;
+}
+
+.judge-demo-preview-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-top: -4px;
+}
+
+.judge-demo-preview-button.sketch-button {
+  flex: 0 0 auto;
+  width: auto;
+  min-height: 30px;
+  border-width: 2px;
+  border-radius: 10px;
+  padding: 4px 12px;
+  color: #ed5b99;
+  background:
+    repeating-linear-gradient(156deg, rgba(255, 154, 190, 0.28) 0 7px, rgba(255, 255, 255, 0.72) 8px 12px),
+    #fff;
+  box-shadow: 0 2px 0 rgba(32, 26, 22, 0.12);
+  font-size: 14px;
+  transform: rotate(-0.5deg);
+  overflow: hidden;
+}
+
+.judge-demo-preview-button.sketch-button:hover,
+.judge-demo-preview-button.sketch-button:focus-visible,
+.judge-demo-preview-button.sketch-button--active {
+  color: #ed5b99;
+  outline: 0;
+  box-shadow:
+    0 2px 0 rgba(32, 26, 22, 0.14),
+    0 0 0 3px rgba(237, 91, 153, 0.14);
 }
 
 .judge-context-files {
@@ -378,6 +438,10 @@
   gap: 12px;
   min-height: 0;
   padding: 16px 4px;
+}
+
+.judge-chat--has-output .judge-message-area {
+  padding-bottom: 92px;
 }
 
 .judge-message-area--blank {
@@ -797,6 +861,43 @@
   padding: 8px 10px;
 }
 
+.judge-composer.judge-composer--floating {
+  position: sticky;
+  bottom: 18px;
+  z-index: 7;
+  margin-top: -84px;
+  height: 56px;
+  min-height: 56px;
+  gap: 8px;
+  padding: 5px 8px;
+  background: color-mix(in srgb, var(--judge-surface-bg) 86%, transparent);
+  -webkit-backdrop-filter: blur(14px) saturate(1.08);
+  backdrop-filter: blur(14px) saturate(1.08);
+  box-shadow:
+    0 10px 24px rgba(32, 26, 22, 0.13),
+    0 0 0 5px rgba(255, 254, 251, 0.46);
+}
+
+.judge-composer--floating .judge-composer-plus,
+.judge-composer--floating .judge-composer-send {
+  width: 36px;
+  height: 36px;
+}
+
+.judge-composer--floating .judge-composer-plus {
+  font-size: 28px;
+}
+
+.judge-composer.judge-composer--floating textarea {
+  min-height: 30px;
+  padding: 3px 0;
+  font-size: 18px;
+}
+
+.judge-composer--floating .judge-model-inline select {
+  font-size: 17px;
+}
+
 .judge-composer--with-file {
   grid-template-columns: 42px minmax(120px, 210px) minmax(0, 1fr) auto 44px;
 }
@@ -932,6 +1033,19 @@
   background: var(--judge-send-bg);
 }
 
+.judge-composer-send svg {
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2.9;
+  transform: translateX(1px) rotate(-2deg);
+}
+
+.judge-composer-send:hover,
+.judge-composer-send:focus-visible {
+  outline: 0;
+  box-shadow: 0 0 0 3px rgba(70, 112, 255, 0.18);
+}
+
 .judge-composer-send:disabled {
   cursor: not-allowed;
   opacity: 0.58;
@@ -961,6 +1075,10 @@
   z-index: 7;
   display: grid;
   justify-items: end;
+}
+
+.judge-surface--panel .judge-download {
+  display: none;
 }
 
 .judge-download-trigger {
